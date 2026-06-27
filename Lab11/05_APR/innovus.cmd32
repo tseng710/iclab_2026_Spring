@@ -1,0 +1,111 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat May 23 00:15:19 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+set init_design_uniquify 1
+setDesignMode -process 180
+suppressMessage TECHLIB 1318
+suppressMessage ENCEXT-2799
+set init_gnd_net GND
+set init_lef_file {LEF/header6_V55_20ka_cic.lef LEF/fsa0m_a_generic_core.lef LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef LEF/fsa0m_a_t33_generic_io.lef LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef LEF/BONDPAD.lef LEF/SUMA180_4096X12.lef}
+set init_verilog CHIP_SYN.v
+set init_mmmc_file CHIP_mmmc.view
+set init_io_file CHIP.io
+set init_top_cell CHIP
+set init_pwr_net VCC
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core_5040 -r 0.996411859478 0.5 250 250 250 250
+uiSetTool select
+getIoFlowFlag
+fit
+zoomBox -589.55500 -347.33700 2833.52500 3037.91900
+panPage 1 0
+setDrawView fplan
+panPage -1 0
+panPage 1 0
+selectInst CORE/u_ctrl_mem0
+addHaloToBlock {15 15 15 15} -allMacro
+uiSetTool obstruct
+clearGlobalNets
+globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+globalNetConnect VCC -type net -net VCC
+globalNetConnect VCC -type tiehi -pin VCC -instanceBasename *
+globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+globalNetConnect GND -type net -net GND
+globalNetConnect GND -type tielo -pin GND -instanceBasename *
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 10 -use_interleaving_wire_group 1
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type block_rings -around each_block -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { ring blockring }
+sroute -connect { blockPin padPin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal6(6) }
+uiSetTool move
+panPage -1 0
+panPage 0 -1
+panPage 0 1
+zoomBox -362.61000 -22.99600 2547.00800 2854.47200
+setObjFPlanBox Instance CORE/u_ctrl_mem0 490.826 1712.8 1269.546 2163.6
+panPage 1 0
+panPage 1 0
+deselectAll
+selectInst CORE/u_ctrl_mem1
+panPage -1 0
+setObjFPlanBox Instance CORE/u_ctrl_mem1 1402.15 1698.617 2180.87 2149.417
+panPage -1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 0 -1
+deselectAll
+selectInst CORE/u_ctrl_mem2
+panPage -1 0
+panPage -1 0
+panPage -1 0
+setObjFPlanBox Instance CORE/u_ctrl_mem2 461.892 487.616 1240.612 938.416
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+deselectAll
+selectInst CORE/u_ctrl_mem3
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+setObjFPlanBox Instance CORE/u_ctrl_mem3 1359.033 492.974 2137.753 943.774

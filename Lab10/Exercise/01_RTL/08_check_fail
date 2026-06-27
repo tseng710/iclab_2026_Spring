@@ -1,0 +1,38 @@
+#!/bin/bash
+
+echo -e "\033[36m***********************************************************************\033[0m"
+echo -e "\033[36m* Lab10 Auto Verification Script (FAIL_X Check)                       *\033[0m"
+echo -e "\033[36m***********************************************************************\033[0m"
+
+if [ -f "09_clean_up" ]; then
+    ./09_clean_up > check.log 2>&1
+fi
+
+echo -e -n "\033[33mRunning CORRECT Design (./00_run_cov)... \033[0m"
+./00_run_cov > check.log 2>&1
+
+if grep -i -q "Congratulations" check.log; then
+    echo -e "\033[32m--- CORRECT DESIGN check Pass ---\033[0m"
+else
+    echo -e "\033[31m--- CORRECT DESIGN check Fail ---\033[0m"
+    echo -e "Please check check.log for details."
+    exit 1
+fi
+
+for ((i=1; i<=5; i++))
+do
+    echo -e -n "\033[33mRunning FAIL_${i}... \033[0m"
+    ./00_run_cov FAIL_${i} > check.log 2>&1
+
+    if grep -q "Wrong Answer" check.log; then
+        echo -e "\033[32mPass (Caught FAIL_${i} Design Error)\033[0m"
+    else
+        echo -e "\033[31mFail (Missed FAIL_${i} Design Error)\033[0m"
+        echo -e "Stop at FAIL_${i}, please check check.log for details."
+        exit 1
+    fi
+done
+
+echo -e "\033[42;37m***********************************************************************\033[0m"
+echo -e "\033[42;37m* ALL FAIL_X DESIGN ERRORS CAUGHT !!!                                 *\033[0m"
+echo -e "\033[42;37m***********************************************************************\033[0m"

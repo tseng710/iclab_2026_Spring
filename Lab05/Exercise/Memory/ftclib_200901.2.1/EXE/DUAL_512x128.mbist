@@ -1,0 +1,254 @@
+///////////////////////////////////////////////////////////////////////////////////
+// 
+//              Synchronous Dual Port SRAM Compiler 
+// 
+//                    UMC 0.18um Generic Logic Process 
+//    __________________________________________________________________________
+// 
+// 
+//        (C) Copyright 2002-2009 Faraday Technology Corp. All Rights Reserved.
+// 
+//      This source code is an unpublished work belongs to Faraday Technology
+//      Corp.  It is considered a trade secret and is not to be divulged or
+//      used by parties who have not received written authorization from
+//      Faraday Technology Corp.
+// 
+//      Faraday's home page can be found at:
+//      http://www.faraday-tech.com/
+//     
+// ________________________________________________________________________________
+// 
+//       Module Name       :  DUAL_512x128  
+//       Word              :  512           
+//       Bit               :  128           
+//       Byte              :  1             
+//       Mux               :  1             
+//       Power Ring Type   :  port          
+//       Power Ring Width  :  2 (um)        
+//       Output Loading    :  0.05 (pf)     
+//       Input Data Slew   :  0.02 (ns)     
+//       Input Clock Slew  :  0.02 (ns)     
+// 
+// ________________________________________________________________________________
+// 
+//       Library          : FSA0M_A
+//       Memaker          : 200901.2.1
+//       Date             : 2026/04/05 14:47:45
+// 
+// ________________________________________________________________________________
+// 
+//       Library          : FSA0M_A
+//       Memaker          : 200901.2.1
+//       Date             : 2026/04/05 14:47:47
+//
+///////////////////////////////////////////////////////////////////////////////////
+
+model DUAL_512x128 (
+    A8, A7, A6, A5, A4, A3, A2, A1, A0,
+    B8, B7, B6, B5, B4, B3, B2, B1, B0,
+    DIA127, DIA126, DIA125, DIA124, DIA123, DIA122, DIA121, DIA120, DIA119, DIA118, DIA117, DIA116, DIA115, DIA114, DIA113, DIA112, DIA111, DIA110, DIA109, DIA108, DIA107, DIA106, DIA105, DIA104, DIA103, DIA102, DIA101, DIA100, DIA99, DIA98, DIA97, DIA96, DIA95, DIA94, DIA93, DIA92, DIA91, DIA90, DIA89, DIA88, DIA87, DIA86, DIA85, DIA84, DIA83, DIA82, DIA81, DIA80, DIA79, DIA78, DIA77, DIA76, DIA75, DIA74, DIA73, DIA72, DIA71, DIA70, DIA69, DIA68, DIA67, DIA66, DIA65, DIA64, DIA63, DIA62, DIA61, DIA60, DIA59, DIA58, DIA57, DIA56, DIA55, DIA54, DIA53, DIA52, DIA51, DIA50, DIA49, DIA48, DIA47, DIA46, DIA45, DIA44, DIA43, DIA42, DIA41, DIA40, DIA39, DIA38, DIA37, DIA36, DIA35, DIA34, DIA33, DIA32, DIA31, DIA30, DIA29, DIA28, DIA27, DIA26, DIA25, DIA24, DIA23, DIA22, DIA21, DIA20, DIA19, DIA18, DIA17, DIA16, DIA15, DIA14, DIA13, DIA12, DIA11, DIA10, DIA9, DIA8, DIA7, DIA6, DIA5, DIA4, DIA3, DIA2, DIA1, DIA0,
+    DIB127, DIB126, DIB125, DIB124, DIB123, DIB122, DIB121, DIB120, DIB119, DIB118, DIB117, DIB116, DIB115, DIB114, DIB113, DIB112, DIB111, DIB110, DIB109, DIB108, DIB107, DIB106, DIB105, DIB104, DIB103, DIB102, DIB101, DIB100, DIB99, DIB98, DIB97, DIB96, DIB95, DIB94, DIB93, DIB92, DIB91, DIB90, DIB89, DIB88, DIB87, DIB86, DIB85, DIB84, DIB83, DIB82, DIB81, DIB80, DIB79, DIB78, DIB77, DIB76, DIB75, DIB74, DIB73, DIB72, DIB71, DIB70, DIB69, DIB68, DIB67, DIB66, DIB65, DIB64, DIB63, DIB62, DIB61, DIB60, DIB59, DIB58, DIB57, DIB56, DIB55, DIB54, DIB53, DIB52, DIB51, DIB50, DIB49, DIB48, DIB47, DIB46, DIB45, DIB44, DIB43, DIB42, DIB41, DIB40, DIB39, DIB38, DIB37, DIB36, DIB35, DIB34, DIB33, DIB32, DIB31, DIB30, DIB29, DIB28, DIB27, DIB26, DIB25, DIB24, DIB23, DIB22, DIB21, DIB20, DIB19, DIB18, DIB17, DIB16, DIB15, DIB14, DIB13, DIB12, DIB11, DIB10, DIB9, DIB8, DIB7, DIB6, DIB5, DIB4, DIB3, DIB2, DIB1, DIB0,
+    DOA127, DOA126, DOA125, DOA124, DOA123, DOA122, DOA121, DOA120, DOA119, DOA118, DOA117, DOA116, DOA115, DOA114, DOA113, DOA112, DOA111, DOA110, DOA109, DOA108, DOA107, DOA106, DOA105, DOA104, DOA103, DOA102, DOA101, DOA100, DOA99, DOA98, DOA97, DOA96, DOA95, DOA94, DOA93, DOA92, DOA91, DOA90, DOA89, DOA88, DOA87, DOA86, DOA85, DOA84, DOA83, DOA82, DOA81, DOA80, DOA79, DOA78, DOA77, DOA76, DOA75, DOA74, DOA73, DOA72, DOA71, DOA70, DOA69, DOA68, DOA67, DOA66, DOA65, DOA64, DOA63, DOA62, DOA61, DOA60, DOA59, DOA58, DOA57, DOA56, DOA55, DOA54, DOA53, DOA52, DOA51, DOA50, DOA49, DOA48, DOA47, DOA46, DOA45, DOA44, DOA43, DOA42, DOA41, DOA40, DOA39, DOA38, DOA37, DOA36, DOA35, DOA34, DOA33, DOA32, DOA31, DOA30, DOA29, DOA28, DOA27, DOA26, DOA25, DOA24, DOA23, DOA22, DOA21, DOA20, DOA19, DOA18, DOA17, DOA16, DOA15, DOA14, DOA13, DOA12, DOA11, DOA10, DOA9, DOA8, DOA7, DOA6, DOA5, DOA4, DOA3, DOA2, DOA1, DOA0,
+    DOB127, DOB126, DOB125, DOB124, DOB123, DOB122, DOB121, DOB120, DOB119, DOB118, DOB117, DOB116, DOB115, DOB114, DOB113, DOB112, DOB111, DOB110, DOB109, DOB108, DOB107, DOB106, DOB105, DOB104, DOB103, DOB102, DOB101, DOB100, DOB99, DOB98, DOB97, DOB96, DOB95, DOB94, DOB93, DOB92, DOB91, DOB90, DOB89, DOB88, DOB87, DOB86, DOB85, DOB84, DOB83, DOB82, DOB81, DOB80, DOB79, DOB78, DOB77, DOB76, DOB75, DOB74, DOB73, DOB72, DOB71, DOB70, DOB69, DOB68, DOB67, DOB66, DOB65, DOB64, DOB63, DOB62, DOB61, DOB60, DOB59, DOB58, DOB57, DOB56, DOB55, DOB54, DOB53, DOB52, DOB51, DOB50, DOB49, DOB48, DOB47, DOB46, DOB45, DOB44, DOB43, DOB42, DOB41, DOB40, DOB39, DOB38, DOB37, DOB36, DOB35, DOB34, DOB33, DOB32, DOB31, DOB30, DOB29, DOB28, DOB27, DOB26, DOB25, DOB24, DOB23, DOB22, DOB21, DOB20, DOB19, DOB18, DOB17, DOB16, DOB15, DOB14, DOB13, DOB12, DOB11, DOB10, DOB9, DOB8, DOB7, DOB6, DOB5, DOB4, DOB3, DOB2, DOB1, DOB0,
+    WEAN,
+    WEBN,
+    CKA, CKB, CSA, CSB, OEA, OEB) (
+
+    bist_definition (
+        data_out      DOA(DOA127, DOA126, DOA125, DOA124, DOA123, DOA122, DOA121, DOA120, DOA119, DOA118, DOA117, DOA116, DOA115, DOA114, DOA113, DOA112, DOA111, DOA110, DOA109, DOA108, DOA107, DOA106, DOA105, DOA104, DOA103, DOA102, DOA101, DOA100, DOA99, DOA98, DOA97, DOA96, DOA95, DOA94, DOA93, DOA92, DOA91, DOA90, DOA89, DOA88, DOA87, DOA86, DOA85, DOA84, DOA83, DOA82, DOA81, DOA80, DOA79, DOA78, DOA77, DOA76, DOA75, DOA74, DOA73, DOA72, DOA71, DOA70, DOA69, DOA68, DOA67, DOA66, DOA65, DOA64, DOA63, DOA62, DOA61, DOA60, DOA59, DOA58, DOA57, DOA56, DOA55, DOA54, DOA53, DOA52, DOA51, DOA50, DOA49, DOA48, DOA47, DOA46, DOA45, DOA44, DOA43, DOA42, DOA41, DOA40, DOA39, DOA38, DOA37, DOA36, DOA35, DOA34, DOA33, DOA32, DOA31, DOA30, DOA29, DOA28, DOA27, DOA26, DOA25, DOA24, DOA23, DOA22, DOA21, DOA20, DOA19, DOA18, DOA17, DOA16, DOA15, DOA14, DOA13, DOA12, DOA11, DOA10, DOA9, DOA8, DOA7, DOA6, DOA5, DOA4, DOA3, DOA2, DOA1, DOA0);
+        data_out      DOB(DOB127, DOB126, DOB125, DOB124, DOB123, DOB122, DOB121, DOB120, DOB119, DOB118, DOB117, DOB116, DOB115, DOB114, DOB113, DOB112, DOB111, DOB110, DOB109, DOB108, DOB107, DOB106, DOB105, DOB104, DOB103, DOB102, DOB101, DOB100, DOB99, DOB98, DOB97, DOB96, DOB95, DOB94, DOB93, DOB92, DOB91, DOB90, DOB89, DOB88, DOB87, DOB86, DOB85, DOB84, DOB83, DOB82, DOB81, DOB80, DOB79, DOB78, DOB77, DOB76, DOB75, DOB74, DOB73, DOB72, DOB71, DOB70, DOB69, DOB68, DOB67, DOB66, DOB65, DOB64, DOB63, DOB62, DOB61, DOB60, DOB59, DOB58, DOB57, DOB56, DOB55, DOB54, DOB53, DOB52, DOB51, DOB50, DOB49, DOB48, DOB47, DOB46, DOB45, DOB44, DOB43, DOB42, DOB41, DOB40, DOB39, DOB38, DOB37, DOB36, DOB35, DOB34, DOB33, DOB32, DOB31, DOB30, DOB29, DOB28, DOB27, DOB26, DOB25, DOB24, DOB23, DOB22, DOB21, DOB20, DOB19, DOB18, DOB17, DOB16, DOB15, DOB14, DOB13, DOB12, DOB11, DOB10, DOB9, DOB8, DOB7, DOB6, DOB5, DOB4, DOB3, DOB2, DOB1, DOB0);
+        data_in       DIA(DIA127, DIA126, DIA125, DIA124, DIA123, DIA122, DIA121, DIA120, DIA119, DIA118, DIA117, DIA116, DIA115, DIA114, DIA113, DIA112, DIA111, DIA110, DIA109, DIA108, DIA107, DIA106, DIA105, DIA104, DIA103, DIA102, DIA101, DIA100, DIA99, DIA98, DIA97, DIA96, DIA95, DIA94, DIA93, DIA92, DIA91, DIA90, DIA89, DIA88, DIA87, DIA86, DIA85, DIA84, DIA83, DIA82, DIA81, DIA80, DIA79, DIA78, DIA77, DIA76, DIA75, DIA74, DIA73, DIA72, DIA71, DIA70, DIA69, DIA68, DIA67, DIA66, DIA65, DIA64, DIA63, DIA62, DIA61, DIA60, DIA59, DIA58, DIA57, DIA56, DIA55, DIA54, DIA53, DIA52, DIA51, DIA50, DIA49, DIA48, DIA47, DIA46, DIA45, DIA44, DIA43, DIA42, DIA41, DIA40, DIA39, DIA38, DIA37, DIA36, DIA35, DIA34, DIA33, DIA32, DIA31, DIA30, DIA29, DIA28, DIA27, DIA26, DIA25, DIA24, DIA23, DIA22, DIA21, DIA20, DIA19, DIA18, DIA17, DIA16, DIA15, DIA14, DIA13, DIA12, DIA11, DIA10, DIA9, DIA8, DIA7, DIA6, DIA5, DIA4, DIA3, DIA2, DIA1, DIA0);
+        data_in       DIB(DIB127, DIB126, DIB125, DIB124, DIB123, DIB122, DIB121, DIB120, DIB119, DIB118, DIB117, DIB116, DIB115, DIB114, DIB113, DIB112, DIB111, DIB110, DIB109, DIB108, DIB107, DIB106, DIB105, DIB104, DIB103, DIB102, DIB101, DIB100, DIB99, DIB98, DIB97, DIB96, DIB95, DIB94, DIB93, DIB92, DIB91, DIB90, DIB89, DIB88, DIB87, DIB86, DIB85, DIB84, DIB83, DIB82, DIB81, DIB80, DIB79, DIB78, DIB77, DIB76, DIB75, DIB74, DIB73, DIB72, DIB71, DIB70, DIB69, DIB68, DIB67, DIB66, DIB65, DIB64, DIB63, DIB62, DIB61, DIB60, DIB59, DIB58, DIB57, DIB56, DIB55, DIB54, DIB53, DIB52, DIB51, DIB50, DIB49, DIB48, DIB47, DIB46, DIB45, DIB44, DIB43, DIB42, DIB41, DIB40, DIB39, DIB38, DIB37, DIB36, DIB35, DIB34, DIB33, DIB32, DIB31, DIB30, DIB29, DIB28, DIB27, DIB26, DIB25, DIB24, DIB23, DIB22, DIB21, DIB20, DIB19, DIB18, DIB17, DIB16, DIB15, DIB14, DIB13, DIB12, DIB11, DIB10, DIB9, DIB8, DIB7, DIB6, DIB5, DIB4, DIB3, DIB2, DIB1, DIB0);
+        address       A (A8, A7, A6, A5, A4, A3, A2, A1, A0);
+        address       B (B8, B7, B6, B5, B4, B3, B2, B1, B0);
+        output_enable OEA low;
+        output_enable OEB low;
+        write_enable  WEAN low;
+        write_enable  WEBN low;
+        chip_enable   CSA high;
+        chip_enable   CSB high;
+        clock         CKA high;
+        clock         CKB high;
+        tech          = FSA0M_A;
+        vendor        = "Faraday Technology Inc.";
+        version       = "200901.2.1";
+        min_address   = 0;
+        max_address   = 511;
+        data_size     = 128;
+        top_column    = 1;
+        top_word      = 1;
+
+        descrambling_definition (
+            address (
+                DSC_A0 = A0;
+                DSC_A1 = A1;
+                DSC_A2 = A2;
+                DSC_A3 = A3;
+                DSC_A4 = A4;
+                DSC_A5 = A5;
+                DSC_A6 = A6;
+                DSC_A7 = A7;
+                DSC_A8 = A8;
+            )
+            data_in (	    
+                DSC_DIA0 = DIA0;
+                DSC_DIA1 = DIA1;
+                DSC_DIA2 = DIA2;
+                DSC_DIA3 = DIA3;
+                DSC_DIA4 = DIA4;
+                DSC_DIA5 = DIA5;
+                DSC_DIA6 = DIA6;
+                DSC_DIA7 = DIA7;
+                DSC_DIA8 = DIA8;
+                DSC_DIA9 = DIA9;
+                DSC_DIA10 = DIA10;
+                DSC_DIA11 = DIA11;
+                DSC_DIA12 = DIA12;
+                DSC_DIA13 = DIA13;
+                DSC_DIA14 = DIA14;
+                DSC_DIA15 = DIA15;
+                DSC_DIA16 = DIA16;
+                DSC_DIA17 = DIA17;
+                DSC_DIA18 = DIA18;
+                DSC_DIA19 = DIA19;
+                DSC_DIA20 = DIA20;
+                DSC_DIA21 = DIA21;
+                DSC_DIA22 = DIA22;
+                DSC_DIA23 = DIA23;
+                DSC_DIA24 = DIA24;
+                DSC_DIA25 = DIA25;
+                DSC_DIA26 = DIA26;
+                DSC_DIA27 = DIA27;
+                DSC_DIA28 = DIA28;
+                DSC_DIA29 = DIA29;
+                DSC_DIA30 = DIA30;
+                DSC_DIA31 = DIA31;
+                DSC_DIA32 = DIA32;
+                DSC_DIA33 = DIA33;
+                DSC_DIA34 = DIA34;
+                DSC_DIA35 = DIA35;
+                DSC_DIA36 = DIA36;
+                DSC_DIA37 = DIA37;
+                DSC_DIA38 = DIA38;
+                DSC_DIA39 = DIA39;
+                DSC_DIA40 = DIA40;
+                DSC_DIA41 = DIA41;
+                DSC_DIA42 = DIA42;
+                DSC_DIA43 = DIA43;
+                DSC_DIA44 = DIA44;
+                DSC_DIA45 = DIA45;
+                DSC_DIA46 = DIA46;
+                DSC_DIA47 = DIA47;
+                DSC_DIA48 = DIA48;
+                DSC_DIA49 = DIA49;
+                DSC_DIA50 = DIA50;
+                DSC_DIA51 = DIA51;
+                DSC_DIA52 = DIA52;
+                DSC_DIA53 = DIA53;
+                DSC_DIA54 = DIA54;
+                DSC_DIA55 = DIA55;
+                DSC_DIA56 = DIA56;
+                DSC_DIA57 = DIA57;
+                DSC_DIA58 = DIA58;
+                DSC_DIA59 = DIA59;
+                DSC_DIA60 = DIA60;
+                DSC_DIA61 = DIA61;
+                DSC_DIA62 = DIA62;
+                DSC_DIA63 = DIA63;
+                DSC_DIA64 = DIA64;
+                DSC_DIA65 = DIA65;
+                DSC_DIA66 = DIA66;
+                DSC_DIA67 = DIA67;
+                DSC_DIA68 = DIA68;
+                DSC_DIA69 = DIA69;
+                DSC_DIA70 = DIA70;
+                DSC_DIA71 = DIA71;
+                DSC_DIA72 = DIA72;
+                DSC_DIA73 = DIA73;
+                DSC_DIA74 = DIA74;
+                DSC_DIA75 = DIA75;
+                DSC_DIA76 = DIA76;
+                DSC_DIA77 = DIA77;
+                DSC_DIA78 = DIA78;
+                DSC_DIA79 = DIA79;
+                DSC_DIA80 = DIA80;
+                DSC_DIA81 = DIA81;
+                DSC_DIA82 = DIA82;
+                DSC_DIA83 = DIA83;
+                DSC_DIA84 = DIA84;
+                DSC_DIA85 = DIA85;
+                DSC_DIA86 = DIA86;
+                DSC_DIA87 = DIA87;
+                DSC_DIA88 = DIA88;
+                DSC_DIA89 = DIA89;
+                DSC_DIA90 = DIA90;
+                DSC_DIA91 = DIA91;
+                DSC_DIA92 = DIA92;
+                DSC_DIA93 = DIA93;
+                DSC_DIA94 = DIA94;
+                DSC_DIA95 = DIA95;
+                DSC_DIA96 = DIA96;
+                DSC_DIA97 = DIA97;
+                DSC_DIA98 = DIA98;
+                DSC_DIA99 = DIA99;
+                DSC_DIA100 = DIA100;
+                DSC_DIA101 = DIA101;
+                DSC_DIA102 = DIA102;
+                DSC_DIA103 = DIA103;
+                DSC_DIA104 = DIA104;
+                DSC_DIA105 = DIA105;
+                DSC_DIA106 = DIA106;
+                DSC_DIA107 = DIA107;
+                DSC_DIA108 = DIA108;
+                DSC_DIA109 = DIA109;
+                DSC_DIA110 = DIA110;
+                DSC_DIA111 = DIA111;
+                DSC_DIA112 = DIA112;
+                DSC_DIA113 = DIA113;
+                DSC_DIA114 = DIA114;
+                DSC_DIA115 = DIA115;
+                DSC_DIA116 = DIA116;
+                DSC_DIA117 = DIA117;
+                DSC_DIA118 = DIA118;
+                DSC_DIA119 = DIA119;
+                DSC_DIA120 = DIA120;
+                DSC_DIA121 = DIA121;
+                DSC_DIA122 = DIA122;
+                DSC_DIA123 = DIA123;
+                DSC_DIA124 = DIA124;
+                DSC_DIA125 = DIA125;
+                DSC_DIA126 = DIA126;
+                DSC_DIA127 = DIA127;
+            )
+        )
+
+        read_write_port(
+            read_cycle(
+                assert CSA;
+                change A;
+                expect DOA move;
+            )
+            write_cycle(
+               assert CSA;
+               change A;
+               change DIA;
+               assert WEAN;
+               wait;
+            )
+        )
+        read_write_port(
+            read_cycle(
+                assert CSB;
+                change B;
+                expect DOB move;
+            )
+            write_cycle(
+               assert CSB;
+               change B;
+               change DIB;
+               assert WEBN;
+               wait;
+            )
+        )
+    )
+)

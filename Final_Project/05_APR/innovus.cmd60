@@ -1,0 +1,46 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Jun 23 23:44:49 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+zoomBox -148.09900 -218.89500 848.70700 766.89700
+zoomBox -31.44200 -41.10800 688.75000 671.12600
+panPage -1 0
+zoomBox -134.31400 264.01200 241.63100 635.80300
+zoomBox -72.60300 418.28100 123.64400 612.36000
+zoomBox -37.63500 491.80000 64.80800 593.11100
+zoomBox -23.51200 526.52500 39.40100 588.74300
+zoomBox -12.13600 553.10700 20.70600 585.58600
+zoomBox -10.24000 557.45200 17.67600 585.06000
+zoomBox -4.23500 570.87600 8.15300 583.12700
+zoomBox -2.04100 575.70700 4.42600 582.10300
+zoomBox -0.73200 578.56700 2.13800 581.40500
+zoomBox -0.15300 579.82500 1.12200 581.08600
+zoomBox -1.00000 578.41400 2.38500 581.76200
+zoomBox -3.24600 574.67400 5.73200 583.55300
+zoomBox -10.88800 561.97600 17.12200 589.67600
+zoomBox -34.62300 522.62300 52.75300 609.03400
+zoomBox -107.70500 427.75100 123.97200 656.86800

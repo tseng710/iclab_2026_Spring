@@ -1,0 +1,490 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Jun 17 20:24:54 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+zoomBox 315.41900 320.71700 1262.14900 815.17800
+zoomBox 531.54800 531.90100 951.61800 751.29600
+zoomBox 615.22500 613.06400 834.50400 727.59000
+zoomBox 668.08800 663.35300 765.38400 714.16900
+zoomBox 688.41300 682.73400 739.20300 709.26100
+zoomBox 700.72600 694.31800 723.26400 706.08900
+zoomBox 706.07700 699.14800 716.07800 704.37100
+zoomBox 708.10600 700.82400 713.32700 703.55100
+zoomBox 707.24700 700.08000 714.47400 703.85500
+zoomBox 705.29900 698.39600 717.07000 704.54400
+zoomBox 698.97200 692.92500 725.50600 706.78300
+zoomBox 680.19200 676.68300 750.55300 713.43100
+zoomBox 632.03800 635.04200 818.60200 732.48100
+zoomBox 538.66800 561.48300 959.14000 781.08800
+zoomBox 334.66500 411.97600 1282.30400 906.91200
+zoomBox -120.51000 81.52900 2015.22900 1196.98900
+zoomBox -758.12900 -395.53800 3333.27900 1741.33500
+zoomBox -53.23400 -219.69700 2082.50900 895.76500
+zoomBox 375.00000 -112.87100 1322.64300 382.06700
+zoomBox 560.88900 -57.64000 981.36400 161.96700
+zoomBox 631.34800 -14.66200 817.91600 82.77900
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+verifyConnectivity -type all -error 1000 -warning 50
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_postRoute -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix CHIP_postRoute -outDir timingReports
+getAnalysisMode -checkType
+zoomBox 670.16900 -9.01600 767.56100 41.85000
+zoomBox 690.20200 -5.86500 741.04200 20.68800
+zoomBox 697.99000 -4.15900 729.21300 12.14800
+uiSetTool move
+zoomBox 701.06700 -3.02000 723.62600 8.76200
+zoomBox 702.27300 -2.58100 721.44900 7.43400
+selectObject IO_Pin {bid_m_inf_data[2]}
+moveGroupPins -loc {699.67000 -0.62000}
+deselectAll
+selectObject IO_Pin stall_2
+moveGroupPins -loc {699.36000 -0.31000}
+zoomBox 688.46300 -11.37600 739.31000 15.18100
+zoomBox 674.58800 -25.24700 772.00100 25.63000
+zoomBox 686.44400 -12.44500 737.29600 14.11400
+zoomBox 693.80600 -5.96700 716.37100 5.81800
+zoomBox 696.58000 -3.34600 708.36100 2.80700
+moveGroupPins -loc {699.98000 1.22900}
+deselectAll
+selectObject IO_Pin {bid_m_inf_data[2]}
+moveGroupPins -loc {698.42000 -0.62000}
+zoomBox 694.78900 -6.46800 717.35800 5.31900
+zoomBox 692.43800 -10.55600 729.18900 8.63800
+zoomBox 690.06500 -14.65000 740.93100 11.91600
+panPage 0 1
+zoomBox 678.81100 -27.26100 793.45100 32.61400
+zoomBox 666.32900 -50.33100 853.00300 47.16600
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+zoomBox 687.67400 675.43400 785.12100 726.32900
+zoomBox 696.58000 685.98800 756.42700 717.24500
+zoomBox 702.05100 692.48800 738.80500 711.68400
+zoomBox 706.04700 697.39000 725.23400 707.41100
+zoomBox 706.70200 698.19300 723.01100 706.71100
+deselectAll
+selectObject IO_Pin bvalid_m_inf_data
+moveGroupPins -loc {699.98000 687.93000}
+deselectAll
+selectObject IO_Pin bready_m_inf_data
+moveGroupPins -loc {699.98000 687.62000}
+panPage -1 0
+zoomBox 693.12300 694.01200 729.88100 713.21000
+zoomBox 691.78900 692.69300 735.03400 715.27900
+zoomBox 662.11000 673.67400 848.82900 771.19400
+zoomBox 655.46300 667.18100 875.13300 781.91100
+zoomBox 647.64300 659.39100 906.07900 794.36800
+panPage 0 -1
+zoomBox 676.07900 656.10300 790.75100 715.99400
+zoomBox 689.02100 674.22500 739.90300 700.80000
+zoomBox 694.15400 681.00900 720.71600 694.88200
+zoomBox 696.31500 683.59000 712.62800 692.11000
+deselectAll
+selectPhyPin 699.2800 687.8200 699.9800 688.1000 3 bvalid_m_inf_data
+undo
+redo
+deselectAll
+selectPhyPin 699.2800 687.2600 699.9800 687.5400 3 bready_m_inf_data
+zoomBox 697.56900 684.25100 707.58800 689.48400
+zoomBox 694.35800 682.10200 720.92800 695.97900
+zoomBox 685.84800 676.40500 756.30200 713.20200
+panPage -1 0
+zoomBox 658.51200 674.76200 741.40000 718.05300
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+zoomBox -22.43900 686.03500 28.46500 712.62100
+zoomBox -13.62100 692.94600 17.64200 709.27400
+deselectAll
+selectObject IO_Pin clk
+moveGroupPins -loc {-0.31000 687.62000}
+deselectAll
+selectObject IO_Pin {bresp_m_inf_data[1]}
+moveGroupPins -loc {-0.62000 687.93000}
+zoomBox -43.55400 675.76600 53.97000 726.70100
+panPage 0 -1
+zoomBox -26.69600 672.28300 33.19700 703.56400
+zoomBox -22.63600 674.72700 28.27300 701.31600
+zoomBox -13.74000 679.81400 17.52600 696.14400
+zoomBox -4.91400 684.50600 6.87900 690.66500
+zoomBox -4.11800 684.94800 5.90700 690.18400
+deselectAll
+selectObject IO_Pin clk
+moveGroupPins -loc {-0.62000 686.62200}
+deselectAll
+selectObject IO_Pin {bresp_m_inf_data[1]}
+moveGroupPins -loc {2.31100 688.24000}
+zoomBox -10.09400 683.78800 12.50100 695.58900
+zoomBox -27.83500 680.34500 32.07700 711.63600
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+zoomBox -75.41400 283.09800 83.44500 366.06700
+zoomBox -171.18300 258.84400 186.84500 445.83600
+zoomBox -328.36200 220.44300 357.50900 578.66200
+zoomBox -629.37300 171.14900 684.54500 857.38600
+zoomBox -1206.95700 111.88400 1310.10200 1426.50100
+panPage 0 -1
+zoomBox -534.76200 -153.31800 582.07100 429.98500
+zoomBox -240.87900 -74.14000 254.66800 184.67600
+zoomBox -108.97300 -36.85300 110.90600 77.98600
+zoomBox -42.39900 -15.54200 40.53100 27.77100
+zoomBox -23.09100 -9.31300 20.20000 13.29700
+zoomBox -12.42500 -5.17300 10.17200 6.62900
+zoomBox -5.90800 -2.67600 4.11900 2.56100
+zoomBox -4.45900 -2.08800 2.78500 1.69500
+zoomBox -3.41400 -1.66400 1.82100 1.07000
+panPage 0 1
+deselectAll
+selectObject IO_Pin {bid_m_inf_data[1]}
+moveGroupPins -loc {-0.62000 0.93400}
+deselectAll
+selectObject IO_Pin {rdata_m_inf_data[0]}
+moveGroupPins -loc {-0.62000 1.29400}
+deselectAll
+selectObject IO_Pin {wdata_m_inf_data[1]}
+panPage 1 0
+panPage 1 0
+moveGroupPins -loc {2.94700 0.00000}
+panPage -1 0
+deselectAll
+selectObject IO_Pin {wdata_m_inf_data[8]}
+panPage 1 0
+panPage 1 0
+moveGroupPins -loc {3.57600 0.00000}
+panPage -1 0
+panPage -1 0
+deselectAll
+selectObject IO_Pin {wdata_m_inf_data[15]}
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+moveGroupPins -loc {-0.62000 3.79700}
+zoomBox -2.58000 2.12100 4.66700 5.90600
+zoomBox -3.62700 1.83000 6.40400 7.06900
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+zoomBox -1.96400 -0.91000 3.27400 1.82600
+deselectAll
+selectObject IO_Pin {awlen_m_inf_data[4]}
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+moveGroupPins -loc {23.44800 0.00000}
+zoomBox 18.00200 -1.45500 29.81300 4.71400
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+panPage 1 0
+zoomBox -5.65600 -1.30200 4.38400 3.94200
+deselectAll
+selectObject IO_Pin stall_1
+moveGroupPins -loc {1.53600 -0.62000}
+deselectAll
+selectObject IO_Pin {awsize_m_inf_data[2]}
+panPage 0 1
+panPage 0 1
+moveGroupPins -loc {-0.62000 4.60000}
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+panPage 0 1
+deselectAll
+selectObject IO_Pin {awaddr_m_inf_data[6]}
+panPage 0 1
+panPage 0 1
+moveGroupPins -loc {-0.62000 5.61300}
+panPage 0 -1
+panPage 0 -1
+deselectAll
+selectObject IO_Pin {awaddr_m_inf_data[13]}
+panPage 0 1
+panPage 0 1
+moveGroupPins -loc {-0.62000 6.42900}
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+deselectAll
+selectObject IO_Pin {awaddr_m_inf_data[20]}
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+moveGroupPins -loc {-0.62000 8.34600}
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+deselectAll
+selectObject Module u_alu
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+deselectAll
+selectObject IO_Pin {awaddr_m_inf_data[27]}
+moveGroupPins -loc {0.35000 0.00000}
+deselectAll
+selectObject IO_Pin {awid_m_inf_data[2]}
+moveGroupPins -loc {0.74300 0.00000}
+deselectAll
+selectObject IO_Pin {rdata_m_inf_data[7]}
+moveGroupPins -loc {3.54500 0.00000}
+deselectAll
+selectObject IO_Pin arvalid_m_inf_data
+moveGroupPins -loc {-0.62000 1.61900}
+deselectAll
+selectObject IO_Pin {rdata_m_inf_data[14]}
+panPage 1 0
+moveGroupPins -loc {4.04500 0.00000}
+deselectAll
+selectObject IO_Pin {arlen_m_inf_data[1]}
+moveGroupPins -loc {6.24300 0.00000}
+deselectAll
+selectObject IO_Pin {araddr_m_inf_data[1]}
+moveGroupPins -loc {7.05900 0.00000}
+deselectAll
+selectObject IO_Pin {araddr_m_inf_data[8]}
+moveGroupPins -loc {-0.62000 2.73400}
+deselectAll
+selectObject IO_Pin {araddr_m_inf_data[15]}
+moveGroupPins -loc {-0.62000 2.75800}
+deselectAll
+selectObject IO_Pin {araddr_m_inf_data[22]}
+zoomBox -1.93100 -0.09800 5.32500 3.69200
+moveGroupPins -loc {-0.62000 2.89100}
+zoomBox -4.37200 -1.79400 11.98400 6.74800
+zoomBox -2.45600 -1.00800 6.08300 3.45200
+zoomBox -2.14200 -0.86900 5.11700 2.92200
+zoomBox -1.87500 -0.74800 4.29500 2.47400
+zoomBox -1.64800 -0.64500 3.59700 2.09400
+zoomBox -1.15200 -0.41800 2.06900 1.26400
+zoomBox -1.03300 -0.36400 1.70500 1.06600
+zoomBox -0.76800 -0.24900 0.91500 0.63000
+moveGroupPins -loc {2.91400 0.00000}
+uiSetTool select
+uiSetTool move
+deselectAll
+selectObject IO_Pin {araddr_m_inf_data[29]}
+zoomBox -1.87600 -0.49600 3.37600 2.24700
+zoomBox -2.51100 -0.64000 4.75900 3.15700
+zoomBox -2.91500 -0.73000 5.63800 3.73700
+moveGroupPins -loc {-0.62000 2.83400}
+deselectAll
+selectObject IO_Pin bready_m_inf_inst_2
+moveGroupPins -loc {-0.62000 3.10900}
+deselectAll
+selectObject IO_Pin arvalid_m_inf_data
+moveGroupPins -loc {0.00000 0.00000}
+deselectAll
+selectObject IO_Pin bready_m_inf_inst_2
+moveGroupPins -loc {-0.62000 2.11200}
+zoomBox -2.12800 -0.10600 4.05200 3.12200
+zoomBox -3.94500 -2.65000 7.89700 3.53500
+zoomBox -6.32600 -5.96100 12.95900 4.11100
+panPage 0 1
+panPage 0 1
+zoomBox -12.74400 -0.38700 13.95000 13.55500
+moveGroupPins -loc {9.11100 0.00000}
+deselectAll
+selectObject IO_Pin {bid_m_inf_inst_2[3]}
+moveGroupPins -loc {-0.62000 8.59000}
+zoomBox -9.04800 2.06000 10.24000 12.13400
+zoomBox -7.60000 3.05100 8.79500 11.61400
+zoomBox -4.49900 5.22700 5.57000 10.48600
+zoomBox -2.61600 6.50200 3.56900 9.73200
+zoomBox -1.45900 7.28500 2.34000 9.26900
+zoomBox -1.18500 7.46800 2.04500 9.15500
+zoomBox -0.94700 7.55300 1.79900 8.98700
+zoomBox -2.18500 7.12600 3.07700 9.87400
+zoomBox -3.17600 6.79000 4.10700 10.59400
+zoomBox -7.62600 5.31100 8.78800 13.88400
+zoomBox -17.65400 1.99500 19.34300 21.31800

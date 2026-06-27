@@ -1,0 +1,3181 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+Options:	
+Date:		Mon May 25 08:35:54 2026
+Host:		ee27 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7713 64-Core Processor 512KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading Pegasus 21.21 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+RC_Corner
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-201):	Pin 'DO11' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI11' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO10' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI10' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO9' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI9' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO8' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI8' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO7' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI7' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO6' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI6' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A1' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'WEB' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'OE' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'CS' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A3' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A4' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A2' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'CK' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A0' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A5' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A6' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A7' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A8' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A9' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'DO5' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO4' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO3' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO2' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO1' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO0' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Loading view definition file from /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP_postCTS.inn.dat/viewDefinition.tcl
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib)
+*** End library_loading (cpu=0.03min, real=0.03min, mem=19.9M, fe_cpu=0.30min, fe_real=0.68min, fe_mem=939.6M) ***
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP_postCTS.inn.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell VCCKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell VCC3IOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell GNDKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell GNDIOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading place ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+'set_default_switching_activity' finished successfully.
+Delay_Conrner_min Delay_Corner_max
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.15-s105_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> addIoFiller -cell EMPTY16D -prefix IOFILLER
+Added 62 of filler cell 'EMPTY16D' on top side.
+Added 61 of filler cell 'EMPTY16D' on left side.
+Added 68 of filler cell 'EMPTY16D' on bottom side.
+Added 61 of filler cell 'EMPTY16D' on right side.
+<CMD> addIoFiller -cell EMPTY8D -prefix IOFILLER
+Added 0 of filler cell 'EMPTY8D' on top side.
+Added 0 of filler cell 'EMPTY8D' on left side.
+Added 1 of filler cell 'EMPTY8D' on bottom side.
+Added 0 of filler cell 'EMPTY8D' on right side.
+<CMD> addIoFiller -cell EMPTY4D -prefix IOFILLER
+Added 0 of filler cell 'EMPTY4D' on top side.
+Added 0 of filler cell 'EMPTY4D' on left side.
+Added 0 of filler cell 'EMPTY4D' on bottom side.
+Added 0 of filler cell 'EMPTY4D' on right side.
+<CMD> addIoFiller -cell EMPTY2D -prefix IOFILLER
+Added 17 of filler cell 'EMPTY2D' on top side.
+Added 16 of filler cell 'EMPTY2D' on left side.
+Added 16 of filler cell 'EMPTY2D' on bottom side.
+Added 16 of filler cell 'EMPTY2D' on right side.
+<CMD> addIoFiller -cell EMPTY1D -prefix IOFILLER -fillAnyGap
+Added 1 of filler cell 'EMPTY1D' on top side.
+Added 1 of filler cell 'EMPTY1D' on left side.
+Added 0 of filler cell 'EMPTY1D' on bottom side.
+Added 1 of filler cell 'EMPTY1D' on right side.
+<CMD> setNanoRouteMode -quiet -routeInsertAntennaDiode 1
+<CMD> setNanoRouteMode -quiet -routeAntennaCellName ANTENNA
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven 1
+<CMD> setNanoRouteMode -quiet -routeWithEco 1
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven 1
+<CMD> setNanoRouteMode -quiet -routeTdrEffort 10
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer 6
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+#WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+<CMD> setNanoRouteMode -quiet -drouteEndIteration 100
+**WARN: (IMPTCM-77):	Option "-routeEcoOnlyInLayers" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven true
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven true
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail -viaOpt -wireOpt
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1214.11 (MB), peak = 1219.14 (MB)
+#WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+#WARNING (NRIG-144) Cannot combine -viaOpt with -globalDetail option. The -viaOpt will be ignored.
+**INFO: User settings:
+setNanoRouteMode -drouteEndIteration                            100
+setNanoRouteMode -drouteStartIteration                          0
+setNanoRouteMode -drouteUseMinSpacingForBlockage                auto
+setNanoRouteMode -extractThirdPartyCompatible                   false
+setNanoRouteMode -grouteExpTdStdDelay                           53.6
+setNanoRouteMode -grouteExpTdUseTifTimingEngineForImportDesign  true
+setNanoRouteMode -routeAntennaCellName                          ANTENNA
+setNanoRouteMode -routeBottomRoutingLayer                       1
+setNanoRouteMode -routeInsertAntennaDiode                       true
+setNanoRouteMode -routeStrictlyHonorNonDefaultRule              false
+setNanoRouteMode -routeTdrEffort                                10
+setNanoRouteMode -routeTopRoutingLayer                          6
+setNanoRouteMode -routeWithEco                                  true
+setNanoRouteMode -routeWithSiDriven                             true
+setNanoRouteMode -routeWithTimingDriven                         true
+setNanoRouteMode -timingEngine                                  {}
+setDesignMode -process                                          180
+setExtractRCMode -coupling_c_th                                 3
+setExtractRCMode -engine                                        preRoute
+setExtractRCMode -relative_c_th                                 0.03
+setExtractRCMode -total_c_th                                    5
+setDelayCalMode -enable_high_fanout                             true
+setDelayCalMode -eng_copyNetPropToNewNet                        true
+setDelayCalMode -engine                                         aae
+setDelayCalMode -ignoreNetLoad                                  false
+setDelayCalMode -socv_accuracy_mode                             low
+setSIMode -separate_delta_delay_on_data                         true
+
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: multi-cut via swapping will not be performed after routing.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+Begin checking placement ... (start mem=1974.1M, init mem=1981.6M)
+Overlapping with other instance:	8
+IO instance overlap:4
+*info: Placed = 8094           (Fixed = 80)
+*info: Unplaced = 0           
+Placement Density:54.86%(247678/451434)
+Placement Density (including fixed std cells):54.86%(247678/451434)
+Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1983.6M)
+#WARNING (NRIG-77) Found placement violations. Please investigate and correct before routing. Routing with placement violations can cause long runtime and may be irresolvable.
+#Use routeDesign -placementCheck to stop on violations. Use routeDesign -noPlacementCheck to skip the check.
+#WARNING (NRIG-87) Timing file "" not found, resetting timing engine to default for this session.
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (77) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1983.6M) ***
+
+globalDetailRoute
+
+#WARNING (NRIF-78) The option routeWithEco combined with routeWithTimingDriven is not recommended due to possible high memory usage, increased run-time, and increased routing pattern pertubations. Please use with caution.
+#Start globalDetailRoute on Mon May 25 08:37:39 2026
+#
+#create default rule from bind_ndr_rule rule=0x7fe2372c5240 0x7fe220a40018
+Skipped RC grid update for preRoute extraction.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+#WARNING (NRIG-1303) Congestion map does not match the GCELL grid, clearing map.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/clk of net clk because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/rst_n of net rst_n because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data_valid of net in_data_valid because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[11] of net in_data[11] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[10] of net in_data[10] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[9] of net in_data[9] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[8] of net in_data[8] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[7] of net in_data[7] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[6] of net in_data[6] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[5] of net in_data[5] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[4] of net in_data[4] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[3] of net in_data[3] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[2] of net in_data[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[1] of net in_data[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[0] of net in_data[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/cmd_valid of net cmd_valid because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/cmd[5] of net cmd[5] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/cmd[4] of net cmd[4] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/cmd[3] of net cmd[3] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/cmd[2] of net cmd[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (EMS-27) Message (NRIG-39) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#num needed restored net=0
+#need_extraction net=0 (total=9026)
+#WARNING (NRDB-733) PIN b_out[0] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[1] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[2] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[3] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[4] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[5] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[6] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[7] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN clk in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[0] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[1] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[2] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[3] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[4] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[5] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd_valid in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN g_out[0] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN g_out[1] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN g_out[2] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN g_out[3] in CELL_VIEW CHIP does not have physical port.
+#WARNING (EMS-27) Message (NRDB-733) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#NanoRoute Version 20.15-s105_1 NR210726-1341/20_15-UB
+#Skip comparing routing design signature in db-snapshot flow
+#Start routing data preparation on Mon May 25 08:37:40 2026
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.980.
+#Voltage range [0.000 - 1.980] has 9024 nets.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Voltage range [1.620 - 1.980] has 1 net.
+#Rebuild pin access data for design.
+#WARNING (NRDB-1028) Some option affecting pin access calculation is set by the user. Pin access is to be recalculated. This incurs runtime.
+#Initial pin access analysis.
+#Detail pin access analysis.
+# metal1       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5000
+# metal2       V   Track-Pitch = 0.6200    Line-2-Via Pitch = 0.5600
+# metal3       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5600
+# metal4       V   Track-Pitch = 0.6200    Line-2-Via Pitch = 0.5600
+# metal5       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5600
+# metal6       V   Track-Pitch = 2.4800    Line-2-Via Pitch = 2.2000
+#Monitoring time of adding inner blkg by smac
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1272.85 (MB), peak = 1305.73 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer metal3's pitch = 0.5600.
+#Using automatically generated G-grids.
+#(check_and_prepare_match_target_file) no match_target_file in constraint. quit
+#Done routing data preparation.
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1285.08 (MB), peak = 1305.73 (MB)
+#
+#Summary of active signal nets routing constraints set by OPT:
+#	preferred routing layers      : 0
+#	preferred routing layer effort: 0
+#	preferred extra space         : 0
+#	preferred multi-cut via       : 0
+#	avoid detour                  : 0
+#	expansion ratio               : 0
+#	net priority                  : 0
+#	s2s control                   : 0
+#	avoid chaining                : 0
+#	inst-based stacking via       : 0
+#
+#Summary of active signal nets routing constraints set by USER:
+#	preferred routing layers      : 0
+#	preferred routing layer effort     : 0
+#	preferred extra space              : 0
+#	preferred multi-cut via            : 0
+#	avoid detour                       : 0
+#	net weight                         : 0
+#	avoid chaining                     : 0
+#	cell-based stacking via (required) : 0
+#	cell-based stacking via (optional) : 0
+#
+#Start timing driven prevention iteration
+#
+#----------------------------------------------------
+# Summary of active signal nets routing constraints
+#+--------------------------+-----------+
+#+--------------------------+-----------+
+#
+#----------------------------------------------------
+#Done timing-driven prevention
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1287.18 (MB), peak = 1305.73 (MB)
+#Total number of trivial nets (e.g. < 2 pins) = 49 (skipped).
+#Total number of routable nets = 8977.
+#Total number of nets in the design = 9026.
+#8910 routable nets do not have any wires.
+#67 routable nets have routed wires.
+#8910 nets will be global routed.
+#10 global routed or unrouted (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#67 detail routed (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#
+#Finished routing data preparation on Mon May 25 08:37:41 2026
+#
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.18 (MB)
+#Total memory = 1287.37 (MB)
+#Peak memory = 1305.73 (MB)
+#
+#
+#Start global routing on Mon May 25 08:37:41 2026
+#
+#
+#Start global routing initialization on Mon May 25 08:37:41 2026
+#
+#Number of eco nets is 10
+#
+#Start global routing data preparation on Mon May 25 08:37:41 2026
+#
+#Start routing resource analysis on Mon May 25 08:37:42 2026
+#
+#Routing resource analysis is done on Mon May 25 08:37:42 2026
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  metal1         H         704        2702       51756    72.75%
+#  metal2         V         678        2417       51756    73.89%
+#  metal3         H         770        2636       51756    73.49%
+#  metal4         V        1045        2050       51756    65.52%
+#  metal5         H        2472         934       51756    26.91%
+#  metal6         V         560         213       51756    26.94%
+#  --------------------------------------------------------------
+#  Total                   6230      59.33%      310536    56.58%
+#
+#  78 nets (0.86%) with 1 preferred extra spacing.
+#
+#
+#
+#Global routing data preparation is done on Mon May 25 08:37:42 2026
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1294.22 (MB), peak = 1305.73 (MB)
+#
+#
+#Global routing initialization is done on Mon May 25 08:37:42 2026
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1294.30 (MB), peak = 1305.73 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:04, elapsed time = 00:00:04, memory = 1306.98 (MB), peak = 1325.41 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1307.10 (MB), peak = 1325.41 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 49 (skipped).
+#Total number of routable nets = 8977.
+#Total number of nets in the design = 9026.
+#
+#8977 routable nets have routed wires.
+#10 global routed or unrouted (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#67 detail routed (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#
+#Routed nets constraints summary:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                 10            8900  
+#------------------------------------------------
+#        Total                 10            8900  
+#------------------------------------------------
+#
+#Routing constraints summary of the whole design:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                 77            8900  
+#------------------------------------------------
+#        Total                 77            8900  
+#------------------------------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer           (1)           (2)           (3)           (4)   OverCon
+#  --------------------------------------------------------------------------
+#  metal1        0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal2       23(0.17%)      4(0.03%)      3(0.02%)      1(0.01%)   (0.23%)
+#  metal3        0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal4        0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal5        0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  metal6        0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  --------------------------------------------------------------------------
+#     Total     23(0.02%)      4(0.00%)      3(0.00%)      1(0.00%)   (0.02%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 4
+#  Overflow after GR: 0.00% H + 0.02% V
+#
+#Hotspot report including placement blocked areas
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      layer     |    max hotspot    |   total hotspot   |            hotspot bbox             |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   metal1(H)    |              0.44 |              0.89 |   866.87  1007.99   907.19  1048.31 |
+[hotspot] |   metal2(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal3(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal4(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal5(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   metal6(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      worst     | (metal1)     0.44 | (metal1)     0.89 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   all layers   |              0.00 |              0.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00/0.00 (area is in unit of 4 std-cell row bins)
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 566434 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 17679 um.
+#Total wire length on LAYER metal2 = 135066 um.
+#Total wire length on LAYER metal3 = 172539 um.
+#Total wire length on LAYER metal4 = 142564 um.
+#Total wire length on LAYER metal5 = 66290 um.
+#Total wire length on LAYER metal6 = 32296 um.
+#Total number of vias = 48216
+#Up-Via Summary (total 48216):
+#           
+#-----------------------
+# metal1          27135
+# metal2          15522
+# metal3           4391
+# metal4            949
+# metal5            219
+#-----------------------
+#                 48216 
+#
+#Total number of involved regular nets 1582
+#Maximum src to sink distance  2915.8
+#Average of max src_to_sink distance  189.2
+#Average of ave src_to_sink distance  134.3
+#Total number of involved priority nets 10
+#Maximum src to sink distance for priority net 521.9
+#Average of max src_to_sink distance for priority net 314.3
+#Average of ave src_to_sink distance for priority net 141.7
+#Max overcon = 4 tracks.
+#Total overcon = 0.02%.
+#Worst layer Gcell overcon rate = 0.00%.
+#
+#Global routing statistics:
+#Cpu time = 00:00:05
+#Elapsed time = 00:00:05
+#Increased memory = 19.75 (MB)
+#Total memory = 1307.11 (MB)
+#Peak memory = 1325.41 (MB)
+#
+#Finished global routing on Mon May 25 08:37:47 2026
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1300.23 (MB), peak = 1325.41 (MB)
+#Start Track Assignment.
+#Done with 9091 horizontal wires in 7 hboxes and 11041 vertical wires in 7 hboxes.
+#Done with 1765 horizontal wires in 7 hboxes and 2693 vertical wires in 7 hboxes.
+#Complete Track Assignment.
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 560948 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 17193 um.
+#Total wire length on LAYER metal2 = 133726 um.
+#Total wire length on LAYER metal3 = 169488 um.
+#Total wire length on LAYER metal4 = 142104 um.
+#Total wire length on LAYER metal5 = 66141 um.
+#Total wire length on LAYER metal6 = 32296 um.
+#Total number of vias = 48216
+#Up-Via Summary (total 48216):
+#           
+#-----------------------
+# metal1          27135
+# metal2          15522
+# metal3           4391
+# metal4            949
+# metal5            219
+#-----------------------
+#                 48216 
+#
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1299.38 (MB), peak = 1325.41 (MB)
+#
+#number of short segments in preferred routing layers
+#	metal3    Total 
+#	2         2         
+#
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:08
+#Elapsed time = 00:00:08
+#Increased memory = 42.82 (MB)
+#Total memory = 1299.61 (MB)
+#Peak memory = 1325.41 (MB)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+# ECO: 31.0% of the total area was rechecked for DRC, and 30.4% required routing.
+#   number of violations = 21
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        2        7        1       10
+#	metal2        3        8        0       11
+#	Totals        5       15        1       21
+#402 out of 8482 instances (4.7%) need to be verified(marked ipoed), dirty area = 10.0%.
+#25.6% of the total area is being checked for drcs
+#25.6% of the total area was checked
+#   number of violations = 21
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        2        7        1       10
+#	metal2        3        8        0       11
+#	Totals        5       15        1       21
+#cpu time = 00:00:25, elapsed time = 00:00:25, memory = 1318.46 (MB), peak = 1362.78 (MB)
+#start 1st optimization iteration ...
+#   number of violations = 15
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        6        1        0        9
+#	metal2        0        5        0        1        6
+#	Totals        2       11        1        1       15
+#    number of process antenna violations = 40
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1319.29 (MB), peak = 1362.78 (MB)
+#start 2nd optimization iteration ...
+#   number of violations = 18
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        7        1        0       10
+#	metal2        0        5        0        2        7
+#	metal3        1        0        0        0        1
+#	Totals        3       12        1        2       18
+#    number of process antenna violations = 40
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.42 (MB), peak = 1362.78 (MB)
+#start 3rd optimization iteration ...
+#   number of violations = 13
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        8        1       10
+#	metal2        0        1        1        2
+#	metal3        0        1        0        1
+#	Totals        1       10        2       13
+#    number of process antenna violations = 40
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.23 (MB), peak = 1362.78 (MB)
+#start 4th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        5        1        0        7
+#	metal2        0        1        0        1        2
+#	Totals        1        6        1        1        9
+#    number of process antenna violations = 40
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.14 (MB), peak = 1362.78 (MB)
+#start 5th optimization iteration ...
+#   number of violations = 11
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        2        7        1       10
+#	metal2        1        0        0        1
+#	Totals        3        7        1       11
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.76 (MB), peak = 1362.78 (MB)
+#start 6th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        4        1        0        5
+#	metal2        1        1        0        1        3
+#	Totals        1        5        1        1        8
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.84 (MB), peak = 1362.78 (MB)
+#start 7th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        4        1        5
+#	metal2        1        0        1
+#	Totals        5        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.16 (MB), peak = 1362.78 (MB)
+#start 8th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        1        5        1        7
+#	metal2        0        1        0        1
+#	Totals        1        6        1        8
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.62 (MB), peak = 1362.78 (MB)
+#start 9th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        4        1        6
+#	metal2        0        1        0        1
+#	Totals        1        5        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.09 (MB), peak = 1362.78 (MB)
+#start 10th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        4        1        5
+#	metal2        1        0        1
+#	Totals        5        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1315.31 (MB), peak = 1362.78 (MB)
+#start 11th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        4        1        6
+#	metal2        3        1        0        4
+#	Totals        4        5        1       10
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1315.80 (MB), peak = 1362.78 (MB)
+#start 12th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        5        1        0        7
+#	metal2        0        1        0        1        2
+#	Totals        1        6        1        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.24 (MB), peak = 1362.78 (MB)
+#start 13th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        4        1        6
+#	metal2        1        1        1        3
+#	metal3        0        1        0        1
+#	Totals        2        6        2       10
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.75 (MB), peak = 1362.78 (MB)
+#start 14th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        0        4        1        5
+#	metal2        1        0        0        1
+#	Totals        1        4        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.35 (MB), peak = 1362.78 (MB)
+#start 15th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        2        5        1        8
+#	metal2        1        0        0        1
+#	Totals        3        5        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.36 (MB), peak = 1362.78 (MB)
+#start 16th optimization iteration ...
+#   number of violations = 14
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        7        4       11
+#	metal2        3        0        3
+#	Totals       10        4       14
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1314.14 (MB), peak = 1362.78 (MB)
+#start 17th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        2        4        1        7
+#	metal2        1        1        0        2
+#	Totals        3        5        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1314.64 (MB), peak = 1362.78 (MB)
+#start 18th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        0        1        0        1        2
+#	Totals        1        5        1        1        8
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.31 (MB), peak = 1362.78 (MB)
+#start 19th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        2        1        0        3
+#	metal2        2        1        1        1        5
+#	metal3        0        1        0        0        1
+#	Totals        2        4        2        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.07 (MB), peak = 1362.78 (MB)
+#start 20th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CutSpc      Mar   Totals
+#	metal1        3        1        0        4
+#	metal2        1        0        1        2
+#	Totals        4        1        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.77 (MB), peak = 1362.78 (MB)
+#start 21th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        4        1        5
+#	metal2        1        0        1
+#	Totals        5        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.88 (MB), peak = 1362.78 (MB)
+#start 22th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        0        3        1        4
+#	metal2        1        1        0        2
+#	Totals        1        4        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1314.02 (MB), peak = 1362.78 (MB)
+#start 23th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        0        3        1        4
+#	metal2        1        0        0        1
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1315.13 (MB), peak = 1362.78 (MB)
+#start 24th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        0        1        0        1        2
+#	Totals        1        4        1        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1315.72 (MB), peak = 1362.78 (MB)
+#start 25th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        0        1
+#	Totals        2        4        2        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.41 (MB), peak = 1362.78 (MB)
+#start 26th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        5        1        0        6
+#	metal2        1        1        0        1        3
+#	Totals        1        6        1        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.69 (MB), peak = 1362.78 (MB)
+#start 27th optimization iteration ...
+#   number of violations = 12
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        5        1        0        7
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        0        1
+#	Totals        2        7        2        1       12
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.44 (MB), peak = 1362.78 (MB)
+#start 28th optimization iteration ...
+#   number of violations = 14
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        6        1        0        8
+#	metal2        1        1        1        1        4
+#	metal3        1        1        0        0        2
+#	Totals        3        8        2        1       14
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.41 (MB), peak = 1362.78 (MB)
+#start 29th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        0        2        1        3
+#	metal2        1        1        0        2
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.37 (MB), peak = 1362.78 (MB)
+#start 30th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        3        1        5
+#	metal2        1        1        0        2
+#	Totals        2        4        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1314.86 (MB), peak = 1362.78 (MB)
+#start 31th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        3        1        0        4
+#	metal2        2        1        0        1        4
+#	Totals        2        4        1        1        8
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1314.84 (MB), peak = 1362.78 (MB)
+#start 32th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        2        1        0        3
+#	metal2        1        1        0        1        3
+#	Totals        1        3        1        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1315.56 (MB), peak = 1362.78 (MB)
+#start 33th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        0        1        0        1        2
+#	Totals        1        3        1        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1315.23 (MB), peak = 1362.78 (MB)
+#start 34th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        0        2        1        3
+#	metal2        1        1        0        2
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1315.64 (MB), peak = 1362.78 (MB)
+#start 35th optimization iteration ...
+#   number of violations = 4
+#
+#    By Layer and Type :
+#	          Short   CutSpc   Totals
+#	metal1        2        1        3
+#	metal2        1        0        1
+#	Totals        3        1        4
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1315.70 (MB), peak = 1362.78 (MB)
+#start 36th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        3        1        0        4
+#	metal2        1        0        1        2
+#	Totals        4        1        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1315.50 (MB), peak = 1362.78 (MB)
+#start 37th optimization iteration ...
+#   number of violations = 12
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        2        2        0        4
+#	metal2        0        2        1        1        4
+#	metal3        1        2        0        1        4
+#	Totals        1        6        3        2       12
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.25 (MB), peak = 1367.70 (MB)
+#start 38th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        2        1        0        3
+#	metal2        1        0        1        2
+#	Totals        3        1        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.10 (MB), peak = 1367.70 (MB)
+#start 39th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        0        1        0        1        2
+#	Totals        1        3        1        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1319.01 (MB), peak = 1379.63 (MB)
+#start 40th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        0        3        1        4
+#	metal2        2        1        0        3
+#	Totals        2        4        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.10 (MB), peak = 1379.63 (MB)
+#start 41th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        4        1        0        5
+#	metal2        2        2        0        1        5
+#	Totals        2        6        1        1       10
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.94 (MB), peak = 1379.63 (MB)
+#start 42th optimization iteration ...
+#   number of violations = 12
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        1        1        1        2        5
+#	metal3        0        1        0        0        1
+#	Totals        2        6        2        2       12
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.74 (MB), peak = 1379.63 (MB)
+#start 43th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        4        1        0        5
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        0        1
+#	Totals        1        6        2        1       10
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.46 (MB), peak = 1379.63 (MB)
+#start 44th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        1        3        1        5
+#	metal2        1        1        0        2
+#	Totals        2        4        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.85 (MB), peak = 1379.63 (MB)
+#start 45th optimization iteration ...
+#   number of violations = 12
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        5        1        0        7
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        0        1
+#	Totals        2        7        2        1       12
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.22 (MB), peak = 1379.63 (MB)
+#start 46th optimization iteration ...
+#   number of violations = 12
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        6        1        0        7
+#	metal2        3        1        0        1        5
+#	Totals        3        7        1        1       12
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.28 (MB), peak = 1379.63 (MB)
+#start 47th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        1        3        2        6
+#	metal2        1        2        0        3
+#	Totals        2        5        2        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.29 (MB), peak = 1379.63 (MB)
+#start 48th optimization iteration ...
+#   number of violations = 4
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        2        1        3
+#	metal2        1        0        1
+#	Totals        3        1        4
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.00 (MB), peak = 1379.63 (MB)
+#start 49th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        4        1        0        7
+#	metal2        0        1        0        1        2
+#	Totals        2        5        1        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.17 (MB), peak = 1379.63 (MB)
+#start 50th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        2        4        1        7
+#	metal2        2        1        0        3
+#	Totals        4        5        1       10
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.18 (MB), peak = 1379.63 (MB)
+#start 51th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        5        1        0        7
+#	metal2        1        1        0        1        3
+#	Totals        2        6        1        1       10
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.12 (MB), peak = 1379.63 (MB)
+#start 52th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        0        1        0        1        2
+#	Totals        1        3        1        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.97 (MB), peak = 1379.63 (MB)
+#start 53th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        0        1        0        1        2
+#	Totals        1        3        1        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.13 (MB), peak = 1379.63 (MB)
+#start 54th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        4        1        0        7
+#	metal2        0        1        0        1        2
+#	Totals        2        5        1        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.00 (MB), peak = 1379.63 (MB)
+#start 55th optimization iteration ...
+#   number of violations = 13
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        2        1        1        1        5
+#	metal3        0        1        0        1        2
+#	Totals        3        6        2        2       13
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.97 (MB), peak = 1379.63 (MB)
+#start 56th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        5        1        0        6
+#	metal2        1        0        1        2
+#	Totals        6        1        1        8
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.23 (MB), peak = 1379.63 (MB)
+#start 57th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        0        1        0        1        2
+#	Totals        1        4        1        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.23 (MB), peak = 1379.63 (MB)
+#start 58th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        5        1        7
+#	metal2        1        1        0        2
+#	Totals        2        6        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.23 (MB), peak = 1379.63 (MB)
+#start 59th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        0        1        1        1        3
+#	metal3        0        1        0        1        2
+#	Totals        1        5        2        2       10
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.07 (MB), peak = 1379.63 (MB)
+#start 60th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        1        1        0        1        3
+#	Totals        2        4        1        1        8
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.12 (MB), peak = 1379.63 (MB)
+#start 61th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        4        1        0        5
+#	metal2        1        0        1        2
+#	Totals        5        1        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.11 (MB), peak = 1379.63 (MB)
+#start 62th optimization iteration ...
+#   number of violations = 14
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        6        1        0        8
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        1        2
+#	Totals        2        8        2        2       14
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.26 (MB), peak = 1379.63 (MB)
+#start 63th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        0        1        0        1        2
+#	Totals        1        4        1        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.16 (MB), peak = 1379.63 (MB)
+#start 64th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        1        1        0        2
+#	Totals        2        3        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.07 (MB), peak = 1379.63 (MB)
+#start 65th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        3        1        5
+#	metal2        1        1        0        2
+#	Totals        2        4        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.15 (MB), peak = 1379.63 (MB)
+#start 66th optimization iteration ...
+#   number of violations = 12
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        6        1        0        8
+#	metal2        0        1        1        1        3
+#	metal3        0        1        0        0        1
+#	Totals        1        8        2        1       12
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.09 (MB), peak = 1379.63 (MB)
+#start 67th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        1        3        1        5
+#	metal2        0        1        1        2
+#	metal3        0        1        0        1
+#	Totals        1        5        2        8
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.27 (MB), peak = 1379.63 (MB)
+#start 68th optimization iteration ...
+#   number of violations = 11
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        5        1        0        7
+#	metal2        0        1        1        1        3
+#	metal3        0        1        0        0        1
+#	Totals        1        7        2        1       11
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.27 (MB), peak = 1379.63 (MB)
+#start 69th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        2        4        1        7
+#	metal2        1        1        0        2
+#	Totals        3        5        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.94 (MB), peak = 1379.63 (MB)
+#start 70th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        1        3        1        5
+#	metal2        0        1        0        1
+#	Totals        1        4        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.25 (MB), peak = 1379.63 (MB)
+#start 71th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        4        1        0        5
+#	metal2        1        1        0        1        3
+#	Totals        1        5        1        1        8
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.25 (MB), peak = 1379.63 (MB)
+#start 72th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        1        1        0        2
+#	Totals        2        3        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.71 (MB), peak = 1379.63 (MB)
+#start 73th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        2        1        0        3
+#	metal2        1        1        1        3
+#	metal3        1        0        1        2
+#	Totals        4        2        2        8
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.69 (MB), peak = 1379.63 (MB)
+#start 74th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        4        1        0        7
+#	metal2        0        1        0        1        2
+#	Totals        2        5        1        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.64 (MB), peak = 1379.63 (MB)
+#start 75th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.57 (MB), peak = 1379.63 (MB)
+#start 76th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        3        1        0        4
+#	metal2        1        1        0        1        3
+#	Totals        1        4        1        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.72 (MB), peak = 1379.63 (MB)
+#start 77th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        0        1
+#	Totals        2        5        2        1       10
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1316.41 (MB), peak = 1379.63 (MB)
+#start 78th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        4        1        5
+#	metal2        1        0        1
+#	Totals        5        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.67 (MB), peak = 1379.63 (MB)
+#start 79th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        2        2        4
+#	metal2        1        0        1
+#	Totals        3        2        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.66 (MB), peak = 1379.63 (MB)
+#start 80th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        2        0        6
+#	metal2        0        2        0        1        3
+#	Totals        1        5        2        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.61 (MB), peak = 1379.63 (MB)
+#start 81th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        5        1        0        7
+#	metal2        1        1        0        1        3
+#	Totals        2        6        1        1       10
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.58 (MB), peak = 1379.63 (MB)
+#start 82th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        0        1        0        1        2
+#	Totals        1        4        1        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.55 (MB), peak = 1379.63 (MB)
+#start 83th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        2        3        1        6
+#	metal2        0        1        1        2
+#	metal3        0        1        0        1
+#	Totals        2        5        2        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.68 (MB), peak = 1379.63 (MB)
+#start 84th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        3        1        5
+#	metal2        0        1        0        1
+#	Totals        1        4        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1317.54 (MB), peak = 1379.63 (MB)
+#start 85th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.24 (MB), peak = 1379.63 (MB)
+#start 86th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        3        1        0        4
+#	metal2        1        1        0        1        3
+#	Totals        1        4        1        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.07 (MB), peak = 1379.63 (MB)
+#start 87th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        1        4        2        7
+#	metal2        1        2        0        3
+#	Totals        2        6        2       10
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.24 (MB), peak = 1379.63 (MB)
+#start 88th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        3        1        0        4
+#	metal2        1        1        0        1        3
+#	Totals        1        4        1        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.09 (MB), peak = 1379.63 (MB)
+#start 89th optimization iteration ...
+#   number of violations = 15
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        2        0        7
+#	metal2        1        2        1        2        6
+#	metal3        0        1        0        1        2
+#	Totals        2        7        3        3       15
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.24 (MB), peak = 1379.63 (MB)
+#start 90th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        2        2        0        4
+#	metal2        1        2        0        1        4
+#	Totals        1        4        2        1        8
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.16 (MB), peak = 1379.63 (MB)
+#start 91th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        3        1        0        4
+#	metal2        1        1        0        1        3
+#	Totals        1        4        1        1        7
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.11 (MB), peak = 1379.63 (MB)
+#start 92th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        3        1        0        4
+#	metal2        1        0        1        2
+#	Totals        4        1        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.19 (MB), peak = 1379.63 (MB)
+#start 93th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        3        1        0        4
+#	metal2        2        1        0        1        4
+#	metal3        1        0        0        0        1
+#	Totals        3        4        1        1        9
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.08 (MB), peak = 1379.63 (MB)
+#start 94th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        1        1        0        2
+#	Totals        2        3        1        6
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.23 (MB), peak = 1379.63 (MB)
+#start 95th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.24 (MB), peak = 1379.63 (MB)
+#start 96th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.15 (MB), peak = 1379.63 (MB)
+#start 97th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.07 (MB), peak = 1379.63 (MB)
+#start 98th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.18 (MB), peak = 1379.63 (MB)
+#start 99th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.20 (MB), peak = 1379.63 (MB)
+#start 100th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#    number of process antenna violations = 39
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.09 (MB), peak = 1379.63 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 589345 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 33583 um.
+#Total wire length on LAYER metal2 = 149548 um.
+#Total wire length on LAYER metal3 = 163049 um.
+#Total wire length on LAYER metal4 = 144376 um.
+#Total wire length on LAYER metal5 = 65247 um.
+#Total wire length on LAYER metal6 = 33542 um.
+#Total number of vias = 49294
+#Up-Via Summary (total 49294):
+#           
+#-----------------------
+# metal1          27173
+# metal2          16509
+# metal3           4622
+# metal4            767
+# metal5            223
+#-----------------------
+#                 49294 
+#
+#Total number of DRC violations = 5
+#Total number of violations on LAYER metal1 = 4
+#Total number of violations on LAYER metal2 = 1
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#Cpu time = 00:00:47
+#Elapsed time = 00:00:47
+#Increased memory = 16.03 (MB)
+#Total memory = 1315.64 (MB)
+#Peak memory = 1379.63 (MB)
+#
+#start routing for process antenna violation fix ...
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1318.99 (MB), peak = 1379.63 (MB)
+#
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 589358 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 33583 um.
+#Total wire length on LAYER metal2 = 149537 um.
+#Total wire length on LAYER metal3 = 163051 um.
+#Total wire length on LAYER metal4 = 144391 um.
+#Total wire length on LAYER metal5 = 65252 um.
+#Total wire length on LAYER metal6 = 33544 um.
+#Total number of vias = 49338
+#Up-Via Summary (total 49338):
+#           
+#-----------------------
+# metal1          27173
+# metal2          16517
+# metal3           4638
+# metal4            783
+# metal5            227
+#-----------------------
+#                 49338 
+#
+#Total number of DRC violations = 5
+#Total number of process antenna violations = 1
+#Total number of net violated process antenna rule = 1 ant fix stage
+#Total number of violations on LAYER metal1 = 4
+#Total number of violations on LAYER metal2 = 1
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#
+#
+# start diode insertion for process antenna violation fix ...
+# output diode eco list to '.nano_eco_diode.list2'.
+#
+Estimated cell power/ground rail width = 0.630 um
+# ** Added 1 diode instances.
+# Distance statistics from ideal location:
+#     Max (X+Y): 7.705 microns
+#    Mean (X+Y): 7.705 microns
+#
+# 1 diode(s) added
+# 0 old filler cell(s) deleted
+# 0 new filler cell(s) added
+#
+#cpu time = 00:00:03, elapsed time = 00:00:04, memory = 1320.60 (MB), peak = 1379.63 (MB)
+#
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 589350 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 33584 um.
+#Total wire length on LAYER metal2 = 149534 um.
+#Total wire length on LAYER metal3 = 163049 um.
+#Total wire length on LAYER metal4 = 144389 um.
+#Total wire length on LAYER metal5 = 65252 um.
+#Total wire length on LAYER metal6 = 33544 um.
+#Total number of vias = 49337
+#Up-Via Summary (total 49337):
+#           
+#-----------------------
+# metal1          27174
+# metal2          16516
+# metal3           4637
+# metal4            783
+# metal5            227
+#-----------------------
+#                 49337 
+#
+#Total number of DRC violations = 5
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER metal1 = 4
+#Total number of violations on LAYER metal2 = 1
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#
+#
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 589350 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 33584 um.
+#Total wire length on LAYER metal2 = 149534 um.
+#Total wire length on LAYER metal3 = 163049 um.
+#Total wire length on LAYER metal4 = 144389 um.
+#Total wire length on LAYER metal5 = 65252 um.
+#Total wire length on LAYER metal6 = 33544 um.
+#Total number of vias = 49337
+#Up-Via Summary (total 49337):
+#           
+#-----------------------
+# metal1          27174
+# metal2          16516
+# metal3           4637
+# metal4            783
+# metal5            227
+#-----------------------
+#                 49337 
+#
+#Total number of DRC violations = 5
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER metal1 = 4
+#Total number of violations on LAYER metal2 = 1
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#
+#
+#Start Post Route wire spreading..
+#
+#Start DRC checking..
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 1325.11 (MB), peak = 1379.63 (MB)
+#CELL_VIEW CHIP,init has 5 DRC violations
+#Total number of DRC violations = 5
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER metal1 = 4
+#Total number of violations on LAYER metal2 = 1
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#
+#Start data preparation for wire spreading...
+#
+#Data preparation is done on Mon May 25 08:38:43 2026
+#
+#
+#Start Post Route Wire Spread.
+#Done with 2448 horizontal wires in 15 hboxes and 3128 vertical wires in 15 hboxes.
+#Complete Post Route Wire Spread.
+#
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 595295 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 33888 um.
+#Total wire length on LAYER metal2 = 151690 um.
+#Total wire length on LAYER metal3 = 164991 um.
+#Total wire length on LAYER metal4 = 145715 um.
+#Total wire length on LAYER metal5 = 65355 um.
+#Total wire length on LAYER metal6 = 33655 um.
+#Total number of vias = 49337
+#Up-Via Summary (total 49337):
+#           
+#-----------------------
+# metal1          27174
+# metal2          16516
+# metal3           4637
+# metal4            783
+# metal5            227
+#-----------------------
+#                 49337 
+#
+#
+#Start DRC checking..
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 1326.41 (MB), peak = 1379.63 (MB)
+#CELL_VIEW CHIP,init has 5 DRC violations
+#Total number of DRC violations = 5
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER metal1 = 4
+#Total number of violations on LAYER metal2 = 1
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:04, elapsed time = 00:00:04, memory = 1326.41 (MB), peak = 1379.63 (MB)
+#CELL_VIEW CHIP,init has 5 DRC violations
+#Total number of DRC violations = 5
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER metal1 = 4
+#Total number of violations on LAYER metal2 = 1
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#Post Route wire spread is done.
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 595295 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 33888 um.
+#Total wire length on LAYER metal2 = 151690 um.
+#Total wire length on LAYER metal3 = 164991 um.
+#Total wire length on LAYER metal4 = 145715 um.
+#Total wire length on LAYER metal5 = 65355 um.
+#Total wire length on LAYER metal6 = 33655 um.
+#Total number of vias = 49337
+#Up-Via Summary (total 49337):
+#           
+#-----------------------
+# metal1          27174
+# metal2          16516
+# metal3           4637
+# metal4            783
+# metal5            227
+#-----------------------
+#                 49337 
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:59
+#Elapsed time = 00:00:59
+#Increased memory = 24.14 (MB)
+#Total memory = 1323.75 (MB)
+#Peak memory = 1379.63 (MB)
+#Skip updating routing design signature in db-snapshot flow
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:01:08
+#Elapsed time = 00:01:08
+#Increased memory = 86.55 (MB)
+#Total memory = 1311.81 (MB)
+#Peak memory = 1379.63 (MB)
+#Number of warnings = 45
+#Total number of warnings = 51
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Mon May 25 08:38:47 2026
+#
+#Default setup view is reset to av_func_mode_max.
+
+detailRoute
+
+#WARNING (NRIF-78) The option routeWithEco combined with routeWithTimingDriven is not recommended due to possible high memory usage, increased run-time, and increased routing pattern pertubations. Please use with caution.
+#Start detailRoute on Mon May 25 08:38:48 2026
+#
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/clk of net clk because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/rst_n of net rst_n because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data_valid of net in_data_valid because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[11] of net in_data[11] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[10] of net in_data[10] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[9] of net in_data[9] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[8] of net in_data[8] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[7] of net in_data[7] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[6] of net in_data[6] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[5] of net in_data[5] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[4] of net in_data[4] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[3] of net in_data[3] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[2] of net in_data[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[1] of net in_data[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/in_data[0] of net in_data[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/cmd_valid of net cmd_valid because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/cmd[5] of net cmd[5] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/cmd[4] of net cmd[4] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/cmd[3] of net cmd[3] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/cmd[2] of net cmd[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (EMS-27) Message (NRIG-39) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#num needed restored net=0
+#need_extraction net=0 (total=9026)
+#WARNING (NRDB-733) PIN b_out[0] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[1] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[2] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[3] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[4] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[5] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[6] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN b_out[7] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN clk in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[0] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[1] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[2] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[3] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[4] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd[5] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN cmd_valid in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN g_out[0] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN g_out[1] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN g_out[2] in CELL_VIEW CHIP does not have physical port.
+#WARNING (NRDB-733) PIN g_out[3] in CELL_VIEW CHIP does not have physical port.
+#WARNING (EMS-27) Message (NRDB-733) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#NanoRoute Version 20.15-s105_1 NR210726-1341/20_15-UB
+#Start routing data preparation on Mon May 25 08:38:48 2026
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.980.
+#Voltage range [0.000 - 1.980] has 9024 nets.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Voltage range [1.620 - 1.980] has 1 net.
+#Initial pin access analysis.
+#Detail pin access analysis.
+# metal1       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5000
+# metal2       V   Track-Pitch = 0.6200    Line-2-Via Pitch = 0.5600
+# metal3       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5600
+# metal4       V   Track-Pitch = 0.6200    Line-2-Via Pitch = 0.5600
+# metal5       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5600
+# metal6       V   Track-Pitch = 2.4800    Line-2-Via Pitch = 2.2000
+#Monitoring time of adding inner blkg by smac
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1310.38 (MB), peak = 1379.63 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer metal3's pitch = 0.5600.
+#Using automatically generated G-grids.
+#(check_and_prepare_match_target_file) no match_target_file in constraint. quit
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1317.63 (MB), peak = 1379.63 (MB)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1321.46 (MB), peak = 1379.63 (MB)
+#start 1st optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        3        1        0        4
+#	metal2        1        0        1        2
+#	Totals        4        1        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.27 (MB), peak = 1379.63 (MB)
+#start 2nd optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        0        4        1        5
+#	metal2        0        1        0        1
+#	metal3        1        0        0        1
+#	Totals        1        5        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1322.81 (MB), peak = 1379.63 (MB)
+#start 3rd optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.51 (MB), peak = 1379.63 (MB)
+#start 4th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        3        1        0        4
+#	metal2        1        0        1        2
+#	Totals        4        1        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1322.91 (MB), peak = 1379.63 (MB)
+#start 5th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        1        4        1        6
+#	metal2        0        1        0        1
+#	Totals        1        5        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1322.71 (MB), peak = 1379.63 (MB)
+#start 6th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        3        1        0        4
+#	metal2        1        1        0        1        3
+#	Totals        1        4        1        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1324.41 (MB), peak = 1379.63 (MB)
+#start 7th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        3        1        0        4
+#	metal2        1        0        1        2
+#	Totals        4        1        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.15 (MB), peak = 1379.63 (MB)
+#start 8th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.24 (MB), peak = 1379.63 (MB)
+#start 9th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.02 (MB), peak = 1379.63 (MB)
+#start 10th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        5        1        0        6
+#	metal2        2        1        0        1        4
+#	Totals        2        6        1        1       10
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.05 (MB), peak = 1379.63 (MB)
+#start 11th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        0        1        0        1        2
+#	Totals        1        4        1        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.77 (MB), peak = 1379.63 (MB)
+#start 12th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        3        1        0        4
+#	metal2        1        1        1        3
+#	metal3        1        0        1        2
+#	Totals        5        2        2        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1324.19 (MB), peak = 1379.63 (MB)
+#start 13th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        3        1        0        4
+#	metal2        0        1        0        1        2
+#	metal3        2        0        0        0        2
+#	Totals        2        4        1        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1324.51 (MB), peak = 1379.63 (MB)
+#start 14th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        3        1        0        4
+#	metal2        1        1        1        3
+#	metal3        1        0        1        2
+#	Totals        5        2        2        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1324.50 (MB), peak = 1379.63 (MB)
+#start 15th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.36 (MB), peak = 1379.63 (MB)
+#start 16th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        1        1        0        1        3
+#	Totals        2        4        1        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.36 (MB), peak = 1379.63 (MB)
+#start 17th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        1        2        1        4
+#	metal2        1        1        0        2
+#	Totals        2        3        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.49 (MB), peak = 1379.63 (MB)
+#start 18th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        4        1        6
+#	metal2        1        1        0        2
+#	Totals        2        5        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1324.91 (MB), peak = 1379.63 (MB)
+#start 19th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        0        1
+#	Totals        2        4        2        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.72 (MB), peak = 1379.63 (MB)
+#start 20th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        0        1        0        1        2
+#	Totals        1        3        1        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.61 (MB), peak = 1379.63 (MB)
+#start 21th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        5        1        0        6
+#	metal2        1        1        0        1        3
+#	Totals        1        6        1        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.14 (MB), peak = 1379.63 (MB)
+#start 22th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        0        1        0        1        2
+#	Totals        1        3        1        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.75 (MB), peak = 1379.63 (MB)
+#start 23th optimization iteration ...
+#   number of violations = 12
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        1        2
+#	Totals        2        6        2        2       12
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1323.80 (MB), peak = 1379.63 (MB)
+#start 24th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        1        1        0        1        3
+#	Totals        2        3        1        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1326.39 (MB), peak = 1379.63 (MB)
+#start 25th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        0        1        0        1        2
+#	Totals        1        4        1        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1325.20 (MB), peak = 1379.63 (MB)
+#start 26th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        1        1        0        2
+#	Totals        2        3        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1324.97 (MB), peak = 1379.63 (MB)
+#start 27th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        0        1
+#	Totals        2        4        2        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1325.55 (MB), peak = 1379.63 (MB)
+#start 28th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        2        3        5
+#	metal2        1        0        1
+#	Totals        3        3        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1325.31 (MB), peak = 1379.63 (MB)
+#start 29th optimization iteration ...
+#   number of violations = 13
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        5        1        0        7
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        1        2
+#	Totals        2        7        2        2       13
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1325.82 (MB), peak = 1379.63 (MB)
+#start 30th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        3        1        5
+#	metal2        0        1        0        1
+#	Totals        1        4        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1326.75 (MB), peak = 1379.63 (MB)
+#start 31th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        3        1        0        4
+#	metal2        1        1        0        1        3
+#	Totals        1        4        1        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1326.67 (MB), peak = 1379.63 (MB)
+#start 32th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        0        1        0        1        2
+#	Totals        1        4        1        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1326.55 (MB), peak = 1379.63 (MB)
+#start 33th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        4        1        0        7
+#	metal2        0        1        0        1        2
+#	Totals        2        5        1        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.21 (MB), peak = 1379.63 (MB)
+#start 34th optimization iteration ...
+#   number of violations = 4
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        2        1        3
+#	metal2        1        0        1
+#	Totals        3        1        4
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.74 (MB), peak = 1379.63 (MB)
+#start 35th optimization iteration ...
+#   number of violations = 14
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        3        1        0        6
+#	metal2        1        1        1        1        4
+#	metal3        0        1        1        0        2
+#	metal4        0        1        0        1        2
+#	Totals        3        6        3        2       14
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.09 (MB), peak = 1379.63 (MB)
+#start 36th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        4        1        0        5
+#	metal2        1        0        1        2
+#	Totals        5        1        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1328.13 (MB), peak = 1380.36 (MB)
+#start 37th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        2        1        0        3
+#	metal2        1        1        0        1        3
+#	Totals        1        3        1        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.88 (MB), peak = 1383.41 (MB)
+#start 38th optimization iteration ...
+#   number of violations = 4
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        2        2        4
+#	Totals        2        2        4
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.82 (MB), peak = 1384.20 (MB)
+#start 39th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        3        1        0        4
+#	metal2        1        0        1        2
+#	Totals        4        1        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.77 (MB), peak = 1397.32 (MB)
+#start 40th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CutSpc   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1328.37 (MB), peak = 1397.32 (MB)
+#start 41th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        3        1        0        4
+#	metal2        1        1        0        1        3
+#	Totals        1        4        1        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.46 (MB), peak = 1397.32 (MB)
+#start 42th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        3        1        0        6
+#	metal2        0        1        0        1        2
+#	Totals        2        4        1        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.14 (MB), peak = 1397.32 (MB)
+#start 43th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        1        2
+#	Totals        2        4        2        2       10
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.92 (MB), peak = 1397.32 (MB)
+#start 44th optimization iteration ...
+#   number of violations = 12
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        6        1        0        8
+#	metal2        0        1        1        1        3
+#	metal3        0        1        0        0        1
+#	Totals        1        8        2        1       12
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.91 (MB), peak = 1397.32 (MB)
+#start 45th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        2        3        1        6
+#	metal2        1        1        0        2
+#	Totals        3        4        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1328.20 (MB), peak = 1397.32 (MB)
+#start 46th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        0        1        0        1        2
+#	Totals        1        5        1        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.43 (MB), peak = 1397.32 (MB)
+#start 47th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        3        1        0        6
+#	metal2        0        1        0        1        2
+#	Totals        2        4        1        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1326.14 (MB), peak = 1397.32 (MB)
+#start 48th optimization iteration ...
+#   number of violations = 15
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        1        1        1        2        5
+#	metal3        0        1        1        1        3
+#	metal4        0        1        0        1        2
+#	Totals        2        6        3        4       15
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.85 (MB), peak = 1397.32 (MB)
+#start 49th optimization iteration ...
+#   number of violations = 13
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        2        0        6
+#	metal2        1        2        1        2        6
+#	metal3        0        1        0        0        1
+#	Totals        2        6        3        2       13
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.52 (MB), peak = 1397.32 (MB)
+#start 50th optimization iteration ...
+#   number of violations = 11
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc      Mar   Totals
+#	metal1        3        5        1        0        9
+#	metal2        0        1        0        1        2
+#	Totals        3        6        1        1       11
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.59 (MB), peak = 1397.32 (MB)
+#start 51th optimization iteration ...
+#   number of violations = 13
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        4        1        0        7
+#	metal2        2        1        1        1        5
+#	metal3        0        1        0        0        1
+#	Totals        4        6        2        1       13
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.79 (MB), peak = 1397.32 (MB)
+#start 52th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        0        1        0        1        2
+#	Totals        1        5        1        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.84 (MB), peak = 1397.32 (MB)
+#start 53th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc   Totals
+#	metal1        1        4        1        6
+#	metal2        1        0        0        1
+#	Totals        2        4        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.57 (MB), peak = 1397.32 (MB)
+#start 54th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        0        1        0        1        2
+#	Totals        1        4        1        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1328.32 (MB), peak = 1397.32 (MB)
+#start 55th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        2        1        0        1        4
+#	Totals        3        4        1        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1326.55 (MB), peak = 1397.32 (MB)
+#start 56th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        0        4        1        5
+#	metal2        1        1        0        2
+#	Totals        1        5        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.84 (MB), peak = 1397.32 (MB)
+#start 57th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        2        0        6
+#	metal2        0        2        0        1        3
+#	Totals        1        5        2        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.73 (MB), peak = 1397.32 (MB)
+#start 58th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        2        0        6
+#	metal2        0        2        0        2        4
+#	Totals        1        5        2        2       10
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1326.45 (MB), peak = 1397.32 (MB)
+#start 59th optimization iteration ...
+#   number of violations = 13
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        3        1        0        6
+#	metal2        2        2        1        1        6
+#	metal3        0        1        0        0        1
+#	Totals        4        6        2        1       13
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.71 (MB), peak = 1397.32 (MB)
+#start 60th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        3        2        0        7
+#	metal2        0        2        0        1        3
+#	Totals        2        5        2        1       10
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1328.05 (MB), peak = 1397.32 (MB)
+#start 61th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CutSpc   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1328.97 (MB), peak = 1397.32 (MB)
+#start 62th optimization iteration ...
+#   number of violations = 13
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        2        0        7
+#	metal2        0        2        1        2        5
+#	metal3        0        1        0        0        1
+#	Totals        1        7        3        2       13
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.66 (MB), peak = 1397.32 (MB)
+#start 63th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.77 (MB), peak = 1397.32 (MB)
+#start 64th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        2        3        1        6
+#	metal2        0        1        0        1
+#	Totals        2        4        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1326.99 (MB), peak = 1397.32 (MB)
+#start 65th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        1        1        0        1        3
+#	Totals        2        5        1        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1328.41 (MB), peak = 1397.32 (MB)
+#start 66th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        4        1        6
+#	metal2        1        1        0        2
+#	Totals        2        5        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.60 (MB), peak = 1397.32 (MB)
+#start 67th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        2        1        0        3
+#	Totals        3        3        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.02 (MB), peak = 1397.32 (MB)
+#start 68th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        1        1        0        1        3
+#	Totals        2        5        1        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.05 (MB), peak = 1397.32 (MB)
+#start 69th optimization iteration ...
+#   number of violations = 14
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        5        2        0        8
+#	metal2        0        2        1        2        5
+#	metal3        0        1        0        0        1
+#	Totals        1        8        3        2       14
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.47 (MB), peak = 1397.32 (MB)
+#start 70th optimization iteration ...
+#   number of violations = 11
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        0        1
+#	Totals        2        6        2        1       11
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.60 (MB), peak = 1397.32 (MB)
+#start 71th optimization iteration ...
+#   number of violations = 13
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        4        1        0        7
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        1        2
+#	Totals        3        6        2        2       13
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.66 (MB), peak = 1397.32 (MB)
+#start 72th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        1        2
+#	Totals        2        4        2        2       10
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1328.27 (MB), peak = 1397.32 (MB)
+#start 73th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        0        1        0        1        2
+#	Totals        1        5        1        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.47 (MB), peak = 1397.32 (MB)
+#start 74th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        3        1        5
+#	metal2        1        1        0        2
+#	Totals        2        4        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.80 (MB), peak = 1397.32 (MB)
+#start 75th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc      Mar   Totals
+#	metal1        2        3        1        0        6
+#	metal2        1        1        0        1        3
+#	Totals        3        4        1        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.82 (MB), peak = 1397.32 (MB)
+#start 76th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        1        1        0        1        3
+#	Totals        2        5        1        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.82 (MB), peak = 1397.32 (MB)
+#start 77th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        2        0        5
+#	metal2        0        2        1        1        4
+#	metal3        0        1        0        0        1
+#	Totals        1        5        3        1       10
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.94 (MB), peak = 1397.32 (MB)
+#start 78th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        5        1        0        7
+#	metal2        0        1        0        1        2
+#	Totals        1        6        1        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.71 (MB), peak = 1397.32 (MB)
+#start 79th optimization iteration ...
+#   number of violations = 7
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        3        1        0        5
+#	metal2        0        1        0        1        2
+#	Totals        1        4        1        1        7
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.61 (MB), peak = 1397.32 (MB)
+#start 80th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        4        1        6
+#	metal2        1        1        0        2
+#	Totals        2        5        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.83 (MB), peak = 1397.32 (MB)
+#start 81th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        4        1        0        7
+#	metal2        0        1        0        1        2
+#	Totals        2        5        1        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.61 (MB), peak = 1397.32 (MB)
+#start 82th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        4        1        0        5
+#	metal2        1        1        1        3
+#	metal3        1        0        0        1
+#	Totals        6        2        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.89 (MB), peak = 1397.32 (MB)
+#start 83th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        0        6        1        7
+#	metal2        1        1        0        2
+#	Totals        1        7        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1330.03 (MB), peak = 1397.32 (MB)
+#start 84th optimization iteration ...
+#   number of violations = 11
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CutSpc      Mar   Totals
+#	metal1        2        5        1        0        8
+#	metal2        1        1        0        1        3
+#	Totals        3        6        1        1       11
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1328.08 (MB), peak = 1397.32 (MB)
+#start 85th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        0        1        0        1        2
+#	Totals        1        3        1        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.56 (MB), peak = 1397.32 (MB)
+#start 86th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        4        1        0        6
+#	metal2        1        1        0        1        3
+#	Totals        2        5        1        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.61 (MB), peak = 1397.32 (MB)
+#start 87th optimization iteration ...
+#   number of violations = 12
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        5        1        0        8
+#	metal2        0        1        1        1        3
+#	metal3        0        1        0        0        1
+#	Totals        2        7        2        1       12
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.73 (MB), peak = 1397.32 (MB)
+#start 88th optimization iteration ...
+#   number of violations = 8
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        1        2        1        0        4
+#	metal2        0        1        1        0        2
+#	metal3        0        1        0        1        2
+#	Totals        1        4        2        1        8
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.71 (MB), peak = 1397.32 (MB)
+#start 89th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	          Short   CShort      Mar   Totals
+#	metal1        3        1        0        4
+#	metal2        1        0        1        2
+#	Totals        4        1        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.75 (MB), peak = 1397.32 (MB)
+#start 90th optimization iteration ...
+#   number of violations = 10
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        0        4        1        0        5
+#	metal2        1        1        1        1        4
+#	metal3        0        1        0        0        1
+#	Totals        1        6        2        1       10
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1327.80 (MB), peak = 1397.32 (MB)
+#start 91th optimization iteration ...
+#   number of violations = 11
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort      Mar   Totals
+#	metal1        2        5        1        0        8
+#	metal2        1        1        0        1        3
+#	Totals        3        6        1        1       11
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.25 (MB), peak = 1397.32 (MB)
+#start 92th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        0        2        1        3
+#	metal2        2        1        0        3
+#	Totals        2        3        1        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.44 (MB), peak = 1397.32 (MB)
+#start 93th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	          Short   CShort   Totals
+#	metal1        3        1        4
+#	metal2        1        0        1
+#	Totals        4        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.44 (MB), peak = 1397.32 (MB)
+#start 94th optimization iteration ...
+#   number of violations = 9
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        3        4        1        8
+#	metal2        0        1        0        1
+#	Totals        3        5        1        9
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.24 (MB), peak = 1397.32 (MB)
+#start 95th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        2        3        5
+#	metal2        1        0        1
+#	Totals        3        3        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.49 (MB), peak = 1397.32 (MB)
+#start 96th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        2        3        5
+#	metal2        1        0        1
+#	Totals        3        3        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.75 (MB), peak = 1397.32 (MB)
+#start 97th optimization iteration ...
+#   number of violations = 6
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	metal1        2        3        5
+#	metal2        1        0        1
+#	Totals        3        3        6
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.54 (MB), peak = 1397.32 (MB)
+#start 98th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.73 (MB), peak = 1397.32 (MB)
+#start 99th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.63 (MB), peak = 1397.32 (MB)
+#start 100th optimization iteration ...
+#   number of violations = 5
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.60 (MB), peak = 1397.32 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 595290 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 33891 um.
+#Total wire length on LAYER metal2 = 151721 um.
+#Total wire length on LAYER metal3 = 164968 um.
+#Total wire length on LAYER metal4 = 145700 um.
+#Total wire length on LAYER metal5 = 65355 um.
+#Total wire length on LAYER metal6 = 33655 um.
+#Total number of vias = 49340
+#Up-Via Summary (total 49340):
+#           
+#-----------------------
+# metal1          27176
+# metal2          16514
+# metal3           4640
+# metal4            783
+# metal5            227
+#-----------------------
+#                 49340 
+#
+#Total number of DRC violations = 5
+#Total number of violations on LAYER metal1 = 4
+#Total number of violations on LAYER metal2 = 1
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#Cpu time = 00:00:23
+#Elapsed time = 00:00:23
+#Increased memory = 22.86 (MB)
+#Total memory = 1327.11 (MB)
+#Peak memory = 1397.32 (MB)
+#
+#start routing for process antenna violation fix ...
+#
+#    By Layer and Type :
+#	         MetSpc    Short   CShort   Totals
+#	metal1        1        2        1        4
+#	metal2        0        1        0        1
+#	Totals        1        3        1        5
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1329.77 (MB), peak = 1397.32 (MB)
+#
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 595290 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 33891 um.
+#Total wire length on LAYER metal2 = 151721 um.
+#Total wire length on LAYER metal3 = 164968 um.
+#Total wire length on LAYER metal4 = 145700 um.
+#Total wire length on LAYER metal5 = 65355 um.
+#Total wire length on LAYER metal6 = 33655 um.
+#Total number of vias = 49340
+#Up-Via Summary (total 49340):
+#           
+#-----------------------
+# metal1          27176
+# metal2          16514
+# metal3           4640
+# metal4            783
+# metal5            227
+#-----------------------
+#                 49340 
+#
+#Total number of DRC violations = 5
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER metal1 = 4
+#Total number of violations on LAYER metal2 = 1
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#
+#
+#Total number of nets with non-default rule or having extra spacing = 78
+#Total wire length = 595290 um.
+#Total half perimeter of net bounding box = 561270 um.
+#Total wire length on LAYER metal1 = 33891 um.
+#Total wire length on LAYER metal2 = 151721 um.
+#Total wire length on LAYER metal3 = 164968 um.
+#Total wire length on LAYER metal4 = 145700 um.
+#Total wire length on LAYER metal5 = 65355 um.
+#Total wire length on LAYER metal6 = 33655 um.
+#Total number of vias = 49340
+#Up-Via Summary (total 49340):
+#           
+#-----------------------
+# metal1          27176
+# metal2          16514
+# metal3           4640
+# metal4            783
+# metal5            227
+#-----------------------
+#                 49340 
+#
+#Total number of DRC violations = 5
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER metal1 = 4
+#Total number of violations on LAYER metal2 = 1
+#Total number of violations on LAYER metal3 = 0
+#Total number of violations on LAYER metal4 = 0
+#Total number of violations on LAYER metal5 = 0
+#Total number of violations on LAYER metal6 = 0
+#
+#
+#detailRoute statistics:
+#Cpu time = 00:00:25
+#Elapsed time = 00:00:25
+#Increased memory = 1.38 (MB)
+#Total memory = 1313.09 (MB)
+#Peak memory = 1397.32 (MB)
+#Number of warnings = 43
+#Total number of warnings = 94
+#Number of fails = 0
+#Total number of fails = 0
+#Complete detailRoute on Mon May 25 08:39:12 2026
+#
+#Default setup view is reset to av_func_mode_max.
+#routeDesign: cpu time = 00:01:33, elapsed time = 00:01:33, memory = 1302.19 (MB), peak = 1397.32 (MB)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Mon May 25 08:39:23 2026
+
+Design Name: CHIP
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (1918.9000, 1907.4800)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+**** 08:39:23 **** Processed 5000 nets.
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Mon May 25 08:39:23 2026
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.3  MEM: 0.000M)
+
+<CMD> getMultiCpuUsage -localCpu
+<CMD> get_verify_drc_mode -disable_rules -quiet
+<CMD> get_verify_drc_mode -quiet -area
+<CMD> get_verify_drc_mode -quiet -layer_range
+<CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+<CMD> get_verify_drc_mode -check_only -quiet
+<CMD> get_verify_drc_mode -check_same_via_cell -quiet
+<CMD> get_verify_drc_mode -exclude_pg_net -quiet
+<CMD> get_verify_drc_mode -ignore_trial_route -quiet
+<CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+<CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+<CMD> get_verify_drc_mode -limit -quiet
+<CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+<CMD> verify_drc
+#-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+#-report CHIP.drc.rpt                    # string, default="", user setting
+ *** Starting Verify DRC (MEM: 2107.8) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+
+  Verification Complete : 8 Viols.
+
+ Violation Summary By Layer and Type:
+
+	          Short   MetSpc   CShort   Totals
+	metal1        5        1        0        6
+	via           0        0        1        1
+	metal2        1        0        0        1
+	Totals        6        1        1        8
+
+ *** End Verify DRC (CPU: 0:00:01.4  ELAPSED TIME: 2.00  MEM: 4.0M) ***
+
+<CMD> set_verify_drc_mode -area {0 0 0 0}
+<CMD> setLayerPreference violation -isVisible 1
+<CMD> violationBrowser -all -no_display_false -displayByLayer
+<CMD_INTERNAL> violationBrowserClose
+<CMD> zoomBox 850.79200 433.42100 1734.76800 1224.76800
+<CMD> zoomBox 1222.30900 611.54500 1614.53400 962.67000
+<CMD> zoomBox 1368.31500 682.12300 1573.06000 865.41300
+<CMD> zoomBox 1444.53000 718.96400 1551.41000 814.64400
+<CMD> zoomBox 1457.01500 724.99900 1547.86300 806.32700
+<CMD> zoomBox 1492.25500 745.00300 1532.56600 781.09000
+<CMD> zoomBox 1496.47100 747.39700 1530.73600 778.07100
+<CMD> zoomBox 1466.51500 730.38800 1543.74200 799.52300
+<CMD> zoomBox 1377.58200 679.89700 1582.35100 863.20900
+<CMD> zoomBox 1198.56900 578.26800 1660.06700 991.40700
+<CMD> zoomBox 1141.78100 546.02900 1684.72000 1032.07500
+<CMD> zoomBox 131.01800 -27.80000 2123.52900 1755.92300
+<CMD> zoomBox -114.16100 -166.99300 2229.97000 1931.50500
+<CMD> zoomBox 464.79700 712.78000 1216.27300 1385.51100
+<CMD> zoomBox 597.23300 909.80500 989.50800 1260.97500
+<CMD> zoomBox 691.10600 987.66900 895.87600 1170.98200
+<CMD> zoomBox 737.93400 1082.87100 793.73400 1132.82400
+<CMD> zoomBox 678.57100 1013.87100 883.35600 1197.19700
+<CMD> zoomBox 460.71800 760.65100 1212.25400 1433.43600
+<CMD> zoomBox 407.87400 699.22900 1292.03400 1490.74100
+<CMD> zoomBox -173.92700 22.98000 2170.39900 2121.65200
+<CMD> zoomBox -338.76700 -168.61900 2419.26400 2300.40700
+<CMD> zoomBox -532.69600 -394.03000 2712.04600 2510.70700
+<CMD> zoomBox -66.76400 -32.93300 2277.56400 2065.74100
+<CMD> zoomBox 115.20200 108.09000 2107.88100 1891.96300
+<CMD> zoomBox 617.93700 499.92800 1658.12900 1431.12200
+<CMD> zoomBox 964.92600 774.83700 1357.23600 1126.03800
+<CMD> zoomBox 1091.05200 881.36500 1239.01200 1013.82100
+<CMD> zoomBox 1127.09900 916.86400 1204.33600 986.00800
+<CMD> zoomBox 1154.48000 933.91600 1183.61200 959.99500
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon May 25 08:40:44 2026
+  Total CPU time:     0:02:06
+  Total real time:    0:04:52
+  Peak memory (main): 1361.94MB
+
+
+*** Memory Usage v#1 (Current mem = 2111.977M, initial mem = 284.375M) ***
+*** Message Summary: 1245 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:05, real=0:04:50, mem=2112.0M) ---

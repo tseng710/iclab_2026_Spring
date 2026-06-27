@@ -1,0 +1,1749 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+Options:	-cpus 8 -init ./cmd/run_apr.cmd -log ./log/run_apr.log -cmd ./log/run_apr.cmdlog 
+Date:		Sun Jun 21 23:53:27 2026
+Host:		ee24 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7763 64-Core Processor 512KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+setMultiCpuUsage -localCpu 8
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading Pegasus 21.21 fill procedures
+Sourcing file "./cmd/run_apr.cmd" ...
+<CMD> set init_design_uniquify 1
+<CMD> setDesignMode -process 180
+##  Process: 180           (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 180nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> suppressMessage TECHLIB 1318
+<CMD> suppressMessage ENCEXT-2799
+<CMD> set init_mmmc_file mmmc.view
+<CMD> set init_lef_file {
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/header6_V55_20ka_cic.lef
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/fsa0m_a_generic_core.lef
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/fsa0m_a_t33_generic_io.lef
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/BONDPAD.lef
+    ../04_MEM/SRAM64X16.lef
+}
+<CMD> set init_verilog ./CHIP_SYN.v
+<CMD> set init_top_cell CHIP
+<CMD> set init_io_file ./CHIP.io
+<CMD> set init_pwr_net VCC
+<CMD> set init_gnd_net GND
+<CMD> init_design -setup av_func_mode_max -hold av_func_mode_min
+#% Begin Load MMMC data ... (date=06/21 23:53:43, mem=617.4M)
+#% End Load MMMC data ... (date=06/21 23:53:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=618.2M, current mem=618.2M)
+RC_Corner
+INFO: New setup and hold views overwrite old settings during design initialization
+
+Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/header6_V55_20ka_cic.lef ...
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/header6_V55_20ka_cic.lef at line 1290.
+
+Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_generic_core.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_generic_core.lef at line 1.
+Set DBUPerIGU to M2 pitch 620.
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_generic_core.lef at line 40071.
+
+Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef ...
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef at line 16493.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef at line 16493.
+
+Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_t33_generic_io.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_t33_generic_io.lef at line 1.
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_t33_generic_io.lef at line 2034.
+
+Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef ...
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef at line 791.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef at line 791.
+
+Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/BONDPAD.lef ...
+WARNING (LEFPARS-2002): NAMESCASESENSITIVE is a required statement on LEF file with version 5.5 and earlier.
+Without NAMESCASESENSITIVE defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/BONDPAD.lef at line 123.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/BONDPAD.lef at line 123.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/BONDPAD.lef at line 123.
+
+Loading LEF file ../04_MEM/SRAM64X16.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../04_MEM/SRAM64X16.lef at line 37.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1157.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1171.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1185.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1199.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1213.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1227.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1241.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1255.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1269.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1283.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1297.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1311.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1325.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1339.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1353.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1367.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1381.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1395.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1409.
+**WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO15' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI15' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO14' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI14' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO13' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI13' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO12' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI12' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO11' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI11' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO10' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI10' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO9' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI9' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO8' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI8' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A1' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'WEB' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OE' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'CS' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A2' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'CK' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A0' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A3' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A4' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A5' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO7' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI7' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO6' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI6' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO5' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'DO4' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO3' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO2' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO1' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO0' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+
+viaInitial starts at Sun Jun 21 23:53:43 2026
+viaInitial ends at Sun Jun 21 23:53:43 2026
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Loading view definition file from mmmc.view
+Starting library reading in 'Multi-threaded flow' (with '8' threads)
+Reading lib_max timing library /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib)
+Read 382 cells in library fsa0m_a_generic_core_ss1p62v125c.
+Reading lib_max timing library /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2008Q3v1.2/T33_GENERIC_IO/FrontEnd/synopsys/fsa0m_a_t33_generic_io_ss1p62v125c.lib.
+Read 6 cells in library fsa0m_a_t33_generic_io_ss1p62v125c.
+Reading lib_max timing library /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/04_MEM/SRAM64X16_WC.lib.
+Read 1 cells in library SRAM64X16_WC.
+Library reading multithread flow ended.
+Starting library reading in 'Multi-threaded flow' (with '8' threads)
+Reading lib_min timing library /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib)
+Read 382 cells in library fsa0m_a_generic_core_ff1p98vm40c.
+Reading lib_min timing library /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2008Q3v1.2/T33_GENERIC_IO/FrontEnd/synopsys/fsa0m_a_t33_generic_io_ff1p98vm40c.lib.
+Read 6 cells in library fsa0m_a_t33_generic_io_ff1p98vm40c.
+Reading lib_min timing library /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/04_MEM/SRAM64X16_BC.lib.
+Read 1 cells in library SRAM64X16_BC.
+Library reading multithread flow ended.
+*** End library_loading (cpu=0.05min, real=0.02min, mem=66.0M, fe_cpu=0.29min, fe_real=0.28min, fe_mem=960.9M) ***
+#% Begin Load netlist data ... (date=06/21 23:53:44, mem=644.6M)
+*** Begin netlist parsing (mem=960.9M) ***
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 389 new cells from 6 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist './CHIP_SYN.v'
+
+*** Memory Usage v#1 (Current mem = 960.887M, initial mem = 284.375M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=960.9M) ***
+#% End Load netlist data ... (date=06/21 23:53:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=653.9M, current mem=653.9M)
+Set top cell to CHIP.
+Hooked 778 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell CHIP ...
+*** Netlist is unique.
+** info: there are 853 modules.
+** info: there are 4028 stdCell insts.
+** info: there are 1 macros.
+
+*** Memory Usage v#1 (Current mem = 973.801M, initial mem = 284.375M) ***
+Reading IO assignment file "./CHIP.io" ...
+**WARN: (IMPFP-669):	IO pin "arid_m_inf_inst_1[3:0]" not found.
+**WARN: (IMPFP-669):	IO pin "araddr_m_inf_inst_1[31:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arlen_m_inf_inst_1[6:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arsize_m_inf_inst_1[2:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arburst_m_inf_inst_1[1:0]" not found.
+**WARN: (IMPFP-669):	IO pin "rid_m_inf_inst_1[3:0]" not found.
+**WARN: (IMPFP-669):	IO pin "rdata_m_inf_inst_1[15:0]" not found.
+**WARN: (IMPFP-669):	IO pin "rresp_m_inf_inst_1[1:0]" not found.
+**WARN: (IMPFP-669):	IO pin "wdata_m_inf_inst_1[15:0]" not found.
+**WARN: (IMPFP-669):	IO pin "bid_m_inf_inst_1[3:0]" not found.
+**WARN: (IMPFP-669):	IO pin "bresp_m_inf_inst_1[1:0]" not found.
+**WARN: (IMPFP-669):	IO pin "awid_m_inf_inst_1[3:0]" not found.
+**WARN: (IMPFP-669):	IO pin "awaddr_m_inf_inst_1[31:0]" not found.
+**WARN: (IMPFP-669):	IO pin "awlen_m_inf_inst_1[6:0]" not found.
+**WARN: (IMPFP-669):	IO pin "awsize_m_inf_inst_1[2:0]" not found.
+**WARN: (IMPFP-669):	IO pin "awburst_m_inf_inst_1[1:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arid_m_inf_inst_2[3:0]" not found.
+**WARN: (IMPFP-669):	IO pin "araddr_m_inf_inst_2[31:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arlen_m_inf_inst_2[6:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arsize_m_inf_inst_2[2:0]" not found.
+**WARN: (EMS-27):	Message (IMPFP-669) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File RC/u18_Faraday.CapTbl ...
+Cap table was created using Encounter 13.13-s017_1.
+Process name: MIXED_MODE_RFCMOS18_1P6M_MMC_TOP_METAL20_6K.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: av_func_mode_max
+    RC-Corner Name        : RC_Corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : 'RC/u18_Faraday.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: 'RC/icecaps.tch'
+ 
+ Analysis View: av_func_mode_min
+    RC-Corner Name        : RC_Corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : 'RC/u18_Faraday.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: 'RC/icecaps.tch'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file 'CHIP.sdc' ...
+Current (total cpu=0:00:18.3, real=0:00:18.0, peak res=919.9M, current mem=919.9M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File CHIP.sdc, Line 8).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File CHIP.sdc, Line 912).
+
+INFO (CTE): Reading of timing constraints file CHIP.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=965.2M, current mem=965.1M)
+Current (total cpu=0:00:18.5, real=0:00:18.0, peak res=965.2M, current mem=965.1M)
+Total number of combinational cells: 290
+Total number of sequential cells: 79
+Total number of tristate cells: 13
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF1 BUF12CK BUF1S BUF1CK BUF2CK BUF2 BUF3 BUF4 BUF3CK BUF4CK BUF6CK BUF6 BUF8 BUF8CK
+Total number of usable buffers: 14
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV1 INV12 INV12CK INV1CK INV1S INV2 INV3 INV2CK INV4 INV3CK INV4CK INV6 INV6CK INV8 INV8CK
+Total number of usable inverters: 15
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DELA DELC DELB
+Total number of identified usable delay cells: 3
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200           33  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           16  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+WARNING   IMPFP-669           48  IO pin "%s" not found.                   
+WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
+WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+WARNING   IMPVL-159          766  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+*** Message Summary: 1281 warning(s), 0 error(s)
+
+<CMD> save_global CHIP.globals
+<CMD> win
+<CMD> panPage -1 0
+<CMD> panPage 0 -1
+<CMD> zoomBox -110.03700 -106.45300 199.51900 199.68200
+<CMD> zoomBox -62.35000 -60.67300 99.24000 99.13100
+<CMD> zoomBox -34.82900 -32.01800 49.52200 51.40100
+<CMD> zoomBox -16.30400 -14.02700 21.12400 22.98700
+<CMD> zoomBox -8.57300 -7.43800 10.96500 11.88400
+<CMD> zoomBox -5.16800 -4.59300 6.83200 7.27400
+<CMD> zoomBox -2.23000 -1.96400 3.09500 3.30200
+<CMD> zoomBox -1.14000 -0.96700 1.64100 1.78300
+<CMD> uiSetTool move
+<CMD> selectObject IO_Pin {rid_m_inf_inst_1[3]}
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.31000 1.13700}
+**WARN: (IMPPTN-1553):	Pin 'rid_m_inf_inst_1[3]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {rid_m_inf_inst_1[2]}
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.31000 0.63500}
+**WARN: (IMPPTN-1553):	Pin 'rid_m_inf_inst_1[2]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {arid_m_inf_inst_1[3]}
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {0.42000 0.00000}
+**WARN: (IMPPTN-1553):	Pin 'arid_m_inf_inst_1[3]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {arid_m_inf_inst_1[2]}
+Press the <F3> key to bring up the form.
+<CMD> panPage 0 1
+<CMD> moveGroupPins -loc {-0.62000 1.98100}
+**WARN: (IMPPTN-1553):	Pin 'arid_m_inf_inst_1[2]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+<CMD> zoomBox -1.35500 -0.42700 1.91700 2.80900
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {1.49800 0.00000}
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {rdata_m_inf_inst_1[15]}
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.62000 1.76100}
+**WARN: (IMPPTN-1553):	Pin 'rdata_m_inf_inst_1[15]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.62000 4.04000}
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {arid_m_inf_inst_1[1]}
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.62000 2.03800}
+**WARN: (IMPPTN-1553):	Pin 'arid_m_inf_inst_1[1]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.62000 1.31100}
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {arid_m_inf_inst_1[0]}
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.62000 1.38800}
+**WARN: (IMPPTN-1553):	Pin 'arid_m_inf_inst_1[0]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.62000 2.24900}
+**WARN: (IMPPTN-3034):	Only editPin command should be used with 'setPinAssignMode -pinEditInBatch true' setting. Current command will reset the persistent database. Subsequent editPin command will run slow. To speed up editPin command again, wrap all editPin commands within 'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+**WARN: (IMPPTN-1553):	Pin 'arid_m_inf_inst_1[0]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+**ERROR: (IMPSYT-16250):	Choose the pin list first.
+**ERROR: (IMPSYT-16269):	Need to specify 'space'.
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType start -spacing 0.56 -start 1.55 0.0 -pin {{arid_m_inf_inst_1[2]} {arid_m_inf_inst_1[3]} arready_m_inf_data arvalid_m_inf_data awready_m_inf_inst_2 awvalid_m_inf_inst_2 bready_m_inf_inst_2 bvalid_m_inf_inst_2 wlast_m_inf_inst_2 wready_m_inf_inst_2 wvalid_m_inf_inst_2}
+Successfully spread [11] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1990.1M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -3.74000 -1.84600 2.52900 4.35400
+<CMD> zoomBox -6.88900 -3.61600 3.31900 6.47900
+<CMD> zoomBox -8.32900 -4.41900 3.68100 7.45800
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> zoomBox -17.07500 -12.35500 14.77100 19.13900
+<CMD> zoomBox -33.17900 -20.35300 18.67800 30.93100
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> zoomBox -81.16200 -78.43900 109.14900 109.76900
+<CMD> zoomBox -306.89700 -232.98100 197.70600 266.04600
+<CMD> zoomBox -763.61400 -544.06200 373.63600 580.62200
+<CMD> panPage 1 0
+<CMD> zoomBox -98.45300 -333.53600 599.96200 357.16200
+<CMD> zoomBox 159.14900 -181.68100 523.72700 178.86900
+<CMD> zoomBox 320.12800 -86.06500 481.89400 73.91400
+<CMD> zoomBox 391.55600 -42.14800 463.33200 28.83500
+<CMD> zoomBox 423.39500 -21.70700 455.24400 9.79000
+<CMD> zoomBox 427.38000 -18.30300 454.45200 8.47000
+<CMD> zoomBox 436.09500 -10.83800 452.72100 5.60400
+<CMD> zoomBox 443.81000 -4.44700 451.18800 2.84900
+**ERROR: (IMPSYT-16250):	Choose the pin list first.
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType start -spacing 0.56 -start 1.55 0.0 -pin {}
+**ERROR: (IMPPTN-963):	Either specified pin name for the selected partition does not exist or has status 'cover'. Specify the pin or the list of pins correctly and run the command again.
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arready_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arready_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arvalid_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arvalid_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arvalid_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awready_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awready_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awvalid_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awvalid_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awvalid_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bready_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bready_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bvalid_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bvalid_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bvalid_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin clk -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rlast_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rlast_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rlast_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rready_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rready_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rst_n -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rvalid_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rvalid_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rvalid_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin stall_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin stall_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wlast_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wlast_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wlast_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wready_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wready_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wvalid_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wvalid_m_inf_inst_1 -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> zoomBox 433.84600 -10.68700 456.86000 12.07300
+<CMD> zoomBox 415.93700 -23.33700 467.80800 27.96100
+<CMD> zoomBox 376.83200 -52.32100 493.73800 63.29300
+<CMD> zoomBox 267.31900 -152.94700 577.29500 153.60400
+<CMD> zoomBox -17.39600 -453.32900 804.49900 359.48400
+<CMD> zoomBox -385.63800 -967.10100 1188.85500 589.99400
+<CMD> panPage -1 0
+<CMD> zoomBox -509.83600 -598.75900 457.10000 357.49300
+<CMD> zoomBox -231.47700 -238.17800 197.55900 186.11700
+<CMD> zoomBox -96.51100 -64.32300 65.30200 95.70200
+<CMD> zoomBox -42.68500 -11.42600 18.34300 48.92800
+<CMD> zoomBox -36.33000 -10.09400 15.54400 41.20700
+<CMD> zoomBox -13.40000 -3.76000 6.16400 15.58800
+<CMD> zoomBox -5.14400 -1.40500 2.23600 5.89300
+<CMD> zoomBox -2.02900 -0.51800 0.75500 2.23500
+<CMD> zoomBox -0.98000 -0.21800 0.25600 1.00400
+<CMD> zoomBox -8.38800 -4.61800 3.64500 7.28200
+<CMD> zoomBox -25.73900 -15.37800 11.80200 21.74800
+<CMD> zoomBox -92.42400 -59.60400 45.34900 76.64700
+<CMD> zoomBox -332.90800 -240.61500 172.70300 259.40900
+<CMD> zoomBox -1210.83500 -922.53200 644.69000 912.49000
+<CMD> zoomBox -4404.00800 -3456.67700 2405.49500 3277.58300
+<CMD> zoomBox -7217.03400 -5757.52800 3871.10500 5208.09000
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_data[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_1[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arready_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arready_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arsize_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arvalid_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arvalid_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arvalid_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_data[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_1[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awaddr_m_inf_inst_2[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awburst_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awid_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awlen_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awready_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awready_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {awsize_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awvalid_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awvalid_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin awvalid_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bid_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bready_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bready_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {bresp_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bvalid_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bvalid_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin bvalid_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin clk -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_data[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_1[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rdata_m_inf_inst_2[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rid_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rlast_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rlast_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rlast_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rready_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rready_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {rresp_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rst_n -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rvalid_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rvalid_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin rvalid_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin stall_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin stall_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_data[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_1[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {wdata_m_inf_inst_2[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wlast_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wlast_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wlast_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wready_m_inf_inst_1 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wready_m_inf_inst_2 -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wvalid_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin wvalid_m_inf_inst_1 -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> zoomBox -3433.48700 -2862.69400 2354.59200 2861.42800
+<CMD> zoomBox -1578.85400 -1420.76800 1442.56100 1567.26100
+<CMD> zoomBox -687.85500 -705.31000 889.34400 854.46100
+<CMD> zoomBox -227.35700 -224.76400 472.45600 467.31600
+<CMD> zoomBox 95.44300 -123.11900 460.75100 238.15200
+<CMD> zoomBox 192.89500 -92.31700 456.83100 168.70300
+<CMD> zoomBox 313.94300 -48.87100 451.72000 87.38400
+<CMD> zoomBox 377.13100 -26.19100 449.05200 44.93500
+<CMD> zoomBox 410.11500 -14.35300 447.65900 22.77600
+<CMD> panPage 1 0
+<CMD> zoomBox 434.05400 -8.98300 457.11100 13.81900
+<CMD> zoomBox 442.29300 -4.74200 454.33000 7.16200
+<CMD> zoomBox 446.59500 -2.44300 452.88000 3.77300
+<CMD> zoomBox 448.86700 -1.25400 452.14900 1.99200
+<CMD> zoomBox 446.95600 -1.76300 453.24400 4.45600
+<CMD> zoomBox 442.61900 -3.02500 454.66500 8.88800
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[8]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[9]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[10]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[11]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[12]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[13]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[14]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[15]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[16]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[17]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[18]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[19]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[20]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[21]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[22]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[23]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[24]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[25]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[26]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[27]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[28]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[29]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[30]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {araddr_m_inf_inst_2[31]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arburst_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arid_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_data[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_1[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin {arlen_m_inf_inst_2[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arready_m_inf_data -status unplaced -silent
+<CMD> setPtnPinStatus -cell CHIP -pin arready_m_inf_inst_1 -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> zoomBox 438.65100 -10.05600 470.59400 21.53400
+<CMD> zoomBox 433.67300 -30.51700 505.66700 40.68100
+<CMD> zoomBox 431.50700 -60.51000 548.73800 55.42600
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> zoomBox 242.11200 -187.79700 552.94900 119.60500
+<CMD> zoomBox 228.44400 -316.20400 734.59000 184.34900
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> zoomBox -84.45600 -19.65500 511.01000 569.23100
+<CMD> zoomBox -64.06700 -16.91700 366.15700 408.55300
+<CMD> zoomBox -43.58300 -14.16600 220.62900 247.12700
+<CMD> zoomBox -34.53700 -12.95200 156.35700 175.83300
+<CMD> zoomBox -18.57600 -8.13800 66.12500 75.62700
+<CMD> zoomBox -9.62300 -3.31500 34.59300 40.41200
+<CMD> zoomBox -4.89000 -1.60200 14.73000 17.80100
+<CMD> zoomBox -1.93500 -0.80400 6.77100 7.80600
+<CMD> zoomBox -0.91500 -0.49100 3.63000 4.00400
+<CMD> deselectAll
+<CMD> selectObject IO_Pin clk
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.62000 0.95800}
+**WARN: (IMPPTN-1553):	Pin 'clk' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+<CMD> deselectAll
+<CMD> selectObject IO_Pin stall_1
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.62000 1.31800}
+**WARN: (IMPPTN-1553):	Pin 'stall_1' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {-0.62000 3.46300}
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon Jun 22 00:00:12 2026
+  Total CPU time:     0:00:46
+  Total real time:    0:06:47
+  Peak memory (main): 1308.77MB
+
+
+*** Memory Usage v#1 (Current mem = 1997.180M, initial mem = 284.375M) ***
+*** Message Summary: 1292 warning(s), 7 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:44.5, real=0:06:45, mem=1997.2M) ---

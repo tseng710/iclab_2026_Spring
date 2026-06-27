@@ -1,0 +1,49 @@
+#!/bin/bash
+
+echo -e "\033[36m***********************************************************************\033[0m"
+echo -e "\033[36m* Lab10 Auto Verification Script                  *\033[0m"
+echo -e "\033[36m***********************************************************************\033[0m"
+
+
+TEST_COUNTS=(4 4 2 4 4 1 1 6 2)
+
+
+if [ -f "09_clean_up" ]; then
+    ./09_clean_up > check.log 2>&1
+fi
+
+
+echo -e -n "\033[33mRunning CORRECT Pattern... \033[0m"
+./01_run > check.log 2>&1
+
+if grep -i -q "Congratulations" check.log; then
+    echo -e "\033[32m--- CORRECT DESIGN check Pass ---\033[0m"
+else
+    echo -e "\033[31m--- CORRECT DESIGN check Fail ---\033[0m"
+    echo -e "Please check check.log for details."
+    exit 1
+fi
+
+
+for ((i=1; i<=9; i++))
+do
+    for((j=1; j<=${TEST_COUNTS[$i-1]}; j++))
+    do
+        echo -e -n "\033[33mRunning SPEC_${i}_${j}... \033[0m"
+        ./01_run SPEC_${i}_${j} > check.log 2>&1
+
+        
+        if grep -q "Assertion $i is violated" check.log; then
+            echo -e "\033[32mPass (Caught Assertion $i)\033[0m"
+        else
+            echo -e "\033[31mFail (Missed Assertion $i)\033[0m"
+            echo -e "Stop at SPEC_${i}_${j}, please check check.log for details."
+            exit 1
+        fi
+    done
+    echo -e "\033[42m--- PATTERN check SPEC_$i All Passed ---\033[0m"
+done
+
+echo -e "\033[42;37m***********************************************************************\033[0m"
+echo -e "\033[42;37m* ALL PATTERNS PASS !!!                        *\033[0m"
+echo -e "\033[42;37m***********************************************************************\033[0m"

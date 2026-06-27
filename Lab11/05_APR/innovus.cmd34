@@ -1,0 +1,263 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat May 23 10:42:39 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+set init_design_uniquify 1
+setDesignMode -process 180
+suppressMessage TECHLIB 1318
+suppressMessage ENCEXT-2799
+set init_gnd_net GND
+set init_lef_file {LEF/header6_V55_20ka_cic.lef LEF/fsa0m_a_generic_core.lef LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef LEF/fsa0m_a_t33_generic_io.lef LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef LEF/BONDPAD.lef LEF/SUMA180_4096X12.lef}
+set init_verilog CHIP_SYN.v
+set init_mmmc_file CHIP_mmmc.view
+set init_io_file CHIP.io
+set init_top_cell CHIP
+set init_pwr_net VCC
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core_5040 -r 0.995990832581 0.45 250 250 250 250
+uiSetTool select
+getIoFlowFlag
+fit
+setDrawView fplan
+zoomBox -627.50300 -505.66700 2947.08400 3049.17100
+zoomBox -1175.83200 -882.06200 3029.56500 3300.10100
+zoomBox -1794.95600 -1264.74400 3152.57000 3655.44800
+panPage 1 0
+uiSetTool moveWire
+uiSetTool move
+selectInst CORE/u_ctrl_mem0
+addHaloToBlock {15 15 15 15} -allMacro
+flipOrRotateObject -rotate R270
+setObjFPlanBox Instance CORE/u_ctrl_mem0 554.026 1384.943 1004.826 2163.663
+deselectAll
+selectInst CORE/u_ctrl_mem1
+flipOrRotateObject -rotate R90
+setObjFPlanBox Instance CORE/u_ctrl_mem1 567.382 464.685 1018.182 1243.405
+deselectAll
+selectInst CORE/u_ctrl_mem0
+flipOrRotateObject -rotate R180
+setObjFPlanBox Instance CORE/u_ctrl_mem0 581.364 1476.055 1032.164 2254.775
+deselectAll
+selectInst CORE/u_ctrl_mem1
+setObjFPlanBox Instance CORE/u_ctrl_mem1 530.934 446.457 981.734 1225.177
+deselectAll
+selectInst CORE/u_ctrl_mem0
+setObjFPlanBox Instance CORE/u_ctrl_mem0 517.579 1466.939 968.379 2245.659
+deselectAll
+selectInst CORE/u_ctrl_mem2
+setEditMode -type regular
+setObjFPlanBox Instance CORE/u_ctrl_mem2 1564.777 1539.838 2343.497 1990.638
+setObjFPlanBox Instance CORE/u_ctrl_mem2 1428.108 1548.952 2206.828 1999.752
+panPage 1 0
+setObjFPlanBox Instance CORE/u_ctrl_mem2 1601.228 1439.613 2379.948 1890.413
+deselectAll
+selectInst CORE/u_ctrl_mem3
+panPage -1 0
+uiSetTool move
+setObjFPlanBox Instance CORE/u_ctrl_mem3 1569.933 701.583 2348.653 1152.383
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+redo
+undo
+setObjFPlanBox Instance CORE/u_ctrl_mem3 5076.937 -346.236 5855.657 104.564
+deselectAll
+selectInst CORE/u_ctrl_mem0
+uiSetTool obstruct
+createPlaceBlockage -box 3251.88500 329.76300 3589.01000 1988.05000 -type hard
+uiSetTool move
+setObjFPlanBox Instance CORE/u_ctrl_mem0 453.799 1722.067 1232.519 2172.867
+deselectAll
+selectInst CORE/u_ctrl_mem1
+setObjFPlanBox Instance CORE/u_ctrl_mem1 1505.863 1740.29 2284.583 2191.09
+deselectAll
+selectInst CORE/u_ctrl_mem2
+setObjFPlanBox Instance CORE/u_ctrl_mem2 471.401 546.688 1250.121 997.488
+panPage 1 0
+deselectAll
+selectInst CORE/u_ctrl_mem3
+panPage -1 0
+setObjFPlanBox Instance CORE/u_ctrl_mem3 1497.045 555.795 2275.765 1006.595
+deselectAll
+selectInst CORE/u_ctrl_mem1
+setObjFPlanBox Instance CORE/u_ctrl_mem1 1505.86 1712.956 2284.58 2163.756
+clearGlobalNets
+globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+globalNetConnect VCC -type net -net VCC
+globalNetConnect VCC -type tiehi -pin VCC -instanceBasename *
+globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+globalNetConnect GND -type net -net GND
+globalNetConnect GND -type tielo -pin GND -instanceBasename *
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 10 -use_interleaving_wire_group 1
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type block_rings -around each_block -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 2 bottom 2 left 2 right 2} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { ring blockring }
+sroute -connect { blockPin padPin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal6(6) }
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from left -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal3 -direction horizontal -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from bottom -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+zoomBox -324.69700 -2633.07300 6523.09100 4176.88200
+setSrouteMode -viaConnectToShape { ring stripe blockring }
+sroute -connect { corePin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -targetViaLayerRange { metal1(1) metal6(6) }
+panPage -1 0
+zoomBox -870.48700 -934.74200 3334.91200 3247.42300
+uiSetTool obstruct
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+verifyConnectivity -net {GND VCC} -type special -error 1000 -warning 50
+zoomBox -538.23800 -632.69700 3036.35200 2922.14400
+zoomBox 66.33600 -226.26100 2261.58200 1956.85700
+zoomBox 519.69400 67.04500 1867.85100 1407.75400
+zoomBox 941.44100 322.49000 1539.62700 917.37100
+zoomBox 1099.93900 424.64400 1412.19700 735.17700
+zoomBox 1176.23400 482.71600 1339.23600 644.81700
+zoomBox 1220.98700 518.37700 1293.31200 590.30200
+zoomBox 1239.23100 529.38000 1276.98600 566.92600
+zoomBox 1246.95700 534.53000 1270.14400 557.58900
+zoomBox 1248.80200 535.76000 1268.51100 555.36000
+uiSetTool select
+deselectAll
+selectWire 1254.2000 541.7000 1265.4200 542.4600 1 VCC
+deselectAll
+selectWire 1258.4500 540.8800 2577.0200 544.8800 3 GND
+editTrim
+zoomBox 1235.51300 525.29200 1279.93300 569.46700
+zoomBox 1220.50400 513.00800 1292.83400 584.93800
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+zoomBox 731.52600 486.78300 870.08900 624.58000
+zoomBox 687.75400 452.31000 913.38100 676.69000
+zoomBox 644.18500 417.99700 956.47100 728.55800
+zoomBox 545.89500 340.30400 1054.40000 846.00000
+zoomBox 387.02000 213.79300 1215.03900 1037.23700
+panPage -1 0
+zoomBox 304.41800 373.11400 736.64900 802.95700
+zoomBox 378.99200 452.25400 604.62000 676.63500
+zoomBox 417.92000 493.56500 535.70000 610.69400
+zoomBox 441.90800 519.84500 494.16900 571.81700
+zoomBox 449.48400 528.42300 481.57900 560.34100
+deselectAll
+selectWire 181.9800 540.8800 463.0700 544.8800 3 GND
+editTrim
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+verifyConnectivity -net {GND VCC} -type special -error 1000 -warning 50
+setPlaceMode -prerouteAsObs {2 3}
+setPlaceMode -fp false
+place_design -noPrePlaceOpt
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS

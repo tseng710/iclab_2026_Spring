@@ -1,0 +1,47 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Jun 15 19:37:57 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+zoomBox 51.89400 50.82400 680.79700 613.82600
+setDrawView ameba
+setDrawView place
+zoomBox -144.97200 -54.79700 725.48200 724.44500
+setDrawView fplan
+zoomBox -393.23100 -189.30700 811.55100 889.23000
+zoomBox -701.52300 -398.22700 965.99600 1094.55800
+zoomBox -384.85200 -168.95400 819.93100 909.58400
+zoomBox -166.86900 -24.06500 703.58700 755.17900
+zoomBox 52.13000 121.49900 586.70100 600.05400
+zoomBox 104.41100 156.24900 558.79700 563.02100
+zoomBox 218.72900 232.23400 497.78000 482.04400
+zoomBox 249.54000 248.74900 486.73400 461.08800
+zoomBox 180.83100 216.92900 509.12600 510.82300
+zoomBox 137.13600 196.69300 523.36600 542.45100
+zoomBox 25.25400 144.87800 559.82800 623.43600
+zoomBox -45.89500 111.92700 583.01600 674.93700
+setDrawView place
+zoomBox -127.16000 62.68000 612.73600 725.04500

@@ -1,0 +1,126 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : DCCPU
+Version: T-2022.03
+Date   : Thu Jun 25 15:33:28 2026
+****************************************
+
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+    SRAM64X16_WC (File: /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/04_MEM/SRAM64X16_WC.db)
+
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+DCCPU                  enG30K            fsa0m_a_generic_core_ss1p62v125c
+BOOTH_MULT             enG5K             fsa0m_a_generic_core_ss1p62v125c
+DEC_CORE               enG5K             fsa0m_a_generic_core_ss1p62v125c
+ALU_CORE               enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_31
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_30
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_1
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_2
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_3
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_6
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_7
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_8
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_9
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_10
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_11
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_12
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_13
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_14
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_15
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_16
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_17
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_18
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_19
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_20
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_21
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_22
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_23
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_24
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_25
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_26
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_27
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_28
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SNPS_CLOCK_GATE_HIGH_DCCPU_29
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   5.7307 mW   (79%)
+  Net Switching Power  =   1.4810 mW   (21%)
+                         ---------
+Total Dynamic Power    =   7.2117 mW  (100%)
+
+Cell Leakage Power     =   8.4756 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             2.8444        3.9074e-03        3.4846e+06            2.8518  (  39.50%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      2.6958            0.9731        9.2790e+04            1.3910  (  19.27%)  i
+register       8.0965e-02        1.9703e-02        2.3828e+06            2.3811  (  32.98%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1095            0.4843        2.5154e+06            0.5963  (   8.26%)
+--------------------------------------------------------------------------------------------------
+Total              5.7307 mW         1.4810 mW     8.4756e+06 pW         7.2201 mW
+1

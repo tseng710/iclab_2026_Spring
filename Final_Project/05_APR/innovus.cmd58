@@ -1,0 +1,115 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Jun 23 22:59:35 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+zoomBox 184.26400 174.54000 626.55200 611.94100
+zoomBox 364.13900 327.94000 595.01500 556.26500
+zoomBox 456.00100 412.68900 576.52100 531.87700
+zoomBox 493.17000 448.57500 567.18500 521.77200
+panPage 1 0
+zoomBox 533.40200 476.67600 572.03900 514.88600
+uiSetTool ruler
+zoomBox 539.36500 482.49900 567.28100 510.10700
+zoomBox 541.69400 484.77400 565.42300 508.24100
+zoomBox 543.67300 486.70800 563.84300 506.65500
+zoomBox 546.16600 489.77800 560.74000 504.19100
+zoomBox 547.13600 490.97800 559.52400 503.22900
+panPage 1 0
+zoomBox 554.00100 492.87400 562.95200 501.72600
+zoomBox 555.23200 493.61000 562.84100 501.13500
+zoomBox 556.27800 494.23400 562.74600 500.63100
+zoomBox 557.20900 494.76500 562.70700 500.20200
+zoomBox 558.67300 495.59900 562.64600 499.52800
+panPage 1 0
+zoomBox 560.59100 496.19700 563.46200 499.03600
+zoomBox 561.32100 496.79800 563.08400 498.54200
+zoomBox 561.87400 497.25600 562.79500 498.16700
+zoomBox 560.97400 496.74200 563.05200 498.79700
+zoomBox 559.49500 495.90200 563.47800 499.84100
+zoomBox 555.63700 493.71500 564.61400 502.59300
+zoomBox 541.02400 485.44200 569.03100 513.14000
+zoomBox 495.43800 459.64200 582.80400 546.04300
+zoomBox 384.63200 397.26200 616.28300 626.35300
+zoomBox 221.73100 305.97200 665.50400 744.84100
+zoomBox -92.57900 143.57800 757.55200 984.31500
+zoomBox 225.61600 297.73900 669.39000 736.60900
+zoomBox 392.93400 385.12000 624.58800 614.21400
+zoomBox 442.53800 412.46600 609.90800 577.98700
+panPage 1 0
+panPage 1 0
+zoomBox 427.90100 290.92900 805.11400 663.97400
+zoomBox 392.22600 255.50000 836.00700 694.37700
+zoomBox 450.51800 353.57900 771.15000 670.66800
+zoomBox 513.96300 455.29000 710.87300 650.02400
+zoomBox 554.94000 520.76300 675.86800 640.35500
+zoomBox 582.14700 561.66800 656.41300 635.11300
+zoomBox 525.04500 498.22100 692.42300 663.75000
+zoomBox 353.99900 340.59500 797.79900 779.49100
+zoomBox 426.12200 406.59400 746.76800 723.69700
+zoomBox 382.56300 396.17300 759.79400 769.23600
+zoomBox 271.02800 369.48900 793.14800 885.84000
+zoomBox 200.10000 352.52000 814.35900 959.99200
+zoomBox 116.65500 332.55700 839.31300 1047.23000
+panPage 0 -1
+zoomBox 210.46000 236.24500 732.58100 752.59700
+zoomBox 305.07400 355.71900 625.72200 672.82400
+zoomBox 375.46400 444.29500 542.84700 609.82800
+zoomBox 405.79500 478.00300 508.59000 579.66200
+zoomBox 427.67500 501.39200 481.33600 554.46000
+zoomBox 437.75900 510.59600 470.71400 543.18700
+zoomBox 444.19800 517.25800 464.43700 537.27300
+zoomBox 448.61600 522.19200 459.18100 532.64000
+zoomBox 449.95500 523.68700 457.58800 531.23600
+panPage 1 0
+zoomBox 453.70800 524.79100 459.22300 530.24500
+zoomBox 454.76500 525.58800 458.75000 529.52900
+zoomBox 455.17800 525.89900 458.56500 529.24900
+zoomBox 456.07800 526.56600 458.15900 528.62400
+zoomBox 456.63300 526.97500 457.91200 528.24000
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_postRoute -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix CHIP_postRoute -outDir timingReports
+zoomBox 456.07900 526.24800 458.53000 528.67200
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+verifyConnectivity -type all -error 1000 -warning 50
+verifyConnectivity
+verifyConnectivity -type special

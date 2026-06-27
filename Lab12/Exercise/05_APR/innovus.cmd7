@@ -1,0 +1,79 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed May 27 20:19:02 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+set_power_output_dir -reset
+set_power_output_dir ./
+set_default_switching_activity -reset
+set_default_switching_activity -input_activity 0.2 -period 10.0
+read_activity_file -reset
+set_power -reset
+set_powerup_analysis -reset
+set_dynamic_power_simulation -reset
+report_power -rail_analysis_format VS -outfile .//CHIP.rpt
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -corner max -create_binary_db false -write_static_currents false -honor_negative_energy true -ignore_control_signals true
+set_power_output_dir -reset
+set_power_output_dir ./
+set_default_switching_activity -reset
+set_default_switching_activity -input_activity 0.2 -period 10.0
+read_activity_file -reset
+set_power -reset
+set_powerup_analysis -reset
+set_dynamic_power_simulation -reset
+report_power -rail_analysis_format VS -outfile .//CHIP.rpt
+setDrawView ameba
+setDrawView place
+zoomBox 531.14600 594.58600 5523.84700 2960.94100
+zoomBox -75.68700 102.06600 6834.62600 3377.29800
+setEditMode -snap false
+setEditMode -snap true
+editFixWideWires
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -analysis_view av_func_mode_min -corner max -create_binary_db false -write_static_currents false -honor_negative_energy true -ignore_control_signals true
+zoomBox -703.57900 -1843.44600 10548.71200 3489.72300
+zoomBox -268.13700 -570.18900 7861.64400 3283.02600
+zoomBox 46.46900 349.73900 5920.23700 3133.68700
+zoomBox 173.22400 687.23400 5165.92700 3053.59000
+zoomBox 884.08100 1312.20900 3490.30400 2547.46200
+zoomBox 1492.09800 1823.01500 2095.74600 2109.12200
+zoomBox 1594.05500 1908.67000 1861.89700 2035.61700
+zoomBox 1632.92600 1941.32500 1772.74200 2007.59300
+zoomBox 1649.30600 1955.08600 1735.17100 1995.78300
+zoomBox 1661.76600 1965.55500 1706.59000 1986.80000
+zoomBox 1664.88300 1969.14500 1697.26900 1984.49500
+zoomBox 1666.10000 1970.54700 1693.63000 1983.59500
+zoomBox 1657.44700 1960.58400 1719.49400 1989.99200
+zoomBox 1631.75900 1931.00900 1796.27900 2008.98500
+zoomBox 1383.07500 1644.67100 2539.70100 2192.86900
+zoomBox 1019.58200 1226.14500 3626.33200 2461.64800
+zoomBox 200.36500 282.89200 6075.32700 3067.40600
+zoomBox -724.93800 -782.50800 8841.45800 3751.60900
+zoomBox -428.57400 -336.69600 7702.86300 3517.30400
+zoomBox 37.45800 364.34500 5912.42200 3148.86000

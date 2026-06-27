@@ -1,0 +1,83 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Jun 22 00:21:31 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP_floorplan.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+panPage 0 -1
+panPage 0 1
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+panPage 0 -1
+panPage -1 0
+zoomBox -188.36200 -183.27600 355.13500 354.21600
+zoomBox -136.70000 -127.44700 255.97700 260.89100
+zoomBox -116.52400 -105.64400 217.25200 224.44400
+zoomBox -54.97500 -46.83000 93.12400 99.63300
+zoomBox -21.45300 -14.95900 26.02500 31.99400
+zoomBox -12.30900 -6.59400 8.75800 14.24000
+zoomBox -10.68000 -5.65700 7.22700 12.05200
+zoomBox -6.85000 -3.64700 4.14800 7.22900
+zoomBox -3.71400 -2.30300 2.02700 3.37500
+zoomBox -2.07600 -1.54000 0.92200 1.42500
+gui_select -rect {-0.90000 -0.83900 0.42500 0.49700}
+gui_select -rect {0.07200 -0.94400 -0.66800 0.47500}
+deselectAll
+dehighlight
+deselectAll
+selectObject IO_Pin {wdata_m_inf_data[0]}
+deselectAll
+selectObject IO_Pin {bresp_m_inf_data[0]}
+deselectAll
+selectObject IO_Pin {bresp_m_inf_data[0]}
+deselectAll
+selectObject IO_Pin {wdata_m_inf_data[0]}
+deselectAll
+selectObject IO_Pin {wdata_m_inf_data[0]}
+deselectAll
+zoomBox -1.56300 -1.14200 2.41600 1.00100
+zoomBox -0.92400 -0.64700 1.15500 0.47300
+zoomBox -0.73000 -0.48200 0.77200 0.32700
+uiSetTool move
+selectObject IO_Pin {bresp_m_inf_data[0]}
+moveGroupPins -loc {0.42400 0.00000}
+zoomBox -1.82700 -0.88700 1.05300 0.66400
+deselectAll
+selectObject IO_Pin {bresp_m_inf_data[1]}
+moveGroupPins -loc {0.50000 0.00000}
+undo

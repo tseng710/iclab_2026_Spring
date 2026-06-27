@@ -1,0 +1,340 @@
+
+
+module OT_DESIGN(
+    // input signals
+    clk,
+    rst_n,
+	
+    in_valid_data,
+	in_data,
+	
+    in_valid_cmd,
+	in_cmd,    
+	
+    // output signals
+	out_valid,	
+	out_data
+);
+
+input              clk;
+input              rst_n;
+
+input              in_valid_data;
+input       [7:0]  in_data;
+
+input              in_valid_cmd;
+input      [9:0]  in_cmd;
+
+output reg         out_valid;
+output reg  [7:0]  out_data;
+
+//==================================================================
+// parameter & integer
+//==================================================================
+parameter S_FETCH=3'b000, S_READ1=3'b001, S_READ2=3'b010, S_WRITE2=3'b011, S_WRITE1=3'b100, S_OPERATE=3'b101;
+
+//==================================================================
+// reg & wire
+//==================================================================
+reg [7:0] in_data_reg;
+reg [11:0] in_count;
+reg [2:0] state, state_next;
+reg in_davalid_reg;
+reg in_cmval_reg;
+reg [9:0]in_cm_reg;
+
+reg [7:0] data1[0:255];
+reg [7:0] data2[0:255];
+reg [7:0] read_cnt1;
+reg [7:0] read_cnt2;
+reg read1_valid, read2_valid;
+// for swap
+reg [18:0] sum1, sum2;
+reg [7:0] swap_cnt;
+
+// for max
+reg [7:0] max1[0:15];
+reg [7:0] max_addr;
+
+// for out
+reg [7:0] out_cnt;
+reg [7:0] out_data_next;
+// -----------------------------------------------------
+// MEM
+// -----------------------------------------------------
+
+// MEM_0: 8-bit width, 4096 depth
+wire        mem0_web;
+wire [11:0] mem0_addr;
+wire  [7:0] mem0_din;
+wire  [7:0] mem0_dout;
+wire [3:0] target1, target2;
+wire [1:0] opcode;
+
+//==================================================================
+// design
+//==================================================================
+assign target1 = in_cm_reg[7:4];
+assign target2 = in_cm_reg[3:0];
+assign opcode = in_cm_reg[9:8];
+
+always @(posedge clk, negedge rst_n) begin
+	if (!rst_n) 
+		state <= 0;
+	else
+		state <= state_next;
+end
+
+always @(*) begin
+	case (state)
+		S_FETCH: state_next = (in_cmval_reg)? S_READ1: S_FETCH;
+		S_READ1: state_next = (read_cnt1==8'd255)? S_READ2: S_READ1;
+		S_READ2: state_next = (read_cnt2==8'd255)? ((opcode == 2'b10)? S_WRITE2: S_OPERATE): S_READ2; 
+		S_WRITE2: state_next = (swap_cnt==8'd255)? S_WRITE1: S_WRITE2;
+		S_WRITE1: state_next = (swap_cnt==8'd255)? S_OPERATE: S_WRITE1;
+		S_OPERATE: state_next = (out_cnt == 8'd255)? S_FETCH: S_OPERATE;
+		default: state_next = state;
+	endcase 
+end
+
+// For initial memory input 
+always @(posedge clk, negedge rst_n) begin
+	if (!rst_n) begin
+		in_davalid_reg <= 0;
+		in_count <= 0;
+		in_data_reg <= 0;
+	end
+	else if(in_valid_data) begin
+		in_davalid_reg <= 1;
+		in_count <= in_count + 1;
+		in_data_reg <= in_data;
+	end
+	else  begin
+		in_davalid_reg <= 0;
+		in_count <= 0;
+		in_data_reg <= 0;
+	end
+end
+
+
+///////// Read CMD
+always @(posedge clk, negedge rst_n) begin
+	if (!rst_n) begin
+		in_cmval_reg <= 0;
+		in_cm_reg <= 0;
+	end
+	else if(in_valid_cmd) begin
+		in_cmval_reg <= 1;
+		in_cm_reg <= in_cmd;
+	end
+	else  begin
+		in_cmval_reg <= 0;
+		in_cm_reg <= in_cm_reg;
+	end
+end
+
+//////// READ t1,t2
+always @(posedge clk, negedge rst_n) begin
+	if (!rst_n) begin
+		read_cnt1 <= 0;
+		read_cnt2 <= 0;
+	end 
+	else begin
+		read_cnt1 <= ((state == S_READ1)? read_cnt1+1 : read_cnt1);
+		read_cnt2 <= ((state == S_READ2)? read_cnt2+1 : read_cnt2);
+	end
+end
+always @(posedge clk, negedge rst_n) begin
+	if (!rst_n) begin
+		read1_valid <= 0;
+		read2_valid <= 0;
+	end 
+	else begin
+		read1_valid <= (state == S_READ1);
+		read2_valid <= (state == S_READ2);
+	end
+end
+
+// read t1,t2
+genvar rt1;
+generate 
+	for (rt1=0; rt1<256; rt1 = rt1 +1) begin
+		if (rt1==255) begin
+			always @(posedge clk, negedge rst_n) begin
+				if (!rst_n) begin
+					data1[rt1] <= 0;
+					data2[rt1] <= 0;
+				end
+				else begin 
+					data1[rt1] <= read1_valid? mem0_dout: data1[rt1];
+					data2[rt1] <= read2_valid? mem0_dout: data2[rt1];
+				end
+			end
+		end
+		else begin
+			always @(posedge clk, negedge rst_n) begin
+				if (!rst_n) begin
+					data1[rt1] <= 0;
+					data2[rt1] <= 0;
+				end
+				else begin 
+					data1[rt1] <= read1_valid? data1[rt1+1]: data1[rt1];
+					data2[rt1] <= read2_valid? data2[rt1+1]: data2[rt1];
+				end
+			end
+		end
+	end
+endgenerate
+// accumulate t1, t2
+always @(posedge clk, negedge rst_n) begin
+	if (!rst_n) begin
+		sum1 <= 0;
+		sum2 <= 0;
+	end
+	else if (S_FETCH)begin 
+		sum1 <= 0;
+		sum2 <= 0;
+	end
+	else begin
+		sum1 <= read1_valid? sum1+mem0_dout: sum1;
+		sum2 <= read2_valid? sum2+mem0_dout: sum2;
+	end
+end
+
+// for max
+always @(posedge clk, negedge rst_n) begin
+	if (!rst_n)
+		max_addr <= 0;
+	else 
+		max_addr <= read1_valid? max_addr+1: max_addr;
+end
+
+genvar row;
+generate 
+	for (row=0; row<16; row = row +1) begin
+		always @(posedge clk, negedge rst_n) begin
+			if (!rst_n)
+				max1[row] <= 0;
+			else if (state == S_FETCH)
+				max1[row] <= 0;
+			else 
+				max1[row] <= (max_addr[7:4]==row)? ((mem0_dout > max1[row])? mem0_dout: max1[row]): max1[row];
+		end
+	end
+endgenerate
+
+////////// swap
+always @(posedge clk, negedge rst_n) begin
+	if (!rst_n)
+		swap_cnt <= 0;
+	else 
+		swap_cnt <= (state==S_WRITE2 | state==S_WRITE1)? swap_cnt+1 : 0;
+end
+
+
+///////////out
+always @(posedge clk, negedge rst_n) begin
+	if (!rst_n)
+		out_cnt <= 0;
+	else 
+		out_cnt <= (state==S_OPERATE)? out_cnt+1 : 0;
+end
+
+wire [7:0] d1, d2;
+assign d1=data1[out_cnt];
+assign d2=data2[out_cnt];
+
+wire [8:0] avert2;
+assign avert2 =d1 + d2; 
+
+wire [7:0] subsum, sb, ss;
+assign {sb,ss} = (d1 > d2)? {d1,d2}: {d2,d1};
+assign subsum = sb-ss;
+
+always @(*) begin
+	if (state==S_OPERATE) begin
+		case (opcode)
+			2'b00: out_data_next = avert2[8:1];
+			2'b01: out_data_next = subsum;
+			2'b10: out_data_next = (sum1 > sum2)? d1: d2;
+			2'b11: out_data_next = max1[out_cnt[7:4]];
+		endcase
+	end
+	else begin
+		out_data_next = 0;
+	end
+end
+
+always @(posedge clk, negedge rst_n) begin
+	if (!rst_n) begin
+		out_valid <= 0;
+		out_data <= 0;
+	end	
+	else begin
+		out_valid <= (state == S_OPERATE);
+		out_data <=- out_data_next;
+	end
+end
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/* 
+  There are eight SRAMs in your GTE. You should not change the name of those SRAMs.
+  TA will check the value in each SRAMs when your GTE is not busy.
+  If you change the name of SRAMs below, you must get the fail in this lab.
+  
+  You should finish SRAM-related signals assignments for each SRAM.
+*/
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// SRAM-related signals assignments
+
+reg [11:0] mem_adr;
+reg me_web;
+reg [7:0] me_din;
+
+always @(*) begin
+	case(state) 
+		S_FETCH: mem_adr=in_count;
+		S_READ1: mem_adr={target1,read_cnt1};
+		S_READ2: mem_adr={target2,read_cnt2};
+		S_WRITE2:mem_adr={target2,swap_cnt};
+		S_WRITE1:mem_adr={target1,swap_cnt};
+		default: mem_adr = 0;
+	endcase
+end
+always @(*) begin
+	case(state) 
+		S_FETCH: me_web= !in_davalid_reg;
+		S_READ1: me_web= 1;
+		S_READ2: me_web= 1;
+		S_WRITE2:me_web= 0;
+		S_WRITE1:me_web= 0;
+		default: me_web= 1;
+	endcase
+end
+always @(*) begin
+	case(state) 
+		S_FETCH: me_din= in_data_reg;
+		S_READ1: me_din= 0;
+		S_READ2: me_din= 0;
+		S_WRITE2:me_din= data1[{target1, swap_cnt}];
+		S_WRITE1:me_din= data2[{target2, swap_cnt}];
+		default: me_din= 0;
+	endcase
+end
+
+
+assign mem0_addr = mem_adr;
+assign mem0_web  = me_web;
+assign mem0_din  = me_din;
+
+
+// MEM_0, MEM_1, MEM_2, MEM_3, MEM_4, MEM_5, MEM_6, MEM_7 instantiation
+SUMA180_4096X8X1BM4 MEM0(
+    .A0(mem0_addr[0]), .A1(mem0_addr[1]), .A2(mem0_addr[2]), .A3(mem0_addr[3]), .A4(mem0_addr[4]), .A5(mem0_addr[5]), .A6(mem0_addr[6]), .A7(mem0_addr[7]), 
+    .A8(mem0_addr[8]), .A9(mem0_addr[9]), .A10(mem0_addr[10]), .A11(mem0_addr[11]),
+    .DO0(mem0_dout[0]), .DO1(mem0_dout[1]), .DO2(mem0_dout[2]), .DO3(mem0_dout[3]), .DO4(mem0_dout[4]), .DO5(mem0_dout[5]), .DO6(mem0_dout[6]), .DO7(mem0_dout[7]),
+    .DI0(mem0_din[0]), .DI1(mem0_din[1]), .DI2(mem0_din[2]), .DI3(mem0_din[3]), .DI4(mem0_din[4]), .DI5(mem0_din[5]), .DI6(mem0_din[6]), .DI7(mem0_din[7]),
+    .CK(clk), .WEB(mem0_web), .OE(), .CS()
+);
+
+endmodule

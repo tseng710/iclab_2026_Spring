@@ -1,0 +1,48 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sat Apr 18 22:34:15 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               7
+    Cells do not drive (LINT-1)                                     7
+
+Nets                                                               13
+    Unloaded nets (LINT-2)                                         13
+
+Tristate                                                            8
+    Single tristate driver drives an input pin (LINT-63)            8
+--------------------------------------------------------------------------------
+
+Warning: In design 'OT_DESIGN', cell 'B_61' does not drive any nets. (LINT-1)
+Warning: In design 'OT_DESIGN', cell 'B_62' does not drive any nets. (LINT-1)
+Warning: In design 'OT_DESIGN', cell 'B_63' does not drive any nets. (LINT-1)
+Warning: In design 'OT_DESIGN', cell 'B_64' does not drive any nets. (LINT-1)
+Warning: In design 'OT_DESIGN', cell 'B_65' does not drive any nets. (LINT-1)
+Warning: In design 'OT_DESIGN', cell 'B_66' does not drive any nets. (LINT-1)
+Warning: In design 'OT_DESIGN', cell 'B_67' does not drive any nets. (LINT-1)
+Warning: In design 'OT_DESIGN', net 'net193' driven by pin 'add_243/Z_0' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net192' driven by pin 'sub_222/Z_0' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net191' driven by pin 'sub_222/Z_1' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net190' driven by pin 'sub_222/Z_2' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net189' driven by pin 'sub_222/Z_3' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net188' driven by pin 'C19398/Z' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net187' driven by pin 'C19385/Z' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net186' driven by pin 'C19374/Z' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net185' driven by pin 'C19363/Z' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net184' driven by pin 'C19359/Z' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net183' driven by pin 'C19355/Z' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net182' driven by pin 'C19351/Z' has no loads. (LINT-2)
+Warning: In design 'OT_DESIGN', net 'net181' driven by pin 'C19347/Z' has no loads. (LINT-2)
+Warning: Net 'mem0_dout[0]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'mem0_dout[1]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'mem0_dout[2]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'mem0_dout[3]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'mem0_dout[4]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'mem0_dout[5]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'mem0_dout[6]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'mem0_dout[7]' has a single tri-state driver.  (LINT-63)
+1

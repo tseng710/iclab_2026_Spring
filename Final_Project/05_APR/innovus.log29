@@ -1,0 +1,729 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+Options:	
+Date:		Sun Jun 21 19:12:52 2026
+Host:		ee24 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7763 64-Core Processor 512KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading Pegasus 21.21 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+RC_Corner
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-201):	Pin 'DO15' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI15' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO14' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI14' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO13' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI13' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO12' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI12' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO11' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI11' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO10' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI10' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO9' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI9' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO8' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI8' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A1' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'WEB' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'OE' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'CS' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A2' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'CK' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A0' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A3' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A4' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A5' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO7' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI7' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO6' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI6' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO5' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'DO4' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO3' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO2' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO1' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO0' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Loading view definition file from /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP_preCTS.inn.dat/viewDefinition.tcl
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib)
+*** End library_loading (cpu=0.02min, real=0.02min, mem=19.9M, fe_cpu=0.30min, fe_real=0.57min, fe_mem=936.3M) ***
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP_preCTS.inn.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name reg2cgate is not defined.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading place ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+'set_default_switching_activity' finished successfully.
+Delay_Corner_min Delay_Corner_max
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.15-s105_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> zoomBox -471.11500 -297.28600 742.68800 903.10500
+<CMD> zoomBox -303.62800 91.73300 441.80000 828.92400
+<CMD> zoomBox -162.49100 376.53800 226.62900 761.35800
+<CMD> zoomBox -99.16700 499.59100 139.80100 735.91800
+<CMD> zoomBox -51.20600 593.19900 73.53800 716.56500
+<CMD> zoomBox -32.14900 629.98700 44.46200 705.75100
+<CMD> zoomBox -20.25000 652.47100 26.79900 699.00000
+<CMD> uiSetTool move
+<CMD> zoomBox -12.42700 667.01400 16.46700 695.58900
+<CMD> selectObject IO_Pin clk
+Press the <F3> key to bring up the form.
+<CMD> panPage 0 -1
+<CMD> moveGroupPins -loc {-0.31000 666.15400}
+**WARN: (IMPPTN-1553):	Pin 'clk' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {bresp_m_inf_data[1]}
+Press the <F3> key to bring up the form.
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> moveGroupPins -loc {2.22700 669.20000}
+**WARN: (IMPPTN-1553):	Pin 'bresp_m_inf_data[1]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+<CMD> zoomBox -28.07000 651.25300 27.28500 705.99600
+<CMD> zoomBox -58.03600 637.70600 48.00900 742.57900
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> zoomBox 131.99400 610.98500 335.14300 811.88900
+<CMD> zoomBox 80.12000 589.57400 361.29500 867.64200
+<CMD> panPage 1 0
+<CMD> zoomBox 92.67600 559.94000 481.84500 944.80900
+<CMD> panPage 1 0
+<CMD> zoomBox 184.37200 541.09500 642.21800 993.88200
+<CMD> zoomBox -94.35300 426.05300 782.73800 1293.45200
+<CMD> panPage 1 0
+<CMD> zoomBox 383.35700 520.41600 922.00100 1053.10800
+<CMD> zoomBox 535.01000 600.87400 816.18600 878.94300
+<CMD> zoomBox 597.95100 635.04200 770.62900 805.81200
+<CMD> zoomBox 636.60500 656.02500 742.65100 760.89900
+<CMD> panPage 0 -1
+<CMD> zoomBox 652.59300 641.68900 729.21100 717.46000
+<CMD> zoomBox 668.49100 659.71000 715.54500 706.24400
+<CMD> zoomBox 678.25400 670.81000 707.15200 699.38900
+<CMD> zoomBox 682.42600 675.84600 703.30500 696.49400
+<CMD> panPage -1 0
+<CMD> deselectAll
+<CMD> selectObject IO_Pin bvalid_m_inf_data
+Press the <F3> key to bring up the form.
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> moveGroupPins -loc {677.66000 664.56500}
+**WARN: (IMPPTN-1553):	Pin 'bvalid_m_inf_data' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+<CMD> zoomBox 671.29200 648.00700 718.34900 694.54400
+<CMD> zoomBox 665.79200 637.55200 742.41700 713.33000
+<CMD> zoomBox 652.37800 613.20500 799.16700 758.37200
+<CMD> zoomBox 626.13700 571.86500 907.34000 849.96100
+<CMD> zoomBox 591.97100 522.67500 1049.86200 975.50600
+<CMD> zoomBox 503.94400 458.58500 1381.12100 1326.06900
+<CMD> zoomBox 433.21100 404.60400 1647.29700 1605.27500
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage -1 0
+<CMD> zoomBox 370.25700 -166.79600 1004.01900 459.96300
+<CMD> zoomBox 540.36700 -77.19700 821.57200 200.90100
+<CMD> zoomBox 605.22300 -43.03800 752.01400 102.13100
+<CMD> zoomBox 624.91100 -32.68600 730.96800 72.19900
+<CMD> zoomBox 651.74800 -18.16000 707.11100 36.59100
+<CMD> zoomBox 659.69800 -13.37900 699.69800 26.17900
+<CMD> zoomBox 671.55100 -8.26400 696.11700 16.03100
+<CMD> deselectAll
+<CMD> selectObject IO_Pin {bid_m_inf_data[2]}
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {675.37400 -0.62000}
+**WARN: (IMPPTN-1553):	Pin 'bid_m_inf_data[2]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+<CMD> deselectAll
+<CMD> selectObject IO_Pin stall_2
+Press the <F3> key to bring up the form.
+<CMD> moveGroupPins -loc {677.66000 2.57100}
+**WARN: (IMPPTN-1553):	Pin 'stall_2' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+<CMD> zoomBox 663.49400 -16.66000 718.86300 38.09700
+<CMD> zoomBox 650.26400 -30.48000 756.33400 74.41800
+<CMD> zoomBox 625.04300 -56.95300 828.24000 143.99900
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> zoomBox 247.99500 -126.39000 705.95100 326.50600
+<CMD> zoomBox 85.15700 -282.88300 1117.27500 737.83000
+<CMD> panPage -1 0
+<CMD> zoomBox -142.70900 -146.60100 396.06400 386.21900
+<CMD> zoomBox -99.22400 -75.93400 182.01900 202.20100
+<CMD> zoomBox -53.17600 -39.04700 93.63600 106.14300
+<CMD> zoomBox -26.72400 -21.56000 49.91400 54.23100
+<CMD> zoomBox -13.09700 -12.79100 26.90900 26.77300
+<CMD> zoomBox -6.82900 -6.59300 14.05500 14.06000
+<CMD> zoomBox -4.18800 -3.98200 8.63800 8.70200
+<CMD> zoomBox -2.30400 -2.14300 4.39300 4.48000
+<CMD> zoomBox -1.51000 -1.36800 2.60300 2.70000
+<CMD> zoomBox -2.94800 -2.41000 4.93300 5.38400
+<CMD> zoomBox -6.71700 -5.14200 11.04700 12.42600
+<CMD> zoomBox -15.20900 -11.29700 24.82900 28.29900
+<CMD> zoomBox -34.16200 -25.44300 56.07600 63.79800
+<CMD> zoomBox -76.87600 -57.32200 126.50000 143.80700
+<CMD> zoomBox -172.67500 -129.17000 285.68800 324.12800
+<CMD> zoomBox -363.17300 -324.96100 669.86200 696.65900
+<CMD> panPage 0 1
+<CMD> zoomBox -220.30700 249.94700 414.10600 877.35000
+<CMD> zoomBox -137.48100 420.36200 252.12900 805.66700
+<CMD> zoomBox -74.10400 537.96200 129.27600 739.09500
+<CMD> zoomBox -47.00600 587.39000 77.89600 710.91200
+<CMD> zoomBox -40.45000 599.15600 65.71600 704.14900
+<CMD> zoomBox -26.04000 624.88300 39.15900 689.36200
+<CMD> getMultiCpuUsage -localCpu
+<CMD> get_verify_drc_mode -disable_rules -quiet
+<CMD> get_verify_drc_mode -quiet -area
+<CMD> get_verify_drc_mode -quiet -layer_range
+<CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+<CMD> get_verify_drc_mode -check_only -quiet
+<CMD> get_verify_drc_mode -check_same_via_cell -quiet
+<CMD> get_verify_drc_mode -exclude_pg_net -quiet
+<CMD> get_verify_drc_mode -ignore_trial_route -quiet
+<CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+<CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+<CMD> get_verify_drc_mode -limit -quiet
+<CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+<CMD> verify_drc
+#-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+#-report CHIP.drc.rpt                    # string, default="", user setting
+ *** Starting Verify DRC (MEM: 1991.7) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+**WARN: (IMPVFG-1103):	VERIFY DRC did not complete: Number of violations exceeds the Error Limit [1000]
+
+  Verification Complete : 1000 Viols.
+
+ Violation Summary By Layer and Type:
+
+	          Short outOfDie      Mar   CShort   CutSpc   Totals
+	metal1       18       99       22        0        0      139
+	via           0        0        0        1        0        1
+	metal2      275       97      132        0        0      504
+	via2          0        0        0       20        8       28
+	metal3      221       28       32        0        0      281
+	via3          0        0        0        4        0        4
+	metal4       18       22        0        0        0       40
+	metal6        0        0        3        0        0        3
+	Totals      532      246      189       25        8     1000
+
+ *** End Verify DRC (CPU: 0:00:00.3  ELAPSED TIME: 1.00  MEM: 28.0M) ***
+
+<CMD> set_verify_drc_mode -area {0 0 0 0}
+<CMD> zoomBox -85.73200 584.68300 87.14800 755.65300
+<CMD> zoomBox -123.27400 562.37100 116.00600 799.00700
+<CMD> zoomBox -208.27900 512.45300 181.35000 897.77700
+<CMD> zoomBox -492.56200 403.24100 385.56500 1271.66500
+<CMD> zoomBox -1157.59500 218.73300 821.48500 2175.94500
+<CMD> zoomBox -3131.87300 -312.23900 2115.59900 4877.25000
+<CMD> panPage 0 -1
+<CMD> zoomBox -2212.04300 -1313.97100 1579.25600 2435.43500
+<CMD> zoomBox -1547.46600 -912.90000 1191.74800 1796.04600
+<CMD> zoomBox -879.78900 -509.95800 802.43100 1153.67400
+<CMD> zoomBox -371.86400 -203.42700 506.26600 665.00000
+<CMD> zoomBox -106.72400 2.19200 351.66600 455.51700
+<CMD> zoomBox 31.67900 109.52500 270.96300 346.16500
+<CMD> zoomBox 88.98300 153.56600 235.93400 298.89300
+<CMD> zoomBox 114.29100 172.94000 220.46400 277.94000
+<CMD> zoomBox 132.35900 187.87900 209.07000 263.74200
+<CMD> zoomBox 139.41600 193.60000 204.62000 258.08400
+<CMD> zoomBox 158.47100 208.81000 192.50900 242.47200
+<CMD> zoomBox 166.47800 214.83200 187.38200 235.50500
+<CMD> zoomBox 172.56700 219.41300 183.48000 230.20500
+<CMD> zoomBox 175.11900 221.44600 181.82100 228.07400
+<CMD> zoomBox 169.87300 218.90700 184.97800 233.84500
+<CMD> zoomBox 158.05000 213.18700 192.09200 246.85300
+<CMD> zoomBox 144.73400 206.72700 200.16700 261.54700
+<CMD> zoomBox 113.13800 191.39600 219.33100 296.41600
+<CMD> zoomBox 52.60700 162.02600 256.04200 363.21300
+<CMD> zoomBox -62.80700 109.24800 326.91200 494.66100
+<CMD> zoomBox -282.96900 9.07800 463.60900 747.40700
+<CMD> zoomBox -363.76600 -26.10400 514.56200 842.51900
+<CMD> zoomBox -458.53500 -66.92300 574.79200 954.98600
+<CMD> zoomBox -701.19600 -171.44300 729.01400 1242.96400
+<CMD> panPage 1 0
+<CMD> undo
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2018.0M).
+<CMD> undo
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2018.0M).
+<CMD> undo
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2018.0M).
+<CMD> undo
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2018.0M).
+<CMD> undo
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2018.0M).
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sun Jun 21 19:15:41 2026
+
+Design Name: CHIP
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (677.6600, 669.2000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+**WARN: (IMPVFC-97):	IO pin clk of net clk has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin stall_1 of net stall_1 has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin stall_2 of net stall_2 has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin arid_m_inf_inst_1[1] of net arid_m_inf_inst_1[1] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[26] of net araddr_m_inf_inst_1[26] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[19] of net araddr_m_inf_inst_1[19] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net araddr_m_inf_inst_1[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[12] of net araddr_m_inf_inst_1[12] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[5] of net araddr_m_inf_inst_1[5] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net araddr_m_inf_inst_1[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin arlen_m_inf_inst_1[5] of net arlen_m_inf_inst_1[5] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin arsize_m_inf_inst_1[1] of net arsize_m_inf_inst_1[1] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin rid_m_inf_inst_1[2] of net rid_m_inf_inst_1[2] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin rdata_m_inf_inst_1[11] of net rdata_m_inf_inst_1[11] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin rdata_m_inf_inst_1[4] of net rdata_m_inf_inst_1[4] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin rlast_m_inf_inst_1 of net rlast_m_inf_inst_1 has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net rvalid_m_inf_inst_1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[31] of net awaddr_m_inf_inst_1[31] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[24] of net awaddr_m_inf_inst_1[24] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[17] of net awaddr_m_inf_inst_1[17] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[10] of net awaddr_m_inf_inst_1[10] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[3] of net awaddr_m_inf_inst_1[3] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin awburst_m_inf_inst_1[1] of net awburst_m_inf_inst_1[1] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (EMS-27):	Message (IMPVFC-97) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Net araddr_m_inf_inst_2[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rlast_m_inf_inst_2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rvalid_m_inf_inst_2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_inst_2[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[28]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[21]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_2[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_data[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OFN21_n3260: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OFN20_n1672: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net stop1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net stop2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net exe_ph: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net act_c: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net en_pipeline: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net en_ir2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net pl_ld: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net is_miss: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net en_c2_r0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net en_c2_r5: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1112: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1143: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1147: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1176: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1207: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1208: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1325: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1329: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1377: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1382: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1385: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1387: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1672: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1686: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1701: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1702: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1703: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1705: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1727: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1780: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1820: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1866: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1902: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1978: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1979: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n1980: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2042: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2043: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2045: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2046: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2047: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2048: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2051: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2052: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2053: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2057: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2086: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2087: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2105: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2106: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2117: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2146: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2150: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2153: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2162: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2173: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2182: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2201: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2237: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2238: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2261: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2265: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2267: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2272: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2279: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2296: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2304: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2305: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2306: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2307: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2309: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2313: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2317: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2318: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2324: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2325: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2326: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2336: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2340: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2341: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2343: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2345: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2346: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2356: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2359: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2368: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2372: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2373: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2411: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2412: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2413: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2414: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2417: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2420: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2421: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2427: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2428: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2429: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2480: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2483: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2485: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2518: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2534: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2556: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2557: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2558: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2561: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2562: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2563: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2570: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2589: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2590: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2606: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2607: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2608: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2615: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2624: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2626: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2627: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2628: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2629: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2636: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2639: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2649: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2675: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2679: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2680: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2685: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2696: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2700: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2701: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2733: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2762: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2779: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2780: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2799: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2800: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2801: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2802: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2803: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2804: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2811: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2814: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2815: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2817: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2818: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2820: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2823: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2830: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2842: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2845: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2848: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2873: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2882: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2900: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2901: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2903: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2914: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2933: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2934: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2950: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2951: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2952: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n2953: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3018: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3019: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3021: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3024: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3035: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3087: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3101: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3102: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3103: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3147: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3148: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3149: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3150: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3151: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3153: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3177: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3178: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3185: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3186: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3205: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3208: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3209: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3260: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3280: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3286: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3287: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3312: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3322: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3327: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3329: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3346: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3347: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3385: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3386: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3387: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net n3543: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net c_st[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net c_st[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net mem_do[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net mem_do[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net mem_do[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net ir1_rt[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net ir2_rs[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_1_r0[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_1_r0[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_1_r0[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_1_r5[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_1_r5[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_1_r6[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_1_r6[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_2_r0[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_2_r0[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_2_r0[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_2_r5[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_2_r5[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_2_r5[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_2_r6[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_2_r6[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_2_r6[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net core_2_r6[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net dec_imm[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net dec_imm[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net nxt_pl_br_tgt[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net nxt_pl_d_addr[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net nxt_pl_d_addr[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net pl_imm[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net pl_fn[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net pl_rd[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net d_cache_data[103]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net d_cache_data[102]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net d_cache_data[71]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net d_cache_data[42]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net d_cache_data[38]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net d_cache_data[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n5: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n7: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n14: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n44: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n46: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n47: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n48: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n49: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n50: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n58: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n59: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n98: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n99: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n103: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n110: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n114: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n126: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n127: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n142: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n158: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n166: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net u_alu/n189: has an unconnected terminal, has regular routing with opens, dangling Wire.
+
+Begin Summary 
+    352 Problem(s) (IMPVFC-96): Terminal(s) are not connected.
+    273 Problem(s) (IMPVFC-92): Pieces of the net are not connected together.
+    352 Problem(s) (IMPVFC-94): The net has dangling wire(s).
+    977 total info(s) created.
+End Summary
+
+End Time: Sun Jun 21 19:15:41 2026
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 977 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.2  MEM: 0.000M)
+
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Jun 21 19:15:46 2026
+  Total CPU time:     0:00:35
+  Total real time:    0:02:55
+  Peak memory (main): 1239.84MB
+
+
+*** Memory Usage v#1 (Current mem = 2021.328M, initial mem = 284.375M) ***
+*** Message Summary: 1320 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:32.7, real=0:02:54, mem=2021.3M) ---

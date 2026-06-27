@@ -1,0 +1,858 @@
+[06/22 10:01:59      0s] 
+[06/22 10:01:59      0s] Cadence Innovus(TM) Implementation System.
+[06/22 10:01:59      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/22 10:01:59      0s] 
+[06/22 10:01:59      0s] Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+[06/22 10:01:59      0s] Options:	-cpus 8 -init ./cmd/run_apr.cmd -log ./log/run_apr.log -cmd ./log/run_apr.cmdlog 
+[06/22 10:01:59      0s] Date:		Mon Jun 22 10:01:59 2026
+[06/22 10:01:59      0s] Host:		ee24 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7763 64-Core Processor 512KB)
+[06/22 10:01:59      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[06/22 10:01:59      0s] 
+[06/22 10:01:59      0s] License:
+[06/22 10:01:59      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[06/22 10:01:59      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/22 10:02:12     12s] @(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/22 10:02:12     12s] @(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+[06/22 10:02:12     12s] @(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/22 10:02:12     12s] @(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+[06/22 10:02:12     12s] @(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+[06/22 10:02:12     12s] @(#)CDS: CPE v20.15-s071
+[06/22 10:02:12     12s] @(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/22 10:02:12     12s] @(#)CDS: OA 22.60-p058 Tue Jun 15 18:38:04 2021
+[06/22 10:02:12     12s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[06/22 10:02:12     12s] @(#)CDS: RCDB 11.15.0
+[06/22 10:02:12     12s] @(#)CDS: STYLUS 20.10-p029_1 (06/24/2021 01:33 PDT)
+[06/22 10:02:13     12s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_106290_ee24_iclab053_DAQeYB.
+
+[06/22 10:02:13     12s] Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+[06/22 10:02:13     12s] setMultiCpuUsage -localCpu 8
+[06/22 10:02:14     14s] 
+[06/22 10:02:14     14s] **INFO:  MMMC transition support version v31-84 
+[06/22 10:02:14     14s] 
+[06/22 10:02:14     14s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/22 10:02:14     14s] <CMD> suppressMessage ENCEXT-2799
+[06/22 10:02:15     14s] <CMD> getVersion
+[06/22 10:02:15     14s] [INFO] Loading Pegasus 21.21 fill procedures
+[06/22 10:02:15     14s] Sourcing file "./cmd/run_apr.cmd" ...
+[06/22 10:02:15     14s] <CMD> set init_design_uniquify 1
+[06/22 10:02:15     14s] <CMD> setDesignMode -process 180
+[06/22 10:02:15     14s] ##  Process: 180           (User Set)               
+[06/22 10:02:15     14s] ##     Node: (not set)                           
+[06/22 10:02:15     14s] 
+##  Check design process and node:  
+##  Design tech node is not set.
+
+[06/22 10:02:15     14s] Applying the recommended capacitance filtering threshold values for 180nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+[06/22 10:02:15     14s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[06/22 10:02:15     14s] 	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+[06/22 10:02:15     14s] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+[06/22 10:02:15     14s] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+[06/22 10:02:15     14s] <CMD> suppressMessage TECHLIB 1318
+[06/22 10:02:15     14s] <CMD> suppressMessage ENCEXT-2799
+[06/22 10:02:15     14s] <CMD> set init_mmmc_file mmmc.view
+[06/22 10:02:15     14s] <CMD> set init_lef_file {
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/header6_V55_20ka_cic.lef
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/fsa0m_a_generic_core.lef
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/fsa0m_a_t33_generic_io.lef
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef
+    /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE//lef/BONDPAD.lef
+    ../04_MEM/SRAM64X16.lef
+}
+[06/22 10:02:15     14s] <CMD> set init_verilog ./CHIP_SYN.v
+[06/22 10:02:15     14s] <CMD> set init_top_cell CHIP
+[06/22 10:02:15     14s] <CMD> set init_io_file ./CHIP.io
+[06/22 10:02:15     14s] <CMD> set init_pwr_net VCC
+[06/22 10:02:15     14s] <CMD> set init_gnd_net GND
+[06/22 10:02:15     14s] <CMD> init_design -setup av_func_mode_max -hold av_func_mode_min
+[06/22 10:02:15     14s] #% Begin Load MMMC data ... (date=06/22 10:02:15, mem=602.2M)
+[06/22 10:02:15     14s] #% End Load MMMC data ... (date=06/22 10:02:15, total cpu=0:00:00.1, real=0:00:00.0, peak res=603.0M, current mem=603.0M)
+[06/22 10:02:15     14s] INFO: New setup and hold views overwrite old settings during design initialization
+[06/22 10:02:15     14s] 
+[06/22 10:02:15     14s] Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/header6_V55_20ka_cic.lef ...
+[06/22 10:02:15     14s] WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+[06/22 10:02:15     14s] Without DIVIDECHAR defined, the LEF file is technically incorrect.
+[06/22 10:02:15     14s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/header6_V55_20ka_cic.lef at line 1290.
+[06/22 10:02:15     14s] 
+[06/22 10:02:15     14s] Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_generic_core.lef ...
+[06/22 10:02:15     14s] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_generic_core.lef at line 1.
+[06/22 10:02:15     14s] Set DBUPerIGU to M2 pitch 620.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_generic_core.lef at line 40071.
+[06/22 10:02:15     14s] 
+[06/22 10:02:15     14s] Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef ...
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-58' for more detail.
+[06/22 10:02:15     14s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[06/22 10:02:15     14s] To increase the message display limit, refer to the product command reference manual.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+[06/22 10:02:15     14s] Without BUSBITCHARS defined, the LEF file is technically incorrect.
+[06/22 10:02:15     14s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef at line 16493.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+[06/22 10:02:15     14s] Without DIVIDECHAR defined, the LEF file is technically incorrect.
+[06/22 10:02:15     14s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef at line 16493.
+[06/22 10:02:15     14s] 
+[06/22 10:02:15     14s] Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_t33_generic_io.lef ...
+[06/22 10:02:15     14s] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_t33_generic_io.lef at line 1.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/fsa0m_a_t33_generic_io.lef at line 2034.
+[06/22 10:02:15     14s] 
+[06/22 10:02:15     14s] Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef ...
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-119' for more detail.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+[06/22 10:02:15     14s] Without BUSBITCHARS defined, the LEF file is technically incorrect.
+[06/22 10:02:15     14s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef at line 791.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+[06/22 10:02:15     14s] Without DIVIDECHAR defined, the LEF file is technically incorrect.
+[06/22 10:02:15     14s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef at line 791.
+[06/22 10:02:15     14s] 
+[06/22 10:02:15     14s] Loading LEF file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/BONDPAD.lef ...
+[06/22 10:02:15     14s] WARNING (LEFPARS-2002): NAMESCASESENSITIVE is a required statement on LEF file with version 5.5 and earlier.
+[06/22 10:02:15     14s] Without NAMESCASESENSITIVE defined, the LEF file is technically incorrect.
+[06/22 10:02:15     14s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/BONDPAD.lef at line 123.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+[06/22 10:02:15     14s] Without BUSBITCHARS defined, the LEF file is technically incorrect.
+[06/22 10:02:15     14s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/BONDPAD.lef at line 123.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+[06/22 10:02:15     14s] Without DIVIDECHAR defined, the LEF file is technically incorrect.
+[06/22 10:02:15     14s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SOCE/lef/BONDPAD.lef at line 123.
+[06/22 10:02:15     14s] 
+[06/22 10:02:15     14s] Loading LEF file ../04_MEM/SRAM64X16.lef ...
+[06/22 10:02:15     14s] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../04_MEM/SRAM64X16.lef at line 37.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1157.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1171.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1185.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1199.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1213.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1227.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1241.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1255.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1269.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1283.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1297.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1311.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1325.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1339.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1353.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1367.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1381.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1395.
+[06/22 10:02:15     14s] WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+[06/22 10:02:15     14s] The LEF parser will ignore this statement.
+[06/22 10:02:15     14s] To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file ../04_MEM/SRAM64X16.lef at line 1409.
+[06/22 10:02:15     14s] **WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[06/22 10:02:15     14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/22 10:02:15     14s] Type 'man IMPLF-61' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO15' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'DI15' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO14' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'DI14' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO13' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'DI13' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO12' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'DI12' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO11' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'DI11' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO10' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'DI10' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO9' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'DI9' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO8' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'DI8' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'A1' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'WEB' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'OE' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'CS' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'A2' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'CK' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'A0' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'A3' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'A4' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'A5' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO7' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'DI7' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO6' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-200):	Pin 'DI6' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-200' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO5' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[06/22 10:02:15     14s] To increase the message display limit, refer to the product command reference manual.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO4' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO3' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO2' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO1' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] **WARN: (IMPLF-201):	Pin 'DO0' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/22 10:02:15     14s] Type 'man IMPLF-201' for more detail.
+[06/22 10:02:15     14s] 
+[06/22 10:02:15     14s] viaInitial starts at Mon Jun 22 10:02:15 2026
+viaInitial ends at Mon Jun 22 10:02:15 2026
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+[06/22 10:02:15     14s] Loading view definition file from mmmc.view
+[06/22 10:02:15     14s] Starting library reading in 'Multi-threaded flow' (with '8' threads)
+[06/22 10:02:16     15s] Reading lib_max timing library /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib.
+[06/22 10:02:16     15s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib)
+[06/22 10:02:16     15s] Read 382 cells in library fsa0m_a_generic_core_ss1p62v125c.
+[06/22 10:02:16     15s] Reading lib_max timing library /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2008Q3v1.2/T33_GENERIC_IO/FrontEnd/synopsys/fsa0m_a_t33_generic_io_ss1p62v125c.lib.
+[06/22 10:02:16     15s] Read 6 cells in library fsa0m_a_t33_generic_io_ss1p62v125c.
+[06/22 10:02:16     15s] Reading lib_max timing library /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/04_MEM/SRAM64X16_WC.lib.
+[06/22 10:02:16     15s] Read 1 cells in library SRAM64X16_WC.
+[06/22 10:02:16     16s] Library reading multithread flow ended.
+[06/22 10:02:16     16s] Starting library reading in 'Multi-threaded flow' (with '8' threads)
+[06/22 10:02:16     17s] Reading lib_min timing library /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib.
+[06/22 10:02:16     17s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib)
+[06/22 10:02:16     17s] Read 382 cells in library fsa0m_a_generic_core_ff1p98vm40c.
+[06/22 10:02:16     17s] Reading lib_min timing library /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2008Q3v1.2/T33_GENERIC_IO/FrontEnd/synopsys/fsa0m_a_t33_generic_io_ff1p98vm40c.lib.
+[06/22 10:02:16     17s] Read 6 cells in library fsa0m_a_t33_generic_io_ff1p98vm40c.
+[06/22 10:02:16     17s] Reading lib_min timing library /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/04_MEM/SRAM64X16_BC.lib.
+[06/22 10:02:16     17s] Read 1 cells in library SRAM64X16_BC.
+[06/22 10:02:16     17s] Library reading multithread flow ended.
+[06/22 10:02:16     17s] Ending "PreSetAnalysisView" (total cpu=0:00:03.1, real=0:00:01.0, peak res=863.2M, current mem=632.1M)
+[06/22 10:02:16     17s] *** End library_loading (cpu=0.05min, real=0.02min, mem=61.0M, fe_cpu=0.30min, fe_real=0.28min, fe_mem=956.4M) ***
+[06/22 10:02:16     17s] #% Begin Load netlist data ... (date=06/22 10:02:16, mem=632.1M)
+[06/22 10:02:16     17s] *** Begin netlist parsing (mem=956.4M) ***
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[06/22 10:02:16     17s] Type 'man IMPVL-159' for more detail.
+[06/22 10:02:16     17s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[06/22 10:02:16     17s] To increase the message display limit, refer to the product command reference manual.
+[06/22 10:02:16     17s] Created 389 new cells from 6 timing libraries.
+[06/22 10:02:16     17s] Reading netlist ...
+[06/22 10:02:16     17s] Backslashed names will retain backslash and a trailing blank character.
+[06/22 10:02:16     17s] Reading verilog netlist './CHIP_SYN.v'
+[06/22 10:02:16     17s] 
+[06/22 10:02:16     17s] *** Memory Usage v#1 (Current mem = 956.402M, initial mem = 284.375M) ***
+[06/22 10:02:16     17s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=956.4M) ***
+[06/22 10:02:16     17s] #% End Load netlist data ... (date=06/22 10:02:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=641.5M, current mem=641.5M)
+[06/22 10:02:16     17s] Set top cell to CHIP.
+[06/22 10:02:16     17s] Hooked 778 DB cells to tlib cells.
+[06/22 10:02:16     18s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=668.6M, current mem=668.6M)
+[06/22 10:02:16     18s] Starting recursive module instantiation check.
+[06/22 10:02:16     18s] No recursion found.
+[06/22 10:02:16     18s] Building hierarchical netlist for Cell CHIP ...
+[06/22 10:02:16     18s] *** Netlist is unique.
+[06/22 10:02:16     18s] Setting Std. cell height to 5040 DBU (smallest netlist inst).
+[06/22 10:02:16     18s] ** info: there are 853 modules.
+[06/22 10:02:16     18s] ** info: there are 4028 stdCell insts.
+[06/22 10:02:16     18s] ** info: there are 1 macros.
+[06/22 10:02:16     18s] 
+[06/22 10:02:16     18s] *** Memory Usage v#1 (Current mem = 969.316M, initial mem = 284.375M) ***
+[06/22 10:02:16     18s] Reading IO assignment file "./CHIP.io" ...
+[06/22 10:02:16     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:16     18s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:16     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:16     18s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:16     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:16     18s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:16     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:16     18s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:16     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:16     18s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:16     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:16     18s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:16     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:16     18s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:16     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:16     18s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:16     18s] Start create_tracks
+[06/22 10:02:16     18s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[06/22 10:02:16     18s] Set Default Net Delay as 1000 ps.
+[06/22 10:02:16     18s] Set Default Net Load as 0.5 pF. 
+[06/22 10:02:16     18s] Set Default Input Pin Transition as 0.1 ps.
+[06/22 10:02:17     18s] Extraction setup Started 
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] Trim Metal Layers:
+[06/22 10:02:17     18s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[06/22 10:02:17     18s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[06/22 10:02:17     18s] Type 'man IMPEXT-6202' for more detail.
+[06/22 10:02:17     18s] Reading Capacitance Table File RC/u18_Faraday.CapTbl ...
+[06/22 10:02:17     18s] Cap table was created using Encounter 13.13-s017_1.
+[06/22 10:02:17     18s] Process name: MIXED_MODE_RFCMOS18_1P6M_MMC_TOP_METAL20_6K.
+[06/22 10:02:17     18s] Importing multi-corner RC tables ... 
+[06/22 10:02:17     18s] Summary of Active RC-Corners : 
+[06/22 10:02:17     18s]  
+[06/22 10:02:17     18s]  Analysis View: av_func_mode_max
+[06/22 10:02:17     18s]     RC-Corner Name        : RC_Corner
+[06/22 10:02:17     18s]     RC-Corner Index       : 0
+[06/22 10:02:17     18s]     RC-Corner Temperature : 25 Celsius
+[06/22 10:02:17     18s]     RC-Corner Cap Table   : 'RC/u18_Faraday.CapTbl'
+[06/22 10:02:17     18s]     RC-Corner PreRoute Res Factor         : 1
+[06/22 10:02:17     18s]     RC-Corner PreRoute Cap Factor         : 1
+[06/22 10:02:17     18s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[06/22 10:02:17     18s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[06/22 10:02:17     18s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[06/22 10:02:17     18s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[06/22 10:02:17     18s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[06/22 10:02:17     18s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[06/22 10:02:17     18s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[06/22 10:02:17     18s]     RC-Corner Technology file: 'RC/icecaps.tch'
+[06/22 10:02:17     18s]  
+[06/22 10:02:17     18s]  Analysis View: av_func_mode_min
+[06/22 10:02:17     18s]     RC-Corner Name        : RC_Corner
+[06/22 10:02:17     18s]     RC-Corner Index       : 0
+[06/22 10:02:17     18s]     RC-Corner Temperature : 25 Celsius
+[06/22 10:02:17     18s]     RC-Corner Cap Table   : 'RC/u18_Faraday.CapTbl'
+[06/22 10:02:17     18s]     RC-Corner PreRoute Res Factor         : 1
+[06/22 10:02:17     18s]     RC-Corner PreRoute Cap Factor         : 1
+[06/22 10:02:17     18s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[06/22 10:02:17     18s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[06/22 10:02:17     18s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[06/22 10:02:17     18s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[06/22 10:02:17     18s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[06/22 10:02:17     18s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[06/22 10:02:17     18s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[06/22 10:02:17     18s]     RC-Corner Technology file: 'RC/icecaps.tch'
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] Trim Metal Layers:
+[06/22 10:02:17     18s] LayerId::1 widthSet size::4
+[06/22 10:02:17     18s] LayerId::2 widthSet size::4
+[06/22 10:02:17     18s] LayerId::3 widthSet size::4
+[06/22 10:02:17     18s] LayerId::4 widthSet size::4
+[06/22 10:02:17     18s] LayerId::5 widthSet size::4
+[06/22 10:02:17     18s] LayerId::6 widthSet size::2
+[06/22 10:02:17     18s] Updating RC grid for preRoute extraction ...
+[06/22 10:02:17     18s] eee: pegSigSF::1.070000
+[06/22 10:02:17     18s] Initializing multi-corner capacitance tables ... 
+[06/22 10:02:17     18s] Initializing multi-corner resistance tables ...
+[06/22 10:02:17     18s] eee: l::1 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[06/22 10:02:17     18s] eee: l::2 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[06/22 10:02:17     18s] eee: l::3 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[06/22 10:02:17     18s] eee: l::4 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[06/22 10:02:17     18s] eee: l::5 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[06/22 10:02:17     18s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[06/22 10:02:17     18s] {RT RC_Corner 0 6 6 {5 0} 1}
+[06/22 10:02:17     18s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[06/22 10:02:17     18s] *Info: initialize multi-corner CTS.
+[06/22 10:02:17     18s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=897.2M, current mem=667.1M)
+[06/22 10:02:17     18s] Reading timing constraints file 'CHIP.sdc' ...
+[06/22 10:02:17     18s] Current (total cpu=0:00:18.5, real=0:00:18.0, peak res=907.9M, current mem=907.9M)
+[06/22 10:02:17     18s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File CHIP.sdc, Line 8).
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File CHIP.sdc, Line 912).
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] INFO (CTE): Reading of timing constraints file CHIP.sdc completed, with 2 WARNING
+[06/22 10:02:17     18s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=953.2M, current mem=953.2M)
+[06/22 10:02:17     18s] Current (total cpu=0:00:18.7, real=0:00:18.0, peak res=953.2M, current mem=953.2M)
+[06/22 10:02:17     18s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[06/22 10:02:17     18s] Summary for sequential cells identification: 
+[06/22 10:02:17     18s]   Identified SBFF number: 42
+[06/22 10:02:17     18s]   Identified MBFF number: 0
+[06/22 10:02:17     18s]   Identified SB Latch number: 0
+[06/22 10:02:17     18s]   Identified MB Latch number: 0
+[06/22 10:02:17     18s]   Not identified SBFF number: 10
+[06/22 10:02:17     18s]   Not identified MBFF number: 0
+[06/22 10:02:17     18s]   Not identified SB Latch number: 0
+[06/22 10:02:17     18s]   Not identified MB Latch number: 0
+[06/22 10:02:17     18s]   Number of sequential cells which are not FFs: 27
+[06/22 10:02:17     18s] Total number of combinational cells: 290
+[06/22 10:02:17     18s] Total number of sequential cells: 79
+[06/22 10:02:17     18s] Total number of tristate cells: 13
+[06/22 10:02:17     18s] Total number of level shifter cells: 0
+[06/22 10:02:17     18s] Total number of power gating cells: 0
+[06/22 10:02:17     18s] Total number of isolation cells: 0
+[06/22 10:02:17     18s] Total number of power switch cells: 0
+[06/22 10:02:17     18s] Total number of pulse generator cells: 0
+[06/22 10:02:17     18s] Total number of always on buffers: 0
+[06/22 10:02:17     18s] Total number of retention cells: 0
+[06/22 10:02:17     18s] List of usable buffers: BUF1 BUF12CK BUF1S BUF1CK BUF2CK BUF2 BUF3 BUF4 BUF3CK BUF4CK BUF6CK BUF6 BUF8 BUF8CK
+[06/22 10:02:17     18s] Total number of usable buffers: 14
+[06/22 10:02:17     18s] List of unusable buffers:
+[06/22 10:02:17     18s] Total number of unusable buffers: 0
+[06/22 10:02:17     18s] List of usable inverters: INV1 INV12 INV12CK INV1CK INV1S INV2 INV3 INV2CK INV4 INV3CK INV4CK INV6 INV6CK INV8 INV8CK
+[06/22 10:02:17     18s] Total number of usable inverters: 15
+[06/22 10:02:17     18s] List of unusable inverters:
+[06/22 10:02:17     18s] Total number of unusable inverters: 0
+[06/22 10:02:17     18s] List of identified usable delay cells: DELA DELC DELB
+[06/22 10:02:17     18s] Total number of identified usable delay cells: 3
+[06/22 10:02:17     18s] List of identified unusable delay cells:
+[06/22 10:02:17     18s] Total number of identified unusable delay cells: 0
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] TimeStamp Deleting Cell Server Begin ...
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] TimeStamp Deleting Cell Server End ...
+[06/22 10:02:17     18s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=955.1M, current mem=955.1M)
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[06/22 10:02:17     18s] Summary for sequential cells identification: 
+[06/22 10:02:17     18s]   Identified SBFF number: 42
+[06/22 10:02:17     18s]   Identified MBFF number: 0
+[06/22 10:02:17     18s]   Identified SB Latch number: 0
+[06/22 10:02:17     18s]   Identified MB Latch number: 0
+[06/22 10:02:17     18s]   Not identified SBFF number: 10
+[06/22 10:02:17     18s]   Not identified MBFF number: 0
+[06/22 10:02:17     18s]   Not identified SB Latch number: 0
+[06/22 10:02:17     18s]   Not identified MB Latch number: 0
+[06/22 10:02:17     18s]   Number of sequential cells which are not FFs: 27
+[06/22 10:02:17     18s]  Visiting view : av_func_mode_max
+[06/22 10:02:17     18s]    : PowerDomain = none : Weighted F : unweighted  = 53.60 (1.000) with rcCorner = 0
+[06/22 10:02:17     18s]    : PowerDomain = none : Weighted F : unweighted  = 51.10 (1.000) with rcCorner = -1
+[06/22 10:02:17     18s]  Visiting view : av_func_mode_min
+[06/22 10:02:17     18s]    : PowerDomain = none : Weighted F : unweighted  = 22.50 (1.000) with rcCorner = 0
+[06/22 10:02:17     18s]    : PowerDomain = none : Weighted F : unweighted  = 20.60 (1.000) with rcCorner = -1
+[06/22 10:02:17     18s] TLC MultiMap info (StdDelay):
+[06/22 10:02:17     18s]   : Delay_Corner_min + lib_min + 1 + no RcCorner := 20.6ps
+[06/22 10:02:17     18s]   : Delay_Corner_min + lib_min + 1 + RC_Corner := 22.5ps
+[06/22 10:02:17     18s]   : Delay_Corner_max + lib_max + 1 + no RcCorner := 51.1ps
+[06/22 10:02:17     18s]   : Delay_Corner_max + lib_max + 1 + RC_Corner := 53.6ps
+[06/22 10:02:17     18s]  Setting StdDelay to: 53.6ps
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] *** Summary of all messages that are not suppressed in this session:
+[06/22 10:02:17     18s] Severity  ID               Count  Summary                                  
+[06/22 10:02:17     18s] WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+[06/22 10:02:17     18s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[06/22 10:02:17     18s] WARNING   IMPLF-200           33  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/22 10:02:17     18s] WARNING   IMPLF-201           16  Pin '%s' in macro '%s' has no ANTENNADIF...
+[06/22 10:02:17     18s] WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+[06/22 10:02:17     18s] WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
+[06/22 10:02:17     18s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[06/22 10:02:17     18s] WARNING   IMPVL-159          766  Pin '%s' of cell '%s' is defined in LEF ...
+[06/22 10:02:17     18s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[06/22 10:02:17     18s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[06/22 10:02:17     18s] WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+[06/22 10:02:17     18s] *** Message Summary: 1233 warning(s), 0 error(s)
+[06/22 10:02:17     18s] 
+[06/22 10:02:17     18s] <CMD> save_global CHIP.globals
+[06/22 10:02:17     18s] <CMD> win
+[06/22 10:02:25     19s] <CMD> getIoFlowFlag
+[06/22 10:02:39     20s] <CMD> setIoFlowFlag 0
+[06/22 10:02:39     20s] <CMD> floorPlan -site core_5040 -r 0.989827217159 0.75 118 118 118 118
+[06/22 10:02:39     20s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:39     20s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:39     20s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:39     20s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:39     20s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:39     20s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:39     20s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:39     20s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:39     20s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:39     20s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:39     20s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:39     20s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:39     20s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:39     20s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:39     20s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/22 10:02:39     20s] Type 'man IMPFP-3961' for more detail.
+[06/22 10:02:39     20s] Start create_tracks
+[06/22 10:02:39     20s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[06/22 10:02:39     20s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[06/22 10:02:39     20s] <CMD> uiSetTool select
+[06/22 10:02:39     20s] <CMD> getIoFlowFlag
+[06/22 10:02:39     20s] <CMD> fit
+[06/22 10:02:40     20s] <CMD> setDrawView fplan
+[06/22 10:02:41     20s] <CMD> zoomBox -244.34100 -185.14400 791.16700 838.92200
+[06/22 10:02:43     20s] <CMD> uiSetTool move
+[06/22 10:02:50     21s] <CMD> addHaloToBlock {15 15 15 15} -allMacro
+[06/22 10:02:51     21s] <CMD> selectInst u_sram_inst
+[06/22 10:02:52     21s] <CMD> zoomBox 14.53700 107.46100 555.07900 642.03000
+[06/22 10:02:53     21s] <CMD> zoomBox 90.37700 199.44900 480.91900 585.67600
+[06/22 10:02:54     21s] <CMD> setObjFPlanBox Instance u_sram_inst 211.9 344.649 517.56 501.449
+[06/22 10:02:54     21s] <CMD> zoomBox -87.24800 -42.45300 660.91100 697.43900
+[06/22 10:02:56     21s] <CMD> setObjFPlanBox Instance u_sram_inst 193.988 363.939 499.648 520.739
+[06/22 10:02:58     21s] <CMD> zoomBox -163.59600 -114.91000 716.59100 755.55100
+[06/22 10:02:59     21s] <CMD> zoomBox -129.41000 113.14900 506.52500 742.05700
+[06/22 10:03:00     21s] <CMD> zoomBox -67.83200 379.47000 264.13100 707.76500
+[06/22 10:03:00     21s] <CMD> zoomBox -34.98100 517.27500 138.30600 688.64700
+[06/22 10:03:01     21s] <CMD> zoomBox -14.50700 585.23800 75.95100 674.69600
+[06/22 10:03:29     24s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:03:29     24s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:03:29     24s] <CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 1 -spreadType center -spacing 6 -pin {{araddr_m_inf_inst_1[0]} {araddr_m_inf_inst_1[1]} {araddr_m_inf_inst_1[2]} {araddr_m_inf_inst_1[3]} {araddr_m_inf_inst_1[4]} {araddr_m_inf_inst_1[5]} {araddr_m_inf_inst_1[6]} {araddr_m_inf_inst_1[7]} {araddr_m_inf_inst_1[8]} {araddr_m_inf_inst_1[9]} {araddr_m_inf_inst_1[10]} {araddr_m_inf_inst_1[11]} {araddr_m_inf_inst_1[12]} {araddr_m_inf_inst_1[13]} {araddr_m_inf_inst_1[14]} {araddr_m_inf_inst_1[15]} {araddr_m_inf_inst_1[16]} {araddr_m_inf_inst_1[17]} {araddr_m_inf_inst_1[18]} {araddr_m_inf_inst_1[19]} {araddr_m_inf_inst_1[20]} {araddr_m_inf_inst_1[21]} {araddr_m_inf_inst_1[22]} {araddr_m_inf_inst_1[23]} {araddr_m_inf_inst_1[24]} {araddr_m_inf_inst_1[25]} {araddr_m_inf_inst_1[26]} {araddr_m_inf_inst_1[27]} {araddr_m_inf_inst_1[28]} {araddr_m_inf_inst_1[29]} {araddr_m_inf_inst_1[30]} {araddr_m_inf_inst_1[31]} {arburst_m_inf_inst_1[0]} {arburst_m_inf_inst_1[1]} {arid_m_inf_inst_1[0]} {arid_m_inf_inst_1[1]} {arid_m_inf_inst_1[2]} {arid_m_inf_inst_1[3]} {arlen_m_inf_inst_1[0]} {arlen_m_inf_inst_1[1]} {arlen_m_inf_inst_1[2]} {arlen_m_inf_inst_1[3]} {arlen_m_inf_inst_1[4]} {arlen_m_inf_inst_1[5]} {arlen_m_inf_inst_1[6]} arready_m_inf_inst_1 {arsize_m_inf_inst_1[0]} {arsize_m_inf_inst_1[1]} {arsize_m_inf_inst_1[2]} arvalid_m_inf_inst_1 {bid_m_inf_inst_1[0]} {bid_m_inf_inst_1[1]} {bid_m_inf_inst_1[2]} {bid_m_inf_inst_1[3]} bready_m_inf_inst_1 {bresp_m_inf_inst_1[0]} {bresp_m_inf_inst_1[1]} bvalid_m_inf_inst_1 {rdata_m_inf_inst_1[0]} {rdata_m_inf_inst_1[1]} {rdata_m_inf_inst_1[2]} {rdata_m_inf_inst_1[3]} {rdata_m_inf_inst_1[4]} {rdata_m_inf_inst_1[5]} {rdata_m_inf_inst_1[6]} {rdata_m_inf_inst_1[7]} {rdata_m_inf_inst_1[8]} {rdata_m_inf_inst_1[9]} {rdata_m_inf_inst_1[10]} {rdata_m_inf_inst_1[11]} {rdata_m_inf_inst_1[12]} {rdata_m_inf_inst_1[13]} {rdata_m_inf_inst_1[14]} {rdata_m_inf_inst_1[15]} {rid_m_inf_inst_1[0]} {rid_m_inf_inst_1[1]} {rid_m_inf_inst_1[2]} {rid_m_inf_inst_1[3]} rlast_m_inf_inst_1 rready_m_inf_inst_1 {rresp_m_inf_inst_1[0]} {rresp_m_inf_inst_1[1]} rvalid_m_inf_inst_1 {wdata_m_inf_inst_1[0]} {wdata_m_inf_inst_1[1]} {wdata_m_inf_inst_1[2]} {wdata_m_inf_inst_1[3]} {wdata_m_inf_inst_1[4]} {wdata_m_inf_inst_1[5]} {wdata_m_inf_inst_1[6]} {wdata_m_inf_inst_1[7]} {wdata_m_inf_inst_1[8]} {wdata_m_inf_inst_1[9]} {wdata_m_inf_inst_1[10]} {wdata_m_inf_inst_1[11]} {wdata_m_inf_inst_1[12]} {wdata_m_inf_inst_1[13]} {wdata_m_inf_inst_1[14]} {wdata_m_inf_inst_1[15]} wlast_m_inf_inst_1 wready_m_inf_inst_1 wvalid_m_inf_inst_1}
+[06/22 10:03:29     24s] #create default rule from bind_ndr_rule rule=0x7f29e0c59450 0x7f298fd76018
+[06/22 10:03:29     24s] ### import design signature (1): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:03:29     24s] Selected [102] pin for spreading. Could not spread (2 out of 102) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+[06/22 10:03:29     24s] 
+[06/22 10:03:29     24s] Following pins are not spread:
+[06/22 10:03:29     24s]   araddr_m_inf_inst_1[0]
+[06/22 10:03:29     24s]   wvalid_m_inf_inst_1
+[06/22 10:03:29     24s] editPin : finished (cpu = 0:00:00.3 real = 0:00:00.0, mem = 1991.6M).
+[06/22 10:03:30     24s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:03:33     25s] <CMD> zoomBox -36.38900 559.32400 88.81200 683.14200
+[06/22 10:03:39     25s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:03:39     25s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:03:39     25s] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 1 -spreadType center -spacing 5.2 -pin {{araddr_m_inf_inst_1[0]} {araddr_m_inf_inst_1[1]} {araddr_m_inf_inst_1[2]} {araddr_m_inf_inst_1[3]} {araddr_m_inf_inst_1[4]} {araddr_m_inf_inst_1[5]} {araddr_m_inf_inst_1[6]} {araddr_m_inf_inst_1[7]} {araddr_m_inf_inst_1[8]} {araddr_m_inf_inst_1[9]} {araddr_m_inf_inst_1[10]} {araddr_m_inf_inst_1[11]} {araddr_m_inf_inst_1[12]} {araddr_m_inf_inst_1[13]} {araddr_m_inf_inst_1[14]} {araddr_m_inf_inst_1[15]} {araddr_m_inf_inst_1[16]} {araddr_m_inf_inst_1[17]} {araddr_m_inf_inst_1[18]} {araddr_m_inf_inst_1[19]} {araddr_m_inf_inst_1[20]} {araddr_m_inf_inst_1[21]} {araddr_m_inf_inst_1[22]} {araddr_m_inf_inst_1[23]} {araddr_m_inf_inst_1[24]} {araddr_m_inf_inst_1[25]} {araddr_m_inf_inst_1[26]} {araddr_m_inf_inst_1[27]} {araddr_m_inf_inst_1[28]} {araddr_m_inf_inst_1[29]} {araddr_m_inf_inst_1[30]} {araddr_m_inf_inst_1[31]} {arburst_m_inf_inst_1[0]} {arburst_m_inf_inst_1[1]} {arid_m_inf_inst_1[0]} {arid_m_inf_inst_1[1]} {arid_m_inf_inst_1[2]} {arid_m_inf_inst_1[3]} {arlen_m_inf_inst_1[0]} {arlen_m_inf_inst_1[1]} {arlen_m_inf_inst_1[2]} {arlen_m_inf_inst_1[3]} {arlen_m_inf_inst_1[4]} {arlen_m_inf_inst_1[5]} {arlen_m_inf_inst_1[6]} arready_m_inf_inst_1 {arsize_m_inf_inst_1[0]} {arsize_m_inf_inst_1[1]} {arsize_m_inf_inst_1[2]} arvalid_m_inf_inst_1 {bid_m_inf_inst_1[0]} {bid_m_inf_inst_1[1]} {bid_m_inf_inst_1[2]} {bid_m_inf_inst_1[3]} bready_m_inf_inst_1 {bresp_m_inf_inst_1[0]} {bresp_m_inf_inst_1[1]} bvalid_m_inf_inst_1 {rdata_m_inf_inst_1[0]} {rdata_m_inf_inst_1[1]} {rdata_m_inf_inst_1[2]} {rdata_m_inf_inst_1[3]} {rdata_m_inf_inst_1[4]} {rdata_m_inf_inst_1[5]} {rdata_m_inf_inst_1[6]} {rdata_m_inf_inst_1[7]} {rdata_m_inf_inst_1[8]} {rdata_m_inf_inst_1[9]} {rdata_m_inf_inst_1[10]} {rdata_m_inf_inst_1[11]} {rdata_m_inf_inst_1[12]} {rdata_m_inf_inst_1[13]} {rdata_m_inf_inst_1[14]} {rdata_m_inf_inst_1[15]} {rid_m_inf_inst_1[0]} {rid_m_inf_inst_1[1]} {rid_m_inf_inst_1[2]} {rid_m_inf_inst_1[3]} rlast_m_inf_inst_1 rready_m_inf_inst_1 {rresp_m_inf_inst_1[0]} {rresp_m_inf_inst_1[1]} rvalid_m_inf_inst_1 {wdata_m_inf_inst_1[0]} {wdata_m_inf_inst_1[1]} {wdata_m_inf_inst_1[2]} {wdata_m_inf_inst_1[3]} {wdata_m_inf_inst_1[4]} {wdata_m_inf_inst_1[5]} {wdata_m_inf_inst_1[6]} {wdata_m_inf_inst_1[7]} {wdata_m_inf_inst_1[8]} {wdata_m_inf_inst_1[9]} {wdata_m_inf_inst_1[10]} {wdata_m_inf_inst_1[11]} {wdata_m_inf_inst_1[12]} {wdata_m_inf_inst_1[13]} {wdata_m_inf_inst_1[14]} {wdata_m_inf_inst_1[15]} wlast_m_inf_inst_1 wready_m_inf_inst_1 wvalid_m_inf_inst_1}
+[06/22 10:03:39     25s] ### import design signature (2): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:03:39     25s] Successfully spread [102] pins.
+[06/22 10:03:39     25s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1993.9M).
+[06/22 10:03:39     25s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:03:42     26s] <CMD> zoomBox -109.70300 500.68800 94.16900 702.30700
+[06/22 10:03:43     26s] <CMD> zoomBox -181.29600 442.28300 100.88100 721.34200
+[06/22 10:03:43     26s] <CMD> zoomBox -226.14000 406.05900 105.83300 734.36400
+[06/22 10:03:44     26s] <CMD> panPage 1 0
+[06/22 10:03:44     26s] <CMD> panPage 1 0
+[06/22 10:03:44     26s] <CMD> panPage 1 0
+[06/22 10:03:45     26s] <CMD> panPage 1 0
+[06/22 10:03:45     26s] <CMD> panPage 1 0
+[06/22 10:03:45     26s] <CMD> panPage 1 0
+[06/22 10:03:45     26s] <CMD> panPage 1 0
+[06/22 10:03:46     26s] <CMD> panPage -1 0
+[06/22 10:03:46     26s] <CMD> panPage -1 0
+[06/22 10:03:46     26s] <CMD> panPage -1 0
+[06/22 10:03:46     26s] <CMD> panPage -1 0
+[06/22 10:03:58     27s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:03:58     27s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:03:58     27s] <CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 1 -spreadType center -spacing 5 -pin {{awaddr_m_inf_data[0]} {awaddr_m_inf_data[1]} {awaddr_m_inf_data[2]} {awaddr_m_inf_data[3]} {awaddr_m_inf_data[4]} {awaddr_m_inf_data[5]} {awaddr_m_inf_data[6]} {awaddr_m_inf_data[7]} {awaddr_m_inf_data[8]} {awaddr_m_inf_data[9]} {awaddr_m_inf_data[10]} {awaddr_m_inf_data[11]} {awaddr_m_inf_data[12]} {awaddr_m_inf_data[13]} {awaddr_m_inf_data[14]} {awaddr_m_inf_data[15]} {awaddr_m_inf_data[16]} {awaddr_m_inf_data[17]} {awaddr_m_inf_data[18]} {awaddr_m_inf_data[19]} {awaddr_m_inf_data[20]} {awaddr_m_inf_data[21]} {awaddr_m_inf_data[22]} {awaddr_m_inf_data[23]} {awaddr_m_inf_data[24]} {awaddr_m_inf_data[25]} {awaddr_m_inf_data[26]} {awaddr_m_inf_data[27]} {awaddr_m_inf_data[28]} {awaddr_m_inf_data[29]} {awaddr_m_inf_data[30]} {awaddr_m_inf_data[31]} {awburst_m_inf_data[0]} {awburst_m_inf_data[1]} {awid_m_inf_data[0]} {awid_m_inf_data[1]} {awid_m_inf_data[2]} {awid_m_inf_data[3]} {awlen_m_inf_data[0]} {awlen_m_inf_data[1]} {awlen_m_inf_data[2]} {awlen_m_inf_data[3]} {awlen_m_inf_data[4]} {awlen_m_inf_data[5]} {awlen_m_inf_data[6]} awready_m_inf_data {awsize_m_inf_data[0]} {awsize_m_inf_data[1]} {awsize_m_inf_data[2]} awvalid_m_inf_data {bid_m_inf_data[0]} {bid_m_inf_data[1]} {bid_m_inf_data[2]} {bid_m_inf_data[3]} bready_m_inf_data {bresp_m_inf_data[0]} {bresp_m_inf_data[1]} bvalid_m_inf_data clk {rdata_m_inf_data[0]} {rdata_m_inf_data[1]} {rdata_m_inf_data[2]} {rdata_m_inf_data[3]} {rdata_m_inf_data[4]} {rdata_m_inf_data[5]} {rdata_m_inf_data[6]} {rdata_m_inf_data[7]} {rdata_m_inf_data[8]} {rdata_m_inf_data[9]} {rdata_m_inf_data[10]} {rdata_m_inf_data[11]} {rdata_m_inf_data[12]} {rdata_m_inf_data[13]} {rdata_m_inf_data[14]} {rdata_m_inf_data[15]} {rid_m_inf_data[0]} {rid_m_inf_data[1]} {rid_m_inf_data[2]} {rid_m_inf_data[3]} rlast_m_inf_data rready_m_inf_data {rresp_m_inf_data[0]} {rresp_m_inf_data[1]} rst_n rvalid_m_inf_data stall_1 stall_2 {wdata_m_inf_data[0]} {wdata_m_inf_data[1]} {wdata_m_inf_data[2]} {wdata_m_inf_data[3]} {wdata_m_inf_data[4]} {wdata_m_inf_data[5]} {wdata_m_inf_data[6]} {wdata_m_inf_data[7]} {wdata_m_inf_data[8]} {wdata_m_inf_data[9]} {wdata_m_inf_data[10]} {wdata_m_inf_data[11]} {wdata_m_inf_data[12]} {wdata_m_inf_data[13]} {wdata_m_inf_data[14]} {wdata_m_inf_data[15]} wlast_m_inf_data wready_m_inf_data wvalid_m_inf_data}
+[06/22 10:03:58     27s] ### import design signature (3): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:03:58     27s] Successfully spread [106] pins.
+[06/22 10:03:58     27s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1999.5M).
+[06/22 10:03:58     27s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:04:01     27s] <CMD> zoomBox -53.44500 115.38700 694.74000 855.30500
+[06/22 10:04:05     27s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:04:05     27s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:04:05     27s] <CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 1 -spreadType center -spacing 5.5 -pin {{awaddr_m_inf_data[0]} {awaddr_m_inf_data[1]} {awaddr_m_inf_data[2]} {awaddr_m_inf_data[3]} {awaddr_m_inf_data[4]} {awaddr_m_inf_data[5]} {awaddr_m_inf_data[6]} {awaddr_m_inf_data[7]} {awaddr_m_inf_data[8]} {awaddr_m_inf_data[9]} {awaddr_m_inf_data[10]} {awaddr_m_inf_data[11]} {awaddr_m_inf_data[12]} {awaddr_m_inf_data[13]} {awaddr_m_inf_data[14]} {awaddr_m_inf_data[15]} {awaddr_m_inf_data[16]} {awaddr_m_inf_data[17]} {awaddr_m_inf_data[18]} {awaddr_m_inf_data[19]} {awaddr_m_inf_data[20]} {awaddr_m_inf_data[21]} {awaddr_m_inf_data[22]} {awaddr_m_inf_data[23]} {awaddr_m_inf_data[24]} {awaddr_m_inf_data[25]} {awaddr_m_inf_data[26]} {awaddr_m_inf_data[27]} {awaddr_m_inf_data[28]} {awaddr_m_inf_data[29]} {awaddr_m_inf_data[30]} {awaddr_m_inf_data[31]} {awburst_m_inf_data[0]} {awburst_m_inf_data[1]} {awid_m_inf_data[0]} {awid_m_inf_data[1]} {awid_m_inf_data[2]} {awid_m_inf_data[3]} {awlen_m_inf_data[0]} {awlen_m_inf_data[1]} {awlen_m_inf_data[2]} {awlen_m_inf_data[3]} {awlen_m_inf_data[4]} {awlen_m_inf_data[5]} {awlen_m_inf_data[6]} awready_m_inf_data {awsize_m_inf_data[0]} {awsize_m_inf_data[1]} {awsize_m_inf_data[2]} awvalid_m_inf_data {bid_m_inf_data[0]} {bid_m_inf_data[1]} {bid_m_inf_data[2]} {bid_m_inf_data[3]} bready_m_inf_data {bresp_m_inf_data[0]} {bresp_m_inf_data[1]} bvalid_m_inf_data clk {rdata_m_inf_data[0]} {rdata_m_inf_data[1]} {rdata_m_inf_data[2]} {rdata_m_inf_data[3]} {rdata_m_inf_data[4]} {rdata_m_inf_data[5]} {rdata_m_inf_data[6]} {rdata_m_inf_data[7]} {rdata_m_inf_data[8]} {rdata_m_inf_data[9]} {rdata_m_inf_data[10]} {rdata_m_inf_data[11]} {rdata_m_inf_data[12]} {rdata_m_inf_data[13]} {rdata_m_inf_data[14]} {rdata_m_inf_data[15]} {rid_m_inf_data[0]} {rid_m_inf_data[1]} {rid_m_inf_data[2]} {rid_m_inf_data[3]} rlast_m_inf_data rready_m_inf_data {rresp_m_inf_data[0]} {rresp_m_inf_data[1]} rst_n rvalid_m_inf_data stall_1 stall_2 {wdata_m_inf_data[0]} {wdata_m_inf_data[1]} {wdata_m_inf_data[2]} {wdata_m_inf_data[3]} {wdata_m_inf_data[4]} {wdata_m_inf_data[5]} {wdata_m_inf_data[6]} {wdata_m_inf_data[7]} {wdata_m_inf_data[8]} {wdata_m_inf_data[9]} {wdata_m_inf_data[10]} {wdata_m_inf_data[11]} {wdata_m_inf_data[12]} {wdata_m_inf_data[13]} {wdata_m_inf_data[14]} {wdata_m_inf_data[15]} wlast_m_inf_data wready_m_inf_data wvalid_m_inf_data}
+[06/22 10:04:05     27s] ### import design signature (4): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:04:05     27s] Successfully spread [106] pins.
+[06/22 10:04:05     27s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1999.5M).
+[06/22 10:04:05     27s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:04:08     28s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:04:08     28s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:04:08     28s] <CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 1 -spreadType center -spacing 6 -pin {{awaddr_m_inf_data[0]} {awaddr_m_inf_data[1]} {awaddr_m_inf_data[2]} {awaddr_m_inf_data[3]} {awaddr_m_inf_data[4]} {awaddr_m_inf_data[5]} {awaddr_m_inf_data[6]} {awaddr_m_inf_data[7]} {awaddr_m_inf_data[8]} {awaddr_m_inf_data[9]} {awaddr_m_inf_data[10]} {awaddr_m_inf_data[11]} {awaddr_m_inf_data[12]} {awaddr_m_inf_data[13]} {awaddr_m_inf_data[14]} {awaddr_m_inf_data[15]} {awaddr_m_inf_data[16]} {awaddr_m_inf_data[17]} {awaddr_m_inf_data[18]} {awaddr_m_inf_data[19]} {awaddr_m_inf_data[20]} {awaddr_m_inf_data[21]} {awaddr_m_inf_data[22]} {awaddr_m_inf_data[23]} {awaddr_m_inf_data[24]} {awaddr_m_inf_data[25]} {awaddr_m_inf_data[26]} {awaddr_m_inf_data[27]} {awaddr_m_inf_data[28]} {awaddr_m_inf_data[29]} {awaddr_m_inf_data[30]} {awaddr_m_inf_data[31]} {awburst_m_inf_data[0]} {awburst_m_inf_data[1]} {awid_m_inf_data[0]} {awid_m_inf_data[1]} {awid_m_inf_data[2]} {awid_m_inf_data[3]} {awlen_m_inf_data[0]} {awlen_m_inf_data[1]} {awlen_m_inf_data[2]} {awlen_m_inf_data[3]} {awlen_m_inf_data[4]} {awlen_m_inf_data[5]} {awlen_m_inf_data[6]} awready_m_inf_data {awsize_m_inf_data[0]} {awsize_m_inf_data[1]} {awsize_m_inf_data[2]} awvalid_m_inf_data {bid_m_inf_data[0]} {bid_m_inf_data[1]} {bid_m_inf_data[2]} {bid_m_inf_data[3]} bready_m_inf_data {bresp_m_inf_data[0]} {bresp_m_inf_data[1]} bvalid_m_inf_data clk {rdata_m_inf_data[0]} {rdata_m_inf_data[1]} {rdata_m_inf_data[2]} {rdata_m_inf_data[3]} {rdata_m_inf_data[4]} {rdata_m_inf_data[5]} {rdata_m_inf_data[6]} {rdata_m_inf_data[7]} {rdata_m_inf_data[8]} {rdata_m_inf_data[9]} {rdata_m_inf_data[10]} {rdata_m_inf_data[11]} {rdata_m_inf_data[12]} {rdata_m_inf_data[13]} {rdata_m_inf_data[14]} {rdata_m_inf_data[15]} {rid_m_inf_data[0]} {rid_m_inf_data[1]} {rid_m_inf_data[2]} {rid_m_inf_data[3]} rlast_m_inf_data rready_m_inf_data {rresp_m_inf_data[0]} {rresp_m_inf_data[1]} rst_n rvalid_m_inf_data stall_1 stall_2 {wdata_m_inf_data[0]} {wdata_m_inf_data[1]} {wdata_m_inf_data[2]} {wdata_m_inf_data[3]} {wdata_m_inf_data[4]} {wdata_m_inf_data[5]} {wdata_m_inf_data[6]} {wdata_m_inf_data[7]} {wdata_m_inf_data[8]} {wdata_m_inf_data[9]} {wdata_m_inf_data[10]} {wdata_m_inf_data[11]} {wdata_m_inf_data[12]} {wdata_m_inf_data[13]} {wdata_m_inf_data[14]} {wdata_m_inf_data[15]} wlast_m_inf_data wready_m_inf_data wvalid_m_inf_data}
+[06/22 10:04:08     28s] ### import design signature (5): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:04:08     28s] Successfully spread [106] pins.
+[06/22 10:04:08     28s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2000.6M).
+[06/22 10:04:08     28s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:04:10     28s] <CMD> zoomBox -157.70200 -13.65600 877.84900 1010.45200
+[06/22 10:04:11     28s] <CMD> zoomBox -308.59300 -172.60400 1124.69500 1244.84700
+[06/22 10:04:23     29s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:04:23     29s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:04:23     29s] <CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing 5 -pin {{araddr_m_inf_data[0]} {araddr_m_inf_data[1]} {araddr_m_inf_data[2]} {araddr_m_inf_data[3]} {araddr_m_inf_data[4]} {araddr_m_inf_data[5]} {araddr_m_inf_data[6]} {araddr_m_inf_data[7]} {araddr_m_inf_data[8]} {araddr_m_inf_data[9]} {araddr_m_inf_data[10]} {araddr_m_inf_data[11]} {araddr_m_inf_data[12]} {araddr_m_inf_data[13]} {araddr_m_inf_data[14]} {araddr_m_inf_data[15]} {araddr_m_inf_data[16]} {araddr_m_inf_data[17]} {araddr_m_inf_data[18]} {araddr_m_inf_data[19]} {araddr_m_inf_data[20]} {araddr_m_inf_data[21]} {araddr_m_inf_data[22]} {araddr_m_inf_data[23]} {araddr_m_inf_data[24]} {araddr_m_inf_data[25]} {araddr_m_inf_data[26]} {araddr_m_inf_data[27]} {araddr_m_inf_data[28]} {araddr_m_inf_data[29]} {araddr_m_inf_data[30]} {araddr_m_inf_data[31]} {arburst_m_inf_data[0]} {arburst_m_inf_data[1]} {arid_m_inf_data[0]} {arid_m_inf_data[1]} {arid_m_inf_data[2]} {arid_m_inf_data[3]} {arlen_m_inf_data[0]} {arlen_m_inf_data[1]} {arlen_m_inf_data[2]} {arlen_m_inf_data[3]} {arlen_m_inf_data[4]} {arlen_m_inf_data[5]} {arlen_m_inf_data[6]} {arsize_m_inf_data[0]} {arsize_m_inf_data[1]} {arsize_m_inf_data[2]} arvalid_m_inf_data {awaddr_m_inf_inst_2[0]} {awaddr_m_inf_inst_2[1]} {awaddr_m_inf_inst_2[2]} {awaddr_m_inf_inst_2[3]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[5]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[7]} {awaddr_m_inf_inst_2[8]} {awaddr_m_inf_inst_2[9]} {awaddr_m_inf_inst_2[10]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[12]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[14]} {awaddr_m_inf_inst_2[15]} {awaddr_m_inf_inst_2[16]} {awaddr_m_inf_inst_2[17]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[19]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[21]} {awaddr_m_inf_inst_2[22]} {awaddr_m_inf_inst_2[23]} {awaddr_m_inf_inst_2[24]} {awaddr_m_inf_inst_2[25]} {awaddr_m_inf_inst_2[26]} {awaddr_m_inf_inst_2[27]} {awaddr_m_inf_inst_2[28]} {awaddr_m_inf_inst_2[29]} {awaddr_m_inf_inst_2[30]} {awaddr_m_inf_inst_2[31]} {awburst_m_inf_inst_2[0]} {awburst_m_inf_inst_2[1]} {awid_m_inf_inst_2[0]} {awid_m_inf_inst_2[1]} {awid_m_inf_inst_2[2]} {awid_m_inf_inst_2[3]} {awlen_m_inf_inst_2[0]} {awlen_m_inf_inst_2[1]} {awlen_m_inf_inst_2[2]} {awlen_m_inf_inst_2[3]} {awlen_m_inf_inst_2[4]} {awlen_m_inf_inst_2[5]} {awlen_m_inf_inst_2[6]} awready_m_inf_inst_2 {awsize_m_inf_inst_2[0]} {awsize_m_inf_inst_2[1]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_2 {bid_m_inf_inst_2[0]} {bid_m_inf_inst_2[1]} {bid_m_inf_inst_2[2]} {bid_m_inf_inst_2[3]} bready_m_inf_inst_2 {bresp_m_inf_inst_2[0]} {bresp_m_inf_inst_2[1]} bvalid_m_inf_inst_2 {wdata_m_inf_inst_2[0]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[2]} {wdata_m_inf_inst_2[3]} {wdata_m_inf_inst_2[4]} {wdata_m_inf_inst_2[5]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[7]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[9]} {wdata_m_inf_inst_2[10]} {wdata_m_inf_inst_2[11]} {wdata_m_inf_inst_2[12]} {wdata_m_inf_inst_2[13]} {wdata_m_inf_inst_2[14]} {wdata_m_inf_inst_2[15]} wlast_m_inf_inst_2 wready_m_inf_inst_2 wvalid_m_inf_inst_2}
+[06/22 10:04:24     29s] ### import design signature (6): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:04:24     29s] Selected [126] pin for spreading. Could not spread (4 out of 126) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+[06/22 10:04:24     29s] 
+[06/22 10:04:24     29s] Following pins are not spread:
+[06/22 10:04:24     29s]   araddr_m_inf_data[0]
+[06/22 10:04:24     29s]   araddr_m_inf_data[1]
+[06/22 10:04:24     29s]   wready_m_inf_inst_2
+[06/22 10:04:24     29s]   wvalid_m_inf_inst_2
+[06/22 10:04:24     29s] editPin : finished (cpu = 0:00:00.0 real = 0:00:01.0, mem = 2000.6M).
+[06/22 10:04:25     30s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:04:29     30s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:04:29     30s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:04:29     30s] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing 4.5 -pin {{araddr_m_inf_data[0]} {araddr_m_inf_data[1]} {araddr_m_inf_data[2]} {araddr_m_inf_data[3]} {araddr_m_inf_data[4]} {araddr_m_inf_data[5]} {araddr_m_inf_data[6]} {araddr_m_inf_data[7]} {araddr_m_inf_data[8]} {araddr_m_inf_data[9]} {araddr_m_inf_data[10]} {araddr_m_inf_data[11]} {araddr_m_inf_data[12]} {araddr_m_inf_data[13]} {araddr_m_inf_data[14]} {araddr_m_inf_data[15]} {araddr_m_inf_data[16]} {araddr_m_inf_data[17]} {araddr_m_inf_data[18]} {araddr_m_inf_data[19]} {araddr_m_inf_data[20]} {araddr_m_inf_data[21]} {araddr_m_inf_data[22]} {araddr_m_inf_data[23]} {araddr_m_inf_data[24]} {araddr_m_inf_data[25]} {araddr_m_inf_data[26]} {araddr_m_inf_data[27]} {araddr_m_inf_data[28]} {araddr_m_inf_data[29]} {araddr_m_inf_data[30]} {araddr_m_inf_data[31]} {arburst_m_inf_data[0]} {arburst_m_inf_data[1]} {arid_m_inf_data[0]} {arid_m_inf_data[1]} {arid_m_inf_data[2]} {arid_m_inf_data[3]} {arlen_m_inf_data[0]} {arlen_m_inf_data[1]} {arlen_m_inf_data[2]} {arlen_m_inf_data[3]} {arlen_m_inf_data[4]} {arlen_m_inf_data[5]} {arlen_m_inf_data[6]} {arsize_m_inf_data[0]} {arsize_m_inf_data[1]} {arsize_m_inf_data[2]} arvalid_m_inf_data {awaddr_m_inf_inst_2[0]} {awaddr_m_inf_inst_2[1]} {awaddr_m_inf_inst_2[2]} {awaddr_m_inf_inst_2[3]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[5]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[7]} {awaddr_m_inf_inst_2[8]} {awaddr_m_inf_inst_2[9]} {awaddr_m_inf_inst_2[10]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[12]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[14]} {awaddr_m_inf_inst_2[15]} {awaddr_m_inf_inst_2[16]} {awaddr_m_inf_inst_2[17]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[19]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[21]} {awaddr_m_inf_inst_2[22]} {awaddr_m_inf_inst_2[23]} {awaddr_m_inf_inst_2[24]} {awaddr_m_inf_inst_2[25]} {awaddr_m_inf_inst_2[26]} {awaddr_m_inf_inst_2[27]} {awaddr_m_inf_inst_2[28]} {awaddr_m_inf_inst_2[29]} {awaddr_m_inf_inst_2[30]} {awaddr_m_inf_inst_2[31]} {awburst_m_inf_inst_2[0]} {awburst_m_inf_inst_2[1]} {awid_m_inf_inst_2[0]} {awid_m_inf_inst_2[1]} {awid_m_inf_inst_2[2]} {awid_m_inf_inst_2[3]} {awlen_m_inf_inst_2[0]} {awlen_m_inf_inst_2[1]} {awlen_m_inf_inst_2[2]} {awlen_m_inf_inst_2[3]} {awlen_m_inf_inst_2[4]} {awlen_m_inf_inst_2[5]} {awlen_m_inf_inst_2[6]} awready_m_inf_inst_2 {awsize_m_inf_inst_2[0]} {awsize_m_inf_inst_2[1]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_2 {bid_m_inf_inst_2[0]} {bid_m_inf_inst_2[1]} {bid_m_inf_inst_2[2]} {bid_m_inf_inst_2[3]} bready_m_inf_inst_2 {bresp_m_inf_inst_2[0]} {bresp_m_inf_inst_2[1]} bvalid_m_inf_inst_2 {wdata_m_inf_inst_2[0]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[2]} {wdata_m_inf_inst_2[3]} {wdata_m_inf_inst_2[4]} {wdata_m_inf_inst_2[5]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[7]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[9]} {wdata_m_inf_inst_2[10]} {wdata_m_inf_inst_2[11]} {wdata_m_inf_inst_2[12]} {wdata_m_inf_inst_2[13]} {wdata_m_inf_inst_2[14]} {wdata_m_inf_inst_2[15]} wlast_m_inf_inst_2 wready_m_inf_inst_2 wvalid_m_inf_inst_2}
+[06/22 10:04:29     30s] ### import design signature (7): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:04:29     30s] Selected [126] pin for spreading. Could not spread (4 out of 126) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+[06/22 10:04:29     30s] 
+[06/22 10:04:29     30s] Following pins are not spread:
+[06/22 10:04:29     30s]   araddr_m_inf_data[0]
+[06/22 10:04:29     30s]   araddr_m_inf_data[1]
+[06/22 10:04:29     30s]   wready_m_inf_inst_2
+[06/22 10:04:29     30s]   wvalid_m_inf_inst_2
+[06/22 10:04:29     30s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2000.6M).
+[06/22 10:04:31     30s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:04:37     31s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:04:37     31s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:04:37     31s] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing 3.5 -pin {{araddr_m_inf_data[0]} {araddr_m_inf_data[1]} {araddr_m_inf_data[2]} {araddr_m_inf_data[3]} {araddr_m_inf_data[4]} {araddr_m_inf_data[5]} {araddr_m_inf_data[6]} {araddr_m_inf_data[7]} {araddr_m_inf_data[8]} {araddr_m_inf_data[9]} {araddr_m_inf_data[10]} {araddr_m_inf_data[11]} {araddr_m_inf_data[12]} {araddr_m_inf_data[13]} {araddr_m_inf_data[14]} {araddr_m_inf_data[15]} {araddr_m_inf_data[16]} {araddr_m_inf_data[17]} {araddr_m_inf_data[18]} {araddr_m_inf_data[19]} {araddr_m_inf_data[20]} {araddr_m_inf_data[21]} {araddr_m_inf_data[22]} {araddr_m_inf_data[23]} {araddr_m_inf_data[24]} {araddr_m_inf_data[25]} {araddr_m_inf_data[26]} {araddr_m_inf_data[27]} {araddr_m_inf_data[28]} {araddr_m_inf_data[29]} {araddr_m_inf_data[30]} {araddr_m_inf_data[31]} {arburst_m_inf_data[0]} {arburst_m_inf_data[1]} {arid_m_inf_data[0]} {arid_m_inf_data[1]} {arid_m_inf_data[2]} {arid_m_inf_data[3]} {arlen_m_inf_data[0]} {arlen_m_inf_data[1]} {arlen_m_inf_data[2]} {arlen_m_inf_data[3]} {arlen_m_inf_data[4]} {arlen_m_inf_data[5]} {arlen_m_inf_data[6]} {arsize_m_inf_data[0]} {arsize_m_inf_data[1]} {arsize_m_inf_data[2]} arvalid_m_inf_data {awaddr_m_inf_inst_2[0]} {awaddr_m_inf_inst_2[1]} {awaddr_m_inf_inst_2[2]} {awaddr_m_inf_inst_2[3]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[5]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[7]} {awaddr_m_inf_inst_2[8]} {awaddr_m_inf_inst_2[9]} {awaddr_m_inf_inst_2[10]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[12]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[14]} {awaddr_m_inf_inst_2[15]} {awaddr_m_inf_inst_2[16]} {awaddr_m_inf_inst_2[17]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[19]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[21]} {awaddr_m_inf_inst_2[22]} {awaddr_m_inf_inst_2[23]} {awaddr_m_inf_inst_2[24]} {awaddr_m_inf_inst_2[25]} {awaddr_m_inf_inst_2[26]} {awaddr_m_inf_inst_2[27]} {awaddr_m_inf_inst_2[28]} {awaddr_m_inf_inst_2[29]} {awaddr_m_inf_inst_2[30]} {awaddr_m_inf_inst_2[31]} {awburst_m_inf_inst_2[0]} {awburst_m_inf_inst_2[1]} {awid_m_inf_inst_2[0]} {awid_m_inf_inst_2[1]} {awid_m_inf_inst_2[2]} {awid_m_inf_inst_2[3]} {awlen_m_inf_inst_2[0]} {awlen_m_inf_inst_2[1]} {awlen_m_inf_inst_2[2]} {awlen_m_inf_inst_2[3]} {awlen_m_inf_inst_2[4]} {awlen_m_inf_inst_2[5]} {awlen_m_inf_inst_2[6]} awready_m_inf_inst_2 {awsize_m_inf_inst_2[0]} {awsize_m_inf_inst_2[1]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_2 {bid_m_inf_inst_2[0]} {bid_m_inf_inst_2[1]} {bid_m_inf_inst_2[2]} {bid_m_inf_inst_2[3]} bready_m_inf_inst_2 {bresp_m_inf_inst_2[0]} {bresp_m_inf_inst_2[1]} bvalid_m_inf_inst_2 {wdata_m_inf_inst_2[0]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[2]} {wdata_m_inf_inst_2[3]} {wdata_m_inf_inst_2[4]} {wdata_m_inf_inst_2[5]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[7]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[9]} {wdata_m_inf_inst_2[10]} {wdata_m_inf_inst_2[11]} {wdata_m_inf_inst_2[12]} {wdata_m_inf_inst_2[13]} {wdata_m_inf_inst_2[14]} {wdata_m_inf_inst_2[15]} wlast_m_inf_inst_2 wready_m_inf_inst_2 wvalid_m_inf_inst_2}
+[06/22 10:04:37     31s] ### import design signature (8): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:04:37     31s] Successfully spread [126] pins.
+[06/22 10:04:37     31s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2000.6M).
+[06/22 10:04:37     31s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:04:42     31s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:04:42     31s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:04:42     31s] <CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing -4.6 -pin {{araddr_m_inf_data[0]} {araddr_m_inf_data[1]} {araddr_m_inf_data[2]} {araddr_m_inf_data[3]} {araddr_m_inf_data[4]} {araddr_m_inf_data[5]} {araddr_m_inf_data[6]} {araddr_m_inf_data[7]} {araddr_m_inf_data[8]} {araddr_m_inf_data[9]} {araddr_m_inf_data[10]} {araddr_m_inf_data[11]} {araddr_m_inf_data[12]} {araddr_m_inf_data[13]} {araddr_m_inf_data[14]} {araddr_m_inf_data[15]} {araddr_m_inf_data[16]} {araddr_m_inf_data[17]} {araddr_m_inf_data[18]} {araddr_m_inf_data[19]} {araddr_m_inf_data[20]} {araddr_m_inf_data[21]} {araddr_m_inf_data[22]} {araddr_m_inf_data[23]} {araddr_m_inf_data[24]} {araddr_m_inf_data[25]} {araddr_m_inf_data[26]} {araddr_m_inf_data[27]} {araddr_m_inf_data[28]} {araddr_m_inf_data[29]} {araddr_m_inf_data[30]} {araddr_m_inf_data[31]} {arburst_m_inf_data[0]} {arburst_m_inf_data[1]} {arid_m_inf_data[0]} {arid_m_inf_data[1]} {arid_m_inf_data[2]} {arid_m_inf_data[3]} {arlen_m_inf_data[0]} {arlen_m_inf_data[1]} {arlen_m_inf_data[2]} {arlen_m_inf_data[3]} {arlen_m_inf_data[4]} {arlen_m_inf_data[5]} {arlen_m_inf_data[6]} {arsize_m_inf_data[0]} {arsize_m_inf_data[1]} {arsize_m_inf_data[2]} arvalid_m_inf_data {awaddr_m_inf_inst_2[0]} {awaddr_m_inf_inst_2[1]} {awaddr_m_inf_inst_2[2]} {awaddr_m_inf_inst_2[3]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[5]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[7]} {awaddr_m_inf_inst_2[8]} {awaddr_m_inf_inst_2[9]} {awaddr_m_inf_inst_2[10]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[12]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[14]} {awaddr_m_inf_inst_2[15]} {awaddr_m_inf_inst_2[16]} {awaddr_m_inf_inst_2[17]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[19]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[21]} {awaddr_m_inf_inst_2[22]} {awaddr_m_inf_inst_2[23]} {awaddr_m_inf_inst_2[24]} {awaddr_m_inf_inst_2[25]} {awaddr_m_inf_inst_2[26]} {awaddr_m_inf_inst_2[27]} {awaddr_m_inf_inst_2[28]} {awaddr_m_inf_inst_2[29]} {awaddr_m_inf_inst_2[30]} {awaddr_m_inf_inst_2[31]} {awburst_m_inf_inst_2[0]} {awburst_m_inf_inst_2[1]} {awid_m_inf_inst_2[0]} {awid_m_inf_inst_2[1]} {awid_m_inf_inst_2[2]} {awid_m_inf_inst_2[3]} {awlen_m_inf_inst_2[0]} {awlen_m_inf_inst_2[1]} {awlen_m_inf_inst_2[2]} {awlen_m_inf_inst_2[3]} {awlen_m_inf_inst_2[4]} {awlen_m_inf_inst_2[5]} {awlen_m_inf_inst_2[6]} awready_m_inf_inst_2 {awsize_m_inf_inst_2[0]} {awsize_m_inf_inst_2[1]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_2 {bid_m_inf_inst_2[0]} {bid_m_inf_inst_2[1]} {bid_m_inf_inst_2[2]} {bid_m_inf_inst_2[3]} bready_m_inf_inst_2 {bresp_m_inf_inst_2[0]} {bresp_m_inf_inst_2[1]} bvalid_m_inf_inst_2 {wdata_m_inf_inst_2[0]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[2]} {wdata_m_inf_inst_2[3]} {wdata_m_inf_inst_2[4]} {wdata_m_inf_inst_2[5]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[7]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[9]} {wdata_m_inf_inst_2[10]} {wdata_m_inf_inst_2[11]} {wdata_m_inf_inst_2[12]} {wdata_m_inf_inst_2[13]} {wdata_m_inf_inst_2[14]} {wdata_m_inf_inst_2[15]} wlast_m_inf_inst_2 wready_m_inf_inst_2 wvalid_m_inf_inst_2}
+[06/22 10:04:42     31s] **ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:04:46     31s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:04:46     31s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:04:46     31s] <CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing 4.6 -pin {{araddr_m_inf_data[0]} {araddr_m_inf_data[1]} {araddr_m_inf_data[2]} {araddr_m_inf_data[3]} {araddr_m_inf_data[4]} {araddr_m_inf_data[5]} {araddr_m_inf_data[6]} {araddr_m_inf_data[7]} {araddr_m_inf_data[8]} {araddr_m_inf_data[9]} {araddr_m_inf_data[10]} {araddr_m_inf_data[11]} {araddr_m_inf_data[12]} {araddr_m_inf_data[13]} {araddr_m_inf_data[14]} {araddr_m_inf_data[15]} {araddr_m_inf_data[16]} {araddr_m_inf_data[17]} {araddr_m_inf_data[18]} {araddr_m_inf_data[19]} {araddr_m_inf_data[20]} {araddr_m_inf_data[21]} {araddr_m_inf_data[22]} {araddr_m_inf_data[23]} {araddr_m_inf_data[24]} {araddr_m_inf_data[25]} {araddr_m_inf_data[26]} {araddr_m_inf_data[27]} {araddr_m_inf_data[28]} {araddr_m_inf_data[29]} {araddr_m_inf_data[30]} {araddr_m_inf_data[31]} {arburst_m_inf_data[0]} {arburst_m_inf_data[1]} {arid_m_inf_data[0]} {arid_m_inf_data[1]} {arid_m_inf_data[2]} {arid_m_inf_data[3]} {arlen_m_inf_data[0]} {arlen_m_inf_data[1]} {arlen_m_inf_data[2]} {arlen_m_inf_data[3]} {arlen_m_inf_data[4]} {arlen_m_inf_data[5]} {arlen_m_inf_data[6]} {arsize_m_inf_data[0]} {arsize_m_inf_data[1]} {arsize_m_inf_data[2]} arvalid_m_inf_data {awaddr_m_inf_inst_2[0]} {awaddr_m_inf_inst_2[1]} {awaddr_m_inf_inst_2[2]} {awaddr_m_inf_inst_2[3]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[5]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[7]} {awaddr_m_inf_inst_2[8]} {awaddr_m_inf_inst_2[9]} {awaddr_m_inf_inst_2[10]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[12]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[14]} {awaddr_m_inf_inst_2[15]} {awaddr_m_inf_inst_2[16]} {awaddr_m_inf_inst_2[17]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[19]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[21]} {awaddr_m_inf_inst_2[22]} {awaddr_m_inf_inst_2[23]} {awaddr_m_inf_inst_2[24]} {awaddr_m_inf_inst_2[25]} {awaddr_m_inf_inst_2[26]} {awaddr_m_inf_inst_2[27]} {awaddr_m_inf_inst_2[28]} {awaddr_m_inf_inst_2[29]} {awaddr_m_inf_inst_2[30]} {awaddr_m_inf_inst_2[31]} {awburst_m_inf_inst_2[0]} {awburst_m_inf_inst_2[1]} {awid_m_inf_inst_2[0]} {awid_m_inf_inst_2[1]} {awid_m_inf_inst_2[2]} {awid_m_inf_inst_2[3]} {awlen_m_inf_inst_2[0]} {awlen_m_inf_inst_2[1]} {awlen_m_inf_inst_2[2]} {awlen_m_inf_inst_2[3]} {awlen_m_inf_inst_2[4]} {awlen_m_inf_inst_2[5]} {awlen_m_inf_inst_2[6]} awready_m_inf_inst_2 {awsize_m_inf_inst_2[0]} {awsize_m_inf_inst_2[1]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_2 {bid_m_inf_inst_2[0]} {bid_m_inf_inst_2[1]} {bid_m_inf_inst_2[2]} {bid_m_inf_inst_2[3]} bready_m_inf_inst_2 {bresp_m_inf_inst_2[0]} {bresp_m_inf_inst_2[1]} bvalid_m_inf_inst_2 {wdata_m_inf_inst_2[0]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[2]} {wdata_m_inf_inst_2[3]} {wdata_m_inf_inst_2[4]} {wdata_m_inf_inst_2[5]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[7]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[9]} {wdata_m_inf_inst_2[10]} {wdata_m_inf_inst_2[11]} {wdata_m_inf_inst_2[12]} {wdata_m_inf_inst_2[13]} {wdata_m_inf_inst_2[14]} {wdata_m_inf_inst_2[15]} wlast_m_inf_inst_2 wready_m_inf_inst_2 wvalid_m_inf_inst_2}
+[06/22 10:04:46     31s] ### import design signature (9): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:04:46     31s] Selected [126] pin for spreading. Could not spread (4 out of 126) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+[06/22 10:04:46     31s] 
+[06/22 10:04:46     31s] Following pins are not spread:
+[06/22 10:04:46     31s]   araddr_m_inf_data[0]
+[06/22 10:04:46     31s]   araddr_m_inf_data[1]
+[06/22 10:04:46     31s]   wready_m_inf_inst_2
+[06/22 10:04:46     31s]   wvalid_m_inf_inst_2
+[06/22 10:04:46     31s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1998.6M).
+[06/22 10:04:48     32s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:04:51     32s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:04:51     32s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:04:51     32s] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing 4 -pin {{araddr_m_inf_data[0]} {araddr_m_inf_data[1]} {araddr_m_inf_data[2]} {araddr_m_inf_data[3]} {araddr_m_inf_data[4]} {araddr_m_inf_data[5]} {araddr_m_inf_data[6]} {araddr_m_inf_data[7]} {araddr_m_inf_data[8]} {araddr_m_inf_data[9]} {araddr_m_inf_data[10]} {araddr_m_inf_data[11]} {araddr_m_inf_data[12]} {araddr_m_inf_data[13]} {araddr_m_inf_data[14]} {araddr_m_inf_data[15]} {araddr_m_inf_data[16]} {araddr_m_inf_data[17]} {araddr_m_inf_data[18]} {araddr_m_inf_data[19]} {araddr_m_inf_data[20]} {araddr_m_inf_data[21]} {araddr_m_inf_data[22]} {araddr_m_inf_data[23]} {araddr_m_inf_data[24]} {araddr_m_inf_data[25]} {araddr_m_inf_data[26]} {araddr_m_inf_data[27]} {araddr_m_inf_data[28]} {araddr_m_inf_data[29]} {araddr_m_inf_data[30]} {araddr_m_inf_data[31]} {arburst_m_inf_data[0]} {arburst_m_inf_data[1]} {arid_m_inf_data[0]} {arid_m_inf_data[1]} {arid_m_inf_data[2]} {arid_m_inf_data[3]} {arlen_m_inf_data[0]} {arlen_m_inf_data[1]} {arlen_m_inf_data[2]} {arlen_m_inf_data[3]} {arlen_m_inf_data[4]} {arlen_m_inf_data[5]} {arlen_m_inf_data[6]} {arsize_m_inf_data[0]} {arsize_m_inf_data[1]} {arsize_m_inf_data[2]} arvalid_m_inf_data {awaddr_m_inf_inst_2[0]} {awaddr_m_inf_inst_2[1]} {awaddr_m_inf_inst_2[2]} {awaddr_m_inf_inst_2[3]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[5]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[7]} {awaddr_m_inf_inst_2[8]} {awaddr_m_inf_inst_2[9]} {awaddr_m_inf_inst_2[10]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[12]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[14]} {awaddr_m_inf_inst_2[15]} {awaddr_m_inf_inst_2[16]} {awaddr_m_inf_inst_2[17]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[19]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[21]} {awaddr_m_inf_inst_2[22]} {awaddr_m_inf_inst_2[23]} {awaddr_m_inf_inst_2[24]} {awaddr_m_inf_inst_2[25]} {awaddr_m_inf_inst_2[26]} {awaddr_m_inf_inst_2[27]} {awaddr_m_inf_inst_2[28]} {awaddr_m_inf_inst_2[29]} {awaddr_m_inf_inst_2[30]} {awaddr_m_inf_inst_2[31]} {awburst_m_inf_inst_2[0]} {awburst_m_inf_inst_2[1]} {awid_m_inf_inst_2[0]} {awid_m_inf_inst_2[1]} {awid_m_inf_inst_2[2]} {awid_m_inf_inst_2[3]} {awlen_m_inf_inst_2[0]} {awlen_m_inf_inst_2[1]} {awlen_m_inf_inst_2[2]} {awlen_m_inf_inst_2[3]} {awlen_m_inf_inst_2[4]} {awlen_m_inf_inst_2[5]} {awlen_m_inf_inst_2[6]} awready_m_inf_inst_2 {awsize_m_inf_inst_2[0]} {awsize_m_inf_inst_2[1]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_2 {bid_m_inf_inst_2[0]} {bid_m_inf_inst_2[1]} {bid_m_inf_inst_2[2]} {bid_m_inf_inst_2[3]} bready_m_inf_inst_2 {bresp_m_inf_inst_2[0]} {bresp_m_inf_inst_2[1]} bvalid_m_inf_inst_2 {wdata_m_inf_inst_2[0]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[2]} {wdata_m_inf_inst_2[3]} {wdata_m_inf_inst_2[4]} {wdata_m_inf_inst_2[5]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[7]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[9]} {wdata_m_inf_inst_2[10]} {wdata_m_inf_inst_2[11]} {wdata_m_inf_inst_2[12]} {wdata_m_inf_inst_2[13]} {wdata_m_inf_inst_2[14]} {wdata_m_inf_inst_2[15]} wlast_m_inf_inst_2 wready_m_inf_inst_2 wvalid_m_inf_inst_2}
+[06/22 10:04:51     32s] ### import design signature (10): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:04:51     32s] Successfully spread [126] pins.
+[06/22 10:04:51     32s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2000.9M).
+[06/22 10:04:51     32s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:05:05     33s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:05:05     33s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:05:05     33s] <CMD> editPin -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 1 -spreadType center -spacing 5 -pin {{araddr_m_inf_inst_2[0]} {araddr_m_inf_inst_2[1]} {araddr_m_inf_inst_2[2]} {araddr_m_inf_inst_2[3]} {araddr_m_inf_inst_2[4]} {araddr_m_inf_inst_2[5]} {araddr_m_inf_inst_2[6]} {araddr_m_inf_inst_2[7]} {araddr_m_inf_inst_2[8]} {araddr_m_inf_inst_2[9]} {araddr_m_inf_inst_2[10]} {araddr_m_inf_inst_2[11]} {araddr_m_inf_inst_2[12]} {araddr_m_inf_inst_2[13]} {araddr_m_inf_inst_2[14]} {araddr_m_inf_inst_2[15]} {araddr_m_inf_inst_2[16]} {araddr_m_inf_inst_2[17]} {araddr_m_inf_inst_2[18]} {araddr_m_inf_inst_2[19]} {araddr_m_inf_inst_2[20]} {araddr_m_inf_inst_2[21]} {araddr_m_inf_inst_2[22]} {araddr_m_inf_inst_2[23]} {araddr_m_inf_inst_2[24]} {araddr_m_inf_inst_2[25]} {araddr_m_inf_inst_2[26]} {araddr_m_inf_inst_2[27]} {araddr_m_inf_inst_2[28]} {araddr_m_inf_inst_2[29]} {araddr_m_inf_inst_2[30]} {araddr_m_inf_inst_2[31]} {arburst_m_inf_inst_2[0]} {arburst_m_inf_inst_2[1]} {arid_m_inf_inst_2[0]} {arid_m_inf_inst_2[1]} {arid_m_inf_inst_2[2]} {arid_m_inf_inst_2[3]} {arlen_m_inf_inst_2[0]} {arlen_m_inf_inst_2[1]} {arlen_m_inf_inst_2[2]} {arlen_m_inf_inst_2[3]} {arlen_m_inf_inst_2[4]} {arlen_m_inf_inst_2[5]} {arlen_m_inf_inst_2[6]} arready_m_inf_data arready_m_inf_inst_2 {arsize_m_inf_inst_2[0]} {arsize_m_inf_inst_2[1]} {arsize_m_inf_inst_2[2]} arvalid_m_inf_inst_2 {awaddr_m_inf_inst_1[0]} {awaddr_m_inf_inst_1[1]} {awaddr_m_inf_inst_1[2]} {awaddr_m_inf_inst_1[3]} {awaddr_m_inf_inst_1[4]} {awaddr_m_inf_inst_1[5]} {awaddr_m_inf_inst_1[6]} {awaddr_m_inf_inst_1[7]} {awaddr_m_inf_inst_1[8]} {awaddr_m_inf_inst_1[9]} {awaddr_m_inf_inst_1[10]} {awaddr_m_inf_inst_1[11]} {awaddr_m_inf_inst_1[12]} {awaddr_m_inf_inst_1[13]} {awaddr_m_inf_inst_1[14]} {awaddr_m_inf_inst_1[15]} {awaddr_m_inf_inst_1[16]} {awaddr_m_inf_inst_1[17]} {awaddr_m_inf_inst_1[18]} {awaddr_m_inf_inst_1[19]} {awaddr_m_inf_inst_1[20]} {awaddr_m_inf_inst_1[21]} {awaddr_m_inf_inst_1[22]} {awaddr_m_inf_inst_1[23]} {awaddr_m_inf_inst_1[24]} {awaddr_m_inf_inst_1[25]} {awaddr_m_inf_inst_1[26]} {awaddr_m_inf_inst_1[27]} {awaddr_m_inf_inst_1[28]} {awaddr_m_inf_inst_1[29]} {awaddr_m_inf_inst_1[30]} {awaddr_m_inf_inst_1[31]} {awburst_m_inf_inst_1[0]} {awburst_m_inf_inst_1[1]} {awid_m_inf_inst_1[0]} {awid_m_inf_inst_1[1]} {awid_m_inf_inst_1[2]} {awid_m_inf_inst_1[3]} {awlen_m_inf_inst_1[0]} {awlen_m_inf_inst_1[1]} {awlen_m_inf_inst_1[2]} {awlen_m_inf_inst_1[3]} {awlen_m_inf_inst_1[4]} {awlen_m_inf_inst_1[5]} {awlen_m_inf_inst_1[6]} awready_m_inf_inst_1 {awsize_m_inf_inst_1[0]} {awsize_m_inf_inst_1[1]} {awsize_m_inf_inst_1[2]} awvalid_m_inf_inst_1 {rdata_m_inf_inst_2[0]} {rdata_m_inf_inst_2[1]} {rdata_m_inf_inst_2[2]} {rdata_m_inf_inst_2[3]} {rdata_m_inf_inst_2[4]} {rdata_m_inf_inst_2[5]} {rdata_m_inf_inst_2[6]} {rdata_m_inf_inst_2[7]} {rdata_m_inf_inst_2[8]} {rdata_m_inf_inst_2[9]} {rdata_m_inf_inst_2[10]} {rdata_m_inf_inst_2[11]} {rdata_m_inf_inst_2[12]} {rdata_m_inf_inst_2[13]} {rdata_m_inf_inst_2[14]} {rdata_m_inf_inst_2[15]} {rid_m_inf_inst_2[0]} {rid_m_inf_inst_2[1]} {rid_m_inf_inst_2[2]} {rid_m_inf_inst_2[3]} rlast_m_inf_inst_2 rready_m_inf_inst_2 {rresp_m_inf_inst_2[0]} {rresp_m_inf_inst_2[1]} rvalid_m_inf_inst_2}
+[06/22 10:05:05     33s] ### import design signature (11): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/22 10:05:05     33s] Successfully spread [126] pins.
+[06/22 10:05:05     33s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1999.0M).
+[06/22 10:05:05     33s] <CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:05:12     34s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[06/22 10:05:12     34s] <CMD> setPinAssignMode -pinEditInBatch true
+[06/22 10:05:12     34s] <CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 1 -spreadType center -spacing -5.04 -pin {{araddr_m_inf_inst_2[0]} {araddr_m_inf_inst_2[1]} {araddr_m_inf_inst_2[2]} {araddr_m_inf_inst_2[3]} {araddr_m_inf_inst_2[4]} {araddr_m_inf_inst_2[5]} {araddr_m_inf_inst_2[6]} {araddr_m_inf_inst_2[7]} {araddr_m_inf_inst_2[8]} {araddr_m_inf_inst_2[9]} {araddr_m_inf_inst_2[10]} {araddr_m_inf_inst_2[11]} {araddr_m_inf_inst_2[12]} {araddr_m_inf_inst_2[13]} {araddr_m_inf_inst_2[14]} {araddr_m_inf_inst_2[15]} {araddr_m_inf_inst_2[16]} {araddr_m_inf_inst_2[17]} {araddr_m_inf_inst_2[18]} {araddr_m_inf_inst_2[19]} {araddr_m_inf_inst_2[20]} {araddr_m_inf_inst_2[21]} {araddr_m_inf_inst_2[22]} {araddr_m_inf_inst_2[23]} {araddr_m_inf_inst_2[24]} {araddr_m_inf_inst_2[25]} {araddr_m_inf_inst_2[26]} {araddr_m_inf_inst_2[27]} {araddr_m_inf_inst_2[28]} {araddr_m_inf_inst_2[29]} {araddr_m_inf_inst_2[30]} {araddr_m_inf_inst_2[31]} {arburst_m_inf_inst_2[0]} {arburst_m_inf_inst_2[1]} {arid_m_inf_inst_2[0]} {arid_m_inf_inst_2[1]} {arid_m_inf_inst_2[2]} {arid_m_inf_inst_2[3]} {arlen_m_inf_inst_2[0]} {arlen_m_inf_inst_2[1]} {arlen_m_inf_inst_2[2]} {arlen_m_inf_inst_2[3]} {arlen_m_inf_inst_2[4]} {arlen_m_inf_inst_2[5]} {arlen_m_inf_inst_2[6]} arready_m_inf_data arready_m_inf_inst_2 {arsize_m_inf_inst_2[0]} {arsize_m_inf_inst_2[1]} {arsize_m_inf_inst_2[2]} arvalid_m_inf_inst_2 {awaddr_m_inf_inst_1[0]} {awaddr_m_inf_inst_1[1]} {awaddr_m_inf_inst_1[2]} {awaddr_m_inf_inst_1[3]} {awaddr_m_inf_inst_1[4]} {awaddr_m_inf_inst_1[5]} {awaddr_m_inf_inst_1[6]} {awaddr_m_inf_inst_1[7]} {awaddr_m_inf_inst_1[8]} {awaddr_m_inf_inst_1[9]} {awaddr_m_inf_inst_1[10]} {awaddr_m_inf_inst_1[11]} {awaddr_m_inf_inst_1[12]} {awaddr_m_inf_inst_1[13]} {awaddr_m_inf_inst_1[14]} {awaddr_m_inf_inst_1[15]} {awaddr_m_inf_inst_1[16]} {awaddr_m_inf_inst_1[17]} {awaddr_m_inf_inst_1[18]} {awaddr_m_inf_inst_1[19]} {awaddr_m_inf_inst_1[20]} {awaddr_m_inf_inst_1[21]} {awaddr_m_inf_inst_1[22]} {awaddr_m_inf_inst_1[23]} {awaddr_m_inf_inst_1[24]} {awaddr_m_inf_inst_1[25]} {awaddr_m_inf_inst_1[26]} {awaddr_m_inf_inst_1[27]} {awaddr_m_inf_inst_1[28]} {awaddr_m_inf_inst_1[29]} {awaddr_m_inf_inst_1[30]} {awaddr_m_inf_inst_1[31]} {awburst_m_inf_inst_1[0]} {awburst_m_inf_inst_1[1]} {awid_m_inf_inst_1[0]} {awid_m_inf_inst_1[1]} {awid_m_inf_inst_1[2]} {awid_m_inf_inst_1[3]} {awlen_m_inf_inst_1[0]} {awlen_m_inf_inst_1[1]} {awlen_m_inf_inst_1[2]} {awlen_m_inf_inst_1[3]} {awlen_m_inf_inst_1[4]} {awlen_m_inf_inst_1[5]} {awlen_m_inf_inst_1[6]} awready_m_inf_inst_1 {awsize_m_inf_inst_1[0]} {awsize_m_inf_inst_1[1]} {awsize_m_inf_inst_1[2]} awvalid_m_inf_inst_1 {rdata_m_inf_inst_2[0]} {rdata_m_inf_inst_2[1]} {rdata_m_inf_inst_2[2]} {rdata_m_inf_inst_2[3]} {rdata_m_inf_inst_2[4]} {rdata_m_inf_inst_2[5]} {rdata_m_inf_inst_2[6]} {rdata_m_inf_inst_2[7]} {rdata_m_inf_inst_2[8]} {rdata_m_inf_inst_2[9]} {rdata_m_inf_inst_2[10]} {rdata_m_inf_inst_2[11]} {rdata_m_inf_inst_2[12]} {rdata_m_inf_inst_2[13]} {rdata_m_inf_inst_2[14]} {rdata_m_inf_inst_2[15]} {rid_m_inf_inst_2[0]} {rid_m_inf_inst_2[1]} {rid_m_inf_inst_2[2]} {rid_m_inf_inst_2[3]} rlast_m_inf_inst_2 rready_m_inf_inst_2 {rresp_m_inf_inst_2[0]} {rresp_m_inf_inst_2[1]} rvalid_m_inf_inst_2}
+[06/22 10:05:12     34s] **ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+[06/22 10:05:27     35s] <CMD> saveDesign CHIP_floorplan.inn
+[06/22 10:05:27     35s] #% Begin save design ... (date=06/22 10:05:27, mem=1202.1M)
+[06/22 10:05:27     35s] % Begin Save ccopt configuration ... (date=06/22 10:05:27, mem=1205.1M)
+[06/22 10:05:27     35s] % End Save ccopt configuration ... (date=06/22 10:05:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=1206.0M, current mem=1206.0M)
+[06/22 10:05:27     35s] % Begin Save netlist data ... (date=06/22 10:05:27, mem=1206.0M)
+[06/22 10:05:27     35s] Writing Binary DB to CHIP_floorplan.inn.dat.tmp/vbin/CHIP.v.bin in multi-threaded mode...
+[06/22 10:05:27     35s] % End Save netlist data ... (date=06/22 10:05:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=1218.6M, current mem=1209.3M)
+[06/22 10:05:27     35s] Saving symbol-table file in separate thread ...
+[06/22 10:05:27     35s] Saving congestion map file in separate thread ...
+[06/22 10:05:27     35s] Saving congestion map file CHIP_floorplan.inn.dat.tmp/CHIP.route.congmap.gz ...
+[06/22 10:05:27     35s] % Begin Save AAE data ... (date=06/22 10:05:27, mem=1210.4M)
+[06/22 10:05:27     35s] Saving AAE Data ...
+[06/22 10:05:27     35s] % End Save AAE data ... (date=06/22 10:05:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=1210.4M, current mem=1210.4M)
+[06/22 10:05:27     35s] Saving preference file CHIP_floorplan.inn.dat.tmp/gui.pref.tcl ...
+[06/22 10:05:27     35s] Saving mode setting ...
+[06/22 10:05:27     35s] Saving global file ...
+[06/22 10:05:28     35s] Saving Drc markers ...
+[06/22 10:05:28     35s] ... No Drc file written since there is no markers found.
+[06/22 10:05:28     35s] Saving special route data file in separate thread ...
+[06/22 10:05:28     35s] Saving PG Conn data in separate thread ...
+[06/22 10:05:28     35s] Saving placement file in separate thread ...
+[06/22 10:05:28     35s] Saving route file in separate thread ...
+[06/22 10:05:28     35s] Saving property file in separate thread ...
+[06/22 10:05:28     35s] TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+[06/22 10:05:28     35s] TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
+[06/22 10:05:28     35s] ** Saving stdCellPlacement_binary (version# 2) ...
+[06/22 10:05:28     35s] Save Adaptive View Pruning View Names to Binary file
+[06/22 10:05:28     35s] Saving property file CHIP_floorplan.inn.dat.tmp/CHIP.prop
+[06/22 10:05:28     35s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2088.9M) ***
+[06/22 10:05:28     35s] TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+[06/22 10:05:28     35s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2088.9M) ***
+[06/22 10:05:28     35s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2088.8M) ***
+[06/22 10:05:28     35s] TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
+[06/22 10:05:28     35s] TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
+[06/22 10:05:28     36s] TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+[06/22 10:05:28     36s] TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[06/22 10:05:28     36s] % Begin Save power constraints data ... (date=06/22 10:05:28, mem=1220.1M)
+[06/22 10:05:28     36s] % End Save power constraints data ... (date=06/22 10:05:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=1220.2M, current mem=1220.2M)
+[06/22 10:05:29     36s] Generated self-contained design CHIP_floorplan.inn.dat.tmp
+[06/22 10:05:29     36s] #% End save design ... (date=06/22 10:05:29, total cpu=0:00:00.5, real=0:00:02.0, peak res=1247.5M, current mem=1222.4M)
+[06/22 10:05:29     36s] *** Message Summary: 0 warning(s), 0 error(s)
+[06/22 10:05:29     36s] 
+[06/22 10:05:41     37s] 
+[06/22 10:05:41     37s] *** Memory Usage v#1 (Current mem = 2082.398M, initial mem = 284.375M) ***
+[06/22 10:05:41     37s] 
+[06/22 10:05:41     37s] *** Summary of all messages that are not suppressed in this session:
+[06/22 10:05:41     37s] Severity  ID               Count  Summary                                  
+[06/22 10:05:41     37s] WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+[06/22 10:05:41     37s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[06/22 10:05:41     37s] WARNING   IMPLF-200           33  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/22 10:05:41     37s] WARNING   IMPLF-201           16  Pin '%s' in macro '%s' has no ANTENNADIF...
+[06/22 10:05:41     37s] WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+[06/22 10:05:41     37s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[06/22 10:05:41     37s] WARNING   IMPFP-3961          16  The techSite '%s' has no related standar...
+[06/22 10:05:41     37s] ERROR     IMPPTN-1668          2  Specifying negative spacing value to spr...
+[06/22 10:05:41     37s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[06/22 10:05:41     37s] WARNING   IMPVL-159          766  Pin '%s' of cell '%s' is defined in LEF ...
+[06/22 10:05:41     37s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[06/22 10:05:41     37s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[06/22 10:05:41     37s] WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+[06/22 10:05:41     37s] *** Message Summary: 1242 warning(s), 2 error(s)
+[06/22 10:05:41     37s] 
+[06/22 10:05:41     37s] --- Ending "Innovus" (totcpu=0:00:37.2, real=0:03:42, mem=2082.4M) ---

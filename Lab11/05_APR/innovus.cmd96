@@ -1,0 +1,97 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue May 26 10:20:11 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP_preCTS.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+update_constraint_mode -name func_mode -sdc_files CHIP_cts.sdc
+set_ccopt_property update_io_latency false
+create_ccopt_clock_tree_spec -file CHIP.CCOPT.spec -keep_all_sdc_clocks
+get_ccopt_clock_trees
+ccopt_check_and_flatten_ilms_no_restore
+set_ccopt_property cts_is_sdc_clock_root -pin clk true
+set_ccopt_property case_analysis -pin I_CLK/PD 0
+set_ccopt_property case_analysis -pin I_CLK/PU 0
+set_ccopt_property case_analysis -pin I_CLK/SMT 0
+create_ccopt_clock_tree -name clk -source clk -no_skew_group
+set_ccopt_property clock_period -pin clk 10.6
+create_ccopt_skew_group -name clk/func_mode -sources clk -auto_sinks
+set_ccopt_property include_source_latency -skew_group clk/func_mode true
+set_ccopt_property extracted_from_clock_name -skew_group clk/func_mode clk
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/func_mode func_mode
+set_ccopt_property extracted_from_delay_corners -skew_group clk/func_mode {Delay_Corner_max Delay_Conrner_min}
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+ccopt_design
+saveDesign ./DBS/CHIP_CTS.inn
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_postCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix CHIP_postCTS -outDir timingReports
+addIoFiller -cell EMPTY16D -prefix IOFILLER
+addIoFiller -cell EMPTY8D -prefix IOFILLER
+addIoFiller -cell EMPTY4D -prefix IOFILLER
+addIoFiller -cell EMPTY2D -prefix IOFILLER
+addIoFiller -cell EMPTY1D -prefix IOFILLER -fillAnyGap
+setNanoRouteMode -quiet -routeInsertAntennaDiode 1
+setNanoRouteMode -quiet -routeAntennaCellName ANTENNA
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithEco 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeTdrEffort 10
+setNanoRouteMode -quiet -routeTopRoutingLayer 6
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail -viaOpt -wireOpt
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+zoomBox 411.43100 891.68400 1343.98500 1813.93400
+zoomBox 618.05200 1309.44500 1031.83200 1718.65300
+zoomBox 710.29600 1494.07500 893.89300 1675.64300
+zoomBox 740.98500 1553.72900 853.73600 1665.23400
+zoomBox 770.67000 1607.55700 820.69900 1657.03300
+zoomBox 781.32700 1627.67700 807.44400 1653.50500
+zoomBox 785.61700 1637.29600 799.25100 1650.77900
+zoomBox 788.46600 1643.02500 794.51600 1649.00800
+zoomBox 789.65000 1645.21300 792.80900 1648.33700
+zoomBox 790.01700 1645.87400 792.29900 1648.13100
+zoomBox 790.28400 1646.35000 791.93300 1647.98100
+verifyConnectivity -type all -error 1000 -warning 50

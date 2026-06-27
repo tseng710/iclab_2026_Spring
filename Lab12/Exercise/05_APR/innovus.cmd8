@@ -1,0 +1,36 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed May 27 20:46:36 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setDrawView place
+zoomBox -37.90700 152.05400 7762.87500 4226.27000
+zoomBox 270.44800 664.88300 5906.51500 3608.50500
+zoomBox 413.22200 858.55400 5203.87900 3360.63300
+panPage -1 0
+zoomBox 1649.60300 2381.98000 3456.39800 3325.63800
+zoomBox 2551.87400 2878.87200 3353.56100 3297.58000
+zoomBox 2826.10900 3019.48400 3318.44700 3276.62400

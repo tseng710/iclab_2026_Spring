@@ -1,0 +1,161 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : DSS
+Version: T-2022.03
+Date   : Mon May 18 10:51:32 2026
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: u_execution_unit/p1_rc_m_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_execution_unit/p2_cost_ms_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSS                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_execution_unit/p1_rc_m_reg[2]/CK (QDFFRBT)            0.00       0.00 r
+  u_execution_unit/p1_rc_m_reg[2]/Q (QDFFRBT)             0.48       0.48 r
+  u_execution_unit/U337/O (INV8)                          0.10       0.58 f
+  u_execution_unit/U150/O (NR2)                           0.20       0.77 r
+  u_execution_unit/U3069/S (FA1)                          0.65       1.42 f
+  u_execution_unit/U3111/S (FA1)                          0.63       2.05 r
+  u_execution_unit/U1960/O (INV1)                         0.11       2.16 f
+  u_execution_unit/U1958/O (OAI12H)                       0.30       2.46 r
+  u_execution_unit/U3160/O (INV1S)                        0.21       2.67 f
+  u_execution_unit/U3161/O (OAI12H)                       0.29       2.95 r
+  u_execution_unit/U3163/O (NR2P)                         0.21       3.16 f
+  u_execution_unit/U2012/O (NR2F)                         0.16       3.33 r
+  u_execution_unit/U3217/O (ND2P)                         0.12       3.45 f
+  u_execution_unit/U3220/O (OAI12HT)                      0.27       3.72 r
+  u_execution_unit/U3289/O (AOI12H)                       0.13       3.86 f
+  u_execution_unit/U3290/O (XNR2HS)                       0.18       4.04 f
+  u_execution_unit/U3292/OB (MXL2HS)                      0.19       4.22 r
+  u_execution_unit/p2_cost_ms_reg[15]/D (QDFFRBP)         0.00       4.22 r
+  data arrival time                                                  4.22
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.10       4.40
+  u_execution_unit/p2_cost_ms_reg[15]/CK (QDFFRBP)        0.00       4.40 r
+  library setup time                                     -0.18       4.22
+  data required time                                                 4.22
+  --------------------------------------------------------------------------
+  data required time                                                 4.22
+  data arrival time                                                 -4.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_execution_unit/p1_rc_m_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_execution_unit/p2_cost_ms_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSS                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_execution_unit/p1_rc_m_reg[2]/CK (QDFFRBT)            0.00       0.00 r
+  u_execution_unit/p1_rc_m_reg[2]/Q (QDFFRBT)             0.48       0.48 r
+  u_execution_unit/U337/O (INV8)                          0.10       0.58 f
+  u_execution_unit/U150/O (NR2)                           0.20       0.77 r
+  u_execution_unit/U3069/S (FA1)                          0.65       1.42 f
+  u_execution_unit/U3111/S (FA1)                          0.63       2.05 r
+  u_execution_unit/U1960/O (INV1)                         0.11       2.16 f
+  u_execution_unit/U1958/O (OAI12H)                       0.30       2.46 r
+  u_execution_unit/U3160/O (INV1S)                        0.21       2.67 f
+  u_execution_unit/U3161/O (OAI12H)                       0.29       2.95 r
+  u_execution_unit/U3163/O (NR2P)                         0.21       3.16 f
+  u_execution_unit/U2012/O (NR2F)                         0.16       3.33 r
+  u_execution_unit/U3217/O (ND2P)                         0.12       3.45 f
+  u_execution_unit/U3220/O (OAI12HT)                      0.27       3.72 r
+  u_execution_unit/U3277/O (AOI12H)                       0.13       3.86 f
+  u_execution_unit/U3278/O (XNR2HS)                       0.18       4.04 f
+  u_execution_unit/U3280/OB (MXL2HS)                      0.19       4.22 r
+  u_execution_unit/p2_cost_ms_reg[14]/D (QDFFRBP)         0.00       4.22 r
+  data arrival time                                                  4.22
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.10       4.40
+  u_execution_unit/p2_cost_ms_reg[14]/CK (QDFFRBP)        0.00       4.40 r
+  library setup time                                     -0.18       4.22
+  data required time                                                 4.22
+  --------------------------------------------------------------------------
+  data required time                                                 4.22
+  data arrival time                                                 -4.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_execution_unit/p1_a_b_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_execution_unit/p2_cost_fb_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSS                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_execution_unit/p1_a_b_reg[7]/CK (QDFFRBN)             0.00       0.00 r
+  u_execution_unit/p1_a_b_reg[7]/Q (QDFFRBN)              0.62       0.62 r
+  u_execution_unit/U3607/O (XNR2HS)                       0.33       0.95 r
+  u_execution_unit/U129/O (OAI22H)                        0.21       1.16 f
+  u_execution_unit/U120/O (INV3)                          0.11       1.27 r
+  u_execution_unit/U1730/O (OR2)                          0.20       1.47 r
+  u_execution_unit/U3608/O (ND3P)                         0.18       1.65 f
+  u_execution_unit/U548/O (XOR2HS)                        0.21       1.86 f
+  u_execution_unit/U457/O (XOR2HS)                        0.22       2.07 f
+  u_execution_unit/U3624/CO (FA1)                         0.42       2.49 f
+  u_execution_unit/U415/O (XNR2HS)                        0.27       2.75 r
+  u_execution_unit/U353/O (XOR2HP)                        0.22       2.98 r
+  u_execution_unit/U351/O (NR2F)                          0.15       3.12 f
+  u_execution_unit/U411/O (OAI12HP)                       0.25       3.37 r
+  u_execution_unit/U3727/O (INV1S)                        0.14       3.51 f
+  u_execution_unit/U3728/O (OAI12HS)                      0.23       3.74 r
+  u_execution_unit/U1208/O (AOI12HS)                      0.11       3.85 f
+  u_execution_unit/U3729/O (XNR2HS)                       0.19       4.04 f
+  u_execution_unit/U3731/OB (MXL2HS)                      0.19       4.23 r
+  u_execution_unit/p2_cost_fb_reg[13]/D (QDFFRBP)         0.00       4.23 r
+  data arrival time                                                  4.23
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  clock uncertainty                                      -0.10       4.40
+  u_execution_unit/p2_cost_fb_reg[13]/CK (QDFFRBP)        0.00       4.40 r
+  library setup time                                     -0.17       4.23
+  data required time                                                 4.23
+  --------------------------------------------------------------------------
+  data required time                                                 4.23
+  data arrival time                                                 -4.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

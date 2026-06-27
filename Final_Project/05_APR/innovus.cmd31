@@ -1,0 +1,60 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sun Jun 21 19:24:23 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP_floorplan.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+zoomBox -18.53400 -26.47600 436.73900 423.76600
+zoomBox -11.32100 -21.82300 317.61400 303.47700
+panPage -1 0
+zoomBox -94.46400 -19.82500 185.13100 256.68100
+zoomBox -43.80000 -13.69300 80.25900 108.99500
+zoomBox -13.93700 -9.26900 32.85300 37.00400
+zoomBox -3.91500 -6.79900 16.84700 13.73400
+zoomBox -0.72600 -3.94800 10.11300 6.77100
+zoomBox 1.48600 -1.61200 5.57400 2.43100
+zoomBox 1.85700 -1.21600 4.81200 1.70600
+zoomBox 2.00200 -1.06100 4.51400 1.42300
+uiSetTool move
+selectMarker 2.7100 -0.2400 3.4500 0.0000 1 1 6
+editMove -dx 0.278 -dy -0.564
+deselectAll
+selectObject IO_Pin rst_n
+moveGroupPins -loc {3.63300 -0.62000}
+deselectAll
+selectMarker 2.7100 -0.2400 3.4500 0.0000 1 1 6
+editMove -dx -0.319 -dy 0.005
+editMove -dx 0.356 -dy -0.57
+zoomBox 1.12000 -1.22500 5.21200 2.82200
+zoomBox -0.95800 -1.60600 6.88300 6.14800
+editMove -dx -0.116 -dy 0.274
+editMove -dx 0.174 -dy -0.057
+uiSetTool select
+uiSetTool move
+deselectAll
+selectObject IO_Pin rst_n
+moveGroupPins -loc {-0.62000 1.68400}
+deselectAll
+selectMarker 2.7100 -0.2400 3.4500 0.0000 1 1 6

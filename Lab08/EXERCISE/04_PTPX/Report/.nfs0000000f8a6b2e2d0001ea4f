@@ -1,0 +1,53 @@
+Information: Running time_based power analysis... (PWR-601)
+Information: Reading vcd file '/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab08_2026s/EXERCISE/04_PTPX/LAB8_DESIGN_SYN_CG.fsdb'
+Information: The waveform options are:
+		File name:	vcd.out
+		File format:	out
+		Time interval:	1ns
+		Hierarchical level:	all
+
+Information: Power analysis is running, please wait ...
+
+Information: analysis is done for time window (0ns - 199942ns)
+
+Information: Total simulation time = 199942.500000 ns
+****************************************
+Report : Time Based Power
+Design : LAB8_DESIGN
+Version: P-2019.03-SP5-1
+Date   : Mon May  4 11:25:45 2026
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           3.026e-06 9.866e-06 8.599e-08 1.298e-05 ( 0.75%)  
+register                3.847e-04 2.922e-05 2.921e-06 4.169e-04 (23.93%)  i
+combinational           5.541e-04 7.536e-04 4.339e-06 1.312e-03 (75.32%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 7.927e-04   (45.51%)
+  Cell Internal Power  = 9.418e-04   (54.07%)
+  Cell Leakage Power   = 7.346e-06   ( 0.42%)
+    Intrinsic Leakage  = 7.346e-06
+    Gate Leakage       =    0.0000
+                         ---------
+Total Power            = 1.742e-03  (100.00%)
+
+X Transition Power     =    0.0000
+Glitching Power        =    0.0000
+
+Peak Power             =    0.0358
+Peak Time              =        45
+
+1

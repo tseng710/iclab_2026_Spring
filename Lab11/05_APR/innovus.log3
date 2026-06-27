@@ -1,0 +1,251 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+Options:	
+Date:		Thu May 21 12:48:26 2026
+Host:		ee24 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7763 64-Core Processor 512KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading Pegasus 21.21 fill procedures
+<CMD> win
+<CMD> set init_design_uniquify 1
+<CMD> setDesignMode -process 180
+##  Process: 180           (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 180nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> suppressMessage TECHLIB 1318
+<CMD> suppressMessage ENCEXT-2799
+<CMD> save_global CHIP.globals
+<CMD> set init_gnd_net GND
+<CMD> set init_lef_file {LEF/BONDPAD.lef LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef LEF/SUMA180_4096X12.lef LEF/fsa0m_a_generic_core.lef LEF/fsa0m_a_t33_generic_io.lef LEF/header6_V55_20ka_cic.lef}
+<CMD> set init_verilog CHIP_SYN.v
+<CMD> set init_mmmc_file CHIP_mmmc.view
+<CMD> set init_io_file CHIP.io
+<CMD> set init_top_cell CHIP
+<CMD> set init_pwr_net VCC
+<CMD> init_design
+#% Begin Load MMMC data ... (date=05/21 12:51:36, mem=637.1M)
+#% End Load MMMC data ... (date=05/21 12:51:36, total cpu=0:00:00.0, real=0:00:00.0, peak res=637.5M, current mem=637.5M)
+RC_Corner
+
+Loading LEF file LEF/BONDPAD.lef ...
+**WARN: (IMPLF-63):	The layer 'metal4' referenced in OBS in macro 'BONDPADD_m' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+**WARN: (IMPLF-63):	The layer 'metal5' referenced in OBS in macro 'BONDPADD_m' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+**WARN: (IMPLF-63):	The layer 'metal6' referenced in OBS in macro 'BONDPADD_m' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+**WARN: (IMPLF-63):	The layer 'metal4' referenced in OBS in macro 'BONDPADCNU_m' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+**WARN: (IMPLF-63):	The layer 'metal5' referenced in OBS in macro 'BONDPADCNU_m' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+**WARN: (IMPLF-63):	The layer 'metal6' referenced in OBS in macro 'BONDPADCNU_m' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+**WARN: (IMPLF-63):	The layer 'metal4' referenced in OBS in macro 'BONDPADCGU_m' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+**WARN: (IMPLF-63):	The layer 'metal5' referenced in OBS in macro 'BONDPADCGU_m' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+**WARN: (IMPLF-63):	The layer 'metal6' referenced in OBS in macro 'BONDPADCGU_m' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+WARNING (LEFPARS-2002): NAMESCASESENSITIVE is a required statement on LEF file with version 5.5 and earlier.
+Without NAMESCASESENSITIVE defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/BONDPAD.lef at line 123.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/BONDPAD.lef at line 123.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/BONDPAD.lef at line 123.
+
+Loading LEF file LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef ...
+**ERROR: (IMPLF-81):	No MANUFACTURINGGRID value was given. It is set to
+minimum LEF unit of 0.01 um. If this value is not right, a MANUFACTURINGGRID
+statement must be added in the technology LEF file.
+**WARN: (IMPLF-18):	The layer 'metal1' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**WARN: (IMPLF-18):	The layer 'metal2' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**WARN: (IMPLF-18):	The layer 'metal3' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**WARN: (IMPLF-18):	The layer 'metal4' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**WARN: (IMPLF-18):	The layer 'metal5' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**WARN: (IMPLF-18):	The layer 'metal6' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2.I1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2.I1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2.I1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2.I2' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2.I2' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2.I2' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2.O' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2.O' does not exist
+**WARN: (IMPLF-44):	Macro 'AN2' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1.B1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1.B1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1.B1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1.I1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1.I1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1.I1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1.O' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1.O' does not exist
+**WARN: (IMPLF-44):	Macro 'AN2B1' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1P.B1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1P.B1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1P.B1' does not exist
+**ERROR: (IMPLF-328):	The layer 'metal1' specified in macro pin 'AN2B1P.I1' does not exist
+**WARN: (EMS-27):	Message (IMPLF-328) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-44):	Macro 'AN2B1P' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN2B1S' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN2B1T' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN2P' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN2S' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN2T' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3B1' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3B1P' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3B1S' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3B1T' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3B2' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3B2P' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3B2S' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3B2T' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3P' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3S' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (IMPLF-44):	Macro 'AN3T' has no SIZE statement or a zero SIZE
+statement and it is a class CORE macro so it needs a correct SIZE. There
+is no SITE statement, so a useful SIZE cannot be computed, so this macro
+is not loaded in the Innovus database and cannot be used in the
+netlist.
+**WARN: (EMS-27):	Message (IMPLF-44) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef at line 16493.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef at line 16493.
+
+Loading LEF file LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef ...
+**WARN: (IMPLF-18):	The layer 'metal1' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**WARN: (IMPLF-18):	The layer 'metal2' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**WARN: (IMPLF-18):	The layer 'metal3' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**WARN: (IMPLF-18):	The layer 'metal4' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**WARN: (IMPLF-18):	The layer 'metal5' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+**WARN: (IMPLF-18):	The layer 'metal6' defined in this LEF file is ignored. It should be added to the first LEF file (technology LEF).
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef at line 791.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef at line 791.
+
+Loading LEF file LEF/SUMA180_4096X12.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file LEF/SUMA180_4096X12.lef at line 37.
+**ERROR: (IMPLF-53):	The layer 'metal4' referenced in pin 'VCC' in macro 'SUMA180_4096X12' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-53' for more detail.
+**ERROR: (IMPLF-3):	Error found when processing LEF file 'LEF/SUMA180_4096X12.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus' again.
+Type 'man IMPLF-3' for more detail.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+
+*** Memory Usage v#1 (Current mem = 916.531M, initial mem = 284.375M) ***
+*** Message Summary: 413 warning(s), 5185 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:24.0, real=0:03:54, mem=916.5M) ---

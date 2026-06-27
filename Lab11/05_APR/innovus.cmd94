@@ -1,0 +1,98 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue May 26 10:09:47 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+addIoFiller -cell EMPTY16D -prefix IOFILLER
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP_postCTS.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+addIoFiller -cell EMPTY16D -prefix IOFILLER
+addIoFiller -cell EMPTY8D -prefix IOFILLER
+addIoFiller -cell EMPTY4D -prefix IOFILLER
+addIoFiller -cell EMPTY2D -prefix IOFILLER
+addIoFiller -cell EMPTY1D -prefix IOFILLER -fillAnyGap
+setNanoRouteMode -quiet -routeInsertAntennaDiode 1
+setNanoRouteMode -quiet -routeAntennaCellName ANTENNA
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithEco 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeTdrEffort 10
+setNanoRouteMode -quiet -routeTopRoutingLayer 6
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1000
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail -viaOpt -wireOpt
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+zoomBox -183.08800 167.94900 2001.48300 1934.68800
+zoomBox 174.92200 739.24000 1516.52100 1824.23800
+zoomBox 460.48800 1175.10800 1160.81100 1741.48400
+zoomBox 582.40400 1359.35700 1012.49100 1707.18300
+zoomBox 664.13300 1472.32800 928.26200 1685.93800
+zoomBox 726.30700 1558.26900 864.18500 1669.77600
+zoomBox 764.19500 1610.48100 825.37300 1659.95800
+zoomBox 779.26300 1631.49400 806.41000 1653.44900
+zoomBox 785.94700 1640.81700 797.99400 1650.56000
+zoomBox 788.80200 1644.43900 794.14900 1648.76300
+zoomBox 790.05500 1646.09500 792.42900 1648.01500
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 790.48 1646.66 791.68 1648.2
+zoomBox 789.82900 1646.33300 792.46600 1648.46600
+zoomBox 789.41500 1645.88500 793.06500 1648.83700
+zoomBox 788.47300 1644.87800 794.41700 1649.68500
+zoomBox 787.53100 1643.89300 795.75800 1650.54600
+zoomBox 785.39700 1641.70200 798.79400 1652.53700
+zoomBox 784.42100 1640.70100 800.18300 1653.44800
+zoomBox 781.92200 1638.13800 803.73900 1655.78200
+zoomBox 780.33300 1636.50800 806.00000 1657.26600
+zoomBox 778.46300 1634.59100 808.66000 1659.01200
+zoomBox 767.05200 1622.91400 824.90100 1669.69900
+zoomBox 757.88100 1613.57700 837.95200 1678.33300
+zoomBox 737.20300 1592.60400 867.58600 1698.04900
+zoomBox 745.21400 1600.70300 856.04000 1690.33200
+zoomBox 737.20200 1592.60300 867.58600 1698.04900
+zoomBox 727.77700 1583.07400 881.17000 1707.12800
+zoomBox 716.68800 1571.90300 897.15100 1717.85000
+zoomBox 703.64100 1558.80900 915.95200 1730.51200
+zoomBox 784.03800 1600.43700 878.24300 1676.62400
+zoomBox 811.51600 1616.53700 860.69300 1656.30800
+zoomBox 827.83000 1626.58800 849.65200 1644.23600
+zoomBox 831.44100 1628.81300 847.20800 1641.56400
+violationBrowserClose

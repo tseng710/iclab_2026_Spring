@@ -1,0 +1,698 @@
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+# (A) Global Parameters
+#======================================================
+set DESIGN "LAB8_DESIGN"
+LAB8_DESIGN
+set CYCLE 15.0
+15.0
+set INPUT_DLY [expr 0.5*$CYCLE]
+7.5
+set OUTPUT_DLY [expr 0.5*$CYCLE]
+7.5
+#======================================================
+# (B) Read RTL Code
+#======================================================
+set hdlin_auto_save_templates TRUE
+TRUE
+analyze -f sverilog $DESIGN\_wocg.v 
+Running PRESTO HDLC
+Compiling source file ../01_RTL/LAB8_DESIGN_wocg.v
+Presto compilation completed successfully.
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+1
+elaborate $DESIGN  
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+  Loading link library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading link library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading link library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading link library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../01_RTL/LAB8_DESIGN_wocg.v:216: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../01_RTL/LAB8_DESIGN_wocg.v:221: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../01_RTL/LAB8_DESIGN_wocg.v:226: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../01_RTL/LAB8_DESIGN_wocg.v:231: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../01_RTL/LAB8_DESIGN_wocg.v:236: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../01_RTL/LAB8_DESIGN_wocg.v:241: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+        in routine LAB8_DESIGN line 169 in file
+                '../01_RTL/LAB8_DESIGN_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    task_num_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     in_cnt_reg      | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_cnt_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    out_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    out_data_reg     | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine LAB8_DESIGN line 214 in file
+                '../01_RTL/LAB8_DESIGN_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        A_reg        | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine LAB8_DESIGN line 219 in file
+                '../01_RTL/LAB8_DESIGN_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        B_reg        | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine LAB8_DESIGN line 224 in file
+                '../01_RTL/LAB8_DESIGN_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       F1_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine LAB8_DESIGN line 229 in file
+                '../01_RTL/LAB8_DESIGN_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       H1_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine LAB8_DESIGN line 234 in file
+                '../01_RTL/LAB8_DESIGN_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       F2_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine LAB8_DESIGN line 239 in file
+                '../01_RTL/LAB8_DESIGN_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       H2_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine LAB8_DESIGN line 244 in file
+                '../01_RTL/LAB8_DESIGN_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     Mid_Reg_reg     | Flip-flop |  192  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+| LAB8_DESIGN/104  |   16   |   16    |      4       |
+| LAB8_DESIGN/127  |   16   |   16    |      4       |
+| LAB8_DESIGN/127  |   16   |   12    |      4       |
+| LAB8_DESIGN/137  |   16   |   16    |      4       |
+| LAB8_DESIGN/166  |   16   |   12    |      4       |
+======================================================
+Presto compilation completed successfully. (LAB8_DESIGN)
+Elaborated 1 design.
+Current design is now 'LAB8_DESIGN'.
+Information: Building the design 'MAC_4x12'. (HDL-193)
+Presto compilation completed successfully. (MAC_4x12)
+Information: Building the design 'MOD_15'. (HDL-193)
+Presto compilation completed successfully. (MOD_15)
+Information: Building the design 'CORE_ALU'. (HDL-193)
+Presto compilation completed successfully. (CORE_ALU)
+1
+current_design $DESIGN
+Current design is 'LAB8_DESIGN'.
+{LAB8_DESIGN}
+link
+
+  Linking design 'LAB8_DESIGN'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (4 designs)               /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab08_2026s/EXERCISE_wocg/02_SYN/LAB8_DESIGN.db, etc
+  fsa0m_a_generic_core_ss1p62v125c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db
+  fsa0m_a_generic_core_ff1p98vm40c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db
+  fsa0m_a_t33_generic_io_ss1p62v125c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db
+  fsa0m_a_t33_generic_io_tt1p8v25c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#======================================================
+#  (C) Global Setting
+#======================================================
+#set_wire_load_mode top
+#set_wire_load_model -name umc18_wl10 -library slow
+#set_operating_conditions -min fast  -max slow
+#======================================================
+#  (D) Set Design Constraints
+#======================================================
+create_clock -name "clk" -period $CYCLE clk 
+1
+set_input_delay  [ expr $CYCLE*0.5 ] -clock clk [all_inputs]
+1
+set_output_delay [ expr $CYCLE*0.5 ] -clock clk [all_outputs]
+1
+set_input_delay 0 -clock clk clk
+1
+set_input_delay 0 -clock clk rst_n
+1
+set_load 0.05 [all_outputs]
+1
+set_max_delay $CYCLE -from [all_inputs] -to [all_outputs]
+1
+#======================================================
+#  (E) Optimization
+#======================================================
+check_design > Report/$DESIGN\.check
+set_fix_multiple_port_nets -all -buffer_constants 
+1
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 8 cores. (OPT-1500)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT WLM                                                           |
+| Comand line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2137                                   |
+| Number of User Hierarchies                              | 4                                      |
+| Sequential Cell Count                                   | 732                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 165                                    |
+| Number of Dont Touch nets                               | 0                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 15 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Information: Uniquified 2 instances of design 'MAC_4x12'. (OPT-1056)
+  Simplifying Design 'LAB8_DESIGN'
+
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ss1p62v125c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ff1p98vm40c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_ss1p62v125c.db.alib' (placeholder)
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_tt1p8v25c.db.alib' (placeholder)
+Warning: Operating condition WCCOM set on design LAB8_DESIGN has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fsa0m_a_generic_core_ff1p98vm40c is characterized. Delays may be inaccurate as a result. (OPT-998)
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 5 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'LAB8_DESIGN'
+Information: Added key list 'DesignWare' to design 'LAB8_DESIGN'. (DDB-72)
+ Implement Synthetic for 'LAB8_DESIGN'.
+  Processing 'MAC_4x12_1'
+ Implement Synthetic for 'MAC_4x12_1'.
+  Processing 'MAC_4x12_0'
+ Implement Synthetic for 'MAC_4x12_0'.
+  Processing 'CORE_ALU'
+ Implement Synthetic for 'CORE_ALU'.
+  Processing 'CORE_ALU_DW_div_uns_J1_0'
+  Processing 'MOD_15'
+Information: Added key list 'DesignWare' to design 'MOD_15'. (DDB-72)
+ Implement Synthetic for 'MOD_15'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIE1' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIE0' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'BHD1' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Complementing port 'task_num' in design 'CORE_ALU'.
+         The new name of the port is 'task_num_BAR'. (OPT-319)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: The wire load model of the parent cell LAB8_DESIGN is different from that of the child cell MAC_F in the design MAC_4x12_1. The child cell will not be ungrouped. (OPT-779)
+Information: The wire load model of the parent cell LAB8_DESIGN is different from that of the child cell MAC_H in the design MAC_4x12_0. The child cell will not be ungrouped. (OPT-779)
+Information: The wire load model of the parent cell LAB8_DESIGN is different from that of the child cell M15 in the design MOD_15. The child cell will not be ungrouped. (OPT-779)
+Information: The wire load model of the parent cell LAB8_DESIGN is different from that of the child cell ALU_INST in the design CORE_ALU. The child cell will not be ungrouped. (OPT-779)
+Information: 3 other designs were not ungrouped because of differing wire load models. (OPT-779)
+Information: Added key list 'DesignWare' to design 'CORE_ALU'. (DDB-72)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:48  146918.7      0.55      18.4       0.0                           9593037.0000
+    0:00:48  146665.6      1.11      41.4       0.0                           9578826.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:48  146853.1      1.11      41.4       0.0                           9601214.0000
+    0:00:48  146853.1      1.11      41.4       0.0                           9601214.0000
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'MAC_4x12_1_DP_OP_10J1_123_2400_3'
+  Mapping 'MOD_15_DP_OP_22J1_125_8911_1'
+Information: Added key list 'DesignWare' to design 'MAC_4x12_0'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'MAC_4x12_1'. (DDB-72)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:50  114286.4      2.35     220.4       0.0                           7012845.0000
+    0:00:51  121373.5      0.00       0.0     182.7                           7623122.0000
+    0:00:51  121373.5      0.00       0.0     182.7                           7623122.0000
+    0:00:51  121354.7      0.01       0.2     182.7                           7621100.5000
+    0:00:51  121026.6      0.89      26.8     182.7                           7601117.0000
+    0:00:52  120998.5      1.31      47.3     182.7                           7599168.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:52  119664.2      0.70      24.0     182.6                           7467924.5000
+    0:00:53  119314.2      0.10       1.6     182.1                           7454922.5000
+    0:00:53  119314.2      0.10       1.6     182.1                           7454922.5000
+    0:00:53  118442.4      0.10       1.6     107.9                           7271034.5000
+    0:00:53  118442.4      0.10       1.6     107.9                           7271034.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:54  118711.2      0.00       0.0     107.9                           7292898.5000
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:54  118795.5      0.00       0.0       0.0                           7298970.5000
+    0:00:54  118795.5      0.00       0.0       0.0                           7298970.5000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:54  118795.5      0.00       0.0       0.0                           7298970.5000
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+Information: Complementing port 'en' in design 'CORE_ALU'.
+         The new name of the port is 'en_BAR'. (OPT-319)
+Information: Complementing port 'task_num_BAR' in design 'CORE_ALU'.
+         The new name of the port is 'task_num'. (OPT-319)
+    0:00:55  117336.2      0.00       0.0       0.0                           7126634.0000
+    0:00:55  117336.2      0.00       0.0       0.0                           7126634.0000
+    0:00:55  117336.2      0.00       0.0       0.0                           7126634.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+    0:00:55  117280.0      0.00       0.0       0.0                           7119990.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:56  117139.4      0.00       0.0       0.0                           7119990.0000
+    0:00:56  115130.1      0.00       0.0       0.0                           6953692.5000
+    0:00:56  115130.1      0.00       0.0       0.0                           6953692.5000
+    0:00:56  115130.1      0.00       0.0       0.0                           6953692.5000
+    0:00:56  115102.0      0.00       0.0       0.0                           6951256.0000
+    0:00:57  114883.3      0.00       0.0       0.0                           6931835.0000
+    0:00:57  114883.3      0.00       0.0       0.0                           6931835.0000
+    0:00:57  114883.3      0.00       0.0       0.0                           6931835.0000
+    0:00:57  114883.3      0.00       0.0       0.0                           6931835.0000
+    0:00:57  114883.3      0.00       0.0       0.0                           6931835.0000
+    0:00:57  114883.3      0.00       0.0       0.0                           6931835.0000
+    0:00:57  114180.2      0.00       0.0       0.0                           6861743.0000
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#uniquify
+#compile
+#======================================================
+#  (F) Output Reports 
+#======================================================
+report_design  >  Report/$DESIGN\.design
+report_resource >  Report/$DESIGN\.resource
+report_timing -max_paths 3 >  Report/$DESIGN\.timing
+report_area >  Report/$DESIGN\.area
+report_power > Report/$DESIGN\.power
+report_clock > Report/$DESIGN\.clock
+report_port >  Report/$DESIGN\.port
+report_power >  Report/$DESIGN\.power
+#report_reference > Report/$DESIGN\.reference
+#======================================================
+#  (G) Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  (H) Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab08_2026s/EXERCISE_wocg/02_SYN/Netlist/LAB8_DESIGN_SYN.v'.
+1
+write -format ddc     -hierarchy -output $DESIGN\_SYN.ddc
+Writing ddc file 'LAB8_DESIGN_SYN.ddc'.
+1
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Information: Writing timing information to file '/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab08_2026s/EXERCISE_wocg/02_SYN/Netlist/LAB8_DESIGN_SYN.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_sdc Netlist/$DESIGN\_SYN.sdc
+1
+#======================================================
+#  (I) Finish and Quit
+#======================================================
+report_area
+ 
+****************************************
+Report : area
+Design : LAB8_DESIGN
+Version: T-2022.03
+Date   : Mon May  4 11:31:18 2026
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+
+Number of ports:                          244
+Number of nets:                          4515
+Number of cells:                         4081
+Number of combinational cells:           3345
+Number of sequential cells:               732
+Number of macros/black boxes:               0
+Number of buf/inv:                        361
+Number of references:                      70
+
+Combinational area:              70667.352490
+Buf/Inv area:                     3762.259181
+Noncombinational area:           43512.840378
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                114180.192868
+Total area:                 undefined
+1
+report_timing 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LAB8_DESIGN
+Version: T-2022.03
+Date   : Mon May  4 11:31:18 2026
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: in_cnt_reg_6_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_data_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LAB8_DESIGN        enG30K                fsa0m_a_generic_core_ss1p62v125c
+  MAC_4x12_1         enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  MOD_15             enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  CORE_ALU           enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  in_cnt_reg_6_/CK (QDFFRBP)               0.00       0.00 r
+  in_cnt_reg_6_/Q (QDFFRBP)                0.49       0.49 r
+  U2005/O (ND2P)                           0.11       0.60 f
+  U2038/O (NR2T)                           0.13       0.72 r
+  U2493/O (ND3HT)                          0.17       0.90 f
+  U2498/O (NR2F)                           0.28       1.17 r
+  U2180/O (INV6)                           0.11       1.28 f
+  U2509/OB (MXL2HP)                        0.21       1.49 f
+  U2176/O (ND2T)                           0.33       1.82 r
+  U2073/O (NR2T)                           0.12       1.94 f
+  U1952/O (INV3)                           0.13       2.07 r
+  U2021/O (INV8)                           0.16       2.24 f
+  U2459/O (AOI22S)                         0.21       2.44 r
+  U1943/O (AN4B1S)                         0.39       2.83 r
+  U3457/O (ND3P)                           0.16       2.99 f
+  MAC_F/m2[0] (MAC_4x12_1)                 0.00       2.99 f
+  MAC_F/U191/O (INV2)                      0.17       3.16 r
+  MAC_F/U540/O (NR2)                       0.12       3.27 f
+  MAC_F/U558/C (HA1)                       0.23       3.50 f
+  MAC_F/U549/CO (FA1)                      0.34       3.84 f
+  MAC_F/U544/CO (FA1)                      0.36       4.20 f
+  MAC_F/U541/CO (FA1)                      0.36       4.55 f
+  MAC_F/U565/S (FA1)                       0.31       4.86 f
+  MAC_F/U567/S (FA1)                       0.58       5.44 f
+  MAC_F/U146/O (ND2)                       0.19       5.63 r
+  MAC_F/U563/O (OAI12H)                    0.16       5.79 f
+  MAC_F/U571/O (AOI12HP)                   0.18       5.97 r
+  MAC_F/U576/O (OAI12HP)                   0.11       6.08 f
+  MAC_F/U165/O (AOI12HP)                   0.23       6.30 r
+  MAC_F/U39/O (INV3)                       0.11       6.41 f
+  MAC_F/U202/O (AOI12H)                    0.15       6.56 r
+  MAC_F/U38/O (XOR2HS)                     0.24       6.80 r
+  MAC_F/out[10] (MAC_4x12_1)               0.00       6.80 r
+  M15/in[10] (MOD_15)                      0.00       6.80 r
+  M15/U45/O (OAI12H)                       0.14       6.95 f
+  M15/U44/O (OAI12H)                       0.13       7.08 r
+  M15/U73/O (XNR2H)                        0.19       7.27 r
+  M15/U74/O (XNR2H)                        0.23       7.51 r
+  M15/U22/O (NR2F)                         0.10       7.61 f
+  M15/U80/O (INV2)                         0.07       7.68 r
+  M15/U15/O (ND2)                          0.13       7.82 f
+  M15/U41/O (XNR2H)                        0.18       8.00 f
+  M15/U39/O (AN2)                          0.24       8.24 f
+  M15/U81/O (AN2T)                         0.23       8.47 f
+  M15/U82/O (NR2F)                         0.12       8.58 r
+  M15/U49/O (NR2T)                         0.10       8.68 f
+  M15/U89/O (ND2P)                         0.12       8.80 r
+  M15/U14/O (INV4)                         0.10       8.90 f
+  M15/U25/O (XOR2HP)                       0.16       9.06 f
+  M15/out[0] (MOD_15)                      0.00       9.06 f
+  U2625/O (OR2)                            0.26       9.32 f
+  U1932/OB (MXL2H)                         0.18       9.50 r
+  ALU_INST/X[1] (CORE_ALU)                 0.00       9.50 r
+  ALU_INST/U18/O (INV4)                    0.11       9.61 f
+  ALU_INST/U64/O (INV12)                   0.11       9.72 r
+  ALU_INST/U108/O (ND2P)                   0.07       9.79 f
+  ALU_INST/U51/O (AN2)                     0.26      10.05 f
+  ALU_INST/U85/O (ND2T)                    0.09      10.14 r
+  ALU_INST/U57/O (ND2T)                    0.11      10.25 f
+  ALU_INST/U91/O (MAO222)                  0.30      10.55 f
+  ALU_INST/U119/O (MAO222)                 0.34      10.89 f
+  ALU_INST/U120/O (NR2F)                   0.18      11.08 r
+  ALU_INST/U59/O (OA12T)                   0.35      11.42 r
+  ALU_INST/U20/O (AOI12HP)                 0.14      11.56 f
+  ALU_INST/U150/O (MAO222P)                0.35      11.91 f
+  ALU_INST/U89/O (MAO222)                  0.29      12.20 f
+  ALU_INST/U151/O (MAO222P)                0.32      12.52 f
+  ALU_INST/U152/O (INV2)                   0.11      12.63 r
+  ALU_INST/U153/O (NR2P)                   0.12      12.75 f
+  ALU_INST/U160/O (NR2F)                   0.17      12.92 r
+  ALU_INST/U169/O (INV2)                   0.09      13.01 f
+  ALU_INST/U28/O (AOI13H)                  0.19      13.20 r
+  ALU_INST/U170/O (NR2T)                   0.12      13.32 f
+  ALU_INST/U256/O (MAO222)                 0.29      13.61 f
+  ALU_INST/U43/O (MAO222)                  0.27      13.88 f
+  ALU_INST/U257/O (MAO222P)                0.32      14.20 f
+  ALU_INST/U61/O (AOI22HP)                 0.16      14.36 r
+  ALU_INST/result[0] (CORE_ALU)            0.00      14.36 r
+  U1923/O (INV3)                           0.09      14.45 f
+  U2489/O (INV8CK)                         0.14      14.59 r
+  U2611/O (MOAI1H)                         0.22      14.82 r
+  out_data_reg_0_/D (QDFFRBS)              0.00      14.82 r
+  data arrival time                                  14.82
+
+  clock clk (rise edge)                   15.00      15.00
+  clock network delay (ideal)              0.00      15.00
+  out_data_reg_0_/CK (QDFFRBS)             0.00      15.00 r
+  library setup time                      -0.18      14.82
+  data required time                                 14.82
+  -----------------------------------------------------------
+  data required time                                 14.82
+  data arrival time                                 -14.82
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+exit
+
+Memory usage for this session 437 Mbytes.
+Memory usage for this session including child processes 755 Mbytes.
+CPU usage for this session 114 seconds ( 0.03 hours ).
+Elapsed time for this session 64 seconds ( 0.02 hours ).
+
+Thank you...
+

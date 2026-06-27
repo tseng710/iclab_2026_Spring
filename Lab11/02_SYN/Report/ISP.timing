@@ -1,0 +1,187 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : ISP
+Version: T-2022.03
+Date   : Wed May 27 11:06:53 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: u_dpc/median_s2_reg[0][10]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_dpc/s_s3_reg[0][13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ISP                G50K                  fsa0m_a_generic_core_ff1p98vm40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dpc/median_s2_reg[0][10]/CK (QDFFS)                   0.00 #     0.00 r
+  u_dpc/median_s2_reg[0][10]/Q (QDFFS)                    0.53       0.53 r
+  U4657/O (INV1S)                                         0.40       0.93 f
+  U4660/O (OR2S)                                          0.46       1.39 f
+  U6807/O (AOI12HS)                                       0.32       1.71 r
+  U6815/O (OAI12HS)                                       0.14       1.85 f
+  U3378/O (AOI12HS)                                       0.23       2.09 r
+  U3377/O (INV2)                                          0.08       2.17 f
+  U3144/O (INV3CK)                                        0.14       2.30 r
+  U4015/O (ND2S)                                          0.13       2.43 f
+  U7138/O (XNR2HS)                                        0.19       2.62 f
+  U7143/S (FA1)                                           0.67       3.29 f
+  U6169/CO (FA1S)                                         0.50       3.78 f
+  U7154/CO (FA1)                                          0.39       4.17 f
+  U7153/CO (FA1)                                          0.36       4.54 f
+  U7152/CO (FA1)                                          0.36       4.90 f
+  U7151/CO (FA1)                                          0.36       5.26 f
+  U7150/CO (FA1)                                          0.36       5.62 f
+  U7149/CO (FA1)                                          0.36       5.98 f
+  U7148/CO (FA1)                                          0.36       6.34 f
+  U7147/CO (FA1)                                          0.36       6.70 f
+  U7146/CO (FA1)                                          0.36       7.06 f
+  U7145/CO (FA1)                                          0.36       7.42 f
+  U7144/CO (FA1)                                          0.35       7.77 f
+  u_dpc/s_s3_reg[0][13]/D (QDFFS)                         0.00       7.77 f
+  data arrival time                                                  7.77
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  u_dpc/s_s3_reg[0][13]/CK (QDFFS)                        0.00       7.90 r
+  library setup time                                     -0.13       7.77
+  data required time                                                 7.77
+  --------------------------------------------------------------------------
+  data required time                                                 7.77
+  data arrival time                                                 -7.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_dpc/median_s2_reg[2][6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_dpc/s_s3_reg[2][12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ISP                G50K                  fsa0m_a_generic_core_ff1p98vm40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dpc/median_s2_reg[2][6]/CK (QDFFN)                    0.00 #     0.00 r
+  u_dpc/median_s2_reg[2][6]/Q (QDFFN)                     0.47       0.47 r
+  U3155/O (INV1S)                                         0.32       0.79 f
+  U3379/O (ND2)                                           0.31       1.09 r
+  U7419/O (OAI12HS)                                       0.14       1.24 f
+  U7420/O (AOI12HS)                                       0.24       1.47 r
+  U7421/O (OAI12H)                                        0.17       1.65 f
+  U7434/O (AOI12HP)                                       0.24       1.88 r
+  U4031/O (ND2S)                                          0.15       2.03 f
+  U7503/O (XNR2HS)                                        0.19       2.22 f
+  U7511/S (HA1)                                           0.32       2.55 f
+  U7517/S (FA1)                                           0.65       3.20 f
+  U7528/CO (FA1)                                          0.36       3.56 f
+  U7527/CO (FA1)                                          0.36       3.92 f
+  U7526/CO (FA1)                                          0.36       4.28 f
+  U7525/CO (FA1)                                          0.36       4.64 f
+  U7524/CO (FA1)                                          0.36       5.00 f
+  U7523/CO (FA1)                                          0.36       5.36 f
+  U7522/CO (FA1)                                          0.36       5.73 f
+  U7521/CO (FA1)                                          0.36       6.09 f
+  U7520/CO (FA1)                                          0.36       6.45 f
+  U7519/CO (FA1)                                          0.36       6.81 f
+  U7518/CO (FA1)                                          0.35       7.16 f
+  U6170/S (FA1S)                                          0.64       7.80 r
+  u_dpc/s_s3_reg[2][12]/D (QDFFS)                         0.00       7.80 r
+  data arrival time                                                  7.80
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  u_dpc/s_s3_reg[2][12]/CK (QDFFS)                        0.00       7.90 r
+  library setup time                                     -0.10       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -7.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_dpc/median_s2_reg[3][4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_dpc/s_s3_reg[3][13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ISP                G50K                  fsa0m_a_generic_core_ff1p98vm40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_dpc/median_s2_reg[3][4]/CK (QDFFS)                    0.00 #     0.00 r
+  u_dpc/median_s2_reg[3][4]/Q (QDFFS)                     0.53       0.53 r
+  U6086/O (INV1S)                                         0.34       0.87 f
+  U5082/O (ND2S)                                          0.35       1.22 r
+  U8169/O (OAI12HS)                                       0.20       1.42 f
+  U8171/O (AOI12HS)                                       0.24       1.66 r
+  U8172/O (OAI12HS)                                       0.17       1.83 f
+  U8181/O (AOI12HS)                                       0.29       2.12 r
+  U3254/O (OA12P)                                         0.35       2.47 r
+  U5248/O (OA12S)                                         0.36       2.83 r
+  U4043/O (NR2)                                           0.19       3.02 f
+  U3403/O (NR2T)                                          0.14       3.16 r
+  U4042/O (NR2)                                           0.13       3.29 f
+  U4040/O (NR2)                                           0.27       3.56 r
+  U6119/O (NR2)                                           0.16       3.72 f
+  U4037/O (NR2)                                           0.27       3.99 r
+  U4039/O (NR2)                                           0.16       4.15 f
+  U4034/O (NR2)                                           0.27       4.42 r
+  U4036/O (NR2)                                           0.16       4.58 f
+  U6118/O (NR2)                                           0.27       4.85 r
+  U4033/O (NR2)                                           0.18       5.03 f
+  U8215/O (NR2P)                                          0.16       5.19 r
+  U3165/O (OR2)                                           0.25       5.44 r
+  U4379/O (AN2S)                                          0.28       5.71 r
+  U6154/S (FA1S)                                          0.57       6.28 f
+  U8274/CO (FA1)                                          0.42       6.70 f
+  U8273/CO (FA1)                                          0.36       7.06 f
+  U8272/CO (FA1)                                          0.36       7.42 f
+  U8271/CO (FA1)                                          0.35       7.77 f
+  u_dpc/s_s3_reg[3][13]/D (QDFFS)                         0.00       7.77 f
+  data arrival time                                                  7.77
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.10       7.90
+  u_dpc/s_s3_reg[3][13]/CK (QDFFS)                        0.00       7.90 r
+  library setup time                                     -0.13       7.77
+  data required time                                                 7.77
+  --------------------------------------------------------------------------
+  data required time                                                 7.77
+  data arrival time                                                 -7.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

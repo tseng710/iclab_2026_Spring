@@ -1,0 +1,127 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sun Apr 12 10:04:10 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              35
+    Cells do not drive (LINT-1)                                     1
+    Connected to power or ground (LINT-32)                         32
+    Nets connected to multiple pins on same cell (LINT-33)          2
+
+Nets                                                               39
+    Unloaded nets (LINT-2)                                         39
+--------------------------------------------------------------------------------
+
+Warning: In design 'HT', cell 'B_89' does not drive any nets. (LINT-1)
+Warning: In design 'HT', net 'net350' driven by pin 'C3151/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net349' driven by pin 'C3147/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net348' driven by pin 'C3141/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net347' driven by pin 'C3135/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net346' driven by pin 'C3124/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net345' driven by pin 'C3120/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net344' driven by pin 'C3109/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net343' driven by pin 'C3105/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net342' driven by pin 'C3094/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net341' driven by pin 'C3090/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net340' driven by pin 'C3079/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net339' driven by pin 'C3075/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net338' driven by pin 'C3064/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net337' driven by pin 'C3060/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net336' driven by pin 'C3049/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net335' driven by pin 'C3045/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net334' driven by pin 'C3034/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net333' driven by pin 'C3030/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net332' driven by pin 'C3019/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net331' driven by pin 'C3008/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net330' driven by pin 'C2999/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net329' driven by pin 'C2991/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'net328' driven by pin 'C2989/Z' has no loads. (LINT-2)
+Warning: In design 'HT', net 'min_node_2[0]' driven by pin 'u_min_finder/min_node_2[0]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'min_node_2[1]' driven by pin 'u_min_finder/min_node_2[1]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'min_node_2[2]' driven by pin 'u_min_finder/min_node_2[2]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'min_node_2[3]' driven by pin 'u_min_finder/min_node_2[3]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'min_node_1[0]' driven by pin 'u_min_finder/min_node_1[0]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'min_node_1[1]' driven by pin 'u_min_finder/min_node_1[1]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'min_node_1[2]' driven by pin 'u_min_finder/min_node_1[2]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'min_node_1[3]' driven by pin 'u_min_finder/min_node_1[3]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'sort_out_c_pack[3]' driven by pin 'u_sort_inst/OUT_character[3]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'sort_out_c_pack[7]' driven by pin 'u_sort_inst/OUT_character[7]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'sort_out_c_pack[11]' driven by pin 'u_sort_inst/OUT_character[11]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'sort_out_c_pack[15]' driven by pin 'u_sort_inst/OUT_character[15]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'sort_out_c_pack[19]' driven by pin 'u_sort_inst/OUT_character[19]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'sort_out_c_pack[23]' driven by pin 'u_sort_inst/OUT_character[23]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'sort_out_c_pack[27]' driven by pin 'u_sort_inst/OUT_character[27]' has no loads. (LINT-2)
+Warning: In design 'HT', net 'sort_out_c_pack[31]' driven by pin 'u_sort_inst/OUT_character[31]' has no loads. (LINT-2)
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[31]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[30]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[29]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[28]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[27]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[26]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[25]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[24]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[23]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[22]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[21]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[20]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[19]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[18]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[17]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[16]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[15]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[14]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[13]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[12]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[11]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[10]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[9]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[8]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[7]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[6]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[5]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[4]' is connected to logic 1. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[3]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[2]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[1]' is connected to logic 0. 
+Warning: In design 'HT', a pin on submodule 'u_sort_inst' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_character[0]' is connected to logic 0. 
+Warning: In design 'HT', the same net is connected to more than one pin on submodule 'u_sort_inst'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'IN_character[31]', 'IN_character[27]'', 'IN_character[24]', 'IN_character[23]', 'IN_character[21]', 'IN_character[19]', 'IN_character[17]', 'IN_character[16]', 'IN_character[15]', 'IN_character[14]', 'IN_character[11]', 'IN_character[10]', 'IN_character[8]', 'IN_character[7]', 'IN_character[6]', 'IN_character[5]', 'IN_character[3]', 'IN_character[2]', 'IN_character[1]', 'IN_character[0]'.
+Warning: In design 'HT', the same net is connected to more than one pin on submodule 'u_sort_inst'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'IN_character[30]', 'IN_character[29]'', 'IN_character[28]', 'IN_character[26]', 'IN_character[25]', 'IN_character[22]', 'IN_character[20]', 'IN_character[18]', 'IN_character[13]', 'IN_character[12]', 'IN_character[9]', 'IN_character[4]'.
+1

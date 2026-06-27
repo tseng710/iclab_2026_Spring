@@ -1,0 +1,109 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sun May 31 19:40:00 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR/CHIP_iclab053.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_postRoute -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix CHIP_postRoute -outDir timingReports
+getIoFlowFlag
+zoomBox 1442.42900 1508.90500 3946.14300 3984.95400
+zoomBox 2303.61900 2502.47300 3610.57400 3794.98700
+zoomBox 2537.39000 2829.75300 3481.66600 3763.59500
+zoomBox 2627.12200 2958.35200 3429.75700 3752.11800
+zoomBox 2810.62300 3242.97100 3303.54300 3730.44400
+zoomBox 2889.64600 3368.67200 3245.78100 3720.87200
+uiSetTool ruler
+zoomBox 2952.15700 3489.13900 3170.86900 3705.43400
+zoomBox 2997.78400 3582.70700 3111.95500 3695.61600
+panPage 1 0
+panPage 1 0
+zoomBox 3094.56100 3618.62600 3164.67600 3687.96600
+zoomBox 3101.34000 3627.18700 3160.93800 3686.12600
+zoomBox 3116.54300 3645.49800 3153.14500 3681.69600
+zoomBox 3087.22800 3616.94500 3169.72000 3698.52500
+zoomBox 3039.37400 3569.78600 3197.40300 3726.06900
+zoomBox 2948.49900 3478.91200 3251.23400 3778.30200
+zoomBox 2774.41200 3304.82500 3354.35800 3878.36300
+zoomBox 2693.59900 3217.44900 3496.29300 4210.83800
+zoomBox 2512.47500 3019.60600 3819.52800 4637.17400
+zoomBox 2332.19300 2822.68200 4141.26300 5061.53100
+zoomBox 2023.80400 2541.16500 4527.70800 5639.91900
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+violationBrowserClose
+verifyConnectivity -type all -error 1000 -warning 50
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+violationBrowserClose
+zoomBox 106.81100 1274.43000 4903.50600 7210.67100
+zoomBox -3429.24300 -950.14500 5759.71900 10421.83000
+zoomBox -4343.06200 -1138.28400 6467.48100 12240.51000
+zoomBox -6671.16700 -1585.30500 8291.52400 16932.05800
+zoomBox -8149.44400 -1867.34600 9453.72200 19917.78800
+zoomBox -4509.20000 -908.98300 6301.34500 12469.81300
+zoomBox -1435.42400 394.75400 4207.75000 7378.57100
+zoomBox -69.05900 1305.53700 3396.55600 5594.47500
+zoomBox 377.06700 1655.92700 3322.84000 5301.52500
+zoomBox 766.85200 1953.75900 3270.76000 5052.51800
+panPage 1 0
+zoomBox 1991.33500 2605.00600 3529.04800 4508.03200
+zoomBox 2246.12000 2905.26400 3357.11700 4280.20000
+zoomBox 2629.82300 3197.38400 3312.11500 4041.76700
+zoomBox 2888.68500 3416.00500 3244.84600 3856.77900
+zoomBox 3014.58900 3531.06800 3200.50700 3761.15400
+zoomBox 3090.96700 3600.97000 3173.46000 3703.06100
+zoomBox 3111.77700 3626.52900 3162.43900 3689.22700
+zoomBox 3116.31100 3633.02300 3159.37400 3686.31600
+zoomBox 3126.17700 3647.85400 3152.62500 3680.58500
+zoomBox 3132.09700 3658.88600 3148.33900 3678.98700
+zoomBox 3119.60800 3637.88500 3156.21400 3683.18700
+zoomBox 3097.72900 3605.30700 3167.85500 3692.09300
+zoomBox 3089.63800 3593.47800 3172.14000 3695.58000
+zoomBox 3018.01000 3504.81100 3203.95300 3734.92800
+zoomBox 2856.58000 3305.16900 3275.65200 3823.80000
+zoomBox 2645.98200 2912.95000 3448.79400 3906.48500
+zoomBox 2858.63800 3306.98400 3277.71100 3825.61600
+zoomBox 2945.30000 3473.75700 3202.66300 3792.26100
+zoomBox 3012.58600 3601.75900 3146.93100 3768.02000
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true

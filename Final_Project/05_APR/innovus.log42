@@ -1,0 +1,910 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+Options:	
+Date:		Mon Jun 22 00:24:44 2026
+Host:		ee24 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7763 64-Core Processor 512KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading Pegasus 21.21 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+RC_Corner
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-201):	Pin 'DO15' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI15' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO14' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI14' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO13' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI13' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO12' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI12' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO11' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI11' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO10' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI10' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO9' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI9' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO8' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI8' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A1' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'WEB' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'OE' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'CS' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A2' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'CK' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A0' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A3' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A4' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A5' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO7' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI7' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO6' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'DI6' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO5' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'DO4' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO3' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO2' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO1' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-201):	Pin 'DO0' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Loading view definition file from /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP.inn.dat/viewDefinition.tcl
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib)
+*** End library_loading (cpu=0.03min, real=0.02min, mem=20.9M, fe_cpu=0.29min, fe_real=0.62min, fe_mem=937.1M) ***
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+*** Netlist is unique.
+**WARN: (IMPFP-669):	IO pin "arid_m_inf_inst_1[3:0]" not found.
+**WARN: (IMPFP-669):	IO pin "araddr_m_inf_inst_1[31:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arlen_m_inf_inst_1[6:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arsize_m_inf_inst_1[2:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arburst_m_inf_inst_1[1:0]" not found.
+**WARN: (IMPFP-669):	IO pin "rid_m_inf_inst_1[3:0]" not found.
+**WARN: (IMPFP-669):	IO pin "rdata_m_inf_inst_1[15:0]" not found.
+**WARN: (IMPFP-669):	IO pin "rresp_m_inf_inst_1[1:0]" not found.
+**WARN: (IMPFP-669):	IO pin "wdata_m_inf_inst_1[15:0]" not found.
+**WARN: (IMPFP-669):	IO pin "bid_m_inf_inst_1[3:0]" not found.
+**WARN: (IMPFP-669):	IO pin "bresp_m_inf_inst_1[1:0]" not found.
+**WARN: (IMPFP-669):	IO pin "awid_m_inf_inst_1[3:0]" not found.
+**WARN: (IMPFP-669):	IO pin "awaddr_m_inf_inst_1[31:0]" not found.
+**WARN: (IMPFP-669):	IO pin "awlen_m_inf_inst_1[6:0]" not found.
+**WARN: (IMPFP-669):	IO pin "awsize_m_inf_inst_1[2:0]" not found.
+**WARN: (IMPFP-669):	IO pin "awburst_m_inf_inst_1[1:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arid_m_inf_inst_2[3:0]" not found.
+**WARN: (IMPFP-669):	IO pin "araddr_m_inf_inst_2[31:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arlen_m_inf_inst_2[6:0]" not found.
+**WARN: (IMPFP-669):	IO pin "arsize_m_inf_inst_2[2:0]" not found.
+**WARN: (EMS-27):	Message (IMPFP-669) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP.inn.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2cgate is not defined.
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading place ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+'set_default_switching_activity' finished successfully.
+Delay_Corner_min Delay_Corner_max
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.15-s105_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 1 -spreadType center -spacing 0.3 -pin {{araddr_m_inf_data[0]} {araddr_m_inf_data[3]} {araddr_m_inf_data[7]} {araddr_m_inf_data[10]} {araddr_m_inf_data[14]} {araddr_m_inf_data[17]} {araddr_m_inf_data[21]} {araddr_m_inf_data[24]} {araddr_m_inf_data[28]} {araddr_m_inf_data[31]} {araddr_m_inf_inst_1[0]} {araddr_m_inf_inst_1[4]} {araddr_m_inf_inst_1[7]} {araddr_m_inf_inst_1[11]} {araddr_m_inf_inst_1[14]} {araddr_m_inf_inst_1[18]} {araddr_m_inf_inst_1[21]} {araddr_m_inf_inst_1[25]} {araddr_m_inf_inst_1[28]} {araddr_m_inf_inst_2[2]} {araddr_m_inf_inst_2[5]} {araddr_m_inf_inst_2[9]} {araddr_m_inf_inst_2[12]} {araddr_m_inf_inst_2[16]} {araddr_m_inf_inst_2[19]} {araddr_m_inf_inst_2[23]} {araddr_m_inf_inst_2[26]} {araddr_m_inf_inst_2[30]} {arburst_m_inf_data[1]} {arburst_m_inf_inst_2[0]} {arid_m_inf_data[3]} {arid_m_inf_inst_1[0]} {arid_m_inf_inst_1[3]} {arid_m_inf_inst_2[1]} {arlen_m_inf_data[0]} {arlen_m_inf_data[3]} {arlen_m_inf_inst_1[0]} {arlen_m_inf_inst_1[4]} {arlen_m_inf_inst_2[2]} {arlen_m_inf_inst_2[5]} arready_m_inf_data arready_m_inf_inst_1 {arsize_m_inf_inst_1[0]} {arsize_m_inf_inst_2[1]} {awaddr_m_inf_data[1]} {awaddr_m_inf_data[5]} {awaddr_m_inf_data[8]} {awaddr_m_inf_data[12]} {awaddr_m_inf_data[15]} {awaddr_m_inf_data[19]} {awaddr_m_inf_data[22]} {awaddr_m_inf_data[26]} {awaddr_m_inf_data[29]} {awaddr_m_inf_inst_1[2]} {awaddr_m_inf_inst_1[5]} {awaddr_m_inf_inst_1[9]} {awaddr_m_inf_inst_1[12]} {awaddr_m_inf_inst_1[16]} {awaddr_m_inf_inst_1[19]} {awaddr_m_inf_inst_1[23]} {awaddr_m_inf_inst_1[26]} {awaddr_m_inf_inst_1[30]} {awaddr_m_inf_inst_2[0]} {awaddr_m_inf_inst_2[3]} {awaddr_m_inf_inst_2[7]} {awaddr_m_inf_inst_2[10]} {awaddr_m_inf_inst_2[14]} {awaddr_m_inf_inst_2[17]} {awaddr_m_inf_inst_2[21]} {awaddr_m_inf_inst_2[24]} {awaddr_m_inf_inst_2[28]} {awaddr_m_inf_inst_2[31]} {awburst_m_inf_inst_1[0]} {awburst_m_inf_inst_2[1]} {awid_m_inf_data[1]} {awid_m_inf_inst_1[1]} {awid_m_inf_inst_2[3]} {awlen_m_inf_data[3]} {awlen_m_inf_data[6]} {awlen_m_inf_inst_1[0]} {awlen_m_inf_inst_1[3]} {awlen_m_inf_inst_2[1]} {awlen_m_inf_inst_2[5]} awready_m_inf_inst_2 {awsize_m_inf_data[1]} {awsize_m_inf_inst_1[1]} awvalid_m_inf_data {bid_m_inf_data[0]} {bid_m_inf_data[3]} {bid_m_inf_inst_1[0]} {bid_m_inf_inst_2[2]} {bresp_m_inf_inst_2[0]} bvalid_m_inf_inst_1 {rdata_m_inf_data[2]} {rdata_m_inf_data[6]} {rdata_m_inf_data[9]} {rdata_m_inf_data[13]} {rdata_m_inf_inst_1[3]} {rdata_m_inf_inst_1[6]} {rdata_m_inf_inst_1[10]} {rdata_m_inf_inst_1[13]} {rdata_m_inf_inst_2[1]} {rdata_m_inf_inst_2[4]} {rdata_m_inf_inst_2[8]} {rdata_m_inf_inst_2[11]} {rdata_m_inf_inst_2[15]} {rid_m_inf_data[0]} {rid_m_inf_inst_1[1]} {rid_m_inf_inst_2[2]} rlast_m_inf_inst_2 rready_m_inf_data {rresp_m_inf_data[1]} {rresp_m_inf_inst_1[1]} rvalid_m_inf_inst_1 {wdata_m_inf_data[0]} {wdata_m_inf_data[3]} {wdata_m_inf_data[7]} {wdata_m_inf_data[10]} {wdata_m_inf_data[14]} {wdata_m_inf_inst_1[0]} {wdata_m_inf_inst_1[4]} {wdata_m_inf_inst_1[7]} {wdata_m_inf_inst_1[11]} {wdata_m_inf_inst_1[14]} {wdata_m_inf_inst_2[2]} {wdata_m_inf_inst_2[5]} {wdata_m_inf_inst_2[9]} {wdata_m_inf_inst_2[12]} wready_m_inf_inst_1 wvalid_m_inf_inst_2}
+Successfully spread [130] pins.
+editPin : finished (cpu = 0:00:00.2 real = 0:00:00.0, mem = 1972.4M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 1 -spreadType center -spacing 2 -pin {{araddr_m_inf_data[0]} {araddr_m_inf_data[3]} {araddr_m_inf_data[7]} {araddr_m_inf_data[10]} {araddr_m_inf_data[14]} {araddr_m_inf_data[17]} {araddr_m_inf_data[21]} {araddr_m_inf_data[24]} {araddr_m_inf_data[28]} {araddr_m_inf_data[31]} {araddr_m_inf_inst_1[0]} {araddr_m_inf_inst_1[4]} {araddr_m_inf_inst_1[7]} {araddr_m_inf_inst_1[11]} {araddr_m_inf_inst_1[14]} {araddr_m_inf_inst_1[18]} {araddr_m_inf_inst_1[21]} {araddr_m_inf_inst_1[25]} {araddr_m_inf_inst_1[28]} {araddr_m_inf_inst_2[2]} {araddr_m_inf_inst_2[5]} {araddr_m_inf_inst_2[9]} {araddr_m_inf_inst_2[12]} {araddr_m_inf_inst_2[16]} {araddr_m_inf_inst_2[19]} {araddr_m_inf_inst_2[23]} {araddr_m_inf_inst_2[26]} {araddr_m_inf_inst_2[30]} {arburst_m_inf_data[1]} {arburst_m_inf_inst_2[0]} {arid_m_inf_data[3]} {arid_m_inf_inst_1[0]} {arid_m_inf_inst_1[3]} {arid_m_inf_inst_2[1]} {arlen_m_inf_data[0]} {arlen_m_inf_data[3]} {arlen_m_inf_inst_1[0]} {arlen_m_inf_inst_1[4]} {arlen_m_inf_inst_2[2]} {arlen_m_inf_inst_2[5]} arready_m_inf_data arready_m_inf_inst_1 {arsize_m_inf_inst_1[0]} {arsize_m_inf_inst_2[1]} {awaddr_m_inf_data[1]} {awaddr_m_inf_data[5]} {awaddr_m_inf_data[8]} {awaddr_m_inf_data[12]} {awaddr_m_inf_data[15]} {awaddr_m_inf_data[19]} {awaddr_m_inf_data[22]} {awaddr_m_inf_data[26]} {awaddr_m_inf_data[29]} {awaddr_m_inf_inst_1[2]} {awaddr_m_inf_inst_1[5]} {awaddr_m_inf_inst_1[9]} {awaddr_m_inf_inst_1[12]} {awaddr_m_inf_inst_1[16]} {awaddr_m_inf_inst_1[19]} {awaddr_m_inf_inst_1[23]} {awaddr_m_inf_inst_1[26]} {awaddr_m_inf_inst_1[30]} {awaddr_m_inf_inst_2[0]} {awaddr_m_inf_inst_2[3]} {awaddr_m_inf_inst_2[7]} {awaddr_m_inf_inst_2[10]} {awaddr_m_inf_inst_2[14]} {awaddr_m_inf_inst_2[17]} {awaddr_m_inf_inst_2[21]} {awaddr_m_inf_inst_2[24]} {awaddr_m_inf_inst_2[28]} {awaddr_m_inf_inst_2[31]} {awburst_m_inf_inst_1[0]} {awburst_m_inf_inst_2[1]} {awid_m_inf_data[1]} {awid_m_inf_inst_1[1]} {awid_m_inf_inst_2[3]} {awlen_m_inf_data[3]} {awlen_m_inf_data[6]} {awlen_m_inf_inst_1[0]} {awlen_m_inf_inst_1[3]} {awlen_m_inf_inst_2[1]} {awlen_m_inf_inst_2[5]} awready_m_inf_inst_2 {awsize_m_inf_data[1]} {awsize_m_inf_inst_1[1]} awvalid_m_inf_data {bid_m_inf_data[0]} {bid_m_inf_data[3]} {bid_m_inf_inst_1[0]} {bid_m_inf_inst_2[2]} {bresp_m_inf_inst_2[0]} bvalid_m_inf_inst_1 {rdata_m_inf_data[2]} {rdata_m_inf_data[6]} {rdata_m_inf_data[9]} {rdata_m_inf_data[13]} {rdata_m_inf_inst_1[3]} {rdata_m_inf_inst_1[6]} {rdata_m_inf_inst_1[10]} {rdata_m_inf_inst_1[13]} {rdata_m_inf_inst_2[1]} {rdata_m_inf_inst_2[4]} {rdata_m_inf_inst_2[8]} {rdata_m_inf_inst_2[11]} {rdata_m_inf_inst_2[15]} {rid_m_inf_data[0]} {rid_m_inf_inst_1[1]} {rid_m_inf_inst_2[2]} rlast_m_inf_inst_2 rready_m_inf_data {rresp_m_inf_data[1]} {rresp_m_inf_inst_1[1]} rvalid_m_inf_inst_1 {wdata_m_inf_data[0]} {wdata_m_inf_data[3]} {wdata_m_inf_data[7]} {wdata_m_inf_data[10]} {wdata_m_inf_data[14]} {wdata_m_inf_inst_1[0]} {wdata_m_inf_inst_1[4]} {wdata_m_inf_inst_1[7]} {wdata_m_inf_inst_1[11]} {wdata_m_inf_inst_1[14]} {wdata_m_inf_inst_2[2]} {wdata_m_inf_inst_2[5]} {wdata_m_inf_inst_2[9]} {wdata_m_inf_inst_2[12]} wready_m_inf_inst_1 wvalid_m_inf_inst_2}
+Successfully spread [130] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 1 -spreadType center -spacing 4 -pin {{araddr_m_inf_data[0]} {araddr_m_inf_data[3]} {araddr_m_inf_data[7]} {araddr_m_inf_data[10]} {araddr_m_inf_data[14]} {araddr_m_inf_data[17]} {araddr_m_inf_data[21]} {araddr_m_inf_data[24]} {araddr_m_inf_data[28]} {araddr_m_inf_data[31]} {araddr_m_inf_inst_1[0]} {araddr_m_inf_inst_1[4]} {araddr_m_inf_inst_1[7]} {araddr_m_inf_inst_1[11]} {araddr_m_inf_inst_1[14]} {araddr_m_inf_inst_1[18]} {araddr_m_inf_inst_1[21]} {araddr_m_inf_inst_1[25]} {araddr_m_inf_inst_1[28]} {araddr_m_inf_inst_2[2]} {araddr_m_inf_inst_2[5]} {araddr_m_inf_inst_2[9]} {araddr_m_inf_inst_2[12]} {araddr_m_inf_inst_2[16]} {araddr_m_inf_inst_2[19]} {araddr_m_inf_inst_2[23]} {araddr_m_inf_inst_2[26]} {araddr_m_inf_inst_2[30]} {arburst_m_inf_data[1]} {arburst_m_inf_inst_2[0]} {arid_m_inf_data[3]} {arid_m_inf_inst_1[0]} {arid_m_inf_inst_1[3]} {arid_m_inf_inst_2[1]} {arlen_m_inf_data[0]} {arlen_m_inf_data[3]} {arlen_m_inf_inst_1[0]} {arlen_m_inf_inst_1[4]} {arlen_m_inf_inst_2[2]} {arlen_m_inf_inst_2[5]} arready_m_inf_data arready_m_inf_inst_1 {arsize_m_inf_inst_1[0]} {arsize_m_inf_inst_2[1]} {awaddr_m_inf_data[1]} {awaddr_m_inf_data[5]} {awaddr_m_inf_data[8]} {awaddr_m_inf_data[12]} {awaddr_m_inf_data[15]} {awaddr_m_inf_data[19]} {awaddr_m_inf_data[22]} {awaddr_m_inf_data[26]} {awaddr_m_inf_data[29]} {awaddr_m_inf_inst_1[2]} {awaddr_m_inf_inst_1[5]} {awaddr_m_inf_inst_1[9]} {awaddr_m_inf_inst_1[12]} {awaddr_m_inf_inst_1[16]} {awaddr_m_inf_inst_1[19]} {awaddr_m_inf_inst_1[23]} {awaddr_m_inf_inst_1[26]} {awaddr_m_inf_inst_1[30]} {awaddr_m_inf_inst_2[0]} {awaddr_m_inf_inst_2[3]} {awaddr_m_inf_inst_2[7]} {awaddr_m_inf_inst_2[10]} {awaddr_m_inf_inst_2[14]} {awaddr_m_inf_inst_2[17]} {awaddr_m_inf_inst_2[21]} {awaddr_m_inf_inst_2[24]} {awaddr_m_inf_inst_2[28]} {awaddr_m_inf_inst_2[31]} {awburst_m_inf_inst_1[0]} {awburst_m_inf_inst_2[1]} {awid_m_inf_data[1]} {awid_m_inf_inst_1[1]} {awid_m_inf_inst_2[3]} {awlen_m_inf_data[3]} {awlen_m_inf_data[6]} {awlen_m_inf_inst_1[0]} {awlen_m_inf_inst_1[3]} {awlen_m_inf_inst_2[1]} {awlen_m_inf_inst_2[5]} awready_m_inf_inst_2 {awsize_m_inf_data[1]} {awsize_m_inf_inst_1[1]} awvalid_m_inf_data {bid_m_inf_data[0]} {bid_m_inf_data[3]} {bid_m_inf_inst_1[0]} {bid_m_inf_inst_2[2]} {bresp_m_inf_inst_2[0]} bvalid_m_inf_inst_1 {rdata_m_inf_data[2]} {rdata_m_inf_data[6]} {rdata_m_inf_data[9]} {rdata_m_inf_data[13]} {rdata_m_inf_inst_1[3]} {rdata_m_inf_inst_1[6]} {rdata_m_inf_inst_1[10]} {rdata_m_inf_inst_1[13]} {rdata_m_inf_inst_2[1]} {rdata_m_inf_inst_2[4]} {rdata_m_inf_inst_2[8]} {rdata_m_inf_inst_2[11]} {rdata_m_inf_inst_2[15]} {rid_m_inf_data[0]} {rid_m_inf_inst_1[1]} {rid_m_inf_inst_2[2]} rlast_m_inf_inst_2 rready_m_inf_data {rresp_m_inf_data[1]} {rresp_m_inf_inst_1[1]} rvalid_m_inf_inst_1 {wdata_m_inf_data[0]} {wdata_m_inf_data[3]} {wdata_m_inf_data[7]} {wdata_m_inf_data[10]} {wdata_m_inf_data[14]} {wdata_m_inf_inst_1[0]} {wdata_m_inf_inst_1[4]} {wdata_m_inf_inst_1[7]} {wdata_m_inf_inst_1[11]} {wdata_m_inf_inst_1[14]} {wdata_m_inf_inst_2[2]} {wdata_m_inf_inst_2[5]} {wdata_m_inf_inst_2[9]} {wdata_m_inf_inst_2[12]} wready_m_inf_inst_1 wvalid_m_inf_inst_2}
+Successfully spread [130] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 1 -spreadType center -spacing 5 -pin {{araddr_m_inf_data[6]} {araddr_m_inf_data[13]} {araddr_m_inf_data[20]} {araddr_m_inf_data[27]} {araddr_m_inf_inst_1[3]} {araddr_m_inf_inst_1[10]} {araddr_m_inf_inst_1[17]} {araddr_m_inf_inst_1[24]} {araddr_m_inf_inst_1[31]} {araddr_m_inf_inst_2[1]} {araddr_m_inf_inst_2[8]} {araddr_m_inf_inst_2[15]} {araddr_m_inf_inst_2[22]} {araddr_m_inf_inst_2[29]} {arburst_m_inf_inst_1[1]} {arid_m_inf_data[2]} {arlen_m_inf_data[6]} {arlen_m_inf_inst_1[3]} {arlen_m_inf_inst_2[1]} {arsize_m_inf_data[2]} arvalid_m_inf_inst_2 {awaddr_m_inf_data[4]} {awaddr_m_inf_data[11]} {awaddr_m_inf_data[18]} {awaddr_m_inf_data[25]} {awaddr_m_inf_inst_1[1]} {awaddr_m_inf_inst_1[8]} {awaddr_m_inf_inst_1[15]} {awaddr_m_inf_inst_1[22]} {awaddr_m_inf_inst_1[29]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[27]} {awid_m_inf_data[0]} {awid_m_inf_inst_2[2]} {awlen_m_inf_data[2]} {awlen_m_inf_data[4]} {awlen_m_inf_inst_1[6]} {awlen_m_inf_inst_2[4]} {awsize_m_inf_data[0]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_1 {bid_m_inf_inst_1[3]} {bid_m_inf_inst_2[1]} bready_m_inf_inst_1 {rdata_m_inf_data[5]} {rdata_m_inf_data[12]} {rdata_m_inf_inst_1[2]} {rdata_m_inf_inst_1[9]} {rdata_m_inf_inst_2[0]} {rdata_m_inf_inst_2[7]} {rdata_m_inf_inst_2[14]} {rid_m_inf_data[3]} {rid_m_inf_inst_1[0]} rready_m_inf_inst_1 {rresp_m_inf_data[0]} {wdata_m_inf_data[1]} {wdata_m_inf_data[6]} {wdata_m_inf_data[13]} {wdata_m_inf_data[15]} {wdata_m_inf_inst_1[3]} {wdata_m_inf_inst_1[10]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[15]} wlast_m_inf_data}
+Successfully spread [67] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 1 -spreadType center -spacing 20 -pin {{araddr_m_inf_data[6]} {araddr_m_inf_data[13]} {araddr_m_inf_data[20]} {araddr_m_inf_data[27]} {araddr_m_inf_inst_1[3]} {araddr_m_inf_inst_1[10]} {araddr_m_inf_inst_1[17]} {araddr_m_inf_inst_1[24]} {araddr_m_inf_inst_1[31]} {araddr_m_inf_inst_2[1]} {araddr_m_inf_inst_2[8]} {araddr_m_inf_inst_2[15]} {araddr_m_inf_inst_2[22]} {araddr_m_inf_inst_2[29]} {arburst_m_inf_inst_1[1]} {arid_m_inf_data[2]} {arlen_m_inf_data[6]} {arlen_m_inf_inst_1[3]} {arlen_m_inf_inst_2[1]} {arsize_m_inf_data[2]} arvalid_m_inf_inst_2 {awaddr_m_inf_data[4]} {awaddr_m_inf_data[11]} {awaddr_m_inf_data[18]} {awaddr_m_inf_data[25]} {awaddr_m_inf_inst_1[1]} {awaddr_m_inf_inst_1[8]} {awaddr_m_inf_inst_1[15]} {awaddr_m_inf_inst_1[22]} {awaddr_m_inf_inst_1[29]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[27]} {awid_m_inf_data[0]} {awid_m_inf_inst_2[2]} {awlen_m_inf_data[2]} {awlen_m_inf_data[4]} {awlen_m_inf_inst_1[6]} {awlen_m_inf_inst_2[4]} {awsize_m_inf_data[0]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_1 {bid_m_inf_inst_1[3]} {bid_m_inf_inst_2[1]} bready_m_inf_inst_1 {rdata_m_inf_data[5]} {rdata_m_inf_data[12]} {rdata_m_inf_inst_1[2]} {rdata_m_inf_inst_1[9]} {rdata_m_inf_inst_2[0]} {rdata_m_inf_inst_2[7]} {rdata_m_inf_inst_2[14]} {rid_m_inf_data[3]} {rid_m_inf_inst_1[0]} rready_m_inf_inst_1 {rresp_m_inf_data[0]} {wdata_m_inf_data[1]} {wdata_m_inf_data[6]} {wdata_m_inf_data[13]} {wdata_m_inf_data[15]} {wdata_m_inf_inst_1[3]} {wdata_m_inf_inst_1[10]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[15]} wlast_m_inf_data}
+Selected [67] pin for spreading. Could not spread (34 out of 67) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+
+Following pins are not spread:
+  araddr_m_inf_data[6]
+  araddr_m_inf_data[13]
+  araddr_m_inf_data[20]
+  araddr_m_inf_data[27]
+  araddr_m_inf_inst_1[3]
+  araddr_m_inf_inst_1[10]
+  araddr_m_inf_inst_1[17]
+  araddr_m_inf_inst_1[24]
+  araddr_m_inf_inst_1[31]
+  araddr_m_inf_inst_2[1]
+  araddr_m_inf_inst_2[8]
+  araddr_m_inf_inst_2[15]
+  araddr_m_inf_inst_2[22]
+  araddr_m_inf_inst_2[29]
+  arburst_m_inf_inst_1[1]
+  arid_m_inf_data[2]
+  arlen_m_inf_data[6]
+  rdata_m_inf_inst_2[0]
+  rdata_m_inf_inst_2[7]
+  rdata_m_inf_inst_2[14]
+  rid_m_inf_data[3]
+  rid_m_inf_inst_1[0]
+  rready_m_inf_inst_1
+  rresp_m_inf_data[0]
+  wdata_m_inf_data[1]
+  wdata_m_inf_data[6]
+  wdata_m_inf_data[13]
+  wdata_m_inf_data[15]
+  wdata_m_inf_inst_1[3]
+  wdata_m_inf_inst_1[10]
+  wdata_m_inf_inst_2[1]
+  wdata_m_inf_inst_2[8]
+  wdata_m_inf_inst_2[15]
+  wlast_m_inf_data
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 1 -spreadType center -spacing 15 -pin {{araddr_m_inf_data[6]} {araddr_m_inf_data[13]} {araddr_m_inf_data[20]} {araddr_m_inf_data[27]} {araddr_m_inf_inst_1[3]} {araddr_m_inf_inst_1[10]} {araddr_m_inf_inst_1[17]} {araddr_m_inf_inst_1[24]} {araddr_m_inf_inst_1[31]} {araddr_m_inf_inst_2[1]} {araddr_m_inf_inst_2[8]} {araddr_m_inf_inst_2[15]} {araddr_m_inf_inst_2[22]} {araddr_m_inf_inst_2[29]} {arburst_m_inf_inst_1[1]} {arid_m_inf_data[2]} {arlen_m_inf_data[6]} {arlen_m_inf_inst_1[3]} {arlen_m_inf_inst_2[1]} {arsize_m_inf_data[2]} arvalid_m_inf_inst_2 {awaddr_m_inf_data[4]} {awaddr_m_inf_data[11]} {awaddr_m_inf_data[18]} {awaddr_m_inf_data[25]} {awaddr_m_inf_inst_1[1]} {awaddr_m_inf_inst_1[8]} {awaddr_m_inf_inst_1[15]} {awaddr_m_inf_inst_1[22]} {awaddr_m_inf_inst_1[29]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[27]} {awid_m_inf_data[0]} {awid_m_inf_inst_2[2]} {awlen_m_inf_data[2]} {awlen_m_inf_data[4]} {awlen_m_inf_inst_1[6]} {awlen_m_inf_inst_2[4]} {awsize_m_inf_data[0]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_1 {bid_m_inf_inst_1[3]} {bid_m_inf_inst_2[1]} bready_m_inf_inst_1 {rdata_m_inf_data[5]} {rdata_m_inf_data[12]} {rdata_m_inf_inst_1[2]} {rdata_m_inf_inst_1[9]} {rdata_m_inf_inst_2[0]} {rdata_m_inf_inst_2[7]} {rdata_m_inf_inst_2[14]} {rid_m_inf_data[3]} {rid_m_inf_inst_1[0]} rready_m_inf_inst_1 {rresp_m_inf_data[0]} {wdata_m_inf_data[1]} {wdata_m_inf_data[6]} {wdata_m_inf_data[13]} {wdata_m_inf_data[15]} {wdata_m_inf_inst_1[3]} {wdata_m_inf_inst_1[10]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[15]} wlast_m_inf_data}
+Selected [67] pin for spreading. Could not spread (22 out of 67) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+
+Following pins are not spread:
+  araddr_m_inf_data[6]
+  araddr_m_inf_data[13]
+  araddr_m_inf_data[20]
+  araddr_m_inf_data[27]
+  araddr_m_inf_inst_1[3]
+  araddr_m_inf_inst_1[10]
+  araddr_m_inf_inst_1[17]
+  araddr_m_inf_inst_1[24]
+  araddr_m_inf_inst_1[31]
+  araddr_m_inf_inst_2[1]
+  araddr_m_inf_inst_2[8]
+  rresp_m_inf_data[0]
+  wdata_m_inf_data[1]
+  wdata_m_inf_data[6]
+  wdata_m_inf_data[13]
+  wdata_m_inf_data[15]
+  wdata_m_inf_inst_1[3]
+  wdata_m_inf_inst_1[10]
+  wdata_m_inf_inst_2[1]
+  wdata_m_inf_inst_2[8]
+  wdata_m_inf_inst_2[15]
+  wlast_m_inf_data
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 1 -spreadType center -spacing 7 -pin {{araddr_m_inf_data[6]} {araddr_m_inf_data[13]} {araddr_m_inf_data[20]} {araddr_m_inf_data[27]} {araddr_m_inf_inst_1[3]} {araddr_m_inf_inst_1[10]} {araddr_m_inf_inst_1[17]} {araddr_m_inf_inst_1[24]} {araddr_m_inf_inst_1[31]} {araddr_m_inf_inst_2[1]} {araddr_m_inf_inst_2[8]} {araddr_m_inf_inst_2[15]} {araddr_m_inf_inst_2[22]} {araddr_m_inf_inst_2[29]} {arburst_m_inf_inst_1[1]} {arid_m_inf_data[2]} {arlen_m_inf_data[6]} {arlen_m_inf_inst_1[3]} {arlen_m_inf_inst_2[1]} {arsize_m_inf_data[2]} arvalid_m_inf_inst_2 {awaddr_m_inf_data[4]} {awaddr_m_inf_data[11]} {awaddr_m_inf_data[18]} {awaddr_m_inf_data[25]} {awaddr_m_inf_inst_1[1]} {awaddr_m_inf_inst_1[8]} {awaddr_m_inf_inst_1[15]} {awaddr_m_inf_inst_1[22]} {awaddr_m_inf_inst_1[29]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[27]} {awid_m_inf_data[0]} {awid_m_inf_inst_2[2]} {awlen_m_inf_data[2]} {awlen_m_inf_data[4]} {awlen_m_inf_inst_1[6]} {awlen_m_inf_inst_2[4]} {awsize_m_inf_data[0]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_1 {bid_m_inf_inst_1[3]} {bid_m_inf_inst_2[1]} bready_m_inf_inst_1 {rdata_m_inf_data[5]} {rdata_m_inf_data[12]} {rdata_m_inf_inst_1[2]} {rdata_m_inf_inst_1[9]} {rdata_m_inf_inst_2[0]} {rdata_m_inf_inst_2[7]} {rdata_m_inf_inst_2[14]} {rid_m_inf_data[3]} {rid_m_inf_inst_1[0]} rready_m_inf_inst_1 {rresp_m_inf_data[0]} {wdata_m_inf_data[1]} {wdata_m_inf_data[6]} {wdata_m_inf_data[13]} {wdata_m_inf_data[15]} {wdata_m_inf_inst_1[3]} {wdata_m_inf_inst_1[10]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[15]} wlast_m_inf_data}
+Successfully spread [67] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 1 -spreadType center -spacing 10 -pin {{araddr_m_inf_data[6]} {araddr_m_inf_data[13]} {araddr_m_inf_data[20]} {araddr_m_inf_data[27]} {araddr_m_inf_inst_1[3]} {araddr_m_inf_inst_1[10]} {araddr_m_inf_inst_1[17]} {araddr_m_inf_inst_1[24]} {araddr_m_inf_inst_1[31]} {araddr_m_inf_inst_2[1]} {araddr_m_inf_inst_2[8]} {araddr_m_inf_inst_2[15]} {araddr_m_inf_inst_2[22]} {araddr_m_inf_inst_2[29]} {arburst_m_inf_inst_1[1]} {arid_m_inf_data[2]} {arlen_m_inf_data[6]} {arlen_m_inf_inst_1[3]} {arlen_m_inf_inst_2[1]} {arsize_m_inf_data[2]} arvalid_m_inf_inst_2 {awaddr_m_inf_data[4]} {awaddr_m_inf_data[11]} {awaddr_m_inf_data[18]} {awaddr_m_inf_data[25]} {awaddr_m_inf_inst_1[1]} {awaddr_m_inf_inst_1[8]} {awaddr_m_inf_inst_1[15]} {awaddr_m_inf_inst_1[22]} {awaddr_m_inf_inst_1[29]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[27]} {awid_m_inf_data[0]} {awid_m_inf_inst_2[2]} {awlen_m_inf_data[2]} {awlen_m_inf_data[4]} {awlen_m_inf_inst_1[6]} {awlen_m_inf_inst_2[4]} {awsize_m_inf_data[0]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_1 {bid_m_inf_inst_1[3]} {bid_m_inf_inst_2[1]} bready_m_inf_inst_1 {rdata_m_inf_data[5]} {rdata_m_inf_data[12]} {rdata_m_inf_inst_1[2]} {rdata_m_inf_inst_1[9]} {rdata_m_inf_inst_2[0]} {rdata_m_inf_inst_2[7]} {rdata_m_inf_inst_2[14]} {rid_m_inf_data[3]} {rid_m_inf_inst_1[0]} rready_m_inf_inst_1 {rresp_m_inf_data[0]} {wdata_m_inf_data[1]} {wdata_m_inf_data[6]} {wdata_m_inf_data[13]} {wdata_m_inf_data[15]} {wdata_m_inf_inst_1[3]} {wdata_m_inf_inst_1[10]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[15]} wlast_m_inf_data}
+Successfully spread [67] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 1 -spreadType center -spacing 9 -pin {{araddr_m_inf_data[6]} {araddr_m_inf_data[13]} {araddr_m_inf_data[20]} {araddr_m_inf_data[27]} {araddr_m_inf_inst_1[3]} {araddr_m_inf_inst_1[10]} {araddr_m_inf_inst_1[17]} {araddr_m_inf_inst_1[24]} {araddr_m_inf_inst_1[31]} {araddr_m_inf_inst_2[1]} {araddr_m_inf_inst_2[8]} {araddr_m_inf_inst_2[15]} {araddr_m_inf_inst_2[22]} {araddr_m_inf_inst_2[29]} {arburst_m_inf_inst_1[1]} {arid_m_inf_data[2]} {arlen_m_inf_data[6]} {arlen_m_inf_inst_1[3]} {arlen_m_inf_inst_2[1]} {arsize_m_inf_data[2]} arvalid_m_inf_inst_2 {awaddr_m_inf_data[4]} {awaddr_m_inf_data[11]} {awaddr_m_inf_data[18]} {awaddr_m_inf_data[25]} {awaddr_m_inf_inst_1[1]} {awaddr_m_inf_inst_1[8]} {awaddr_m_inf_inst_1[15]} {awaddr_m_inf_inst_1[22]} {awaddr_m_inf_inst_1[29]} {awaddr_m_inf_inst_2[6]} {awaddr_m_inf_inst_2[13]} {awaddr_m_inf_inst_2[20]} {awaddr_m_inf_inst_2[27]} {awid_m_inf_data[0]} {awid_m_inf_inst_2[2]} {awlen_m_inf_data[2]} {awlen_m_inf_data[4]} {awlen_m_inf_inst_1[6]} {awlen_m_inf_inst_2[4]} {awsize_m_inf_data[0]} {awsize_m_inf_inst_2[2]} awvalid_m_inf_inst_1 {bid_m_inf_inst_1[3]} {bid_m_inf_inst_2[1]} bready_m_inf_inst_1 {rdata_m_inf_data[5]} {rdata_m_inf_data[12]} {rdata_m_inf_inst_1[2]} {rdata_m_inf_inst_1[9]} {rdata_m_inf_inst_2[0]} {rdata_m_inf_inst_2[7]} {rdata_m_inf_inst_2[14]} {rid_m_inf_data[3]} {rid_m_inf_inst_1[0]} rready_m_inf_inst_1 {rresp_m_inf_data[0]} {wdata_m_inf_data[1]} {wdata_m_inf_data[6]} {wdata_m_inf_data[13]} {wdata_m_inf_data[15]} {wdata_m_inf_inst_1[3]} {wdata_m_inf_inst_1[10]} {wdata_m_inf_inst_2[1]} {wdata_m_inf_inst_2[8]} {wdata_m_inf_inst_2[15]} wlast_m_inf_data}
+Successfully spread [67] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing 9.52 -pin {{araddr_m_inf_data[2]} {araddr_m_inf_data[5]} {araddr_m_inf_data[9]} {araddr_m_inf_data[12]} {araddr_m_inf_data[16]} {araddr_m_inf_data[19]} {araddr_m_inf_data[23]} {araddr_m_inf_data[26]} {araddr_m_inf_data[30]} {araddr_m_inf_inst_1[2]} {araddr_m_inf_inst_1[6]} {araddr_m_inf_inst_1[9]} {araddr_m_inf_inst_1[13]} {araddr_m_inf_inst_1[16]} {araddr_m_inf_inst_1[20]} {araddr_m_inf_inst_1[23]} {araddr_m_inf_inst_1[27]} {araddr_m_inf_inst_1[30]} {araddr_m_inf_inst_2[0]} {araddr_m_inf_inst_2[4]} {araddr_m_inf_inst_2[7]} {araddr_m_inf_inst_2[11]} {araddr_m_inf_inst_2[14]} {araddr_m_inf_inst_2[18]} {araddr_m_inf_inst_2[21]} {araddr_m_inf_inst_2[25]} {araddr_m_inf_inst_2[28]} {arburst_m_inf_data[0]} {arburst_m_inf_inst_1[0]} {arid_m_inf_data[1]} {arid_m_inf_inst_1[2]} {arid_m_inf_inst_2[0]} {arid_m_inf_inst_2[3]} {arlen_m_inf_data[2]} {arlen_m_inf_data[5]} {arlen_m_inf_inst_1[2]} {arlen_m_inf_inst_1[6]} {arlen_m_inf_inst_2[0]} {arlen_m_inf_inst_2[4]} arready_m_inf_inst_2 {arsize_m_inf_data[1]} {arsize_m_inf_inst_1[2]} {arsize_m_inf_inst_2[0]} {awaddr_m_inf_data[0]} {awaddr_m_inf_data[3]} {awaddr_m_inf_data[7]} {awaddr_m_inf_data[10]} {awaddr_m_inf_data[14]} {awaddr_m_inf_data[17]} {awaddr_m_inf_data[21]} {awaddr_m_inf_data[24]} {awaddr_m_inf_data[28]} {awaddr_m_inf_data[31]} {awaddr_m_inf_inst_1[0]} {awaddr_m_inf_inst_1[4]} {awaddr_m_inf_inst_1[7]} {awaddr_m_inf_inst_1[11]} {awaddr_m_inf_inst_1[14]} {awaddr_m_inf_inst_1[18]} {awaddr_m_inf_inst_1[21]} {awaddr_m_inf_inst_1[25]} {awaddr_m_inf_inst_1[28]} {awaddr_m_inf_inst_2[2]} {awaddr_m_inf_inst_2[5]} {awaddr_m_inf_inst_2[9]} {awaddr_m_inf_inst_2[12]} {awaddr_m_inf_inst_2[16]} {awaddr_m_inf_inst_2[19]} {awaddr_m_inf_inst_2[23]} {awaddr_m_inf_inst_2[26]} {awaddr_m_inf_inst_2[30]} {awburst_m_inf_data[1]} {awburst_m_inf_inst_2[0]} {awid_m_inf_data[3]} {awid_m_inf_inst_1[0]} {awid_m_inf_inst_1[3]} {awid_m_inf_inst_2[1]} {awlen_m_inf_data[1]} {awlen_m_inf_data[5]} {awlen_m_inf_inst_1[2]} {awlen_m_inf_inst_1[5]} {awlen_m_inf_inst_2[0]} {awlen_m_inf_inst_2[3]} awready_m_inf_data awready_m_inf_inst_1 {awsize_m_inf_inst_1[0]} {awsize_m_inf_inst_2[1]} {bid_m_inf_inst_1[2]} {bid_m_inf_inst_2[0]} {bresp_m_inf_data[0]} {bresp_m_inf_inst_1[1]} bvalid_m_inf_inst_2 {rdata_m_inf_data[1]} {rdata_m_inf_data[4]} {rdata_m_inf_data[8]} {rdata_m_inf_data[11]} {rdata_m_inf_data[15]} {rdata_m_inf_inst_1[1]} {rdata_m_inf_inst_1[5]} {rdata_m_inf_inst_1[8]} {rdata_m_inf_inst_1[12]} {rdata_m_inf_inst_1[15]} {rdata_m_inf_inst_2[3]} {rdata_m_inf_inst_2[6]} {rdata_m_inf_inst_2[10]} {rdata_m_inf_inst_2[13]} {rid_m_inf_data[2]} {rid_m_inf_inst_1[3]} {rid_m_inf_inst_2[1]} rlast_m_inf_data {rresp_m_inf_inst_1[0]} {rresp_m_inf_inst_2[1]} rst_n rvalid_m_inf_inst_2 {wdata_m_inf_data[2]} {wdata_m_inf_data[5]} {wdata_m_inf_data[8]} {wdata_m_inf_data[9]} {wdata_m_inf_data[12]} {wdata_m_inf_inst_1[2]} {wdata_m_inf_inst_1[6]} {wdata_m_inf_inst_1[9]} {wdata_m_inf_inst_1[13]} {wdata_m_inf_inst_2[0]} {wdata_m_inf_inst_2[4]} {wdata_m_inf_inst_2[7]} {wdata_m_inf_inst_2[11]} {wdata_m_inf_inst_2[14]} wlast_m_inf_inst_1 wready_m_inf_inst_2}
+Selected [130] pin for spreading. Could not spread (66 out of 130) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+
+Following pins are not spread:
+  araddr_m_inf_data[2]
+  araddr_m_inf_data[5]
+  araddr_m_inf_data[9]
+  araddr_m_inf_data[12]
+  araddr_m_inf_data[16]
+  araddr_m_inf_data[19]
+  araddr_m_inf_data[23]
+  araddr_m_inf_data[26]
+  araddr_m_inf_data[30]
+  araddr_m_inf_inst_1[2]
+  araddr_m_inf_inst_1[6]
+  araddr_m_inf_inst_1[9]
+  araddr_m_inf_inst_1[13]
+  araddr_m_inf_inst_1[16]
+  araddr_m_inf_inst_1[20]
+  araddr_m_inf_inst_1[23]
+  araddr_m_inf_inst_1[27]
+  araddr_m_inf_inst_1[30]
+  araddr_m_inf_inst_2[0]
+  araddr_m_inf_inst_2[4]
+  araddr_m_inf_inst_2[7]
+  araddr_m_inf_inst_2[11]
+  araddr_m_inf_inst_2[14]
+  araddr_m_inf_inst_2[18]
+  araddr_m_inf_inst_2[21]
+  araddr_m_inf_inst_2[25]
+  araddr_m_inf_inst_2[28]
+  arburst_m_inf_data[0]
+  arburst_m_inf_inst_1[0]
+  arid_m_inf_data[1]
+  arid_m_inf_inst_1[2]
+  arid_m_inf_inst_2[0]
+  arid_m_inf_inst_2[3]
+  rdata_m_inf_inst_1[1]
+  rdata_m_inf_inst_1[5]
+  rdata_m_inf_inst_1[8]
+  rdata_m_inf_inst_1[12]
+  rdata_m_inf_inst_1[15]
+  rdata_m_inf_inst_2[3]
+  rdata_m_inf_inst_2[6]
+  rdata_m_inf_inst_2[10]
+  rdata_m_inf_inst_2[13]
+  rid_m_inf_data[2]
+  rid_m_inf_inst_1[3]
+  rid_m_inf_inst_2[1]
+  rlast_m_inf_data
+  rresp_m_inf_inst_1[0]
+  rresp_m_inf_inst_2[1]
+  rst_n
+  rvalid_m_inf_inst_2
+  wdata_m_inf_data[2]
+  wdata_m_inf_data[5]
+  wdata_m_inf_data[8]
+  wdata_m_inf_data[9]
+  wdata_m_inf_data[12]
+  wdata_m_inf_inst_1[2]
+  wdata_m_inf_inst_1[6]
+  wdata_m_inf_inst_1[9]
+  wdata_m_inf_inst_1[13]
+  wdata_m_inf_inst_2[0]
+  wdata_m_inf_inst_2[4]
+  wdata_m_inf_inst_2[7]
+  wdata_m_inf_inst_2[11]
+  wdata_m_inf_inst_2[14]
+  wlast_m_inf_inst_1
+  wready_m_inf_inst_2
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing 7 -pin {{araddr_m_inf_data[2]} {araddr_m_inf_data[5]} {araddr_m_inf_data[9]} {araddr_m_inf_data[12]} {araddr_m_inf_data[16]} {araddr_m_inf_data[19]} {araddr_m_inf_data[23]} {araddr_m_inf_data[26]} {araddr_m_inf_data[30]} {araddr_m_inf_inst_1[2]} {araddr_m_inf_inst_1[6]} {araddr_m_inf_inst_1[9]} {araddr_m_inf_inst_1[13]} {araddr_m_inf_inst_1[16]} {araddr_m_inf_inst_1[20]} {araddr_m_inf_inst_1[23]} {araddr_m_inf_inst_1[27]} {araddr_m_inf_inst_1[30]} {araddr_m_inf_inst_2[0]} {araddr_m_inf_inst_2[4]} {araddr_m_inf_inst_2[7]} {araddr_m_inf_inst_2[11]} {araddr_m_inf_inst_2[14]} {araddr_m_inf_inst_2[18]} {araddr_m_inf_inst_2[21]} {araddr_m_inf_inst_2[25]} {araddr_m_inf_inst_2[28]} {arburst_m_inf_data[0]} {arburst_m_inf_inst_1[0]} {arid_m_inf_data[1]} {arid_m_inf_inst_1[2]} {arid_m_inf_inst_2[0]} {arid_m_inf_inst_2[3]} {arlen_m_inf_data[2]} {arlen_m_inf_data[5]} {arlen_m_inf_inst_1[2]} {arlen_m_inf_inst_1[6]} {arlen_m_inf_inst_2[0]} {arlen_m_inf_inst_2[4]} arready_m_inf_inst_2 {arsize_m_inf_data[1]} {arsize_m_inf_inst_1[2]} {arsize_m_inf_inst_2[0]} {awaddr_m_inf_data[0]} {awaddr_m_inf_data[3]} {awaddr_m_inf_data[7]} {awaddr_m_inf_data[10]} {awaddr_m_inf_data[14]} {awaddr_m_inf_data[17]} {awaddr_m_inf_data[21]} {awaddr_m_inf_data[24]} {awaddr_m_inf_data[28]} {awaddr_m_inf_data[31]} {awaddr_m_inf_inst_1[0]} {awaddr_m_inf_inst_1[4]} {awaddr_m_inf_inst_1[7]} {awaddr_m_inf_inst_1[11]} {awaddr_m_inf_inst_1[14]} {awaddr_m_inf_inst_1[18]} {awaddr_m_inf_inst_1[21]} {awaddr_m_inf_inst_1[25]} {awaddr_m_inf_inst_1[28]} {awaddr_m_inf_inst_2[2]} {awaddr_m_inf_inst_2[5]} {awaddr_m_inf_inst_2[9]} {awaddr_m_inf_inst_2[12]} {awaddr_m_inf_inst_2[16]} {awaddr_m_inf_inst_2[19]} {awaddr_m_inf_inst_2[23]} {awaddr_m_inf_inst_2[26]} {awaddr_m_inf_inst_2[30]} {awburst_m_inf_data[1]} {awburst_m_inf_inst_2[0]} {awid_m_inf_data[3]} {awid_m_inf_inst_1[0]} {awid_m_inf_inst_1[3]} {awid_m_inf_inst_2[1]} {awlen_m_inf_data[1]} {awlen_m_inf_data[5]} {awlen_m_inf_inst_1[2]} {awlen_m_inf_inst_1[5]} {awlen_m_inf_inst_2[0]} {awlen_m_inf_inst_2[3]} awready_m_inf_data awready_m_inf_inst_1 {awsize_m_inf_inst_1[0]} {awsize_m_inf_inst_2[1]} {bid_m_inf_inst_1[2]} {bid_m_inf_inst_2[0]} {bresp_m_inf_data[0]} {bresp_m_inf_inst_1[1]} bvalid_m_inf_inst_2 {rdata_m_inf_data[1]} {rdata_m_inf_data[4]} {rdata_m_inf_data[8]} {rdata_m_inf_data[11]} {rdata_m_inf_data[15]} {rdata_m_inf_inst_1[1]} {rdata_m_inf_inst_1[5]} {rdata_m_inf_inst_1[8]} {rdata_m_inf_inst_1[12]} {rdata_m_inf_inst_1[15]} {rdata_m_inf_inst_2[3]} {rdata_m_inf_inst_2[6]} {rdata_m_inf_inst_2[10]} {rdata_m_inf_inst_2[13]} {rid_m_inf_data[2]} {rid_m_inf_inst_1[3]} {rid_m_inf_inst_2[1]} rlast_m_inf_data {rresp_m_inf_inst_1[0]} {rresp_m_inf_inst_2[1]} rst_n rvalid_m_inf_inst_2 {wdata_m_inf_data[2]} {wdata_m_inf_data[5]} {wdata_m_inf_data[8]} {wdata_m_inf_data[9]} {wdata_m_inf_data[12]} {wdata_m_inf_inst_1[2]} {wdata_m_inf_inst_1[6]} {wdata_m_inf_inst_1[9]} {wdata_m_inf_inst_1[13]} {wdata_m_inf_inst_2[0]} {wdata_m_inf_inst_2[4]} {wdata_m_inf_inst_2[7]} {wdata_m_inf_inst_2[11]} {wdata_m_inf_inst_2[14]} wlast_m_inf_inst_1 wready_m_inf_inst_2}
+Selected [130] pin for spreading. Could not spread (46 out of 130) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+
+Following pins are not spread:
+  araddr_m_inf_data[2]
+  araddr_m_inf_data[5]
+  araddr_m_inf_data[9]
+  araddr_m_inf_data[12]
+  araddr_m_inf_data[16]
+  araddr_m_inf_data[19]
+  araddr_m_inf_data[23]
+  araddr_m_inf_data[26]
+  araddr_m_inf_data[30]
+  araddr_m_inf_inst_1[2]
+  araddr_m_inf_inst_1[6]
+  araddr_m_inf_inst_1[9]
+  araddr_m_inf_inst_1[13]
+  araddr_m_inf_inst_1[16]
+  araddr_m_inf_inst_1[20]
+  araddr_m_inf_inst_1[23]
+  araddr_m_inf_inst_1[27]
+  araddr_m_inf_inst_1[30]
+  araddr_m_inf_inst_2[0]
+  araddr_m_inf_inst_2[4]
+  araddr_m_inf_inst_2[7]
+  araddr_m_inf_inst_2[11]
+  araddr_m_inf_inst_2[14]
+  rid_m_inf_inst_1[3]
+  rid_m_inf_inst_2[1]
+  rlast_m_inf_data
+  rresp_m_inf_inst_1[0]
+  rresp_m_inf_inst_2[1]
+  rst_n
+  rvalid_m_inf_inst_2
+  wdata_m_inf_data[2]
+  wdata_m_inf_data[5]
+  wdata_m_inf_data[8]
+  wdata_m_inf_data[9]
+  wdata_m_inf_data[12]
+  wdata_m_inf_inst_1[2]
+  wdata_m_inf_inst_1[6]
+  wdata_m_inf_inst_1[9]
+  wdata_m_inf_inst_1[13]
+  wdata_m_inf_inst_2[0]
+  wdata_m_inf_inst_2[4]
+  wdata_m_inf_inst_2[7]
+  wdata_m_inf_inst_2[11]
+  wdata_m_inf_inst_2[14]
+  wlast_m_inf_inst_1
+  wready_m_inf_inst_2
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing 5 -pin {{araddr_m_inf_data[2]} {araddr_m_inf_data[5]} {araddr_m_inf_data[9]} {araddr_m_inf_data[12]} {araddr_m_inf_data[16]} {araddr_m_inf_data[19]} {araddr_m_inf_data[23]} {araddr_m_inf_data[26]} {araddr_m_inf_data[30]} {araddr_m_inf_inst_1[2]} {araddr_m_inf_inst_1[6]} {araddr_m_inf_inst_1[9]} {araddr_m_inf_inst_1[13]} {araddr_m_inf_inst_1[16]} {araddr_m_inf_inst_1[20]} {araddr_m_inf_inst_1[23]} {araddr_m_inf_inst_1[27]} {araddr_m_inf_inst_1[30]} {araddr_m_inf_inst_2[0]} {araddr_m_inf_inst_2[4]} {araddr_m_inf_inst_2[7]} {araddr_m_inf_inst_2[11]} {araddr_m_inf_inst_2[14]} {araddr_m_inf_inst_2[18]} {araddr_m_inf_inst_2[21]} {araddr_m_inf_inst_2[25]} {araddr_m_inf_inst_2[28]} {arburst_m_inf_data[0]} {arburst_m_inf_inst_1[0]} {arid_m_inf_data[1]} {arid_m_inf_inst_1[2]} {arid_m_inf_inst_2[0]} {arid_m_inf_inst_2[3]} {arlen_m_inf_data[2]} {arlen_m_inf_data[5]} {arlen_m_inf_inst_1[2]} {arlen_m_inf_inst_1[6]} {arlen_m_inf_inst_2[0]} {arlen_m_inf_inst_2[4]} arready_m_inf_inst_2 {arsize_m_inf_data[1]} {arsize_m_inf_inst_1[2]} {arsize_m_inf_inst_2[0]} {awaddr_m_inf_data[0]} {awaddr_m_inf_data[3]} {awaddr_m_inf_data[7]} {awaddr_m_inf_data[10]} {awaddr_m_inf_data[14]} {awaddr_m_inf_data[17]} {awaddr_m_inf_data[21]} {awaddr_m_inf_data[24]} {awaddr_m_inf_data[28]} {awaddr_m_inf_data[31]} {awaddr_m_inf_inst_1[0]} {awaddr_m_inf_inst_1[4]} {awaddr_m_inf_inst_1[7]} {awaddr_m_inf_inst_1[11]} {awaddr_m_inf_inst_1[14]} {awaddr_m_inf_inst_1[18]} {awaddr_m_inf_inst_1[21]} {awaddr_m_inf_inst_1[25]} {awaddr_m_inf_inst_1[28]} {awaddr_m_inf_inst_2[2]} {awaddr_m_inf_inst_2[5]} {awaddr_m_inf_inst_2[9]} {awaddr_m_inf_inst_2[12]} {awaddr_m_inf_inst_2[16]} {awaddr_m_inf_inst_2[19]} {awaddr_m_inf_inst_2[23]} {awaddr_m_inf_inst_2[26]} {awaddr_m_inf_inst_2[30]} {awburst_m_inf_data[1]} {awburst_m_inf_inst_2[0]} {awid_m_inf_data[3]} {awid_m_inf_inst_1[0]} {awid_m_inf_inst_1[3]} {awid_m_inf_inst_2[1]} {awlen_m_inf_data[1]} {awlen_m_inf_data[5]} {awlen_m_inf_inst_1[2]} {awlen_m_inf_inst_1[5]} {awlen_m_inf_inst_2[0]} {awlen_m_inf_inst_2[3]} awready_m_inf_data awready_m_inf_inst_1 {awsize_m_inf_inst_1[0]} {awsize_m_inf_inst_2[1]} {bid_m_inf_inst_1[2]} {bid_m_inf_inst_2[0]} {bresp_m_inf_data[0]} {bresp_m_inf_inst_1[1]} bvalid_m_inf_inst_2 {rdata_m_inf_data[1]} {rdata_m_inf_data[4]} {rdata_m_inf_data[8]} {rdata_m_inf_data[11]} {rdata_m_inf_data[15]} {rdata_m_inf_inst_1[1]} {rdata_m_inf_inst_1[5]} {rdata_m_inf_inst_1[8]} {rdata_m_inf_inst_1[12]} {rdata_m_inf_inst_1[15]} {rdata_m_inf_inst_2[3]} {rdata_m_inf_inst_2[6]} {rdata_m_inf_inst_2[10]} {rdata_m_inf_inst_2[13]} {rid_m_inf_data[2]} {rid_m_inf_inst_1[3]} {rid_m_inf_inst_2[1]} rlast_m_inf_data {rresp_m_inf_inst_1[0]} {rresp_m_inf_inst_2[1]} rst_n rvalid_m_inf_inst_2 {wdata_m_inf_data[2]} {wdata_m_inf_data[5]} {wdata_m_inf_data[8]} {wdata_m_inf_data[9]} {wdata_m_inf_data[12]} {wdata_m_inf_inst_1[2]} {wdata_m_inf_inst_1[6]} {wdata_m_inf_inst_1[9]} {wdata_m_inf_inst_1[13]} {wdata_m_inf_inst_2[0]} {wdata_m_inf_inst_2[4]} {wdata_m_inf_inst_2[7]} {wdata_m_inf_inst_2[11]} {wdata_m_inf_inst_2[14]} wlast_m_inf_inst_1 wready_m_inf_inst_2}
+Selected [130] pin for spreading. Could not spread (8 out of 130) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+
+Following pins are not spread:
+  araddr_m_inf_data[2]
+  araddr_m_inf_data[5]
+  araddr_m_inf_data[9]
+  araddr_m_inf_data[12]
+  wdata_m_inf_inst_2[11]
+  wdata_m_inf_inst_2[14]
+  wlast_m_inf_inst_1
+  wready_m_inf_inst_2
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 1 -spreadType center -spacing 4 -pin {{araddr_m_inf_data[2]} {araddr_m_inf_data[5]} {araddr_m_inf_data[9]} {araddr_m_inf_data[12]} {araddr_m_inf_data[16]} {araddr_m_inf_data[19]} {araddr_m_inf_data[23]} {araddr_m_inf_data[26]} {araddr_m_inf_data[30]} {araddr_m_inf_inst_1[2]} {araddr_m_inf_inst_1[6]} {araddr_m_inf_inst_1[9]} {araddr_m_inf_inst_1[13]} {araddr_m_inf_inst_1[16]} {araddr_m_inf_inst_1[20]} {araddr_m_inf_inst_1[23]} {araddr_m_inf_inst_1[27]} {araddr_m_inf_inst_1[30]} {araddr_m_inf_inst_2[0]} {araddr_m_inf_inst_2[4]} {araddr_m_inf_inst_2[7]} {araddr_m_inf_inst_2[11]} {araddr_m_inf_inst_2[14]} {araddr_m_inf_inst_2[18]} {araddr_m_inf_inst_2[21]} {araddr_m_inf_inst_2[25]} {araddr_m_inf_inst_2[28]} {arburst_m_inf_data[0]} {arburst_m_inf_inst_1[0]} {arid_m_inf_data[1]} {arid_m_inf_inst_1[2]} {arid_m_inf_inst_2[0]} {arid_m_inf_inst_2[3]} {arlen_m_inf_data[2]} {arlen_m_inf_data[5]} {arlen_m_inf_inst_1[2]} {arlen_m_inf_inst_1[6]} {arlen_m_inf_inst_2[0]} {arlen_m_inf_inst_2[4]} arready_m_inf_inst_2 {arsize_m_inf_data[1]} {arsize_m_inf_inst_1[2]} {arsize_m_inf_inst_2[0]} {awaddr_m_inf_data[0]} {awaddr_m_inf_data[3]} {awaddr_m_inf_data[7]} {awaddr_m_inf_data[10]} {awaddr_m_inf_data[14]} {awaddr_m_inf_data[17]} {awaddr_m_inf_data[21]} {awaddr_m_inf_data[24]} {awaddr_m_inf_data[28]} {awaddr_m_inf_data[31]} {awaddr_m_inf_inst_1[0]} {awaddr_m_inf_inst_1[4]} {awaddr_m_inf_inst_1[7]} {awaddr_m_inf_inst_1[11]} {awaddr_m_inf_inst_1[14]} {awaddr_m_inf_inst_1[18]} {awaddr_m_inf_inst_1[21]} {awaddr_m_inf_inst_1[25]} {awaddr_m_inf_inst_1[28]} {awaddr_m_inf_inst_2[2]} {awaddr_m_inf_inst_2[5]} {awaddr_m_inf_inst_2[9]} {awaddr_m_inf_inst_2[12]} {awaddr_m_inf_inst_2[16]} {awaddr_m_inf_inst_2[19]} {awaddr_m_inf_inst_2[23]} {awaddr_m_inf_inst_2[26]} {awaddr_m_inf_inst_2[30]} {awburst_m_inf_data[1]} {awburst_m_inf_inst_2[0]} {awid_m_inf_data[3]} {awid_m_inf_inst_1[0]} {awid_m_inf_inst_1[3]} {awid_m_inf_inst_2[1]} {awlen_m_inf_data[1]} {awlen_m_inf_data[5]} {awlen_m_inf_inst_1[2]} {awlen_m_inf_inst_1[5]} {awlen_m_inf_inst_2[0]} {awlen_m_inf_inst_2[3]} awready_m_inf_data awready_m_inf_inst_1 {awsize_m_inf_inst_1[0]} {awsize_m_inf_inst_2[1]} {bid_m_inf_inst_1[2]} {bid_m_inf_inst_2[0]} {bresp_m_inf_data[0]} {bresp_m_inf_inst_1[1]} bvalid_m_inf_inst_2 {rdata_m_inf_data[1]} {rdata_m_inf_data[4]} {rdata_m_inf_data[8]} {rdata_m_inf_data[11]} {rdata_m_inf_data[15]} {rdata_m_inf_inst_1[1]} {rdata_m_inf_inst_1[5]} {rdata_m_inf_inst_1[8]} {rdata_m_inf_inst_1[12]} {rdata_m_inf_inst_1[15]} {rdata_m_inf_inst_2[3]} {rdata_m_inf_inst_2[6]} {rdata_m_inf_inst_2[10]} {rdata_m_inf_inst_2[13]} {rid_m_inf_data[2]} {rid_m_inf_inst_1[3]} {rid_m_inf_inst_2[1]} rlast_m_inf_data {rresp_m_inf_inst_1[0]} {rresp_m_inf_inst_2[1]} rst_n rvalid_m_inf_inst_2 {wdata_m_inf_data[2]} {wdata_m_inf_data[5]} {wdata_m_inf_data[8]} {wdata_m_inf_data[9]} {wdata_m_inf_data[12]} {wdata_m_inf_inst_1[2]} {wdata_m_inf_inst_1[6]} {wdata_m_inf_inst_1[9]} {wdata_m_inf_inst_1[13]} {wdata_m_inf_inst_2[0]} {wdata_m_inf_inst_2[4]} {wdata_m_inf_inst_2[7]} {wdata_m_inf_inst_2[11]} {wdata_m_inf_inst_2[14]} wlast_m_inf_inst_1 wready_m_inf_inst_2}
+Successfully spread [130] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 1 -spreadType center -spacing 3 -pin {{araddr_m_inf_data[4]} {araddr_m_inf_data[11]} {araddr_m_inf_data[18]} {araddr_m_inf_data[25]} {araddr_m_inf_inst_1[1]} {araddr_m_inf_inst_1[8]} {araddr_m_inf_inst_1[15]} {araddr_m_inf_inst_1[22]} {araddr_m_inf_inst_1[29]} {araddr_m_inf_inst_2[6]} {araddr_m_inf_inst_2[13]} {araddr_m_inf_inst_2[20]} {araddr_m_inf_inst_2[27]} {arid_m_inf_data[0]} {arid_m_inf_inst_2[2]} {arlen_m_inf_data[4]} {arlen_m_inf_inst_1[1]} {arlen_m_inf_inst_2[6]} {arsize_m_inf_data[0]} {arsize_m_inf_inst_2[2]} arvalid_m_inf_inst_1 {awaddr_m_inf_data[2]} {awaddr_m_inf_data[9]} {awaddr_m_inf_data[16]} {awaddr_m_inf_data[23]} {awaddr_m_inf_data[30]} {awaddr_m_inf_inst_1[6]} {awaddr_m_inf_inst_1[13]} {awaddr_m_inf_inst_1[20]} {awaddr_m_inf_inst_1[27]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[25]} {awburst_m_inf_data[0]} {awid_m_inf_inst_1[2]} {awid_m_inf_inst_2[0]} {awlen_m_inf_data[0]} {awlen_m_inf_inst_1[4]} {awlen_m_inf_inst_2[2]} {awsize_m_inf_inst_1[2]} {awsize_m_inf_inst_2[0]} {bid_m_inf_inst_1[1]} {bresp_m_inf_inst_2[1]} {rdata_m_inf_data[3]} {rdata_m_inf_data[10]} {rdata_m_inf_inst_1[0]} {rdata_m_inf_inst_1[7]} {rdata_m_inf_inst_1[14]} {rdata_m_inf_inst_2[5]} {rdata_m_inf_inst_2[12]} {rid_m_inf_data[1]} {rid_m_inf_inst_2[3]} {rresp_m_inf_inst_2[0]} rvalid_m_inf_data {wdata_m_inf_data[4]} {wdata_m_inf_data[11]} {wdata_m_inf_inst_1[1]} {wdata_m_inf_inst_1[8]} {wdata_m_inf_inst_1[15]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[13]} wlast_m_inf_inst_2 wready_m_inf_data}
+Successfully spread [64] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 1 -spreadType center -spacing 6 -pin {{araddr_m_inf_data[4]} {araddr_m_inf_data[11]} {araddr_m_inf_data[18]} {araddr_m_inf_data[25]} {araddr_m_inf_inst_1[1]} {araddr_m_inf_inst_1[8]} {araddr_m_inf_inst_1[15]} {araddr_m_inf_inst_1[22]} {araddr_m_inf_inst_1[29]} {araddr_m_inf_inst_2[6]} {araddr_m_inf_inst_2[13]} {araddr_m_inf_inst_2[20]} {araddr_m_inf_inst_2[27]} {arid_m_inf_data[0]} {arid_m_inf_inst_2[2]} {arlen_m_inf_data[4]} {arlen_m_inf_inst_1[1]} {arlen_m_inf_inst_2[6]} {arsize_m_inf_data[0]} {arsize_m_inf_inst_2[2]} arvalid_m_inf_inst_1 {awaddr_m_inf_data[2]} {awaddr_m_inf_data[9]} {awaddr_m_inf_data[16]} {awaddr_m_inf_data[23]} {awaddr_m_inf_data[30]} {awaddr_m_inf_inst_1[6]} {awaddr_m_inf_inst_1[13]} {awaddr_m_inf_inst_1[20]} {awaddr_m_inf_inst_1[27]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[25]} {awburst_m_inf_data[0]} {awid_m_inf_inst_1[2]} {awid_m_inf_inst_2[0]} {awlen_m_inf_data[0]} {awlen_m_inf_inst_1[4]} {awlen_m_inf_inst_2[2]} {awsize_m_inf_inst_1[2]} {awsize_m_inf_inst_2[0]} {bid_m_inf_inst_1[1]} {bresp_m_inf_inst_2[1]} {rdata_m_inf_data[3]} {rdata_m_inf_data[10]} {rdata_m_inf_inst_1[0]} {rdata_m_inf_inst_1[7]} {rdata_m_inf_inst_1[14]} {rdata_m_inf_inst_2[5]} {rdata_m_inf_inst_2[12]} {rid_m_inf_data[1]} {rid_m_inf_inst_2[3]} {rresp_m_inf_inst_2[0]} rvalid_m_inf_data {wdata_m_inf_data[4]} {wdata_m_inf_data[11]} {wdata_m_inf_inst_1[1]} {wdata_m_inf_inst_1[8]} {wdata_m_inf_inst_1[15]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[13]} wlast_m_inf_inst_2 wready_m_inf_data}
+Successfully spread [64] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 1 -spreadType center -spacing 8 -pin {{araddr_m_inf_data[4]} {araddr_m_inf_data[11]} {araddr_m_inf_data[18]} {araddr_m_inf_data[25]} {araddr_m_inf_inst_1[1]} {araddr_m_inf_inst_1[8]} {araddr_m_inf_inst_1[15]} {araddr_m_inf_inst_1[22]} {araddr_m_inf_inst_1[29]} {araddr_m_inf_inst_2[6]} {araddr_m_inf_inst_2[13]} {araddr_m_inf_inst_2[20]} {araddr_m_inf_inst_2[27]} {arid_m_inf_data[0]} {arid_m_inf_inst_2[2]} {arlen_m_inf_data[4]} {arlen_m_inf_inst_1[1]} {arlen_m_inf_inst_2[6]} {arsize_m_inf_data[0]} {arsize_m_inf_inst_2[2]} arvalid_m_inf_inst_1 {awaddr_m_inf_data[2]} {awaddr_m_inf_data[9]} {awaddr_m_inf_data[16]} {awaddr_m_inf_data[23]} {awaddr_m_inf_data[30]} {awaddr_m_inf_inst_1[6]} {awaddr_m_inf_inst_1[13]} {awaddr_m_inf_inst_1[20]} {awaddr_m_inf_inst_1[27]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[25]} {awburst_m_inf_data[0]} {awid_m_inf_inst_1[2]} {awid_m_inf_inst_2[0]} {awlen_m_inf_data[0]} {awlen_m_inf_inst_1[4]} {awlen_m_inf_inst_2[2]} {awsize_m_inf_inst_1[2]} {awsize_m_inf_inst_2[0]} {bid_m_inf_inst_1[1]} {bresp_m_inf_inst_2[1]} {rdata_m_inf_data[3]} {rdata_m_inf_data[10]} {rdata_m_inf_inst_1[0]} {rdata_m_inf_inst_1[7]} {rdata_m_inf_inst_1[14]} {rdata_m_inf_inst_2[5]} {rdata_m_inf_inst_2[12]} {rid_m_inf_data[1]} {rid_m_inf_inst_2[3]} {rresp_m_inf_inst_2[0]} rvalid_m_inf_data {wdata_m_inf_data[4]} {wdata_m_inf_data[11]} {wdata_m_inf_inst_1[1]} {wdata_m_inf_inst_1[8]} {wdata_m_inf_inst_1[15]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[13]} wlast_m_inf_inst_2 wready_m_inf_data}
+Successfully spread [64] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 1 -spreadType center -spacing 9.5 -pin {{araddr_m_inf_data[4]} {araddr_m_inf_data[11]} {araddr_m_inf_data[18]} {araddr_m_inf_data[25]} {araddr_m_inf_inst_1[1]} {araddr_m_inf_inst_1[8]} {araddr_m_inf_inst_1[15]} {araddr_m_inf_inst_1[22]} {araddr_m_inf_inst_1[29]} {araddr_m_inf_inst_2[6]} {araddr_m_inf_inst_2[13]} {araddr_m_inf_inst_2[20]} {araddr_m_inf_inst_2[27]} {arid_m_inf_data[0]} {arid_m_inf_inst_2[2]} {arlen_m_inf_data[4]} {arlen_m_inf_inst_1[1]} {arlen_m_inf_inst_2[6]} {arsize_m_inf_data[0]} {arsize_m_inf_inst_2[2]} arvalid_m_inf_inst_1 {awaddr_m_inf_data[2]} {awaddr_m_inf_data[9]} {awaddr_m_inf_data[16]} {awaddr_m_inf_data[23]} {awaddr_m_inf_data[30]} {awaddr_m_inf_inst_1[6]} {awaddr_m_inf_inst_1[13]} {awaddr_m_inf_inst_1[20]} {awaddr_m_inf_inst_1[27]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[25]} {awburst_m_inf_data[0]} {awid_m_inf_inst_1[2]} {awid_m_inf_inst_2[0]} {awlen_m_inf_data[0]} {awlen_m_inf_inst_1[4]} {awlen_m_inf_inst_2[2]} {awsize_m_inf_inst_1[2]} {awsize_m_inf_inst_2[0]} {bid_m_inf_inst_1[1]} {bresp_m_inf_inst_2[1]} {rdata_m_inf_data[3]} {rdata_m_inf_data[10]} {rdata_m_inf_inst_1[0]} {rdata_m_inf_inst_1[7]} {rdata_m_inf_inst_1[14]} {rdata_m_inf_inst_2[5]} {rdata_m_inf_inst_2[12]} {rid_m_inf_data[1]} {rid_m_inf_inst_2[3]} {rresp_m_inf_inst_2[0]} rvalid_m_inf_data {wdata_m_inf_data[4]} {wdata_m_inf_data[11]} {wdata_m_inf_inst_1[1]} {wdata_m_inf_inst_1[8]} {wdata_m_inf_inst_1[15]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[13]} wlast_m_inf_inst_2 wready_m_inf_data}
+Successfully spread [64] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1974.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.24 -pinDepth 0.74 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 1 -spreadType center -spacing -9.52 -pin {{araddr_m_inf_data[4]} {araddr_m_inf_data[11]} {araddr_m_inf_data[18]} {araddr_m_inf_data[25]} {araddr_m_inf_inst_1[1]} {araddr_m_inf_inst_1[8]} {araddr_m_inf_inst_1[15]} {araddr_m_inf_inst_1[22]} {araddr_m_inf_inst_1[29]} {araddr_m_inf_inst_2[6]} {araddr_m_inf_inst_2[13]} {araddr_m_inf_inst_2[20]} {araddr_m_inf_inst_2[27]} {arid_m_inf_data[0]} {arid_m_inf_inst_2[2]} {arlen_m_inf_data[4]} {arlen_m_inf_inst_1[1]} {arlen_m_inf_inst_2[6]} {arsize_m_inf_data[0]} {arsize_m_inf_inst_2[2]} arvalid_m_inf_inst_1 {awaddr_m_inf_data[2]} {awaddr_m_inf_data[9]} {awaddr_m_inf_data[16]} {awaddr_m_inf_data[23]} {awaddr_m_inf_data[30]} {awaddr_m_inf_inst_1[6]} {awaddr_m_inf_inst_1[13]} {awaddr_m_inf_inst_1[20]} {awaddr_m_inf_inst_1[27]} {awaddr_m_inf_inst_2[4]} {awaddr_m_inf_inst_2[11]} {awaddr_m_inf_inst_2[18]} {awaddr_m_inf_inst_2[25]} {awburst_m_inf_data[0]} {awid_m_inf_inst_1[2]} {awid_m_inf_inst_2[0]} {awlen_m_inf_data[0]} {awlen_m_inf_inst_1[4]} {awlen_m_inf_inst_2[2]} {awsize_m_inf_inst_1[2]} {awsize_m_inf_inst_2[0]} {bid_m_inf_inst_1[1]} {bresp_m_inf_inst_2[1]} {rdata_m_inf_data[3]} {rdata_m_inf_data[10]} {rdata_m_inf_inst_1[0]} {rdata_m_inf_inst_1[7]} {rdata_m_inf_inst_1[14]} {rdata_m_inf_inst_2[5]} {rdata_m_inf_inst_2[12]} {rid_m_inf_data[1]} {rid_m_inf_inst_2[3]} {rresp_m_inf_inst_2[0]} rvalid_m_inf_data {wdata_m_inf_data[4]} {wdata_m_inf_data[11]} {wdata_m_inf_inst_1[1]} {wdata_m_inf_inst_1[8]} {wdata_m_inf_inst_1[15]} {wdata_m_inf_inst_2[6]} {wdata_m_inf_inst_2[13]} wlast_m_inf_inst_2 wready_m_inf_data}
+**ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -143.71700 -105.57500 741.27800 769.64100
+<CMD> zoomBox -267.10500 -188.40900 774.06600 841.25700
+<CMD> zoomBox -118.38700 173.39700 521.02300 805.74200
+<CMD> zoomBox -338.08800 -89.58100 703.08600 940.08800
+<CMD> panPage 0 -1
+<CMD> zoomBox -213.78500 -160.23700 425.62600 472.10900
+<CMD> zoomBox -116.24200 10.52800 217.53500 340.61700
+<CMD> zoomBox -54.89000 120.88300 93.21000 267.34700
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Mon Jun 22 00:28:31 2026
+
+Design Name: CHIP
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (683.8600, 669.2000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+**WARN: (IMPVFC-97):	IO pin clk of net clk has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net rst_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin stall_1 of net stall_1 has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin stall_2 of net stall_2 has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net arid_m_inf_inst_1[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arid_m_inf_inst_1[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin arid_m_inf_inst_1[1] of net arid_m_inf_inst_1[1] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net arid_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[31]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[30]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[29]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[28]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[27]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[26] of net araddr_m_inf_inst_1[26] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net araddr_m_inf_inst_1[25]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[24]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[23]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[22]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[21]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[20]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[19] of net araddr_m_inf_inst_1[19] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net araddr_m_inf_inst_1[18]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[17]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[16]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[15]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[12] of net araddr_m_inf_inst_1[12] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net araddr_m_inf_inst_1[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[5] of net araddr_m_inf_inst_1[5] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net araddr_m_inf_inst_1[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_1[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin arlen_m_inf_inst_1[5] of net arlen_m_inf_inst_1[5] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net arlen_m_inf_inst_1[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_1[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_1[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_1[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arsize_m_inf_inst_1[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin arsize_m_inf_inst_1[1] of net arsize_m_inf_inst_1[1] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net arsize_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arburst_m_inf_inst_1[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arburst_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arvalid_m_inf_inst_1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arready_m_inf_inst_1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin rid_m_inf_inst_1[2] of net rid_m_inf_inst_1[2] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net rdata_m_inf_inst_1[15]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin rdata_m_inf_inst_1[11] of net rdata_m_inf_inst_1[11] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net rdata_m_inf_inst_1[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin rdata_m_inf_inst_1[4] of net rdata_m_inf_inst_1[4] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net rdata_m_inf_inst_1[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin rlast_m_inf_inst_1 of net rlast_m_inf_inst_1 has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net rvalid_m_inf_inst_1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rready_m_inf_inst_1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_inst_1[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_inst_1[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_inst_1[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[31] of net awaddr_m_inf_inst_1[31] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net awaddr_m_inf_inst_1[30]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[29]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[28]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[27]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[26]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[25]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[24] of net awaddr_m_inf_inst_1[24] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net awaddr_m_inf_inst_1[23]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[22]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[21]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[20]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[19]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[18]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[17] of net awaddr_m_inf_inst_1[17] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net awaddr_m_inf_inst_1[16]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[15]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[10] of net awaddr_m_inf_inst_1[10] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net awaddr_m_inf_inst_1[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[3] of net awaddr_m_inf_inst_1[3] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net awaddr_m_inf_inst_1[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awsize_m_inf_inst_1[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awsize_m_inf_inst_1[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awsize_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (IMPVFC-97):	IO pin awburst_m_inf_inst_1[1] of net awburst_m_inf_inst_1[1] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+Net awburst_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_1[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_1[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_1[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_1[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_1[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+**WARN: (EMS-27):	Message (IMPVFC-97) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Net awlen_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awvalid_m_inf_inst_1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[15]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_1[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wlast_m_inf_inst_1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net bready_m_inf_inst_1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arid_m_inf_inst_2[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arid_m_inf_inst_2[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arid_m_inf_inst_2[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arid_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[30]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[29]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[28]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[27]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[26]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[25]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[23]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[22]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[21]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[20]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[19]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[18]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[16]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[15]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_2[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_2[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_2[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_2[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_2[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arsize_m_inf_inst_2[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arsize_m_inf_inst_2[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arsize_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arburst_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arvalid_m_inf_inst_2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arready_m_inf_inst_2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[15]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rlast_m_inf_inst_2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rvalid_m_inf_inst_2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_inst_2[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_inst_2[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_inst_2[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[31]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[30]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[28]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[27]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[26]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[25]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[24]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[23]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[21]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[20]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[19]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[18]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[17]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[16]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awsize_m_inf_inst_2[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awsize_m_inf_inst_2[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awsize_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awburst_m_inf_inst_2[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awburst_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_2[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_2[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_2[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_2[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_2[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[15]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wdata_m_inf_inst_2[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wlast_m_inf_inst_2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net wvalid_m_inf_inst_2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arid_m_inf_data[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arid_m_inf_data[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arid_m_inf_data[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arid_m_inf_data[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[31]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[30]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[28]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[27]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[26]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[25]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[24]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[23]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[21]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[20]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[19]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[18]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[17]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[16]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net araddr_m_inf_data[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_data[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_data[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_data[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_data[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_data[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arlen_m_inf_data[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arsize_m_inf_data[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arsize_m_inf_data[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arsize_m_inf_data[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arburst_m_inf_data[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arburst_m_inf_data[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net arready_m_inf_data: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[15]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rdata_m_inf_data[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rlast_m_inf_data: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rvalid_m_inf_data: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net rready_m_inf_data: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_data[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_data[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awid_m_inf_data[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[31]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[30]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[29]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[28]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[26]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[25]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[24]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[23]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[22]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[21]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[19]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[18]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[17]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[16]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[15]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awaddr_m_inf_data[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awsize_m_inf_data[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awsize_m_inf_data[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awburst_m_inf_data[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awburst_m_inf_data[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_data[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_data[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_data[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_data[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net awlen_m_inf_data[2]: has an unconnected terminal, has regular routing with opens.
+**WARN: (IMPVFC-3):	Verify Connectivity stopped: Number of errors exceeds the limit 1000
+Type 'man IMPVFC-3' for more detail.
+
+Begin Summary 
+    334 Problem(s) (IMPVFC-96): Terminal(s) are not connected.
+    333 Problem(s) (IMPVFC-92): Pieces of the net are not connected together.
+    333 Problem(s) (IMPVFC-94): The net has dangling wire(s).
+    1000 total info(s) created.
+End Summary
+
+End Time: Mon Jun 22 00:28:31 2026
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 1000 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.1  MEM: 0.000M)
+
+<CMD> zoomBox -215.60900 53.51800 118.17300 383.61200
+<CMD> zoomBox -691.47700 -146.47100 193.53900 728.76600
+<CMD> zoomBox -1170.75600 -348.22000 270.34700 1076.95900
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon Jun 22 00:28:44 2026
+  Total CPU time:     0:00:37
+  Total real time:    0:04:02
+  Peak memory (main): 1213.38MB
+
+
+*** Memory Usage v#1 (Current mem = 1977.945M, initial mem = 292.375M) ***
+*** Message Summary: 1356 warning(s), 1 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:35.1, real=0:04:00, mem=1977.9M) ---

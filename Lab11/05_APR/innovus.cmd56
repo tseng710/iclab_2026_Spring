@@ -1,0 +1,46 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon May 25 04:21:27 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+summaryReport -noHtml -outfile summary.rpt
+summaryReport -noHtml -outfile summary.rpt
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+summaryReport -noHtml -outfile summary.rpt
+zoomBox -1420.22500 -502.21100 2994.32200 3449.75100
+zoomBox -2984.17100 -1017.67800 3125.93100 4452.16800
+zoomBox -845.68200 100.68400 2343.83200 2955.98000
+zoomBox -237.68400 514.03100 2066.74100 2576.98300
+zoomBox -0.23600 675.46000 1958.52500 2428.96900
+zoomBox 373.15100 929.30600 1788.35600 2196.21700
+zoomBox 641.39900 1086.80000 1663.88500 2002.14300
+zoomBox 746.16100 1148.30700 1615.27400 1926.34900
+zoomBox 1121.23400 1388.93400 1399.85400 1638.35800
+zoomBox 1148.53700 1394.34000 1385.36400 1606.35100
+zoomBox 378.69100 1241.89300 1793.91500 2508.82100
+zoomBox 215.53100 1209.58400 1880.50200 2700.08800
+zoomBox -202.24500 1126.85500 2102.21300 3189.83700
+panPage 0 -1
+panPage 0 -1

@@ -1,0 +1,51 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue May 26 14:37:09 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+violationBrowserClose
+selectInst CORE/u_ctrl_mem2
+deselectAll
+selectInst CORE/u_ctrl_mem1
+deselectAll
+selectInst CORE/u_ctrl_mem3
+setDrawView ameba
+setDrawView fplan
+deselectAll
+selectInst CORE/u_ctrl_mem3
+deselectAll
+selectInst CORE/u_ctrl_mem3
+setDrawView place
+zoomBox 331.33700 363.04600 1546.57000 1450.93900
+zoomBox 621.91400 549.88900 1368.21900 1217.99100
+zoomBox 1045.60800 846.10400 1079.64200 876.57200
+zoomBox 1036.57700 838.74700 1083.68400 880.91800
+zoomBox 1030.83400 834.06900 1086.25400 883.68200
+zoomBox 919.04200 761.99900 1158.32100 976.20500
+zoomBox 436.39200 450.84200 1469.47600 1375.67300
+zoomBox -600.95700 -217.91700 2138.23300 2234.24300

@@ -1,0 +1,130 @@
+ 
+****************************************
+Report : area
+Design : HARVESTER_TOP
+Version: T-2022.03
+Date   : Sun Apr 26 21:09:33 2026
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+    DUAL_64X32X1BM1_WC (File: /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab07_2026/Exercise/04_MEM/DUAL_64X32X1BM1_WC.db)
+
+Number of ports:                          602
+Number of nets:                         23628
+Number of cells:                        20696
+Number of combinational cells:          18565
+Number of sequential cells:              2084
+Number of macros/black boxes:               3
+Number of buf/inv:                       2648
+Number of references:                     143
+
+Combinational area:             487675.040470
+Buf/Inv area:                    29382.494205
+Noncombinational area:          124207.675949
+Macro/Black Box area:           510759.515625
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:               1122642.232044
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area                  Local cell area
+                                  ---------------------  ------------------------------------- 
+Hierarchical cell                 Absolute      Percent  Combi-       Noncombi-    Black-
+                                  Total         Total    national     national     boxes        Design
+--------------------------------  ------------  -------  -----------  -----------  -----------  ---------
+HARVESTER_TOP                     1122642.2320    100.0  487675.0405  118983.0103  510759.5156  HARVESTER_TOP
+u_FIFO_syn_AR/u_NDFF_BUS_r2w/genblk1[0].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_r2w/genblk1[1].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_r2w/genblk1[2].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_r2w/genblk1[3].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_r2w/genblk1[4].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_r2w/genblk1[5].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_r2w/genblk1[6].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_w2r/genblk1[0].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_w2r/genblk1[1].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_w2r/genblk1[2].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_w2r/genblk1[3].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_w2r/genblk1[4].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_w2r/genblk1[5].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_AR/u_NDFF_BUS_w2r/genblk1[6].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_r2w/genblk1[0].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_r2w/genblk1[1].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_r2w/genblk1[2].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_r2w/genblk1[3].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_r2w/genblk1[4].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_r2w/genblk1[5].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_r2w/genblk1[6].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_w2r/genblk1[0].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_w2r/genblk1[1].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_w2r/genblk1[2].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_w2r/genblk1[3].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_w2r/genblk1[4].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_w2r/genblk1[5].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_R/u_NDFF_BUS_w2r/genblk1[6].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_r2w/genblk1[0].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_r2w/genblk1[1].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_r2w/genblk1[2].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_r2w/genblk1[3].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_r2w/genblk1[4].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_r2w/genblk1[5].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_r2w/genblk1[6].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_w2r/genblk1[0].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_w2r/genblk1[1].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_w2r/genblk1[2].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_w2r/genblk1[3].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_w2r/genblk1[4].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_w2r/genblk1[5].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_FIFO_syn_output/u_NDFF_BUS_w2r/genblk1[6].u_NDFF_syn
+                                      118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_Handshake_syn/u_NDFF_syn_ack        118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+u_Handshake_syn/u_NDFF_syn_req        118.7424      0.0       0.0000     118.7424       0.0000  NDFF_syn
+--------------------------------  ------------  -------  -----------  -----------  -----------  ---------
+Total                                                    487675.0405  124207.6759  510759.5156
+
+1

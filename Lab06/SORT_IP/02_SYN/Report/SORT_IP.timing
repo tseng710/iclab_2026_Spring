@@ -1,0 +1,171 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : SORT_IP_IP_WIDTH8
+Version: T-2022.03
+Date   : Wed Apr  8 17:09:04 2026
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: IN_weight[1]
+              (input port)
+  Endpoint: OUT_character[19]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SORT_IP_IP_WIDTH8  enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  IN_weight[1] (in)                        0.00       0.00 f
+  U1746/O (INV1S)                          0.52       0.52 r
+  U1747/O (INV1S)                          1.10       1.62 f
+  U1865/O (MOAI1S)                         1.23       2.85 r
+  U2162/O (OAI22S)                         0.20       3.05 f
+  U2163/O (MOAI1S)                         0.36       3.42 f
+  U2164/O (AOI22S)                         0.27       3.68 r
+  U2165/O (OAI22S)                         0.13       3.82 f
+  U2166/O (OA12S)                          0.32       4.13 f
+  U2167/O (NR2)                            0.20       4.33 r
+  U2298/S (FA1S)                           0.55       4.88 f
+  U2297/CO (FA1S)                          0.55       5.43 f
+  U2301/S (FA1S)                           0.96       6.39 r
+  U2302/O (INV1S)                          0.21       6.61 f
+  U3019/O (ND2S)                           0.23       6.84 r
+  U3100/O (NR2)                            0.15       6.99 f
+  U3104/O (INV1S)                          0.32       7.32 r
+  U3105/O (ND2S)                           0.21       7.53 f
+  U3108/O (NR2)                            0.24       7.77 r
+  U3113/O (ND2S)                           0.15       7.92 f
+  U3117/O (OR2B1S)                         0.28       8.20 f
+  U3120/O (NR3)                            0.58       8.77 r
+  U3137/O (AOI22S)                         0.21       8.99 f
+  U3138/O (OAI112HS)                       0.17       9.16 r
+  U3139/O (AO112S)                         0.64       9.81 r
+  OUT_character[19] (out)                  0.00       9.81 r
+  data arrival time                                   9.81
+
+  max_delay                               20.00      20.00
+  output external delay                    0.00      20.00
+  data required time                                 20.00
+  -----------------------------------------------------------
+  data required time                                 20.00
+  data arrival time                                  -9.81
+  -----------------------------------------------------------
+  slack (MET)                                        10.19
+
+
+  Startpoint: IN_weight[1]
+              (input port)
+  Endpoint: OUT_character[18]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SORT_IP_IP_WIDTH8  enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  IN_weight[1] (in)                        0.00       0.00 f
+  U1746/O (INV1S)                          0.52       0.52 r
+  U1747/O (INV1S)                          1.10       1.62 f
+  U1865/O (MOAI1S)                         1.23       2.85 r
+  U2162/O (OAI22S)                         0.20       3.05 f
+  U2163/O (MOAI1S)                         0.36       3.42 f
+  U2164/O (AOI22S)                         0.27       3.68 r
+  U2165/O (OAI22S)                         0.13       3.82 f
+  U2166/O (OA12S)                          0.32       4.13 f
+  U2167/O (NR2)                            0.20       4.33 r
+  U2298/S (FA1S)                           0.55       4.88 f
+  U2297/CO (FA1S)                          0.55       5.43 f
+  U2301/S (FA1S)                           0.96       6.39 r
+  U2302/O (INV1S)                          0.21       6.61 f
+  U3019/O (ND2S)                           0.23       6.84 r
+  U3100/O (NR2)                            0.15       6.99 f
+  U3104/O (INV1S)                          0.32       7.32 r
+  U3105/O (ND2S)                           0.21       7.53 f
+  U3108/O (NR2)                            0.24       7.77 r
+  U3113/O (ND2S)                           0.15       7.92 f
+  U3117/O (OR2B1S)                         0.28       8.20 f
+  U3120/O (NR3)                            0.58       8.77 r
+  U3132/O (AOI22S)                         0.21       8.99 f
+  U3133/O (OAI112HS)                       0.16       9.15 r
+  U3134/O (AO112S)                         0.65       9.79 r
+  OUT_character[18] (out)                  0.00       9.79 r
+  data arrival time                                   9.79
+
+  max_delay                               20.00      20.00
+  output external delay                    0.00      20.00
+  data required time                                 20.00
+  -----------------------------------------------------------
+  data required time                                 20.00
+  data arrival time                                  -9.79
+  -----------------------------------------------------------
+  slack (MET)                                        10.21
+
+
+  Startpoint: IN_weight[1]
+              (input port)
+  Endpoint: OUT_character[17]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SORT_IP_IP_WIDTH8  enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  IN_weight[1] (in)                        0.00       0.00 f
+  U1746/O (INV1S)                          0.52       0.52 r
+  U1747/O (INV1S)                          1.10       1.62 f
+  U1865/O (MOAI1S)                         1.23       2.85 r
+  U2162/O (OAI22S)                         0.20       3.05 f
+  U2163/O (MOAI1S)                         0.36       3.42 f
+  U2164/O (AOI22S)                         0.27       3.68 r
+  U2165/O (OAI22S)                         0.13       3.82 f
+  U2166/O (OA12S)                          0.32       4.13 f
+  U2167/O (NR2)                            0.20       4.33 r
+  U2298/S (FA1S)                           0.55       4.88 f
+  U2297/CO (FA1S)                          0.55       5.43 f
+  U2301/S (FA1S)                           0.96       6.39 r
+  U2302/O (INV1S)                          0.21       6.61 f
+  U3019/O (ND2S)                           0.23       6.84 r
+  U3100/O (NR2)                            0.15       6.99 f
+  U3104/O (INV1S)                          0.32       7.32 r
+  U3105/O (ND2S)                           0.21       7.53 f
+  U3108/O (NR2)                            0.24       7.77 r
+  U3113/O (ND2S)                           0.15       7.92 f
+  U3117/O (OR2B1S)                         0.28       8.20 f
+  U3120/O (NR3)                            0.58       8.77 r
+  U3127/O (AOI22S)                         0.21       8.99 f
+  U3128/O (OAI112HS)                       0.16       9.15 r
+  U3129/O (AO112S)                         0.64       9.78 r
+  OUT_character[17] (out)                  0.00       9.78 r
+  data arrival time                                   9.78
+
+  max_delay                               20.00      20.00
+  output external delay                    0.00      20.00
+  data required time                                 20.00
+  -----------------------------------------------------------
+  data required time                                 20.00
+  data arrival time                                  -9.78
+  -----------------------------------------------------------
+  slack (MET)                                        10.22
+
+
+1

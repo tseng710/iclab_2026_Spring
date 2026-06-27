@@ -1,0 +1,159 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Jun 22 09:38:40 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+zoomBox -230.00300 -143.78500 811.16900 885.88200
+zoomBox -354.52400 -211.45900 870.38400 999.91400
+zoomBox -501.81600 -289.48500 939.25300 1135.66100
+zoomBox -1118.80500 -614.65400 1227.73600 1705.95800
+zoomBox -1400.96900 -763.36200 1359.66700 1966.77000
+zoomBox -521.53500 -309.77800 519.64000 719.89200
+zoomBox -258.49300 -153.05300 285.00800 384.44200
+zoomBox -102.03200 -53.79300 139.12500 184.69900
+zoomBox -57.98900 -25.51600 90.11100 120.94800
+zoomBox -38.53900 -13.02800 68.46400 92.79300
+zoomBox -24.48600 -4.00500 52.82400 72.45100
+zoomBox -30.94400 -8.17600 60.01000 81.77300
+zoomBox -62.09700 -21.94600 86.00700 124.52100
+zoomBox -113.34100 -44.05500 127.82300 194.44400
+zoomBox -164.34600 -66.06100 169.44600 264.04300
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage -1 0
+panPage 0 -1
+zoomBox -99.38100 -120.89700 141.78400 117.60300
+zoomBox -21.34600 -64.00300 104.54300 60.49500
+zoomBox 16.44300 -33.19500 82.15800 31.79400
+zoomBox 36.14600 -17.13700 70.45100 16.78900
+zoomBox 43.97600 -9.00900 61.88400 8.70100
+panPage -1 0
+panPage -1 0
+panPage 1 0
+zoomBox 33.66400 -13.56000 62.82400 15.27800
+zoomBox 21.04600 -24.08700 76.90800 31.15800
+zoomBox 15.27300 -27.39100 80.99300 37.60300
+zoomBox -8.98600 -41.00400 98.02800 64.82800
+zoomBox -37.14500 -54.78100 110.97200 91.69900
+zoomBox 12.27000 -31.18300 89.58900 45.28200
+zoomBox 37.86100 -18.31900 78.22200 21.59600
+uiSetTool move
+zoomBox 54.35900 -8.68500 72.26800 9.02600
+zoomBox 59.39900 -5.69500 70.39800 5.18200
+selectObject IO_Pin {wdata_m_inf_inst_2[11]}
+moveGroupPins -loc {66.34500 -0.62000}
+deselectAll
+selectObject IO_Pin {wdata_m_inf_inst_2[12]}
+moveGroupPins -loc {60.87600 -0.62000}
+panPage -1 0
+panPage -1 0
+deselectAll
+selectObject IO_Pin {wdata_m_inf_inst_2[13]}
+moveGroupPins -loc {54.94000 -0.62000}
+panPage -1 0
+panPage -1 0
+deselectAll
+selectObject IO_Pin {wdata_m_inf_inst_2[14]}
+moveGroupPins -loc {49.51200 -0.62000}
+panPage -1 0
+panPage -1 0
+deselectAll
+selectObject IO_Pin {wdata_m_inf_inst_2[15]}
+moveGroupPins -loc {46.47400 -0.62000}
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+zoomBox 8.04200 -11.52300 32.83200 12.99300
+zoomBox -11.19100 -24.83300 44.68000 30.42100
+zoomBox -24.43000 -33.95900 52.90000 42.51700
+verifyConnectivity -type all -error 1000 -warning 50
+zoomBox -42.64500 -47.13700 64.38700 58.71200
+zoomBox -67.81500 -65.03300 80.32700 81.47200
+zoomBox -102.60500 -89.65800 102.43700 113.11800
+zoomBox -181.37800 -145.41600 152.49900 184.77200
+zoomBox -308.87100 -236.20700 234.79100 301.44800
+zoomBox -435.77400 -328.11500 316.70000 416.04400
+zoomBox -723.11400 -536.22000 502.16500 675.52000
+panPage 0 1
+panPage 1 0
+zoomBox -123.50600 -92.59800 761.75800 782.88400
+zoomBox 43.88700 -34.23700 683.49000 598.29900
+zoomBox 256.17500 -28.40700 648.97200 360.05000
+zoomBox 350.22900 -26.69300 634.02600 253.96800
+zoomBox 457.87600 -18.84600 606.02100 127.66200
+zoomBox 530.94500 -13.03200 586.81900 42.22500
+zoomBox 551.99600 -8.21300 581.16300 20.63200
+zoomBox 563.00100 -4.79600 578.22700 10.26200
+zoomBox 567.67400 -3.08800 577.02600 6.16100
+zoomBox 570.54300 -2.03900 576.28800 3.64300
+zoomBox 572.73300 -1.24000 575.73300 1.72700
+deselectAll
+selectObject IO_Pin {araddr_m_inf_data[8]}
+moveGroupPins -loc {574.62200 -0.62000}
+zoomBox 571.34300 -2.24800 576.22900 2.58400
+zoomBox 568.04600 -4.56900 577.40700 4.68900
+zoomBox 556.65500 -12.44500 581.47700 12.10300
+zoomBox 549.63200 -17.29100 583.98800 16.68500
+panPage 1 0
+zoomBox 569.91700 -8.91400 587.85200 8.82300
+zoomBox 575.95200 -4.02300 583.91200 3.84900
+deselectAll
+selectObject IO_Pin {araddr_m_inf_data[7]}
+moveGroupPins -loc {581.22400 -0.62000}
+zoomBox 565.82900 -9.11000 586.93900 11.76700
+zoomBox 555.61800 -14.24000 589.99200 19.75400
+zoomBox 571.71600 -7.52300 589.66000 10.22300
+zoomBox 579.39600 -3.99500 588.76300 5.26800
+moveGroupPins -loc {581.06100 -0.62000}
+deselectAll
+selectObject IO_Pin {araddr_m_inf_data[6]}
+moveGroupPins -loc {586.86600 -0.62000}
+zoomBox 572.04200 -7.13500 589.98600 10.61100
+zoomBox 562.38600 -11.16400 591.60600 17.73300
+panPage 1 0
+panPage 1 0
+zoomBox 585.45400 -6.14900 600.70800 8.93600
+zoomBox 588.32700 -3.53100 596.29000 4.34400
+deselectAll
+selectObject IO_Pin {araddr_m_inf_data[5]}
+moveGroupPins -loc {592.70400 -0.62000}
+zoomBox 578.22400 -7.82100 599.34200 13.06400
+zoomBox 568.05000 -12.09500 602.43800 21.91300
+panPage 1 0
+zoomBox 587.06600 -7.93600 608.18500 12.95000
+zoomBox 591.88800 -4.43500 602.91300 6.46800
+zoomBox 593.35200 -3.29700 601.31800 4.58100
+zoomBox 593.92800 -2.85500 600.70000 3.84200
+zoomBox 594.83700 -2.16100 599.73000 2.67800
+deselectAll
+selectObject IO_Pin {araddr_m_inf_data[4]}
+moveGroupPins -loc {598.05900 -0.62000}
+zoomBox 596.10200 -1.25000 599.10700 1.72200

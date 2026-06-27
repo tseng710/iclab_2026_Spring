@@ -1,0 +1,508 @@
+[06/21 22:58:38      0s] 
+[06/21 22:58:38      0s] Cadence Innovus(TM) Implementation System.
+[06/21 22:58:38      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/21 22:58:38      0s] 
+[06/21 22:58:38      0s] Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+[06/21 22:58:38      0s] Options:	
+[06/21 22:58:38      0s] Date:		Sun Jun 21 22:58:38 2026
+[06/21 22:58:38      0s] Host:		ee24 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7763 64-Core Processor 512KB)
+[06/21 22:58:38      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[06/21 22:58:38      0s] 
+[06/21 22:58:38      0s] License:
+[06/21 22:58:38      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[06/21 22:58:38      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/21 22:58:52     12s] @(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/21 22:58:52     12s] @(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+[06/21 22:58:52     12s] @(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/21 22:58:52     12s] @(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+[06/21 22:58:52     12s] @(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+[06/21 22:58:52     12s] @(#)CDS: CPE v20.15-s071
+[06/21 22:58:52     12s] @(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/21 22:58:52     12s] @(#)CDS: OA 22.60-p058 Tue Jun 15 18:38:04 2021
+[06/21 22:58:52     12s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[06/21 22:58:52     12s] @(#)CDS: RCDB 11.15.0
+[06/21 22:58:52     12s] @(#)CDS: STYLUS 20.10-p029_1 (06/24/2021 01:33 PDT)
+[06/21 22:58:52     12s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_221177_ee24_iclab053_pDn463.
+
+[06/21 22:58:52     12s] Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+[06/21 22:58:54     14s] 
+[06/21 22:58:54     14s] **INFO:  MMMC transition support version v31-84 
+[06/21 22:58:54     14s] 
+[06/21 22:58:54     14s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/21 22:58:54     14s] <CMD> suppressMessage ENCEXT-2799
+[06/21 22:58:54     14s] <CMD> getVersion
+[06/21 22:58:54     14s] [INFO] Loading Pegasus 21.21 fill procedures
+[06/21 22:58:55     14s] <CMD> win
+[06/21 22:59:09     15s] <CMD> encMessage warning 0
+[06/21 22:59:09     15s] Suppress "**WARN ..." messages.
+[06/21 22:59:09     15s] <CMD> encMessage debug 0
+[06/21 22:59:09     15s] <CMD> encMessage info 0
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[06/21 22:59:09     15s] To increase the message display limit, refer to the product command reference manual.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[06/21 22:59:09     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO15' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'DI15' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO14' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'DI14' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO13' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'DI13' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO12' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'DI12' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO11' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'DI11' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO10' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'DI10' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO9' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'DI9' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO8' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'DI8' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'A1' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'WEB' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'OE' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'CS' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'A2' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'CK' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'A0' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'A3' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'A4' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'A5' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO7' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'DI7' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO6' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-200):	Pin 'DI6' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO5' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[06/21 22:59:09     15s] To increase the message display limit, refer to the product command reference manual.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO4' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO3' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO2' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO1' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] **WARN: (IMPLF-201):	Pin 'DO0' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 22:59:09     15s] Loading view definition file from /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP_floorplan.inn.dat/viewDefinition.tcl
+[06/21 22:59:10     16s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib)
+[06/21 22:59:10     17s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib)
+[06/21 22:59:10     17s] *** End library_loading (cpu=0.03min, real=0.02min, mem=25.9M, fe_cpu=0.29min, fe_real=0.53min, fe_mem=934.1M) ***
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[06/21 22:59:10     17s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[06/21 22:59:10     17s] To increase the message display limit, refer to the product command reference manual.
+[06/21 22:59:11     17s] *** Netlist is unique.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "arid_m_inf_inst_1[3:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "araddr_m_inf_inst_1[31:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "arlen_m_inf_inst_1[6:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "arsize_m_inf_inst_1[2:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "arburst_m_inf_inst_1[1:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "rid_m_inf_inst_1[3:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "rdata_m_inf_inst_1[15:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "rresp_m_inf_inst_1[1:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "wdata_m_inf_inst_1[15:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "bid_m_inf_inst_1[3:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "bresp_m_inf_inst_1[1:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "awid_m_inf_inst_1[3:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "awaddr_m_inf_inst_1[31:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "awlen_m_inf_inst_1[6:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "awsize_m_inf_inst_1[2:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "awburst_m_inf_inst_1[1:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "arid_m_inf_inst_2[3:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "araddr_m_inf_inst_2[31:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "arlen_m_inf_inst_2[6:0]" not found.
+[06/21 22:59:11     17s] **WARN: (IMPFP-669):	IO pin "arsize_m_inf_inst_2[2:0]" not found.
+[06/21 22:59:11     17s] **WARN: (EMS-27):	Message (IMPFP-669) has exceeded the current message display limit of 20.
+[06/21 22:59:11     17s] To increase the message display limit, refer to the product command reference manual.
+[06/21 22:59:11     17s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:11     17s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:11     17s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:11     17s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:11     17s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:11     17s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:11     17s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:11     17s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:11     17s] Loading preference file /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP_floorplan.inn.dat/gui.pref.tcl ...
+[06/21 22:59:11     18s] 
+[06/21 22:59:11     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[06/21 22:59:11     18s] 
+[06/21 22:59:11     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[06/21 22:59:11     18s] 
+[06/21 22:59:11     18s] TimeStamp Deleting Cell Server Begin ...
+[06/21 22:59:11     18s] 
+[06/21 22:59:11     18s] TimeStamp Deleting Cell Server End ...
+[06/21 22:59:11     18s] 
+[06/21 22:59:11     18s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[06/21 22:59:11     18s] 
+[06/21 22:59:11     18s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[06/21 22:59:12     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:12     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:12     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:12     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:12     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:12     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:12     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:12     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 22:59:12     18s] Loading place ...
+[06/21 22:59:13     18s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[06/21 22:59:13     18s] {RT RC_Corner 0 6 6 {5 0} 1}
+[06/21 22:59:13     18s] 
+[06/21 22:59:13     18s] TimeStamp Deleting Cell Server Begin ...
+[06/21 22:59:13     18s] 
+[06/21 22:59:13     18s] TimeStamp Deleting Cell Server End ...
+[06/21 22:59:13     18s] 
+[06/21 22:59:13     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[06/21 22:59:13     18s] 
+[06/21 22:59:13     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[06/21 22:59:13     18s] 
+[06/21 22:59:13     18s] TimeStamp Deleting Cell Server Begin ...
+[06/21 22:59:13     18s] 
+[06/21 22:59:13     18s] TimeStamp Deleting Cell Server End ...
+[06/21 22:59:13     18s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.15-s105_1. They will be removed in the next release. 
+[06/21 22:59:13     18s] timing_enable_default_delay_arc
+[06/21 22:59:16     19s] <CMD> zoomBox -54.80000 -67.42500 971.26800 947.30500
+[06/21 22:59:18     19s] <CMD> panPage -1 0
+[06/21 22:59:19     19s] <CMD> zoomBox -307.06500 51.33800 565.09300 913.85900
+[06/21 22:59:20     19s] <CMD> zoomBox -221.04200 238.53900 409.09200 861.71000
+[06/21 22:59:20     19s] <CMD> zoomBox -113.63100 455.82900 215.30500 781.13000
+[06/21 22:59:21     19s] <CMD> uiSetTool move
+[06/21 22:59:22     19s] <CMD> zoomBox -46.86900 550.96700 124.83800 720.77700
+[06/21 22:59:22     19s] <CMD> zoomBox -27.13900 600.41900 78.31200 704.70500
+[06/21 22:59:23     19s] <CMD> panPage -1 0
+[06/21 22:59:24     19s] <CMD> zoomBox -31.20600 637.82800 23.84100 692.26700
+[06/21 22:59:25     19s] <CMD> zoomBox -19.19800 653.52900 14.60900 686.96200
+[06/21 22:59:27     20s] <CMD> zoomBox -16.34000 657.32100 12.39600 685.73900
+[06/21 22:59:27     20s] <CMD> zoomBox -10.10400 665.51600 7.54400 682.96900
+[06/21 22:59:29     20s] <CMD> selectObject IO_Pin rready_m_inf_data
+[06/21 22:59:29     20s] Press the <F3> key to bring up the form.
+[06/21 22:59:30     20s] <CMD> panPage 0 -1
+[06/21 22:59:30     20s] <CMD> panPage 0 -1
+[06/21 22:59:30     20s] <CMD> zoomBox -11.89900 652.27300 8.86300 672.80600
+[06/21 22:59:30     20s] <CMD> panPage 0 -1
+[06/21 22:59:31     20s] <CMD> moveGroupPins -loc {-0.62000 653.52000}
+[06/21 22:59:31     20s] **WARN: (IMPPTN-1553):	Pin 'rready_m_inf_data' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 22:59:31     20s] #create default rule from bind_ndr_rule rule=0x7ff1c3ecd0e0 0x7ff1c82bc018
+[06/21 22:59:31     20s] ### import design signature (2): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 22:59:32     20s] <CMD> panPage 0 1
+[06/21 22:59:33     20s] <CMD> panPage 0 1
+[06/21 22:59:33     20s] <CMD> panPage 0 1
+[06/21 22:59:35     20s] <CMD> deselectAll
+[06/21 22:59:35     20s] <CMD> selectObject IO_Pin arvalid_m_inf_inst_1
+[06/21 22:59:35     20s] Press the <F3> key to bring up the form.
+[06/21 22:59:36     20s] <CMD> panPage 0 -1
+[06/21 22:59:36     20s] <CMD> panPage 1 0
+[06/21 22:59:37     20s] <CMD> moveGroupPins -loc {7.90800 659.12000}
+[06/21 22:59:37     20s] **WARN: (IMPPTN-1553):	Pin 'arvalid_m_inf_inst_1' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 22:59:37     20s] ### import design signature (3): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 22:59:38     20s] <CMD> zoomBox -23.17000 655.14700 23.62600 701.42600
+[06/21 22:59:39     20s] <CMD> zoomBox -53.31700 652.46300 36.33200 741.12100
+[06/21 22:59:39     20s] <CMD> zoomBox -64.44700 651.47100 41.02300 755.77600
+[06/21 22:59:40     20s] <CMD> zoomBox -77.54100 650.37400 46.54200 773.08600
+[06/21 22:59:40     20s] <CMD> zoomBox -92.94500 649.08400 53.03500 793.45100
+[06/21 22:59:41     20s] <CMD> panPage 0 -1
+[06/21 22:59:42     21s] <CMD> zoomBox -155.61600 595.13200 82.08900 830.21000
+[06/21 22:59:42     21s] <CMD> zoomBox -217.99500 584.53800 111.00800 909.90600
+[06/21 22:59:42     21s] <CMD> zoomBox -257.66400 577.80200 129.39900 960.58800
+[06/21 22:59:43     21s] <CMD> zoomBox -423.83300 549.58400 206.43600 1172.88900
+[06/21 22:59:43     21s] <CMD> panPage 0 -1
+[06/21 22:59:44     21s] <CMD> panPage 0 -1
+[06/21 22:59:44     21s] <CMD> panPage 0 -1
+[06/21 22:59:44     21s] <CMD> panPage 0 -1
+[06/21 22:59:45     21s] <CMD> zoomBox -221.32600 -107.39600 107.67900 217.97400
+[06/21 22:59:46     21s] <CMD> zoomBox -115.61600 -59.89900 56.12800 109.94700
+[06/21 22:59:47     21s] <CMD> zoomBox -69.80100 -38.52700 35.67100 65.78000
+[06/21 22:59:47     21s] <CMD> zoomBox -58.87600 -33.37000 30.77600 55.29100
+[06/21 22:59:48     21s] <CMD> zoomBox -35.49500 -21.58500 19.56300 32.86500
+[06/21 22:59:48     21s] <CMD> zoomBox -29.91300 -18.77100 16.88600 27.51100
+[06/21 22:59:50     21s] <CMD> zoomBox -17.94200 -11.88700 10.80000 16.53700
+[06/21 22:59:51     21s] <CMD> zoomBox -9.05700 -6.36300 5.94700 8.47500
+[06/21 22:59:51     21s] <CMD> zoomBox -4.60600 -3.11300 3.22600 4.63200
+[06/21 22:59:55     21s] <CMD> deselectAll
+[06/21 22:59:55     21s] <CMD> selectObject IO_Pin bvalid_m_inf_inst_2
+[06/21 22:59:55     21s] Press the <F3> key to bring up the form.
+[06/21 22:59:56     21s] <CMD> moveGroupPins -loc {2.15900 -0.62000}
+[06/21 22:59:56     21s] **WARN: (IMPPTN-1553):	Pin 'bvalid_m_inf_inst_2' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 22:59:56     21s] ### import design signature (4): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 22:59:57     21s] <CMD> deselectAll
+[06/21 22:59:57     21s] <CMD> selectObject IO_Pin clk
+[06/21 22:59:57     21s] Press the <F3> key to bring up the form.
+[06/21 22:59:58     22s] <CMD> moveGroupPins -loc {-0.62000 2.88600}
+[06/21 22:59:58     22s] **WARN: (IMPPTN-1553):	Pin 'clk' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 22:59:58     22s] ### import design signature (5): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 22:59:59     22s] <CMD> zoomBox -10.15400 -6.48100 4.85000 8.35700
+[06/21 23:00:01     22s] Press the <F3> key to bring up the form.
+[06/21 23:00:02     22s] <CMD> panPage 0 1
+[06/21 23:00:03     22s] <CMD> moveGroupPins -loc {-0.62000 10.22200}
+[06/21 23:00:03     22s] ### import design signature (6): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 23:00:04     22s] <CMD> zoomBox -12.42600 -3.38600 5.22600 14.07100
+[06/21 23:00:04     22s] <CMD> zoomBox -18.25700 -6.78200 6.17500 17.38000
+[06/21 23:00:06     22s] <CMD> zoomBox -13.88700 -2.06200 3.76500 15.39500
+[06/21 23:00:06     22s] <CMD> zoomBox -10.72100 1.34800 2.03300 13.96100
+[06/21 23:00:07     22s] <CMD> zoomBox -9.17400 2.70100 1.66700 13.42200
+[06/21 23:00:08     22s] <CMD> zoomBox -6.73900 4.79400 1.09400 12.54000
+[06/21 23:00:08     22s] <CMD> zoomBox -5.78500 5.60100 0.87300 12.18500
+[06/21 23:00:09     22s] <CMD> panPage 1 0
+[06/21 23:00:10     22s] Press the <F3> key to bring up the form.
+[06/21 23:00:11     22s] <CMD> panPage 0 1
+[06/21 23:00:11     22s] <CMD> panPage 0 1
+[06/21 23:00:14     22s] <CMD> moveGroupPins -loc {-0.62000 15.12400}
+[06/21 23:00:14     22s] ### import design signature (7): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 23:00:15     23s] <CMD> zoomBox -9.93600 5.30200 5.07100 20.14300
+[06/21 23:00:15     23s] <CMD> zoomBox -28.59600 -6.40300 11.19700 32.95000
+[06/21 23:00:16     23s] <CMD> zoomBox -80.26200 -32.34500 25.24900 72.00000
+[06/21 23:00:17     23s] <CMD> zoomBox -112.57800 -46.52500 33.45900 97.89800
+[06/21 23:00:17     23s] <CMD> zoomBox -185.75100 -78.63300 52.04800 156.53800
+[06/21 23:00:19     23s] <CMD> zoomBox -160.59200 -67.27000 41.53800 132.62700
+[06/21 23:00:19     23s] <CMD> zoomBox -137.53200 -56.99600 34.27900 112.91700
+[06/21 23:00:19     23s] <CMD> zoomBox -86.98500 -34.53100 18.52900 69.81700
+[06/21 23:00:23     23s] <CMD> zoomBox -63.79900 -25.85000 12.43500 49.54200
+[06/21 23:00:23     23s] <CMD> zoomBox -47.04800 -19.57700 8.03200 34.89400
+[06/21 23:00:24     23s] <CMD> zoomBox -34.26600 -13.94500 5.53000 25.41100
+[06/21 23:00:24     23s] <CMD> zoomBox -29.11000 -11.75800 4.71700 21.69500
+[06/21 23:00:24     23s] <CMD> zoomBox -20.98500 -8.33600 3.45500 15.83400
+[06/21 23:00:24     23s] <CMD> zoomBox -9.28600 -3.23600 1.55900 7.48900
+[06/21 23:00:25     24s] <CMD> zoomBox -5.80400 -1.58000 0.85700 5.00700
+[06/21 23:00:26     24s] <CMD> deselectAll
+[06/21 23:00:26     24s] <CMD> selectObject IO_Pin {rdata_m_inf_data[0]}
+[06/21 23:00:26     24s] Press the <F3> key to bring up the form.
+[06/21 23:00:26     24s] <CMD> panPage 0 1
+[06/21 23:00:27     24s] <CMD> moveGroupPins -loc {-0.62000 5.45400}
+[06/21 23:00:27     24s] ### import design signature (8): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 23:00:28     24s] <CMD> zoomBox -12.55500 -2.54700 2.45700 12.29900
+[06/21 23:00:29     24s] <CMD> zoomBox -27.79600 -9.02900 6.03700 24.43000
+[06/21 23:00:29     24s] <CMD> zoomBox -62.40500 -23.95200 13.84900 51.45900
+[06/21 23:00:30     24s] <CMD> zoomBox -119.50000 -48.38500 26.57900 96.08000
+[06/21 23:00:31     24s] <CMD> zoomBox -228.87700 -95.19000 50.96600 181.56100
+[06/21 23:00:31     24s] <CMD> zoomBox -316.76400 -132.79900 70.56300 250.24800
+[06/21 23:00:32     24s] <CMD> panPage 1 0
+[06/21 23:00:32     24s] <CMD> panPage 1 0
+[06/21 23:00:34     24s] <CMD> zoomBox -314.28400 -257.43000 427.71500 476.37000
+[06/21 23:00:34     24s] <CMD> zoomBox -499.55300 -358.72500 527.43500 656.91500
+[06/21 23:00:35     24s] <CMD> zoomBox -756.70700 -498.92500 664.72900 906.80500
+[06/21 23:00:35     24s] <CMD> zoomBox -1113.63500 -691.96800 853.75100 1253.67900
+[06/21 23:00:36     24s] <CMD> panPage 1 0
+[06/21 23:00:36     24s] <CMD> zoomBox 56.75300 -355.98800 1083.74100 659.65200
+[06/21 23:00:37     24s] <CMD> zoomBox 403.18700 -164.98600 858.86800 285.66000
+[06/21 23:00:38     25s] <CMD> zoomBox 545.37400 -59.60200 747.56300 140.35300
+[06/21 23:00:38     25s] <CMD> zoomBox 607.50800 -27.19100 713.05300 77.18800
+[06/21 23:00:39     25s] <CMD> zoomBox 635.65500 -17.00400 700.47400 47.09900
+[06/21 23:00:40     25s] <CMD> zoomBox 642.78100 -14.62300 697.87800 39.86500
+[06/21 23:00:41     25s] <CMD> zoomBox 662.08500 -8.12500 690.84600 20.31800
+[06/21 23:00:42     25s] <CMD> zoomBox 670.07500 -5.15400 687.73900 12.31500
+[06/21 23:00:43     25s] <CMD> deselectAll
+[06/21 23:00:43     25s] <CMD> selectObject IO_Pin arready_m_inf_data
+[06/21 23:00:43     25s] Press the <F3> key to bring up the form.
+[06/21 23:00:44     25s] <CMD> panPage -1 0
+[06/21 23:00:45     25s] <CMD> moveGroupPins -loc {669.55400 -0.62000}
+[06/21 23:00:45     25s] **WARN: (IMPPTN-1553):	Pin 'arready_m_inf_data' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 23:00:45     25s] ### import design signature (9): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 23:00:46     25s] <CMD> zoomBox 657.95300 -9.11400 691.79300 24.35200
+[06/21 23:00:46     25s] <CMD> zoomBox 652.35100 -12.34600 699.18900 33.97400
+[06/21 23:00:47     25s] <CMD> panPage 1 0
+[06/21 23:00:49     26s] <CMD> zoomBox 673.31200 -7.35400 702.07700 21.09300
+[06/21 23:00:49     26s] <CMD> zoomBox 674.96500 -6.16200 699.41500 18.01800
+[06/21 23:00:49     26s] <CMD> zoomBox 679.44000 -2.97100 692.20400 9.65200
+[06/21 23:00:50     26s] <CMD> deselectAll
+[06/21 23:00:50     26s] <CMD> selectObject IO_Pin awvalid_m_inf_inst_1
+[06/21 23:00:50     26s] Press the <F3> key to bring up the form.
+[06/21 23:00:51     26s] <CMD> panPage -1 0
+[06/21 23:00:51     26s] <CMD> panPage -1 0
+[06/21 23:00:53     26s] <CMD> moveGroupPins -loc {673.94000 4.10300}
+[06/21 23:00:53     26s] **WARN: (IMPPTN-1553):	Pin 'awvalid_m_inf_inst_1' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 23:00:54     26s] ### import design signature (10): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 23:00:54     26s] <CMD> zoomBox 660.12200 -16.27600 699.94100 23.10300
+[06/21 23:00:55     26s] <CMD> zoomBox 638.52800 -40.65400 728.27200 48.09800
+[06/21 23:00:56     26s] <CMD> zoomBox 589.65500 -95.56600 791.91500 104.45900
+[06/21 23:00:56     26s] <CMD> zoomBox 509.16000 -185.95300 896.62700 197.23300
+[06/21 23:00:57     26s] <CMD> zoomBox 403.34800 -303.42300 1034.27400 320.53100
+[06/21 23:00:57     26s] <CMD> zoomBox 354.95700 -357.14500 1097.22300 376.91900
+[06/21 23:00:58     26s] <CMD> zoomBox -49.51000 -806.17200 1623.37200 848.22500
+[06/21 23:00:58     26s] <CMD> panPage 0 1
+[06/21 23:00:59     26s] <CMD> panPage -1 0
+[06/21 23:01:00     26s] <CMD> zoomBox 82.52800 180.86200 955.78400 1044.46900
+[06/21 23:01:01     27s] <CMD> zoomBox 414.23100 456.65000 801.70000 839.83800
+[06/21 23:01:01     27s] <CMD> zoomBox 580.70800 596.20700 726.84200 740.72600
+[06/21 23:01:02     27s] <CMD> zoomBox 637.74700 643.06600 702.58800 707.19100
+[06/21 23:01:02     27s] <CMD> zoomBox 650.37200 653.43700 697.22100 699.76800
+[06/21 23:01:02     27s] <CMD> zoomBox 663.05600 663.64800 691.82700 692.10100
+[06/21 23:01:03     27s] <CMD> zoomBox 671.08100 669.46900 688.75100 686.94400
+[06/21 23:01:04     27s] <CMD> zoomBox 676.83900 674.15100 686.06300 683.27300
+[06/21 23:01:05     27s] <CMD> deselectAll
+[06/21 23:01:05     27s] <CMD> selectObject IO_Pin bready_m_inf_inst_1
+[06/21 23:01:05     27s] Press the <F3> key to bring up the form.
+[06/21 23:01:05     27s] <CMD> panPage -1 0
+[06/21 23:01:06     27s] <CMD> zoomBox 664.41200 667.25900 693.18500 695.71400
+[06/21 23:01:06     27s] <CMD> zoomBox 650.78700 658.41800 705.90600 712.92800
+[06/21 23:01:06     27s] <CMD> zoomBox 645.73500 655.10400 710.58100 719.23300
+[06/21 23:01:06     27s] <CMD> zoomBox 603.36200 626.95500 749.50900 771.48700
+[06/21 23:01:07     27s] <CMD> zoomBox 556.51700 600.74200 794.49400 836.08900
+[06/21 23:01:08     27s] <CMD> moveGroupPins -loc {653.58900 659.12000}
+[06/21 23:01:08     27s] **WARN: (IMPPTN-1553):	Pin 'bready_m_inf_inst_1' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 23:01:08     27s] ### import design signature (11): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 23:01:11     27s] <CMD> zoomBox 627.95000 644.13700 733.54300 748.56300
+[06/21 23:01:11     27s] <CMD> zoomBox 659.64500 663.39200 706.49800 709.72700
+[06/21 23:01:12     27s] <CMD> zoomBox 663.32100 665.70900 703.14600 705.09400
+[06/21 23:01:12     27s] <CMD> zoomBox 666.44500 667.66700 700.29700 701.14500
+[06/21 23:01:12     27s] <CMD> zoomBox 673.27600 671.94900 694.06600 692.50900
+[06/21 23:01:12     27s] <CMD> deselectAll
+[06/21 23:01:12     27s] <CMD> selectObject IO_Pin rready_m_inf_inst_2
+[06/21 23:01:12     27s] Press the <F3> key to bring up the form.
+[06/21 23:01:13     27s] <CMD> panPage 0 -1
+[06/21 23:01:13     27s] <CMD> panPage 0 -1
+[06/21 23:01:13     27s] <CMD> zoomBox 659.88200 653.75500 706.74000 700.09500
+[06/21 23:01:14     27s] <CMD> zoomBox 655.63300 651.91200 710.76000 706.43000
+[06/21 23:01:14     27s] <CMD> zoomBox 650.95600 649.61900 715.81200 713.75800
+[06/21 23:01:14     27s] <CMD> zoomBox 645.47600 646.90000 721.77700 722.35800
+[06/21 23:01:17     27s] <CMD> moveGroupPins -loc {673.94000 653.94400}
+[06/21 23:01:17     27s] **WARN: (IMPPTN-1553):	Pin 'rready_m_inf_inst_2' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 23:01:17     27s] ### import design signature (12): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 23:01:18     27s] <CMD> zoomBox 616.00900 639.69300 762.17900 784.24800
+[06/21 23:01:18     27s] <CMD> panPage -1 0
+[06/21 23:01:18     27s] <CMD> zoomBox 500.94500 628.26900 830.37600 954.06000
+[06/21 23:01:19     27s] <CMD> zoomBox 418.71200 612.25700 955.13700 1142.75500
+[06/21 23:01:19     28s] <CMD> zoomBox 284.01300 592.39400 1157.49300 1456.22200
+[06/21 23:01:19     28s] <CMD> panPage 0 -1
+[06/21 23:01:20     28s] <CMD> panPage -1 0
+[06/21 23:01:20     28s] <CMD> panPage -1 0
+[06/21 23:01:33     28s] <CMD> saveDesign CHIP_floorplan.inn
+[06/21 23:01:33     28s] #% Begin save design ... (date=06/21 23:01:33, mem=1197.6M)
+[06/21 23:01:33     28s] % Begin Save ccopt configuration ... (date=06/21 23:01:33, mem=1200.5M)
+[06/21 23:01:33     28s] % End Save ccopt configuration ... (date=06/21 23:01:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1201.3M, current mem=1201.3M)
+[06/21 23:01:33     28s] % Begin Save netlist data ... (date=06/21 23:01:33, mem=1201.4M)
+[06/21 23:01:33     28s] Writing Binary DB to CHIP_floorplan.inn.dat.tmp/CHIP.v.bin in single-threaded mode...
+[06/21 23:01:33     28s] % End Save netlist data ... (date=06/21 23:01:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1202.2M, current mem=1201.8M)
+[06/21 23:01:33     28s] Saving symbol-table file ...
+[06/21 23:01:34     28s] Saving congestion map file CHIP_floorplan.inn.dat.tmp/CHIP.route.congmap.gz ...
+[06/21 23:01:34     28s] % Begin Save AAE data ... (date=06/21 23:01:34, mem=1202.4M)
+[06/21 23:01:34     28s] Saving AAE Data ...
+[06/21 23:01:34     28s] % End Save AAE data ... (date=06/21 23:01:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1202.4M, current mem=1202.4M)
+[06/21 23:01:34     28s] Saving preference file CHIP_floorplan.inn.dat.tmp/gui.pref.tcl ...
+[06/21 23:01:34     28s] Saving mode setting ...
+[06/21 23:01:34     28s] Saving global file ...
+[06/21 23:01:34     29s] % Begin Save floorplan data ... (date=06/21 23:01:34, mem=1209.0M)
+[06/21 23:01:34     29s] Saving floorplan file ...
+[06/21 23:01:34     29s] % End Save floorplan data ... (date=06/21 23:01:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1210.0M, current mem=1210.0M)
+[06/21 23:01:35     29s] Saving Drc markers ...
+[06/21 23:01:35     29s] ... No Drc file written since there is no markers found.
+[06/21 23:01:35     29s] % Begin Save placement data ... (date=06/21 23:01:35, mem=1210.0M)
+[06/21 23:01:35     29s] ** Saving stdCellPlacement_binary (version# 2) ...
+[06/21 23:01:35     29s] Save Adaptive View Pruning View Names to Binary file
+[06/21 23:01:35     29s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1948.8M) ***
+[06/21 23:01:35     29s] % End Save placement data ... (date=06/21 23:01:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=1210.1M, current mem=1210.1M)
+[06/21 23:01:35     29s] % Begin Save routing data ... (date=06/21 23:01:35, mem=1210.1M)
+[06/21 23:01:35     29s] Saving route file ...
+[06/21 23:01:35     29s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1945.8M) ***
+[06/21 23:01:35     29s] % End Save routing data ... (date=06/21 23:01:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=1210.2M, current mem=1210.2M)
+[06/21 23:01:35     29s] Saving property file CHIP_floorplan.inn.dat.tmp/CHIP.prop
+[06/21 23:01:35     29s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1948.8M) ***
+[06/21 23:01:35     29s] % Begin Save power constraints data ... (date=06/21 23:01:35, mem=1210.7M)
+[06/21 23:01:35     29s] % End Save power constraints data ... (date=06/21 23:01:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=1210.8M, current mem=1210.8M)
+[06/21 23:01:35     29s] Generated self-contained design CHIP_floorplan.inn.dat.tmp
+[06/21 23:01:36     29s] #% End save design ... (date=06/21 23:01:36, total cpu=0:00:00.7, real=0:00:03.0, peak res=1239.8M, current mem=1213.8M)
+[06/21 23:01:36     29s] *** Message Summary: 0 warning(s), 0 error(s)
+[06/21 23:01:36     29s] 
+[06/21 23:01:39     29s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Jun 21 23:01:39 2026
+  Total CPU time:     0:00:34
+  Total real time:    0:03:03
+  Peak memory (main): 1217.68MB
+
+[06/21 23:01:39     29s] 
+[06/21 23:01:39     29s] *** Memory Usage v#1 (Current mem = 1989.523M, initial mem = 284.375M) ***
+[06/21 23:01:39     29s] 
+[06/21 23:01:39     29s] *** Summary of all messages that are not suppressed in this session:
+[06/21 23:01:39     29s] Severity  ID               Count  Summary                                  
+[06/21 23:01:39     29s] WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+[06/21 23:01:39     29s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[06/21 23:01:39     29s] WARNING   IMPLF-200           33  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/21 23:01:39     29s] WARNING   IMPLF-201           16  Pin '%s' in macro '%s' has no ANTENNADIF...
+[06/21 23:01:39     29s] WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+[06/21 23:01:39     29s] WARNING   IMPFP-669           48  IO pin "%s" not found.                   
+[06/21 23:01:39     29s] WARNING   IMPFP-3961          16  The techSite '%s' has no related standar...
+[06/21 23:01:39     29s] WARNING   IMPPTN-1553          8  Pin '%s' of partition '%s' is unplaced. ...
+[06/21 23:01:39     29s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[06/21 23:01:39     29s] WARNING   IMPVL-159          766  Pin '%s' of cell '%s' is defined in LEF ...
+[06/21 23:01:39     29s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[06/21 23:01:39     29s] WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+[06/21 23:01:39     29s] *** Message Summary: 1296 warning(s), 0 error(s)
+[06/21 23:01:39     29s] 
+[06/21 23:01:39     29s] --- Ending "Innovus" (totcpu=0:00:29.7, real=0:03:01, mem=1989.5M) ---

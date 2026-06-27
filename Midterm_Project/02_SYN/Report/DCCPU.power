@@ -1,0 +1,55 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : DCCPU
+Version: T-2022.03
+Date   : Wed May  6 12:37:12 2026
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/umc018/Synthesis/slow.db)
+    SRAM64X16_WC (File: /RAID2/COURSE/2026_Spring/iclab/iclab053/Midterm_Project/04_MEM/SRAM64X16_WC.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  35.6605 mW   (99%)
+  Net Switching Power  = 202.9134 uW    (1%)
+                         ---------
+Total Dynamic Power    =  35.8635 mW  (100%)
+
+Cell Leakage Power     =  10.0787 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory            21.9830        2.9259e-03        3.4846e+06           21.9894  (  61.30%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     13.1948            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.4223        8.4112e-03        3.2260e+06           13.6287  (  37.99%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  6.0499e-02            0.1916        3.3681e+06            0.2554  (   0.71%)
+--------------------------------------------------------------------------------------------------
+Total             35.6605 mW         0.2029 mW     1.0079e+07 pW        35.8735 mW
+1

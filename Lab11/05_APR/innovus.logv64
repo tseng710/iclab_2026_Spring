@@ -1,0 +1,772 @@
+[05/25 07:57:45      0s] 
+[05/25 07:57:45      0s] Cadence Innovus(TM) Implementation System.
+[05/25 07:57:45      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/25 07:57:45      0s] 
+[05/25 07:57:45      0s] Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+[05/25 07:57:45      0s] Options:	
+[05/25 07:57:45      0s] Date:		Mon May 25 07:57:45 2026
+[05/25 07:57:45      0s] Host:		ee27 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7713 64-Core Processor 512KB)
+[05/25 07:57:45      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/25 07:57:45      0s] 
+[05/25 07:57:45      0s] License:
+[05/25 07:57:45      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[05/25 07:57:45      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/25 07:57:59     11s] @(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/25 07:57:59     11s] @(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+[05/25 07:57:59     11s] @(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/25 07:57:59     11s] @(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+[05/25 07:57:59     11s] @(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+[05/25 07:57:59     11s] @(#)CDS: CPE v20.15-s071
+[05/25 07:57:59     11s] @(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/25 07:57:59     11s] @(#)CDS: OA 22.60-p058 Tue Jun 15 18:38:04 2021
+[05/25 07:57:59     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[05/25 07:57:59     11s] @(#)CDS: RCDB 11.15.0
+[05/25 07:57:59     11s] @(#)CDS: STYLUS 20.10-p029_1 (06/24/2021 01:33 PDT)
+[05/25 07:57:59     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_197721_ee27_iclab053_TJh78D.
+
+[05/25 07:57:59     11s] Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+[05/25 07:58:01     13s] 
+[05/25 07:58:01     13s] **INFO:  MMMC transition support version v31-84 
+[05/25 07:58:01     13s] 
+[05/25 07:58:01     13s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/25 07:58:01     13s] <CMD> suppressMessage ENCEXT-2799
+[05/25 07:58:01     13s] <CMD> getVersion
+[05/25 07:58:02     13s] [INFO] Loading Pegasus 21.21 fill procedures
+[05/25 07:58:02     13s] <CMD> win
+[05/25 07:58:57     16s] <CMD> encMessage warning 0
+[05/25 07:58:57     16s] Suppress "**WARN ..." messages.
+[05/25 07:58:57     16s] <CMD> encMessage debug 0
+[05/25 07:58:57     16s] <CMD> encMessage info 0
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[05/25 07:58:57     17s] To increase the message display limit, refer to the product command reference manual.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[05/25 07:58:57     17s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO11' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'DI11' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO10' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'DI10' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO9' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'DI9' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO8' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'DI8' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO7' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'DI7' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO6' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'DI6' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'A1' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'WEB' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'OE' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'CS' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'A3' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'A4' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'A2' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'CK' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'A0' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'A5' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'A6' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'A7' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'A8' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-200):	Pin 'A9' in macro 'SUMA180_4096X12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[05/25 07:58:57     17s] To increase the message display limit, refer to the product command reference manual.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO5' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO4' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO3' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO2' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO1' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] **WARN: (IMPLF-201):	Pin 'DO0' in macro 'SUMA180_4096X12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/25 07:58:57     17s] Loading view definition file from /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP.inn.dat/viewDefinition.tcl
+[05/25 07:58:58     17s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib)
+[05/25 07:58:59     18s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib)
+[05/25 07:58:59     18s] *** End library_loading (cpu=0.02min, real=0.03min, mem=19.9M, fe_cpu=0.31min, fe_real=1.23min, fe_mem=942.7M) ***
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[05/25 07:58:59     18s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[05/25 07:58:59     18s] To increase the message display limit, refer to the product command reference manual.
+[05/25 07:58:59     19s] *** Netlist is unique.
+[05/25 07:58:59     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:58:59     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:58:59     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:58:59     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:58:59     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:58:59     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:58:59     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:58:59     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:58:59     19s] Loading preference file /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP.inn.dat/gui.pref.tcl ...
+[05/25 07:58:59     19s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[05/25 07:59:00     19s] 
+[05/25 07:59:00     19s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/25 07:59:00     19s] 
+[05/25 07:59:00     19s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[05/25 07:59:00     19s] 
+[05/25 07:59:00     19s] TimeStamp Deleting Cell Server Begin ...
+[05/25 07:59:00     19s] 
+[05/25 07:59:00     19s] TimeStamp Deleting Cell Server End ...
+[05/25 07:59:00     19s] 
+[05/25 07:59:00     19s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[05/25 07:59:00     19s] 
+[05/25 07:59:00     19s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[05/25 07:59:00     19s] **WARN: (IMPSYC-2):	Timing information is not defined for cell VCCKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[05/25 07:59:00     19s] **WARN: (IMPSYC-2):	Timing information is not defined for cell VCC3IOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[05/25 07:59:00     19s] **WARN: (IMPSYC-2):	Timing information is not defined for cell GNDKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[05/25 07:59:00     19s] **WARN: (IMPSYC-2):	Timing information is not defined for cell GNDIOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[05/25 07:59:00     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:59:00     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:59:00     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:59:00     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:59:00     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:59:00     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:59:00     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:59:00     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/25 07:59:01     19s] Loading place ...
+[05/25 07:59:02     20s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[05/25 07:59:02     20s] {RT RC_Corner 0 6 6 {5 0} 1}
+[05/25 07:59:02     21s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[05/25 07:59:03     21s] 
+[05/25 07:59:03     21s] TimeStamp Deleting Cell Server Begin ...
+[05/25 07:59:03     21s] 
+[05/25 07:59:03     21s] TimeStamp Deleting Cell Server End ...
+[05/25 07:59:03     21s] 
+[05/25 07:59:03     21s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/25 07:59:03     21s] 
+[05/25 07:59:03     21s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[05/25 07:59:03     21s] 
+[05/25 07:59:03     21s] TimeStamp Deleting Cell Server Begin ...
+[05/25 07:59:03     21s] 
+[05/25 07:59:03     21s] TimeStamp Deleting Cell Server End ...
+[05/25 07:59:03     21s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.15-s105_1. They will be removed in the next release. 
+[05/25 07:59:03     21s] timing_enable_default_delay_arc
+[05/25 07:59:06     21s] <CMD> getMultiCpuUsage -localCpu
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -disable_rules -quiet
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -quiet -area
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -quiet -layer_range
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -check_only -quiet
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -check_same_via_cell -quiet
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -exclude_pg_net -quiet
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -ignore_trial_route -quiet
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+[05/25 07:59:06     21s] <CMD> get_verify_drc_mode -limit -quiet
+[05/25 07:59:09     21s] <CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+[05/25 07:59:09     21s] <CMD> verify_drc
+[05/25 07:59:09     21s] #-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+[05/25 07:59:09     21s] #-report CHIP.drc.rpt                    # string, default="", user setting
+[05/25 07:59:09     21s]  *** Starting Verify DRC (MEM: 1984.8) ***
+[05/25 07:59:09     21s] 
+[05/25 07:59:09     21s] #create default rule from bind_ndr_rule rule=0x7fb265b8b2f0 0x7fb267f88018
+[05/25 07:59:09     21s] ### import design signature (2): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[05/25 07:59:09     21s]   VERIFY DRC ...... Starting Verification
+[05/25 07:59:09     21s]   VERIFY DRC ...... Initializing
+[05/25 07:59:09     21s]   VERIFY DRC ...... Deleting Existing Violations
+[05/25 07:59:09     21s]   VERIFY DRC ...... Creating Sub-Areas
+[05/25 07:59:09     21s]   VERIFY DRC ...... Using new threading
+[05/25 07:59:09     21s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 253.440 253.440} 1 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {253.440 0.000 506.880 253.440} 2 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 2 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {506.880 0.000 760.320 253.440} 3 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 3 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {760.320 0.000 1013.760 253.440} 4 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 4 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1013.760 0.000 1267.200 253.440} 5 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 5 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1267.200 0.000 1520.640 253.440} 6 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 6 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1520.640 0.000 1774.080 253.440} 7 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 7 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1774.080 0.000 2024.300 253.440} 8 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 8 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {0.000 253.440 253.440 506.880} 9 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 9 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {253.440 253.440 506.880 506.880} 10 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 10 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {506.880 253.440 760.320 506.880} 11 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 11 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {760.320 253.440 1013.760 506.880} 12 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 12 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1013.760 253.440 1267.200 506.880} 13 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 13 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1267.200 253.440 1520.640 506.880} 14 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 14 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1520.640 253.440 1774.080 506.880} 15 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 15 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1774.080 253.440 2024.300 506.880} 16 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 16 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {0.000 506.880 253.440 760.320} 17 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 17 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {253.440 506.880 506.880 760.320} 18 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 18 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {506.880 506.880 760.320 760.320} 19 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 19 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {760.320 506.880 1013.760 760.320} 20 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 20 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1013.760 506.880 1267.200 760.320} 21 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 21 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1267.200 506.880 1520.640 760.320} 22 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 22 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1520.640 506.880 1774.080 760.320} 23 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 23 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {1774.080 506.880 2024.300 760.320} 24 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 24 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {0.000 760.320 253.440 1013.760} 25 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 25 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {253.440 760.320 506.880 1013.760} 26 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 26 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {506.880 760.320 760.320 1013.760} 27 of 64
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area : 27 complete 0 Viols.
+[05/25 07:59:09     22s]   VERIFY DRC ...... Sub-Area: {760.320 760.320 1013.760 1013.760} 28 of 64
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area : 28 complete 0 Viols.
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area: {1013.760 760.320 1267.200 1013.760} 29 of 64
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area : 29 complete 0 Viols.
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area: {1267.200 760.320 1520.640 1013.760} 30 of 64
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area : 30 complete 0 Viols.
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area: {1520.640 760.320 1774.080 1013.760} 31 of 64
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area : 31 complete 0 Viols.
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area: {1774.080 760.320 2024.300 1013.760} 32 of 64
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area : 32 complete 0 Viols.
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area: {0.000 1013.760 253.440 1267.200} 33 of 64
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area : 33 complete 0 Viols.
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area: {253.440 1013.760 506.880 1267.200} 34 of 64
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area : 34 complete 0 Viols.
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area: {506.880 1013.760 760.320 1267.200} 35 of 64
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area : 35 complete 0 Viols.
+[05/25 07:59:10     22s]   VERIFY DRC ...... Sub-Area: {760.320 1013.760 1013.760 1267.200} 36 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 36 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1013.760 1013.760 1267.200 1267.200} 37 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 37 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1267.200 1013.760 1520.640 1267.200} 38 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 38 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1520.640 1013.760 1774.080 1267.200} 39 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 39 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1774.080 1013.760 2024.300 1267.200} 40 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 40 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {0.000 1267.200 253.440 1520.640} 41 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 41 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {253.440 1267.200 506.880 1520.640} 42 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 42 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {506.880 1267.200 760.320 1520.640} 43 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 43 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {760.320 1267.200 1013.760 1520.640} 44 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 44 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1013.760 1267.200 1267.200 1520.640} 45 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 45 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1267.200 1267.200 1520.640 1520.640} 46 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 46 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1520.640 1267.200 1774.080 1520.640} 47 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 47 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1774.080 1267.200 2024.300 1520.640} 48 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 48 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {0.000 1520.640 253.440 1774.080} 49 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 49 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {253.440 1520.640 506.880 1774.080} 50 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 50 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {506.880 1520.640 760.320 1774.080} 51 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 51 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {760.320 1520.640 1013.760 1774.080} 52 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 52 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1013.760 1520.640 1267.200 1774.080} 53 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 53 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1267.200 1520.640 1520.640 1774.080} 54 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 54 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1520.640 1520.640 1774.080 1774.080} 55 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 55 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1774.080 1520.640 2024.300 1774.080} 56 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 56 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {0.000 1774.080 253.440 2013.320} 57 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 57 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {253.440 1774.080 506.880 2013.320} 58 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 58 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {506.880 1774.080 760.320 2013.320} 59 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 59 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {760.320 1774.080 1013.760 2013.320} 60 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 60 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1013.760 1774.080 1267.200 2013.320} 61 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 61 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1267.200 1774.080 1520.640 2013.320} 62 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 62 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1520.640 1774.080 1774.080 2013.320} 63 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 63 complete 0 Viols.
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area: {1774.080 1774.080 2024.300 2013.320} 64 of 64
+[05/25 07:59:10     23s]   VERIFY DRC ...... Sub-Area : 64 complete 0 Viols.
+[05/25 07:59:10     23s] 
+[05/25 07:59:10     23s]   Verification Complete : 0 Viols.
+[05/25 07:59:10     23s] 
+[05/25 07:59:10     23s]  *** End Verify DRC (CPU: 0:00:01.5  ELAPSED TIME: 1.00  MEM: 43.0M) ***
+[05/25 07:59:10     23s] 
+[05/25 07:59:10     23s] <CMD> set_verify_drc_mode -area {0 0 0 0}
+[05/25 07:59:19     24s] <CMD> verifyConnectivity -type all -error 1000 -warning 50
+[05/25 07:59:19     24s] VERIFY_CONNECTIVITY use new engine.
+[05/25 07:59:19     24s] 
+[05/25 07:59:19     24s] ******** Start: VERIFY CONNECTIVITY ********
+[05/25 07:59:19     24s] Start Time: Mon May 25 07:59:19 2026
+[05/25 07:59:19     24s] 
+[05/25 07:59:19     24s] Design Name: CHIP
+[05/25 07:59:19     24s] Database Units: 1000
+[05/25 07:59:19     24s] Design Boundary: (0.0000, 0.0000) (2024.3000, 2013.3200)
+[05/25 07:59:19     24s] Error Limit = 1000; Warning Limit = 50
+[05/25 07:59:19     24s] Check all nets
+[05/25 07:59:19     24s] **** 07:59:19 **** Processed 5000 nets.
+[05/25 07:59:19     24s] 
+[05/25 07:59:19     24s] Begin Summary 
+[05/25 07:59:19     24s]   Found no problems or warnings.
+[05/25 07:59:19     24s] End Summary
+[05/25 07:59:19     24s] 
+[05/25 07:59:19     24s] End Time: Mon May 25 07:59:19 2026
+[05/25 07:59:19     24s] Time Elapsed: 0:00:00.0
+[05/25 07:59:19     24s] 
+[05/25 07:59:19     24s] ******** End: VERIFY CONNECTIVITY ********
+[05/25 07:59:19     24s]   Verification Complete : 0 Viols.  0 Wrngs.
+[05/25 07:59:19     24s]   (CPU Time: 0:00:00.3  MEM: 7.000M)
+[05/25 07:59:19     24s] 
+[05/25 07:59:46     26s] <CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+[05/25 07:59:46     26s] <CMD> timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_postRoute -outDir timingReports
+[05/25 07:59:46     26s] *** timeDesign #1 [begin] : totSession cpu/real = 0:00:26.3/0:01:58.5 (0.2), mem = 2077.0M
+[05/25 07:59:46     26s]  Reset EOS DB
+[05/25 07:59:46     26s] Ignoring AAE DB Resetting ...
+[05/25 07:59:46     26s] Extraction called for design 'CHIP' of instances=21945 and nets=8969 using extraction engine 'postRoute' at effort level 'high' .
+[05/25 07:59:46     26s] Integrated QRC (IQuantus) Extraction in Multi-Corner mode called for design 'CHIP'. Number of corners is 1.
+[05/25 07:59:46     26s] No IQuantus parasitic data in Innovus. Going for full-chip extraction.
+[05/25 07:59:46     26s]  Min pitch recieved = 2240 
+[05/25 07:59:47     26s] IQuantus Extraction invoked in single CPU mode. Commands setDistributeHost/setMultiCpuUsage can be used to activate multiCPU extraction.
+[05/25 07:59:47     26s] 
+[05/25 07:59:47     26s] IQuantus Extraction engine initialization using 1 tech files:
+[05/25 07:59:47     26s] 	/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP.inn.dat/libs/mmmc/RC_Corner/icecaps.tch at temperature 25C . 
+[05/25 07:59:47     26s] 
+[05/25 07:59:47     26s] +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[05/25 07:59:47     27s] No layermap file specified. Automatically mapping tech and lef layers. Log file is 'extLogDir/IQuantus_25-May-2026_07:59:46_197721_ea479i/extr.CHIP.layermap.log'.
+[05/25 07:59:47     27s] +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[05/25 07:59:47     27s] IQuantus Extraction engine initialized successfully.
+[05/25 07:59:47     27s] 
+[05/25 07:59:47     27s] Dumping IQuantus extraction options in file 'extLogDir/IQuantus_25-May-2026_07:59:46_197721_ea479i/extr.CHIP.extraction_options.log'.
+[05/25 07:59:47     27s] Initialization for IQuantus Fullchip Extraction DONE (CPU Time: 0:00:01.0  Real Time: 0:00:01.0  MEM: 2151.957M)
+[05/25 07:59:47     27s] QX tile count(x,y) : (21,21)
+[05/25 07:59:47     27s] FE-QX grid count(x,y) :  (67,67)
+[05/25 07:59:47     27s] Halo size : 11.094000 micron 
+[05/25 07:59:47     27s] 
+[05/25 07:59:47     27s] Geometry processing of Gray and Metal fill STARTED.................... DONE (CPU Time: 0:00:00.3  Real Time: 0:00:01.0  MEM: 2163.133M)
+[05/25 07:59:48     27s] Geometry processing of nets STARTED.................... DONE (NETS: 8920  Geometries: 141275  CPU Time: 0:00:00.7  Real Time: 0:00:01.0  MEM: 2236.844M)
+[05/25 07:59:49     28s] 
+[05/25 07:59:49     28s] Extraction of Geometries STARTED.
+[05/25 07:59:49     28s] +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[05/25 07:59:59     38s] +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[05/25 07:59:59     38s] Extraction of Geometries DONE (NETS: 8920  CPU Time: 0:00:09.7  Real Time: 0:00:10.0  MEM: 2320.414M)
+[05/25 07:59:59     38s] 
+[05/25 07:59:59     38s] Parasitic Network Creation STARTED
+[05/25 07:59:59     38s] Creating parasitic data file '/tmp/innovus_temp_197721_ee27_iclab053_TJh78D/CHIP_197721_TxUyaj.rcdb.d' for storing RC.
+[05/25 07:59:59     38s] ....................
+[05/25 07:59:59     38s] Number of Extracted Resistors     : 108119
+[05/25 07:59:59     38s] Number of Extracted Ground Caps   : 117288
+[05/25 07:59:59     38s] Number of Extracted Coupling Caps : 37492
+[05/25 07:59:59     38s] Parasitic Network Creation DONE (Nets: 8920  CPU Time: 0:00:00.3  Real Time: 0:00:00.0  MEM: 2344.426M)
+[05/25 07:59:59     38s] 
+[05/25 07:59:59     38s] IQuantus Extraction engine is being closed... 
+[05/25 07:59:59     38s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=2344.422M)
+[05/25 07:59:59     38s] Opening parasitic data file '/tmp/innovus_temp_197721_ee27_iclab053_TJh78D/CHIP_197721_TxUyaj.rcdb.d' for reading (mem: 2344.422M)
+[05/25 07:59:59     38s] processing rcdb (/tmp/innovus_temp_197721_ee27_iclab053_TJh78D/CHIP_197721_TxUyaj.rcdb.d) for hinst (top) of cell (CHIP);
+[05/25 08:00:00     39s] Closing parasitic data file '/tmp/innovus_temp_197721_ee27_iclab053_TJh78D/CHIP_197721_TxUyaj.rcdb.d': 0 access done (mem: 2344.422M)
+[05/25 08:00:00     39s] Lumped Parasitic Loading Completed (total cpu=0:00:00.4, real=0:00:01.0, current mem=2344.422M)
+[05/25 08:00:00     39s] IQuantus Fullchip Extraction DONE (CPU Time: 0:00:12.8  Real Time: 0:00:14.0  MEM: 2344.422M)
+[05/25 08:00:00     39s] Starting delay calculation for Setup views
+[05/25 08:00:00     39s] AAE_INFO: resetNetProps viewIdx 0 
+[05/25 08:00:00     39s] Starting SI iteration 1 using Infinite Timing Windows
+[05/25 08:00:00     39s] #################################################################################
+[05/25 08:00:00     39s] # Design Stage: PostRoute
+[05/25 08:00:00     39s] # Design Name: CHIP
+[05/25 08:00:00     39s] # Design Mode: 180nm
+[05/25 08:00:00     39s] # Analysis Mode: MMMC OCV 
+[05/25 08:00:00     39s] # Parasitics Mode: SPEF/RCDB 
+[05/25 08:00:00     39s] # Signoff Settings: SI On 
+[05/25 08:00:00     39s] #################################################################################
+[05/25 08:00:00     39s] AAE_INFO: 1 threads acquired from CTE.
+[05/25 08:00:00     39s] Setting infinite Tws ...
+[05/25 08:00:00     39s] First Iteration Infinite Tw... 
+[05/25 08:00:00     39s] Calculate early delays in OCV mode...
+[05/25 08:00:00     39s] Calculate late delays in OCV mode...
+[05/25 08:00:00     39s] Topological Sorting (REAL = 0:00:00.0, MEM = 2344.4M, InitMEM = 2344.4M)
+[05/25 08:00:00     39s] Start delay calculation (fullDC) (1 T). (MEM=2344.42)
+[05/25 08:00:00     39s] AAE_INFO: Number of noise libraries( CDBs ) loaded = 2
+[05/25 08:00:00     39s] AAE_INFO: Cdb files are: 
+[05/25 08:00:00     39s]  	/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP.inn.dat/libs/mmmc/u18_ss.cdb
+[05/25 08:00:00     39s] 	/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab11_2026spring/05_APR/CHIP.inn.dat/libs/mmmc/u18_ff.cdb
+[05/25 08:00:00     39s]  
+[05/25 08:00:00     39s] Start AAE Lib Loading. (MEM=2356.03)
+[05/25 08:00:01     40s] End AAE Lib Loading. (MEM=2403.73 CPU=0:00:00.6 Real=0:00:01.0)
+[05/25 08:00:01     40s] End AAE Lib Interpolated Model. (MEM=2403.73 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/25 08:00:01     40s] Opening parasitic data file '/tmp/innovus_temp_197721_ee27_iclab053_TJh78D/CHIP_197721_TxUyaj.rcdb.d' for reading (mem: 2384.648M)
+[05/25 08:00:01     40s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 2384.6M)
+[05/25 08:00:01     40s] **WARN: (IMPESI-3086):	The cell 'XMD' does not have characterized noise model(s) for 'fsa0m_a_t33_generic_io_ss1p62v125c, fsa0m_a_t33_generic_io_ff1p98vm40c' lib(s). Missing noise information could compromise the accuracy of analysis.
+[05/25 08:00:01     40s] Type 'man IMPESI-3086' for more detail.
+[05/25 08:00:01     40s] **WARN: (IMPESI-3086):	The cell 'SUMA180_4096X12' does not have characterized noise model(s) for 'SUMA180_4096X12_WC, SUMA180_4096X12_BC' lib(s). Missing noise information could compromise the accuracy of analysis.
+[05/25 08:00:01     40s] Type 'man IMPESI-3086' for more detail.
+[05/25 08:00:01     40s] **WARN: (IMPESI-3086):	The cell 'YA2GSD' does not have characterized noise model(s) for 'fsa0m_a_t33_generic_io_ss1p62v125c, fsa0m_a_t33_generic_io_ff1p98vm40c' lib(s). Missing noise information could compromise the accuracy of analysis.
+[05/25 08:00:01     40s] Type 'man IMPESI-3086' for more detail.
+[05/25 08:00:03     42s] Total number of fetched objects 8977
+[05/25 08:00:03     42s] AAE_INFO-618: Total number of nets in the design is 8969,  100.0 percent of the nets selected for SI analysis
+[05/25 08:00:03     42s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[05/25 08:00:03     42s] End delay calculation. (MEM=2379.71 CPU=0:00:02.1 REAL=0:00:02.0)
+[05/25 08:00:03     42s] End delay calculation (fullDC). (MEM=2343.09 CPU=0:00:03.0 REAL=0:00:03.0)
+[05/25 08:00:03     42s] *** CDM Built up (cpu=0:00:03.3  real=0:00:03.0  mem= 2343.1M) ***
+[05/25 08:00:03     42s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2343.1M)
+[05/25 08:00:03     42s] Add other clocks and setupCteToAAEClockMapping during iter 1
+[05/25 08:00:03     42s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2343.1M)
+[05/25 08:00:03     42s] Starting SI iteration 2
+[05/25 08:00:03     42s] Calculate early delays in OCV mode...
+[05/25 08:00:03     42s] Calculate late delays in OCV mode...
+[05/25 08:00:04     43s] Start delay calculation (fullDC) (1 T). (MEM=2212.21)
+[05/25 08:00:04     43s] End AAE Lib Interpolated Model. (MEM=2212.21 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/25 08:00:04     43s] Glitch Analysis: View av_func_mode_max -- Total Number of Nets Skipped = 0. 
+[05/25 08:00:04     43s] Glitch Analysis: View av_func_mode_max -- Total Number of Nets Analyzed = 8977. 
+[05/25 08:00:04     43s] Total number of fetched objects 8977
+[05/25 08:00:04     43s] AAE_INFO-618: Total number of nets in the design is 8969,  0.5 percent of the nets selected for SI analysis
+[05/25 08:00:04     43s] End delay calculation. (MEM=2250.37 CPU=0:00:00.1 REAL=0:00:00.0)
+[05/25 08:00:04     43s] End delay calculation (fullDC). (MEM=2250.37 CPU=0:00:00.2 REAL=0:00:00.0)
+[05/25 08:00:04     43s] *** CDM Built up (cpu=0:00:00.2  real=0:00:01.0  mem= 2250.4M) ***
+[05/25 08:00:04     43s] *** Done Building Timing Graph (cpu=0:00:04.1 real=0:00:04.0 totSessionCpu=0:00:43.3 mem=2250.4M)
+[05/25 08:00:04     43s] Effort level <high> specified for reg2reg path_group
+[05/25 08:00:04     43s] OPERPROF: Starting spInitSiteArr at level 1, MEM:2214.4M
+[05/25 08:00:04     43s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:2214.4M
+[05/25 08:00:04     43s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:2214.4M
+[05/25 08:00:04     43s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.000, REAL:0.003, MEM:2214.4M
+[05/25 08:00:04     43s] Use non-trimmed site array because memory saving is not enough.
+[05/25 08:00:04     43s] OPERPROF:     Starting RoutingBlockageFromWireViaStBox at level 3, MEM:2217.3M
+[05/25 08:00:04     43s] OPERPROF:     Finished RoutingBlockageFromWireViaStBox at level 3, CPU:0.010, REAL:0.006, MEM:2217.3M
+[05/25 08:00:04     43s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.030, REAL:0.027, MEM:2217.3M
+[05/25 08:00:04     43s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.040, REAL:0.033, MEM:2217.3M
+[05/25 08:00:04     43s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:2217.3M
+[05/25 08:00:04     43s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:2217.3M
+[05/25 08:00:06     44s] 
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ av_func_mode_max 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.049  |  0.207  |  0.049  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  2586   |  2306   |   306   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Tech dependent Parameter, Build TLibAnalyzer for: HybridTechSiteEnabled
+[05/25 08:00:06     44s] Density: 42.019%
+       (125.461% with Fillers)
+Total number of glitch violations: 0
+------------------------------------------------------------------
+Reported timing to dir timingReports
+[05/25 08:00:06     44s] Total CPU time: 17.77 sec
+[05/25 08:00:06     44s] Total Real time: 20.0 sec
+[05/25 08:00:06     44s] Total Memory Usage: 2231.570312 Mbytes
+[05/25 08:00:06     44s] Info: pop threads available for lower-level modules during optimization.
+[05/25 08:00:06     44s] Reset AAE Options
+[05/25 08:00:06     44s] *** timeDesign #1 [finish] : cpu/real = 0:00:17.7/0:00:19.7 (0.9), totSession cpu/real = 0:00:44.1/0:02:18.2 (0.3), mem = 2231.6M
+[05/25 08:00:06     44s] 
+[05/25 08:00:06     44s] =============================================================================================
+[05/25 08:00:06     44s]  Final TAT Report for timeDesign #1                                             20.15-s105_1
+[05/25 08:00:06     44s] =============================================================================================
+[05/25 08:00:06     44s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[05/25 08:00:06     44s] ---------------------------------------------------------------------------------------------
+[05/25 08:00:06     44s] [ ViewPruning            ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[05/25 08:00:06     44s] [ ExtractRC              ]      1   0:00:13.5  (  68.6 % )     0:00:13.5 /  0:00:12.8    1.0
+[05/25 08:00:06     44s] [ TimingUpdate           ]      2   0:00:00.2  (   1.1 % )     0:00:04.3 /  0:00:04.2    1.0
+[05/25 08:00:06     44s] [ FullDelayCalc          ]      1   0:00:04.1  (  20.9 % )     0:00:04.1 /  0:00:04.0    1.0
+[05/25 08:00:06     44s] [ OptSummaryReport       ]      1   0:00:00.1  (   0.4 % )     0:00:01.8 /  0:00:00.6    0.4
+[05/25 08:00:06     44s] [ TimingReport           ]      1   0:00:00.0  (   0.2 % )     0:00:00.0 /  0:00:00.0    1.0
+[05/25 08:00:06     44s] [ DrvReport              ]      1   0:00:01.4  (   7.0 % )     0:00:01.4 /  0:00:00.3    0.2
+[05/25 08:00:06     44s] [ GenerateReports        ]      1   0:00:00.2  (   1.0 % )     0:00:00.2 /  0:00:00.2    0.8
+[05/25 08:00:06     44s] [ MISC                   ]          0:00:00.2  (   0.8 % )     0:00:00.2 /  0:00:00.1    0.8
+[05/25 08:00:06     44s] ---------------------------------------------------------------------------------------------
+[05/25 08:00:06     44s]  timeDesign #1 TOTAL                0:00:19.7  ( 100.0 % )     0:00:19.7 /  0:00:17.7    0.9
+[05/25 08:00:06     44s] ---------------------------------------------------------------------------------------------
+[05/25 08:00:06     44s] 
+[05/25 08:01:05     47s] <CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+[05/25 08:01:05     47s] <CMD> timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix CHIP_postRoute -outDir timingReports
+[05/25 08:01:05     47s] *** timeDesign #2 [begin] : totSession cpu/real = 0:00:47.6/0:03:17.9 (0.2), mem = 2237.7M
+[05/25 08:01:05     47s]  Reset EOS DB
+[05/25 08:01:05     47s] Ignoring AAE DB Resetting ...
+[05/25 08:01:05     47s] Closing parasitic data file '/tmp/innovus_temp_197721_ee27_iclab053_TJh78D/CHIP_197721_TxUyaj.rcdb.d': 8920 access done (mem: 2237.711M)
+[05/25 08:01:05     47s] Extraction called for design 'CHIP' of instances=21945 and nets=8969 using extraction engine 'postRoute' at effort level 'high' .
+[05/25 08:01:05     47s] Integrated QRC (IQuantus) Extraction in Multi-Corner mode called for design 'CHIP'. Number of corners is 1.
+[05/25 08:01:06     47s] No changed net or region found. No need to perform incremental extraction.
+[05/25 08:01:06     47s] Effort level <high> specified for reg2reg path_group
+[05/25 08:01:06     48s] All LLGs are deleted
+[05/25 08:01:06     48s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:2213.5M
+[05/25 08:01:06     48s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:2213.5M
+[05/25 08:01:06     48s] OPERPROF: Starting spInitSiteArr at level 1, MEM:2213.5M
+[05/25 08:01:06     48s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:2213.5M
+[05/25 08:01:06     48s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:2213.5M
+[05/25 08:01:06     48s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.000, REAL:0.004, MEM:2213.5M
+[05/25 08:01:06     48s] Fast DP-INIT is on for default
+[05/25 08:01:06     48s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.020, REAL:0.019, MEM:2213.5M
+[05/25 08:01:06     48s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.030, REAL:0.024, MEM:2213.5M
+[05/25 08:01:06     48s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:2213.5M
+[05/25 08:01:06     48s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:2213.5M
+[05/25 08:01:06     48s] Starting delay calculation for Hold views
+[05/25 08:01:06     48s] AAE_INFO: resetNetProps viewIdx 1 
+[05/25 08:01:06     48s] Starting SI iteration 1 using Infinite Timing Windows
+[05/25 08:01:06     48s] #################################################################################
+[05/25 08:01:06     48s] # Design Stage: PostRoute
+[05/25 08:01:06     48s] # Design Name: CHIP
+[05/25 08:01:06     48s] # Design Mode: 180nm
+[05/25 08:01:06     48s] # Analysis Mode: MMMC OCV 
+[05/25 08:01:06     48s] # Parasitics Mode: SPEF/RCDB 
+[05/25 08:01:06     48s] # Signoff Settings: SI On 
+[05/25 08:01:06     48s] #################################################################################
+[05/25 08:01:06     48s] AAE_INFO: 1 threads acquired from CTE.
+[05/25 08:01:06     48s] Setting infinite Tws ...
+[05/25 08:01:06     48s] First Iteration Infinite Tw... 
+[05/25 08:01:06     48s] Calculate late delays in OCV mode...
+[05/25 08:01:06     48s] Calculate early delays in OCV mode...
+[05/25 08:01:06     48s] Topological Sorting (REAL = 0:00:00.0, MEM = 2211.5M, InitMEM = 2211.5M)
+[05/25 08:01:06     48s] Start delay calculation (fullDC) (1 T). (MEM=2211.49)
+[05/25 08:01:06     48s] *** Calculating scaling factor for lib_min libraries using the default operating condition of each library.
+[05/25 08:01:07     48s] End AAE Lib Interpolated Model. (MEM=2223.1 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/25 08:01:07     48s] Opening parasitic data file '/tmp/innovus_temp_197721_ee27_iclab053_TJh78D/CHIP_197721_TxUyaj.rcdb.d' for reading (mem: 2223.102M)
+[05/25 08:01:07     48s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 2239.9M)
+[05/25 08:01:08     50s] Total number of fetched objects 8977
+[05/25 08:01:08     50s] AAE_INFO-618: Total number of nets in the design is 8969,  100.0 percent of the nets selected for SI analysis
+[05/25 08:01:08     50s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/25 08:01:08     50s] End delay calculation. (MEM=2255.53 CPU=0:00:01.7 REAL=0:00:01.0)
+[05/25 08:01:08     50s] End delay calculation (fullDC). (MEM=2255.53 CPU=0:00:02.0 REAL=0:00:02.0)
+[05/25 08:01:08     50s] *** CDM Built up (cpu=0:00:02.0  real=0:00:02.0  mem= 2255.5M) ***
+[05/25 08:01:09     50s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2255.5M)
+[05/25 08:01:09     50s] Add other clocks and setupCteToAAEClockMapping during iter 1
+[05/25 08:01:09     50s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2255.5M)
+[05/25 08:01:09     50s] Starting SI iteration 2
+[05/25 08:01:09     50s] Calculate late delays in OCV mode...
+[05/25 08:01:09     50s] Calculate early delays in OCV mode...
+[05/25 08:01:09     50s] Start delay calculation (fullDC) (1 T). (MEM=2227.65)
+[05/25 08:01:09     50s] End AAE Lib Interpolated Model. (MEM=2227.65 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[05/25 08:01:09     50s] Glitch Analysis: View av_func_mode_min -- Total Number of Nets Skipped = 0. 
+[05/25 08:01:09     50s] Glitch Analysis: View av_func_mode_min -- Total Number of Nets Analyzed = 8977. 
+[05/25 08:01:09     50s] Total number of fetched objects 8977
+[05/25 08:01:09     50s] AAE_INFO-618: Total number of nets in the design is 8969,  0.1 percent of the nets selected for SI analysis
+[05/25 08:01:09     50s] End delay calculation. (MEM=2266.81 CPU=0:00:00.0 REAL=0:00:00.0)
+[05/25 08:01:09     50s] End delay calculation (fullDC). (MEM=2266.81 CPU=0:00:00.1 REAL=0:00:00.0)
+[05/25 08:01:09     50s] *** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 2266.8M) ***
+[05/25 08:01:09     50s] *** Done Building Timing Graph (cpu=0:00:02.6 real=0:00:03.0 totSessionCpu=0:00:50.8 mem=2266.8M)
+[05/25 08:01:09     50s] 
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Hold views included:
+ av_func_mode_min 
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.135  |  0.135  |  4.924  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  2586   |  2306   |   306   |
++--------------------+---------+---------+---------+
+
+Tech dependent Parameter, Build TLibAnalyzer for: HybridTechSiteEnabled
+[05/25 08:01:09     50s] Density: 42.019%
+       (125.461% with Fillers)
+------------------------------------------------------------------
+Reported timing to dir timingReports
+[05/25 08:01:09     51s] Total CPU time: 3.46 sec
+[05/25 08:01:09     51s] Total Real time: 4.0 sec
+[05/25 08:01:09     51s] Total Memory Usage: 2194.078125 Mbytes
+[05/25 08:01:09     51s] Reset AAE Options
+[05/25 08:01:09     51s] *** timeDesign #2 [finish] : cpu/real = 0:00:03.4/0:00:03.8 (0.9), totSession cpu/real = 0:00:51.0/0:03:21.7 (0.3), mem = 2194.1M
+[05/25 08:01:09     51s] 
+[05/25 08:01:09     51s] =============================================================================================
+[05/25 08:01:09     51s]  Final TAT Report for timeDesign #2                                             20.15-s105_1
+[05/25 08:01:09     51s] =============================================================================================
+[05/25 08:01:09     51s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[05/25 08:01:09     51s] ---------------------------------------------------------------------------------------------
+[05/25 08:01:09     51s] [ ViewPruning            ]      2   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[05/25 08:01:09     51s] [ ExtractRC              ]      1   0:00:00.6  (  14.9 % )     0:00:00.6 /  0:00:00.2    0.4
+[05/25 08:01:09     51s] [ TimingUpdate           ]      1   0:00:00.1  (   2.9 % )     0:00:02.6 /  0:00:02.6    1.0
+[05/25 08:01:09     51s] [ FullDelayCalc          ]      1   0:00:02.5  (  66.3 % )     0:00:02.5 /  0:00:02.5    1.0
+[05/25 08:01:09     51s] [ OptSummaryReport       ]      1   0:00:00.0  (   1.2 % )     0:00:02.9 /  0:00:02.9    1.0
+[05/25 08:01:09     51s] [ TimingReport           ]      1   0:00:00.0  (   1.1 % )     0:00:00.0 /  0:00:00.1    1.2
+[05/25 08:01:09     51s] [ GenerateReports        ]      1   0:00:00.2  (   4.6 % )     0:00:00.2 /  0:00:00.1    0.8
+[05/25 08:01:09     51s] [ MISC                   ]          0:00:00.3  (   9.1 % )     0:00:00.3 /  0:00:00.3    1.0
+[05/25 08:01:09     51s] ---------------------------------------------------------------------------------------------
+[05/25 08:01:09     51s]  timeDesign #2 TOTAL                0:00:03.8  ( 100.0 % )     0:00:03.8 /  0:00:03.4    0.9
+[05/25 08:01:09     51s] ---------------------------------------------------------------------------------------------
+[05/25 08:01:09     51s] 
+[05/25 08:02:12     54s] <CMD> summaryReport -noHtml -outfile summary.rpt
+[05/25 08:02:12     54s] Start to collect the design information.
+[05/25 08:02:12     54s] Build netlist information for Cell CHIP.
+[05/25 08:02:12     54s] Finished collecting the design information.
+[05/25 08:02:12     54s] Generating macro cells used in the design report.
+[05/25 08:02:12     54s] Generating standard cells used in the design report.
+[05/25 08:02:12     54s] Generating IO cells used in the design report.
+[05/25 08:02:12     54s] Analyze library ... 
+[05/25 08:02:12     54s] Analyze netlist ... 
+[05/25 08:02:12     54s] Analyze timing ... 
+[05/25 08:02:12     54s] Analyze floorplan/placement ... 
+[05/25 08:02:12     54s] All LLGs are deleted
+[05/25 08:02:12     54s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:2198.2M
+[05/25 08:02:12     54s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:2198.2M
+[05/25 08:02:12     54s] OPERPROF: Starting spInitSiteArr at level 1, MEM:2198.2M
+[05/25 08:02:12     54s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:2198.2M
+[05/25 08:02:12     54s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:2198.2M
+[05/25 08:02:12     54s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.010, REAL:0.003, MEM:2198.2M
+[05/25 08:02:12     54s] Fast DP-INIT is on for default
+[05/25 08:02:12     54s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.010, REAL:0.018, MEM:2198.2M
+[05/25 08:02:12     54s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.020, REAL:0.024, MEM:2198.2M
+[05/25 08:02:12     54s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:2198.2M
+[05/25 08:02:12     54s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:2198.2M
+[05/25 08:02:12     54s] Analysis Routing ...
+[05/25 08:02:12     54s] Report saved in file summary.rpt
+[05/25 08:05:08     64s] <CMD> zoomBox 99.51600 93.61200 1390.89800 1249.67500
+[05/25 08:05:09     64s] <CMD> zoomBox 182.21000 108.14600 1279.88600 1090.80000
+[05/25 08:05:09     65s] <CMD> zoomBox 252.50100 120.49900 1185.52600 955.75600
+[05/25 08:05:11     65s] <CMD> panPage 0 1
+[05/25 08:05:12     65s] <CMD> panPage 0 1
+[05/25 08:05:12     65s] <CMD> panPage -1 0
+[05/25 08:05:13     65s] <CMD> panPage 0 1
+[05/25 08:05:13     65s] <CMD> panPage 0 1
+[05/25 08:05:14     65s] <CMD> panPage 0 1
+[05/25 08:05:17     65s] <CMD> zoomBox 60.34800 1484.25100 734.46000 2087.72500
+[05/25 08:05:17     65s] <CMD> zoomBox 94.62000 1527.54800 667.61600 2040.50200
+[05/25 08:05:18     65s] <CMD> zoomBox 188.86700 1612.93900 487.97600 1880.70500
+[05/25 08:05:19     65s] <CMD> zoomBox 210.87800 1652.88300 426.98500 1846.34500
+[05/25 08:05:19     65s] <CMD> zoomBox 219.47500 1668.48300 403.16600 1832.92600
+[05/25 08:05:21     65s] <CMD> zoomBox 92.55700 1512.85800 665.56000 2025.81800
+[05/25 08:05:22     65s] <CMD> zoomBox 59.59200 1472.43700 733.71300 2075.91900
+[05/25 08:05:22     65s] <CMD> zoomBox 20.81000 1424.88300 813.89300 2134.86200
+[05/25 08:05:23     65s] <CMD> zoomBox -24.81600 1368.93700 908.22300 2204.20600
+[05/25 08:05:26     66s] <CMD> zoomBox -542.37400 1052.65000 1560.46500 2935.14000
+[05/25 08:05:26     66s] <CMD> zoomBox -706.55600 952.31700 1767.37200 3167.01100
+[05/25 08:05:27     66s] <CMD> panPage 0 -1
+[05/25 08:05:28     66s] <CMD> panPage 0 -1
+[05/25 08:05:28     66s] <CMD> panPage 1 0
+[05/25 08:05:30     66s] <CMD> panPage 0 1
+[05/25 08:05:31     66s] <CMD> panPage 0 1
+[05/25 08:05:59     68s] <CMD> zoomBox -384.01100 832.01900 2526.49300 3437.54100
+[05/25 08:05:59     68s] <CMD> zoomBox -877.69600 690.49200 2546.42600 3755.81200
+[05/25 08:06:00     68s] <CMD> panPage 0 -1
+[05/25 08:06:41     70s] <CMD> zoomBox -1205.23000 -460.48800 2823.14900 3145.77100
+[05/25 08:06:48     71s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon May 25 08:06:48 2026
+  Total CPU time:     0:01:17
+  Total real time:    0:09:04
+  Peak memory (main): 1496.45MB
+
+[05/25 08:06:48     71s] 
+[05/25 08:06:48     71s] *** Memory Usage v#1 (Current mem = 2198.172M, initial mem = 284.375M) ***
+[05/25 08:06:48     71s] 
+[05/25 08:06:48     71s] *** Summary of all messages that are not suppressed in this session:
+[05/25 08:06:48     71s] Severity  ID               Count  Summary                                  
+[05/25 08:06:48     71s] WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+[05/25 08:06:48     71s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[05/25 08:06:48     71s] WARNING   IMPLF-200           35  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/25 08:06:48     71s] WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/25 08:06:48     71s] WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+[05/25 08:06:48     71s] WARNING   IMPFP-3961          16  The techSite '%s' has no related standar...
+[05/25 08:06:48     71s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[05/25 08:06:48     71s] WARNING   IMPSYC-2             4  Timing information is not defined for ce...
+[05/25 08:06:48     71s] WARNING   IMPVL-159          766  Pin '%s' of cell '%s' is defined in LEF ...
+[05/25 08:06:48     71s] WARNING   IMPESI-3086          3  The cell '%s' does not have characterize...
+[05/25 08:06:48     71s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[05/25 08:06:48     71s] WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+[05/25 08:06:48     71s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[05/25 08:06:48     71s] WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+[05/25 08:06:48     71s] *** Message Summary: 1247 warning(s), 0 error(s)
+[05/25 08:06:48     71s] 
+[05/25 08:06:48     71s] --- Ending "Innovus" (totcpu=0:01:11, real=0:09:03, mem=2198.2M) ---

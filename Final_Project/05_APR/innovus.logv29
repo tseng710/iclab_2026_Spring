@@ -1,0 +1,793 @@
+[06/21 19:12:52      0s] 
+[06/21 19:12:52      0s] Cadence Innovus(TM) Implementation System.
+[06/21 19:12:52      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/21 19:12:52      0s] 
+[06/21 19:12:52      0s] Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+[06/21 19:12:52      0s] Options:	
+[06/21 19:12:52      0s] Date:		Sun Jun 21 19:12:52 2026
+[06/21 19:12:52      0s] Host:		ee24 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7763 64-Core Processor 512KB)
+[06/21 19:12:52      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[06/21 19:12:52      0s] 
+[06/21 19:12:52      0s] License:
+[06/21 19:12:52      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[06/21 19:12:52      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/21 19:13:06     12s] @(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/21 19:13:06     12s] @(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+[06/21 19:13:06     12s] @(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/21 19:13:06     12s] @(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+[06/21 19:13:06     12s] @(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+[06/21 19:13:06     12s] @(#)CDS: CPE v20.15-s071
+[06/21 19:13:06     12s] @(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[06/21 19:13:06     12s] @(#)CDS: OA 22.60-p058 Tue Jun 15 18:38:04 2021
+[06/21 19:13:06     12s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[06/21 19:13:06     12s] @(#)CDS: RCDB 11.15.0
+[06/21 19:13:06     12s] @(#)CDS: STYLUS 20.10-p029_1 (06/24/2021 01:33 PDT)
+[06/21 19:13:06     12s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_175445_ee24_iclab053_VrJNjd.
+
+[06/21 19:13:06     12s] Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+[06/21 19:13:08     14s] 
+[06/21 19:13:08     14s] **INFO:  MMMC transition support version v31-84 
+[06/21 19:13:08     14s] 
+[06/21 19:13:08     14s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/21 19:13:08     14s] <CMD> suppressMessage ENCEXT-2799
+[06/21 19:13:09     14s] <CMD> getVersion
+[06/21 19:13:09     14s] [INFO] Loading Pegasus 21.21 fill procedures
+[06/21 19:13:09     14s] <CMD> win
+[06/21 19:13:24     16s] <CMD> encMessage warning 0
+[06/21 19:13:24     16s] Suppress "**WARN ..." messages.
+[06/21 19:13:24     16s] <CMD> encMessage debug 0
+[06/21 19:13:24     16s] <CMD> encMessage info 0
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[06/21 19:13:25     16s] To increase the message display limit, refer to the product command reference manual.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[06/21 19:13:25     16s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO15' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'DI15' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO14' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'DI14' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO13' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'DI13' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO12' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'DI12' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO11' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'DI11' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO10' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'DI10' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO9' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'DI9' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO8' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'DI8' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'A1' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'WEB' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'OE' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'CS' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'A2' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'CK' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'A0' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'A3' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'A4' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'A5' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO7' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'DI7' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO6' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-200):	Pin 'DI6' in macro 'SRAM64X16' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO5' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[06/21 19:13:25     16s] To increase the message display limit, refer to the product command reference manual.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO4' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO3' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO2' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO1' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] **WARN: (IMPLF-201):	Pin 'DO0' in macro 'SRAM64X16' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 19:13:25     16s] Loading view definition file from /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP_preCTS.inn.dat/viewDefinition.tcl
+[06/21 19:13:26     17s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib)
+[06/21 19:13:26     17s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib)
+[06/21 19:13:26     18s] *** End library_loading (cpu=0.02min, real=0.02min, mem=19.9M, fe_cpu=0.30min, fe_real=0.57min, fe_mem=936.3M) ***
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[06/21 19:13:26     18s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[06/21 19:13:26     18s] To increase the message display limit, refer to the product command reference manual.
+[06/21 19:13:27     18s] *** Netlist is unique.
+[06/21 19:13:27     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:27     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:27     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:27     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:27     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:27     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:27     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:27     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:27     18s] Loading preference file /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP_preCTS.inn.dat/gui.pref.tcl ...
+[06/21 19:13:27     18s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[06/21 19:13:27     18s] **WARN: (IMPOPT-3602):	The specified path group name reg2cgate is not defined.
+[06/21 19:13:27     18s] 
+[06/21 19:13:27     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[06/21 19:13:27     18s] 
+[06/21 19:13:27     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[06/21 19:13:27     18s] 
+[06/21 19:13:27     18s] TimeStamp Deleting Cell Server Begin ...
+[06/21 19:13:27     18s] 
+[06/21 19:13:27     18s] TimeStamp Deleting Cell Server End ...
+[06/21 19:13:27     18s] 
+[06/21 19:13:27     18s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[06/21 19:13:27     18s] 
+[06/21 19:13:27     18s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[06/21 19:13:28     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:28     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:28     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:28     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:28     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:28     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:28     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:28     18s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[06/21 19:13:28     19s] Loading place ...
+[06/21 19:13:29     19s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[06/21 19:13:29     19s] {RT RC_Corner 0 6 6 {5 0} 1}
+[06/21 19:13:29     19s] {RT RC_Corner 0 6 6 {5 0} 1}
+[06/21 19:13:30     19s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[06/21 19:13:30     20s] 
+[06/21 19:13:30     20s] TimeStamp Deleting Cell Server Begin ...
+[06/21 19:13:30     20s] 
+[06/21 19:13:30     20s] TimeStamp Deleting Cell Server End ...
+[06/21 19:13:30     20s] 
+[06/21 19:13:30     20s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[06/21 19:13:30     20s] 
+[06/21 19:13:30     20s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[06/21 19:13:30     20s] 
+[06/21 19:13:30     20s] TimeStamp Deleting Cell Server Begin ...
+[06/21 19:13:30     20s] 
+[06/21 19:13:30     20s] TimeStamp Deleting Cell Server End ...
+[06/21 19:13:30     20s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.15-s105_1. They will be removed in the next release. 
+[06/21 19:13:30     20s] timing_enable_default_delay_arc
+[06/21 19:13:36     20s] <CMD> zoomBox -471.11500 -297.28600 742.68800 903.10500
+[06/21 19:13:38     20s] <CMD> zoomBox -303.62800 91.73300 441.80000 828.92400
+[06/21 19:13:38     20s] <CMD> zoomBox -162.49100 376.53800 226.62900 761.35800
+[06/21 19:13:39     20s] <CMD> zoomBox -99.16700 499.59100 139.80100 735.91800
+[06/21 19:13:39     20s] <CMD> zoomBox -51.20600 593.19900 73.53800 716.56500
+[06/21 19:13:40     20s] <CMD> zoomBox -32.14900 629.98700 44.46200 705.75100
+[06/21 19:13:40     20s] <CMD> zoomBox -20.25000 652.47100 26.79900 699.00000
+[06/21 19:13:42     21s] <CMD> uiSetTool move
+[06/21 19:13:46     21s] <CMD> zoomBox -12.42700 667.01400 16.46700 695.58900
+[06/21 19:13:47     21s] <CMD> selectObject IO_Pin clk
+[06/21 19:13:47     21s] Press the <F3> key to bring up the form.
+[06/21 19:13:48     21s] <CMD> panPage 0 -1
+[06/21 19:13:49     21s] <CMD> moveGroupPins -loc {-0.31000 666.15400}
+[06/21 19:13:49     21s] **WARN: (IMPPTN-1553):	Pin 'clk' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 19:13:49     21s] #create default rule from bind_ndr_rule rule=0x7fa03786d0e0 0x7fa03b6aa018
+[06/21 19:13:50     22s] ### import design signature (2): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 19:13:50     22s] <CMD> panPage 0 1
+[06/21 19:13:50     22s] <CMD> panPage 0 1
+[06/21 19:13:51     22s] <CMD> deselectAll
+[06/21 19:13:51     22s] <CMD> selectObject IO_Pin {bresp_m_inf_data[1]}
+[06/21 19:13:51     22s] Press the <F3> key to bring up the form.
+[06/21 19:13:52     22s] <CMD> panPage 0 -1
+[06/21 19:13:52     22s] <CMD> panPage 0 -1
+[06/21 19:13:53     22s] <CMD> moveGroupPins -loc {2.22700 669.20000}
+[06/21 19:13:53     22s] **WARN: (IMPPTN-1553):	Pin 'bresp_m_inf_data[1]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 19:13:53     22s] ### import design signature (3): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 19:13:54     22s] <CMD> zoomBox -28.07000 651.25300 27.28500 705.99600
+[06/21 19:13:54     22s] <CMD> zoomBox -58.03600 637.70600 48.00900 742.57900
+[06/21 19:13:54     22s] <CMD> panPage 1 0
+[06/21 19:13:55     22s] <CMD> panPage 1 0
+[06/21 19:13:55     22s] <CMD> panPage 1 0
+[06/21 19:13:55     22s] <CMD> panPage 1 0
+[06/21 19:13:56     22s] <CMD> panPage 1 0
+[06/21 19:13:56     22s] <CMD> panPage 1 0
+[06/21 19:13:56     22s] <CMD> panPage 1 0
+[06/21 19:13:56     22s] <CMD> panPage 1 0
+[06/21 19:13:57     22s] <CMD> zoomBox 131.99400 610.98500 335.14300 811.88900
+[06/21 19:13:57     22s] <CMD> zoomBox 80.12000 589.57400 361.29500 867.64200
+[06/21 19:13:57     22s] <CMD> panPage 1 0
+[06/21 19:13:58     22s] <CMD> zoomBox 92.67600 559.94000 481.84500 944.80900
+[06/21 19:13:58     22s] <CMD> panPage 1 0
+[06/21 19:13:58     22s] <CMD> zoomBox 184.37200 541.09500 642.21800 993.88200
+[06/21 19:13:59     22s] <CMD> zoomBox -94.35300 426.05300 782.73800 1293.45200
+[06/21 19:13:59     22s] <CMD> panPage 1 0
+[06/21 19:14:00     22s] <CMD> zoomBox 383.35700 520.41600 922.00100 1053.10800
+[06/21 19:14:01     23s] <CMD> zoomBox 535.01000 600.87400 816.18600 878.94300
+[06/21 19:14:01     23s] <CMD> zoomBox 597.95100 635.04200 770.62900 805.81200
+[06/21 19:14:01     23s] <CMD> zoomBox 636.60500 656.02500 742.65100 760.89900
+[06/21 19:14:02     23s] <CMD> panPage 0 -1
+[06/21 19:14:03     23s] <CMD> zoomBox 652.59300 641.68900 729.21100 717.46000
+[06/21 19:14:03     23s] <CMD> zoomBox 668.49100 659.71000 715.54500 706.24400
+[06/21 19:14:04     23s] <CMD> zoomBox 678.25400 670.81000 707.15200 699.38900
+[06/21 19:14:04     23s] <CMD> zoomBox 682.42600 675.84600 703.30500 696.49400
+[06/21 19:14:04     23s] <CMD> panPage -1 0
+[06/21 19:14:06     23s] <CMD> deselectAll
+[06/21 19:14:06     23s] <CMD> selectObject IO_Pin bvalid_m_inf_data
+[06/21 19:14:06     23s] Press the <F3> key to bring up the form.
+[06/21 19:14:07     23s] <CMD> panPage 0 -1
+[06/21 19:14:07     23s] <CMD> panPage 0 -1
+[06/21 19:14:07     23s] <CMD> panPage 0 -1
+[06/21 19:14:08     23s] <CMD> moveGroupPins -loc {677.66000 664.56500}
+[06/21 19:14:08     23s] **WARN: (IMPPTN-1553):	Pin 'bvalid_m_inf_data' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 19:14:08     23s] ### import design signature (4): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 19:14:09     23s] <CMD> zoomBox 671.29200 648.00700 718.34900 694.54400
+[06/21 19:14:09     23s] <CMD> zoomBox 665.79200 637.55200 742.41700 713.33000
+[06/21 19:14:10     23s] <CMD> zoomBox 652.37800 613.20500 799.16700 758.37200
+[06/21 19:14:11     23s] <CMD> zoomBox 626.13700 571.86500 907.34000 849.96100
+[06/21 19:14:11     24s] <CMD> zoomBox 591.97100 522.67500 1049.86200 975.50600
+[06/21 19:14:12     24s] <CMD> zoomBox 503.94400 458.58500 1381.12100 1326.06900
+[06/21 19:14:12     24s] <CMD> zoomBox 433.21100 404.60400 1647.29700 1605.27500
+[06/21 19:14:13     24s] <CMD> panPage 0 -1
+[06/21 19:14:13     24s] <CMD> panPage 0 -1
+[06/21 19:14:14     24s] <CMD> panPage -1 0
+[06/21 19:14:15     24s] <CMD> zoomBox 370.25700 -166.79600 1004.01900 459.96300
+[06/21 19:14:15     24s] <CMD> zoomBox 540.36700 -77.19700 821.57200 200.90100
+[06/21 19:14:16     24s] <CMD> zoomBox 605.22300 -43.03800 752.01400 102.13100
+[06/21 19:14:16     24s] <CMD> zoomBox 624.91100 -32.68600 730.96800 72.19900
+[06/21 19:14:17     24s] <CMD> zoomBox 651.74800 -18.16000 707.11100 36.59100
+[06/21 19:14:17     24s] <CMD> zoomBox 659.69800 -13.37900 699.69800 26.17900
+[06/21 19:14:18     24s] <CMD> zoomBox 671.55100 -8.26400 696.11700 16.03100
+[06/21 19:14:19     24s] <CMD> deselectAll
+[06/21 19:14:19     24s] <CMD> selectObject IO_Pin {bid_m_inf_data[2]}
+[06/21 19:14:19     24s] Press the <F3> key to bring up the form.
+[06/21 19:14:20     24s] <CMD> moveGroupPins -loc {675.37400 -0.62000}
+[06/21 19:14:20     24s] **WARN: (IMPPTN-1553):	Pin 'bid_m_inf_data[2]' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 19:14:20     24s] ### import design signature (5): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 19:14:22     25s] <CMD> deselectAll
+[06/21 19:14:22     25s] <CMD> selectObject IO_Pin stall_2
+[06/21 19:14:22     25s] Press the <F3> key to bring up the form.
+[06/21 19:14:23     25s] <CMD> moveGroupPins -loc {677.66000 2.57100}
+[06/21 19:14:23     25s] **WARN: (IMPPTN-1553):	Pin 'stall_2' of partition 'CHIP' is unplaced. Status of the unplaced pin will be not changed by setPtnPinStatus command. Place the pin to get the desired status on this pin.
+[06/21 19:14:23     25s] ### import design signature (6): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 19:14:24     25s] <CMD> zoomBox 663.49400 -16.66000 718.86300 38.09700
+[06/21 19:14:24     25s] <CMD> zoomBox 650.26400 -30.48000 756.33400 74.41800
+[06/21 19:14:25     25s] <CMD> zoomBox 625.04300 -56.95300 828.24000 143.99900
+[06/21 19:14:25     25s] <CMD> panPage -1 0
+[06/21 19:14:25     25s] <CMD> panPage -1 0
+[06/21 19:14:26     25s] <CMD> panPage -1 0
+[06/21 19:14:26     25s] <CMD> panPage -1 0
+[06/21 19:14:27     25s] <CMD> panPage -1 0
+[06/21 19:14:27     25s] <CMD> zoomBox 247.99500 -126.39000 705.95100 326.50600
+[06/21 19:14:28     25s] <CMD> zoomBox 85.15700 -282.88300 1117.27500 737.83000
+[06/21 19:14:28     25s] <CMD> panPage -1 0
+[06/21 19:14:30     25s] <CMD> zoomBox -142.70900 -146.60100 396.06400 386.21900
+[06/21 19:14:31     25s] <CMD> zoomBox -99.22400 -75.93400 182.01900 202.20100
+[06/21 19:14:32     26s] <CMD> zoomBox -53.17600 -39.04700 93.63600 106.14300
+[06/21 19:14:32     26s] <CMD> zoomBox -26.72400 -21.56000 49.91400 54.23100
+[06/21 19:14:33     26s] <CMD> zoomBox -13.09700 -12.79100 26.90900 26.77300
+[06/21 19:14:34     26s] <CMD> zoomBox -6.82900 -6.59300 14.05500 14.06000
+[06/21 19:14:34     26s] <CMD> zoomBox -4.18800 -3.98200 8.63800 8.70200
+[06/21 19:14:36     26s] <CMD> zoomBox -2.30400 -2.14300 4.39300 4.48000
+[06/21 19:14:37     26s] <CMD> zoomBox -1.51000 -1.36800 2.60300 2.70000
+[06/21 19:14:39     26s] <CMD> zoomBox -2.94800 -2.41000 4.93300 5.38400
+[06/21 19:14:39     26s] <CMD> zoomBox -6.71700 -5.14200 11.04700 12.42600
+[06/21 19:14:40     26s] <CMD> zoomBox -15.20900 -11.29700 24.82900 28.29900
+[06/21 19:14:40     26s] <CMD> zoomBox -34.16200 -25.44300 56.07600 63.79800
+[06/21 19:14:41     26s] <CMD> zoomBox -76.87600 -57.32200 126.50000 143.80700
+[06/21 19:14:41     26s] <CMD> zoomBox -172.67500 -129.17000 285.68800 324.12800
+[06/21 19:14:41     26s] <CMD> zoomBox -363.17300 -324.96100 669.86200 696.65900
+[06/21 19:14:42     27s] <CMD> panPage 0 1
+[06/21 19:14:43     27s] <CMD> zoomBox -220.30700 249.94700 414.10600 877.35000
+[06/21 19:14:44     27s] <CMD> zoomBox -137.48100 420.36200 252.12900 805.66700
+[06/21 19:14:44     27s] <CMD> zoomBox -74.10400 537.96200 129.27600 739.09500
+[06/21 19:14:45     27s] <CMD> zoomBox -47.00600 587.39000 77.89600 710.91200
+[06/21 19:14:45     27s] <CMD> zoomBox -40.45000 599.15600 65.71600 704.14900
+[06/21 19:14:45     27s] <CMD> zoomBox -26.04000 624.88300 39.15900 689.36200
+[06/21 19:14:49     27s] <CMD> getMultiCpuUsage -localCpu
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -disable_rules -quiet
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -quiet -area
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -quiet -layer_range
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -check_only -quiet
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -check_same_via_cell -quiet
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -exclude_pg_net -quiet
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -ignore_trial_route -quiet
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+[06/21 19:14:49     27s] <CMD> get_verify_drc_mode -limit -quiet
+[06/21 19:14:50     27s] <CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+[06/21 19:14:50     27s] <CMD> verify_drc
+[06/21 19:14:50     27s] #-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+[06/21 19:14:50     27s] #-report CHIP.drc.rpt                    # string, default="", user setting
+[06/21 19:14:50     27s]  *** Starting Verify DRC (MEM: 1991.7) ***
+[06/21 19:14:50     27s] 
+[06/21 19:14:50     27s] ### import design signature (7): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[06/21 19:14:50     27s]   VERIFY DRC ...... Starting Verification
+[06/21 19:14:50     27s]   VERIFY DRC ...... Initializing
+[06/21 19:14:50     27s]   VERIFY DRC ...... Deleting Existing Violations
+[06/21 19:14:50     27s]   VERIFY DRC ...... Creating Sub-Areas
+[06/21 19:14:50     27s]   VERIFY DRC ...... Using new threading
+[06/21 19:14:50     27s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 226.560 226.560} 1 of 9
+[06/21 19:14:51     27s]   VERIFY DRC ...... Sub-Area : 1 complete 952 Viols.
+[06/21 19:14:51     27s]   VERIFY DRC ...... Sub-Area: {226.560 0.000 453.120 226.560} 2 of 9
+[06/21 19:14:51     28s] **WARN: (IMPVFG-1103):	VERIFY DRC did not complete: Number of violations exceeds the Error Limit [1000]
+[06/21 19:14:51     28s] 
+[06/21 19:14:51     28s]   Verification Complete : 1000 Viols.
+[06/21 19:14:51     28s] 
+[06/21 19:14:51     28s]  Violation Summary By Layer and Type:
+[06/21 19:14:51     28s] 
+[06/21 19:14:51     28s] 	          Short outOfDie      Mar   CShort   CutSpc   Totals
+[06/21 19:14:51     28s] 	metal1       18       99       22        0        0      139
+[06/21 19:14:51     28s] 	via           0        0        0        1        0        1
+[06/21 19:14:51     28s] 	metal2      275       97      132        0        0      504
+[06/21 19:14:51     28s] 	via2          0        0        0       20        8       28
+[06/21 19:14:51     28s] 	metal3      221       28       32        0        0      281
+[06/21 19:14:51     28s] 	via3          0        0        0        4        0        4
+[06/21 19:14:51     28s] 	metal4       18       22        0        0        0       40
+[06/21 19:14:51     28s] 	metal6        0        0        3        0        0        3
+[06/21 19:14:51     28s] 	Totals      532      246      189       25        8     1000
+[06/21 19:14:51     28s] 
+[06/21 19:14:51     28s]  *** End Verify DRC (CPU: 0:00:00.3  ELAPSED TIME: 1.00  MEM: 28.0M) ***
+[06/21 19:14:51     28s] 
+[06/21 19:14:51     28s] <CMD> set_verify_drc_mode -area {0 0 0 0}
+[06/21 19:14:55     28s] <CMD> zoomBox -85.73200 584.68300 87.14800 755.65300
+[06/21 19:14:55     28s] <CMD> zoomBox -123.27400 562.37100 116.00600 799.00700
+[06/21 19:14:55     28s] <CMD> zoomBox -208.27900 512.45300 181.35000 897.77700
+[06/21 19:14:56     28s] <CMD> zoomBox -492.56200 403.24100 385.56500 1271.66500
+[06/21 19:14:56     28s] <CMD> zoomBox -1157.59500 218.73300 821.48500 2175.94500
+[06/21 19:14:56     28s] <CMD> zoomBox -3131.87300 -312.23900 2115.59900 4877.25000
+[06/21 19:14:57     28s] <CMD> panPage 0 -1
+[06/21 19:14:58     28s] <CMD> zoomBox -2212.04300 -1313.97100 1579.25600 2435.43500
+[06/21 19:14:58     28s] <CMD> zoomBox -1547.46600 -912.90000 1191.74800 1796.04600
+[06/21 19:14:59     28s] <CMD> zoomBox -879.78900 -509.95800 802.43100 1153.67400
+[06/21 19:14:59     28s] <CMD> zoomBox -371.86400 -203.42700 506.26600 665.00000
+[06/21 19:15:01     28s] <CMD> zoomBox -106.72400 2.19200 351.66600 455.51700
+[06/21 19:15:01     28s] <CMD> zoomBox 31.67900 109.52500 270.96300 346.16500
+[06/21 19:15:03     29s] <CMD> zoomBox 88.98300 153.56600 235.93400 298.89300
+[06/21 19:15:04     29s] <CMD> zoomBox 114.29100 172.94000 220.46400 277.94000
+[06/21 19:15:04     29s] <CMD> zoomBox 132.35900 187.87900 209.07000 263.74200
+[06/21 19:15:04     29s] <CMD> zoomBox 139.41600 193.60000 204.62000 258.08400
+[06/21 19:15:05     29s] <CMD> zoomBox 158.47100 208.81000 192.50900 242.47200
+[06/21 19:15:05     29s] <CMD> zoomBox 166.47800 214.83200 187.38200 235.50500
+[06/21 19:15:06     29s] <CMD> zoomBox 172.56700 219.41300 183.48000 230.20500
+[06/21 19:15:07     29s] <CMD> zoomBox 175.11900 221.44600 181.82100 228.07400
+[06/21 19:15:08     29s] <CMD> zoomBox 169.87300 218.90700 184.97800 233.84500
+[06/21 19:15:09     29s] <CMD> zoomBox 158.05000 213.18700 192.09200 246.85300
+[06/21 19:15:09     29s] <CMD> zoomBox 144.73400 206.72700 200.16700 261.54700
+[06/21 19:15:10     29s] <CMD> zoomBox 113.13800 191.39600 219.33100 296.41600
+[06/21 19:15:11     29s] <CMD> zoomBox 52.60700 162.02600 256.04200 363.21300
+[06/21 19:15:12     29s] <CMD> zoomBox -62.80700 109.24800 326.91200 494.66100
+[06/21 19:15:12     29s] <CMD> zoomBox -282.96900 9.07800 463.60900 747.40700
+[06/21 19:15:13     29s] <CMD> zoomBox -363.76600 -26.10400 514.56200 842.51900
+[06/21 19:15:13     29s] <CMD> zoomBox -458.53500 -66.92300 574.79200 954.98600
+[06/21 19:15:14     30s] <CMD> zoomBox -701.19600 -171.44300 729.01400 1242.96400
+[06/21 19:15:30     31s] <CMD> panPage 1 0
+[06/21 19:15:33     31s] <CMD> undo
+[06/21 19:15:33     31s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/21 19:15:33     31s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2018.0M).
+[06/21 19:15:34     31s] <CMD> undo
+[06/21 19:15:34     31s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/21 19:15:34     31s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2018.0M).
+[06/21 19:15:34     31s] <CMD> undo
+[06/21 19:15:34     31s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/21 19:15:34     31s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2018.0M).
+[06/21 19:15:34     31s] <CMD> undo
+[06/21 19:15:34     31s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/21 19:15:34     31s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2018.0M).
+[06/21 19:15:34     31s] <CMD> undo
+[06/21 19:15:34     31s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/21 19:15:34     31s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2018.0M).
+[06/21 19:15:41     32s] <CMD> verifyConnectivity -type all -error 1000 -warning 50
+[06/21 19:15:41     32s] VERIFY_CONNECTIVITY use new engine.
+[06/21 19:15:41     32s] 
+[06/21 19:15:41     32s] ******** Start: VERIFY CONNECTIVITY ********
+[06/21 19:15:41     32s] Start Time: Sun Jun 21 19:15:41 2026
+[06/21 19:15:41     32s] 
+[06/21 19:15:41     32s] Design Name: CHIP
+[06/21 19:15:41     32s] Database Units: 1000
+[06/21 19:15:41     32s] Design Boundary: (0.0000, 0.0000) (677.6600, 669.2000)
+[06/21 19:15:41     32s] Error Limit = 1000; Warning Limit = 50
+[06/21 19:15:41     32s] Check all nets
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin clk of net clk has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin stall_1 of net stall_1 has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin stall_2 of net stall_2 has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin arid_m_inf_inst_1[1] of net arid_m_inf_inst_1[1] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[26] of net araddr_m_inf_inst_1[26] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[19] of net araddr_m_inf_inst_1[19] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] Net araddr_m_inf_inst_1[14]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[12] of net araddr_m_inf_inst_1[12] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin araddr_m_inf_inst_1[5] of net araddr_m_inf_inst_1[5] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] Net araddr_m_inf_inst_1[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin arlen_m_inf_inst_1[5] of net arlen_m_inf_inst_1[5] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin arsize_m_inf_inst_1[1] of net arsize_m_inf_inst_1[1] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin rid_m_inf_inst_1[2] of net rid_m_inf_inst_1[2] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin rdata_m_inf_inst_1[11] of net rdata_m_inf_inst_1[11] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin rdata_m_inf_inst_1[4] of net rdata_m_inf_inst_1[4] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin rlast_m_inf_inst_1 of net rlast_m_inf_inst_1 has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] Net rvalid_m_inf_inst_1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[31] of net awaddr_m_inf_inst_1[31] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[24] of net awaddr_m_inf_inst_1[24] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[17] of net awaddr_m_inf_inst_1[17] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[10] of net awaddr_m_inf_inst_1[10] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin awaddr_m_inf_inst_1[3] of net awaddr_m_inf_inst_1[3] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (IMPVFC-97):	IO pin awburst_m_inf_inst_1[1] of net awburst_m_inf_inst_1[1] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+[06/21 19:15:41     32s] **WARN: (EMS-27):	Message (IMPVFC-97) has exceeded the current message display limit of 20.
+[06/21 19:15:41     32s] To increase the message display limit, refer to the product command reference manual.
+[06/21 19:15:41     32s] Net araddr_m_inf_inst_2[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net rlast_m_inf_inst_2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net rvalid_m_inf_inst_2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net awid_m_inf_inst_2[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net awaddr_m_inf_inst_2[28]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net awaddr_m_inf_inst_2[21]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net awlen_m_inf_inst_2[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net wdata_m_inf_data[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net FE_OFN21_n3260: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net FE_OFN20_n1672: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net stop1: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net stop2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net exe_ph: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net act_c: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net en_pipeline: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net en_ir2: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net pl_ld: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net is_miss: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net en_c2_r0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net en_c2_r5: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1112: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1143: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1147: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1176: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1207: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1208: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1325: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1329: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1377: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1382: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1385: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1387: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1672: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1686: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1701: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1702: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1703: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1705: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1727: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1780: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1820: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1866: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1902: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1978: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1979: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n1980: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2042: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2043: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2045: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2046: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2047: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2048: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2051: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2052: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2053: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2057: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2086: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2087: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2105: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2106: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2117: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2146: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2150: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2153: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2162: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2173: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2182: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2201: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2237: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2238: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2261: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2265: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2267: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2272: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2279: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2296: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2304: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2305: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2306: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2307: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2309: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2313: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2317: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2318: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2324: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2325: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2326: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2336: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2340: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2341: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2343: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2345: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2346: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2356: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2359: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2368: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2372: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2373: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2411: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2412: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2413: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2414: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2417: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2420: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2421: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2427: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2428: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2429: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2480: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2483: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2485: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2518: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2534: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2556: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2557: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2558: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2561: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2562: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2563: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2570: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2589: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2590: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2606: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2607: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2608: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2615: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2624: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2626: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2627: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2628: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2629: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2636: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2639: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2649: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2675: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2679: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2680: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2685: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2696: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2700: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2701: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2733: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2762: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2779: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2780: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2799: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2800: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2801: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2802: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2803: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2804: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2811: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2814: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2815: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2817: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2818: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2820: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2823: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2830: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2842: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2845: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2848: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2873: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2882: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2900: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2901: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2903: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2914: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2933: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2934: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2950: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2951: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2952: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n2953: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3018: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3019: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3021: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3024: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3035: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3087: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3101: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3102: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3103: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3147: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3148: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3149: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3150: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3151: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3153: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3177: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3178: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3185: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3186: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3205: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3208: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3209: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3260: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3280: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3286: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3287: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3312: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3322: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3327: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3329: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3346: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3347: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3385: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3386: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3387: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net n3543: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net c_st[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net c_st[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net mem_do[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net mem_do[11]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net mem_do[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net ir1_rt[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net ir2_rs[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_1_r0[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_1_r0[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_1_r0[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_1_r5[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_1_r5[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_1_r6[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_1_r6[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_2_r0[13]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_2_r0[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_2_r0[10]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_2_r5[9]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_2_r5[8]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_2_r5[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_2_r6[12]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_2_r6[6]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_2_r6[3]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net core_2_r6[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net dec_imm[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net dec_imm[4]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net nxt_pl_br_tgt[5]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net nxt_pl_d_addr[2]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net nxt_pl_d_addr[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net pl_imm[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net pl_fn[1]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net pl_rd[0]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net d_cache_data[103]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net d_cache_data[102]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net d_cache_data[71]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net d_cache_data[42]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net d_cache_data[38]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net d_cache_data[7]: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n5: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n7: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n14: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n44: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n46: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n47: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n48: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n49: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n50: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n58: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n59: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n98: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n99: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n103: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n110: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n114: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n126: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n127: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n142: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n158: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n166: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] Net u_alu/n189: has an unconnected terminal, has regular routing with opens, dangling Wire.
+[06/21 19:15:41     32s] 
+[06/21 19:15:41     32s] Begin Summary 
+[06/21 19:15:41     32s]     352 Problem(s) (IMPVFC-96): Terminal(s) are not connected.
+[06/21 19:15:41     32s]     273 Problem(s) (IMPVFC-92): Pieces of the net are not connected together.
+[06/21 19:15:41     32s]     352 Problem(s) (IMPVFC-94): The net has dangling wire(s).
+[06/21 19:15:41     32s]     977 total info(s) created.
+[06/21 19:15:41     32s] End Summary
+[06/21 19:15:41     32s] 
+[06/21 19:15:41     32s] End Time: Sun Jun 21 19:15:41 2026
+[06/21 19:15:41     32s] Time Elapsed: 0:00:00.0
+[06/21 19:15:41     32s] 
+[06/21 19:15:41     32s] ******** End: VERIFY CONNECTIVITY ********
+[06/21 19:15:41     32s]   Verification Complete : 977 Viols.  0 Wrngs.
+[06/21 19:15:41     32s]   (CPU Time: 0:00:00.2  MEM: 0.000M)
+[06/21 19:15:41     32s] 
+[06/21 19:15:46     32s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Jun 21 19:15:46 2026
+  Total CPU time:     0:00:35
+  Total real time:    0:02:55
+  Peak memory (main): 1239.84MB
+
+[06/21 19:15:46     32s] 
+[06/21 19:15:46     32s] *** Memory Usage v#1 (Current mem = 2021.328M, initial mem = 284.375M) ***
+[06/21 19:15:46     32s] 
+[06/21 19:15:46     32s] *** Summary of all messages that are not suppressed in this session:
+[06/21 19:15:46     32s] Severity  ID               Count  Summary                                  
+[06/21 19:15:46     32s] WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+[06/21 19:15:46     32s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[06/21 19:15:46     32s] WARNING   IMPLF-200           33  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/21 19:15:46     32s] WARNING   IMPLF-201           16  Pin '%s' in macro '%s' has no ANTENNADIF...
+[06/21 19:15:46     32s] WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+[06/21 19:15:46     32s] WARNING   IMPFP-3961          16  The techSite '%s' has no related standar...
+[06/21 19:15:46     32s] WARNING   IMPPTN-1553          5  Pin '%s' of partition '%s' is unplaced. ...
+[06/21 19:15:46     32s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[06/21 19:15:46     32s] WARNING   IMPVL-159          766  Pin '%s' of cell '%s' is defined in LEF ...
+[06/21 19:15:46     32s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[06/21 19:15:46     32s] WARNING   IMPVFC-97           71  IO pin %s of net %s has not been assigne...
+[06/21 19:15:46     32s] WARNING   IMPVFG-1103          1  VERIFY DRC did not complete:             
+[06/21 19:15:46     32s] WARNING   IMPOPT-3602          2  The specified path group name %s is not ...
+[06/21 19:15:46     32s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[06/21 19:15:46     32s] WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+[06/21 19:15:46     32s] *** Message Summary: 1320 warning(s), 0 error(s)
+[06/21 19:15:46     32s] 
+[06/21 19:15:46     32s] --- Ending "Innovus" (totcpu=0:00:32.7, real=0:02:54, mem=2021.3M) ---

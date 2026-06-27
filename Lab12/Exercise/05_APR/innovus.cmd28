@@ -1,0 +1,58 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat May 30 22:41:30 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setDrawView place
+zoomBox 248.14300 242.82800 9850.96100 5258.21700
+zoomBox 937.88900 946.42700 7875.92600 4570.04600
+panPage -1 0
+zoomBox -256.88800 1519.95400 4755.84400 4138.01900
+panPage 0 1
+zoomBox 928.50100 2792.44000 4550.20100 4683.99200
+zoomBox 2129.34300 3289.60300 4353.52000 4451.25300
+zoomBox 3028.73300 3649.62500 4189.76900 4256.01400
+zoomBox 3407.74200 3798.14500 4120.76300 4170.54400
+panPage 1 0
+zoomBox 3674.99800 3835.02200 4281.06800 4151.56200
+setPreference TermCrossPix 6
+setPreference TextDisplaySize l
+zoomBox 3712.88300 3860.25500 4228.04300 4129.31400
+zoomBox 3673.50500 3829.26300 4279.57600 4145.80400
+zoomBox 3711.24700 3870.48900 4226.40900 4139.54900
+zoomBox 3673.50400 3830.54100 4279.57700 4147.08300
+zoomBox 3720.70000 3849.87400 4235.86300 4118.93500
+zoomBox 3673.50200 3829.61600 4279.57800 4146.15900
+zoomBox 3720.98300 3856.76800 4236.14800 4125.83000
+zoomBox 3673.50000 3829.61500 4279.57800 4146.15900
+uiSetTool ruler
+zoomBox 3779.50400 3839.12700 4095.88200 4004.36600
+zoomBox 3824.17400 3843.13500 4018.47200 3944.61400
+zoomBox 3851.60600 3845.59600 3970.93200 3907.91800
+zoomBox 3868.45400 3847.10700 3941.73600 3885.38100
+zoomBox 3878.77900 3848.05800 3923.78300 3871.56300
+zoomBox 3866.77700 3843.88800 3940.05900 3882.16200
+zoomBox 3861.34700 3841.78500 3947.56100 3886.81300

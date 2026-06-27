@@ -1,0 +1,257 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon May 25 16:01:24 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+set init_gnd_net GND
+set init_lef_file {LEF/header6_V55_20ka_cic.lef LEF/fsa0m_a_generic_core.lef LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef LEF/fsa0m_a_t33_generic_io.lef LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef LEF/BONDPAD.lef LEF/SUMA180_4096X12.lef}
+set init_verilog CHIP_SYN.v
+set init_mmmc_file CHIP_mmmc.view
+set init_io_file CHIP.io
+set init_top_cell CHIP
+set init_pwr_net VCC
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core_5040 -r 0.997540542119 0.8 110 110 110 110
+uiSetTool select
+getIoFlowFlag
+fit
+panPage 1 0
+setDrawView fplan
+selectInst CORE/u_ctrl_mem0
+addHaloToBlock {15 15 15 15} -allMacro
+zoomBox 170.36800 -164.83100 2971.52900 2342.80600
+zoomBox -208.84700 -224.30400 3086.63700 2725.85800
+deselectAll
+selectInst CORE/u_ctrl_mem0
+uiSetTool move
+setObjFPlanBox Instance CORE/u_ctrl_mem0 294.447 1168.127 1073.167 1618.927
+deselectAll
+selectInst CORE/u_ctrl_mem1
+fit
+flipOrRotateObject -rotate R90
+setObjFPlanBox Instance CORE/u_ctrl_mem1 294.143 311.239 744.943 1089.959
+panPage 1 0
+panPage 1 0
+panPage 1 0
+deselectAll
+selectInst CORE/u_ctrl_mem2
+panPage -1 0
+panPage -1 0
+panPage -1 0
+flipOrRotateObject -rotate R180
+setObjFPlanBox Instance CORE/u_ctrl_mem2 856.801 308.019 1635.521 758.819
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+deselectAll
+selectInst CORE/u_ctrl_mem3
+panPage -1 0
+panPage 0 1
+panPage 0 1
+zoomBox 2424.68600 1115.15200 5225.84700 3622.78900
+zoomBox 2172.72900 1036.49500 5468.21200 3986.65600
+zoomBox 1786.78100 966.52800 5663.81900 4437.30500
+panPage -1 0
+panPage -1 0
+panPage 0 -1
+flipOrRotateObject -rotate R270
+setObjFPlanBox Instance CORE/u_ctrl_mem3 1195.574 857.087 1646.374 1635.807
+saveDesign CHIP_floorplan.inn
+uiSetTool obstruct
+clearGlobalNets
+globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+globalNetConnect VCC -type net -net VCC
+globalNetConnect VCC -type tiehi -pin VCC -instanceBasename *
+globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+globalNetConnect GND -type net -net GND
+globalNetConnect GND -type tielo -pin GND -instanceBasename *
+saveDesign CHIP_floorplan.inn
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 5 -use_interleaving_wire_group 1
+zoomBox -64.83100 298.30300 2736.33000 2805.94000
+zoomBox 368.57900 645.23200 2392.41800 2457.00000
+zoomBox 537.84300 780.72200 2258.10600 2320.72500
+zoomBox 831.18300 1017.24600 2074.07400 2129.89900
+zoomBox 1307.03100 1405.43800 1858.51000 1899.12900
+zoomBox 1413.74000 1490.76500 1812.18400 1847.45700
+zoomBox 1490.83700 1552.41300 1778.71400 1810.12400
+zoomBox 1556.35700 1609.25200 1764.34900 1795.44900
+zoomBox 1581.94500 1631.45000 1758.73900 1789.71800
+zoomBox 1408.74800 1527.93300 1807.20000 1884.63300
+zoomBox 1213.12100 1411.01000 1861.93600 1991.83800
+zoomBox 1132.39500 1369.53600 1895.70700 2052.86300
+zoomBox 1037.42300 1320.74300 1935.43800 2124.65800
+zoomBox 925.69200 1263.34000 1982.18000 2209.12200
+zoomBox 639.59900 1116.35700 2101.86600 2425.39800
+zoomBox 243.62300 912.91900 2267.52200 2724.74100
+zoomBox -8.19000 783.54700 2372.86800 2915.10200
+zoomBox -652.97100 452.28400 2642.61100 3402.53300
+zoomBox -1063.00700 241.62300 2814.14900 3712.50500
+zoomBox -1545.40200 -6.21300 3015.95800 4077.17800
+undo
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 5 -use_interleaving_wire_group 1
+zoomBox 472.27100 1277.37000 1715.20000 2390.05700
+zoomBox 876.81000 1452.95900 1640.12500 2136.28900
+panPage 1 0
+zoomBox 1265.87900 1560.79300 1734.65100 1980.44400
+panPage 1 0
+zoomBox 1444.72500 1586.53600 1843.18100 1943.23900
+panPage -1 0
+panPage -1 0
+zoomBox 900.89300 1148.97900 1957.38700 2094.76700
+zoomBox 607.19200 829.51500 2327.51800 2369.57400
+zoomBox 472.87500 683.41600 2496.78800 2495.25000
+panPage -1 0
+panPage -1 0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type block_rings -around each_block -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 2 bottom 2 left 2 right 2} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { ring blockring }
+sroute -connect { blockPin padPin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal6(6) }
+panPage 1 0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal3 -direction horizontal -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from bottom -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+undo
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from left -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal3 -direction horizontal -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from bottom -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { ring stripe blockring }
+sroute -connect { corePin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -targetViaLayerRange { metal1(1) metal6(6) }
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+zoomBox -738.68200 315.35600 2062.58200 2823.08500
+zoomBox -1575.19800 -194.07000 2301.98500 3276.83600
+panPage 0 -1
+zoomBox -950.24600 -795.51000 1851.01800 1712.21900
+zoomBox -491.68100 -477.73200 1532.23300 1334.10300
+zoomBox 210.36300 -37.86200 1108.38500 766.05900
+zoomBox 559.13100 158.95300 897.82100 462.15300
+zoomBox 666.37400 242.31000 816.65400 376.84300
+zoomBox 721.98200 285.89700 770.16000 329.02700
+zoomBox 729.66000 291.53500 764.47000 322.69700
+zoomBox 737.37400 297.19900 758.75300 316.33800
+zoomBox 743.24300 301.50800 754.40400 311.49900
+zoomBox 744.20500 302.21300 753.69200 310.70600
+zoomBox 745.02200 302.81300 753.08600 310.03200
+zoomBox 742.52900 302.45600 753.69100 312.44800
+zoomBox 739.07900 301.96200 754.52900 315.79300
+zoomBox 712.72900 298.19100 760.92500 341.33700
+zoomBox 28.58100 200.29600 927.01100 1004.58300
+zoomBox -1165.31500 29.46400 1216.84700 2162.00700
+panPage 1 0
+zoomBox -278.24500 67.83100 1746.59300 1880.49300
+zoomBox -119.11300 105.94400 1601.99900 1646.70700
+zoomBox 16.14800 138.34000 1479.09400 1447.98900
+zoomBox 674.99200 304.74700 825.34000 439.34100
+zoomBox 686.31100 307.60500 814.10800 422.01100
+zoomBox 695.93300 310.03500 804.56100 407.28000
+zoomBox 704.11200 312.10000 796.44600 394.75900
+panPage 0 -1
+zoomBox 716.77400 293.00300 783.48500 352.72400
+zoomBox 725.92200 297.12200 774.12100 340.27000
+zoomBox 735.08900 301.18700 764.69000 327.68600
+zoomBox 739.13700 302.85500 760.52400 322.00100
+zoomBox 740.71800 303.50700 758.89700 319.78100
+zoomBox 744.17500 304.93100 755.34000 314.92600
+zoomBox 745.00000 305.27100 754.49100 313.76700
+zoomBox 745.72600 305.50800 753.79300 312.73000
+zoomBox 746.34200 305.71000 753.20000 311.84900
+zoomBox 746.85200 305.89900 752.68100 311.11700
+zoomBox 747.28500 306.05900 752.24000 310.49500
+uiSetTool select
+deselectAll
+selectMarker 749.6000 306.8600 749.8800 307.0200 35 1 5
+editTrim
+deselectAll
+selectMarker 749.6000 306.8600 749.8800 307.0200 35 1 5
+editTrim
+deselectAll
+selectMarker 749.0400 306.8600 749.3200 307.0200 35 1 5
+editTrim
+deselectAll
+selectMarker 750.1600 306.8600 750.4400 307.0200 35 1 5
+editTrim
+deselectAll
+selectMarker 750.7200 306.8600 751.0000 307.0200 35 1 5
+editTrim
+deselectAll
+selectMarker 750.7200 306.5800 751.0000 306.7400 35 1 6
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+deselectAll
+selectMarker 750.7200 306.5800 751.0000 306.7400 35 1 6
+violationBrowserClose
+undo
+zoomBox 733.81500 297.27200 758.98700 319.80600
+zoomBox 730.85600 295.34100 760.47000 321.85200
+zoomBox 697.12700 276.54600 775.65500 346.84500
+zoomBox 667.57200 260.39600 795.44200 374.86700
+zoomBox 654.05600 253.01100 804.49100 387.68200

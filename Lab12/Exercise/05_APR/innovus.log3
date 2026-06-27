@@ -1,0 +1,1593 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+Options:	
+Date:		Wed May 27 18:49:32 2026
+Host:		ee24 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7763 64-Core Processor 512KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading Pegasus 21.21 fill procedures
+<CMD> win
+<CMD> save_global CHIP.globals
+<CMD> set init_gnd_net GND
+<CMD> set init_lef_file {LEF/header6_V55_20ka_cic.lef LEF/fsa0m_a_generic_core.lef LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef LEF/fsa0m_a_t33_generic_io.lef LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef LEF/BONDPAD.lef LEF/SRAM_128X16.lef LEF/SRAM_512X128.lef LEF/SUMA180_1024X32X1BM2.lef}
+<CMD> set init_verilog CHIP_SYN.v
+<CMD> set init_mmmc_file CHIP_mmmc.view
+<CMD> set init_io_file CHIP.io
+<CMD> set init_top_cell CHIP
+<CMD> set init_pwr_net VCC
+<CMD> init_design
+#% Begin Load MMMC data ... (date=05/27 18:58:05, mem=634.5M)
+#% End Load MMMC data ... (date=05/27 18:58:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=634.7M, current mem=634.7M)
+RC_Corner
+
+Loading LEF file LEF/header6_V55_20ka_cic.lef ...
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/header6_V55_20ka_cic.lef at line 1290.
+
+Loading LEF file LEF/fsa0m_a_generic_core.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file LEF/fsa0m_a_generic_core.lef at line 1.
+Set DBUPerIGU to M2 pitch 620.
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file LEF/fsa0m_a_generic_core.lef at line 40071.
+
+Loading LEF file LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef ...
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef at line 16493.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef at line 16493.
+
+Loading LEF file LEF/fsa0m_a_t33_generic_io.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file LEF/fsa0m_a_t33_generic_io.lef at line 1.
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file LEF/fsa0m_a_t33_generic_io.lef at line 2034.
+
+Loading LEF file LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef ...
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef at line 791.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef at line 791.
+
+Loading LEF file LEF/BONDPAD.lef ...
+WARNING (LEFPARS-2002): NAMESCASESENSITIVE is a required statement on LEF file with version 5.5 and earlier.
+Without NAMESCASESENSITIVE defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/BONDPAD.lef at line 123.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/BONDPAD.lef at line 123.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file LEF/BONDPAD.lef at line 123.
+
+Loading LEF file LEF/SRAM_128X16.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file LEF/SRAM_128X16.lef at line 37.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1217.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1231.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1245.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1259.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1273.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1287.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1301.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1315.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1329.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1343.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1357.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1371.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1385.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1399.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1413.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1427.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1441.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1455.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_128X16.lef at line 1469.
+
+Loading LEF file LEF/SRAM_512X128.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file LEF/SRAM_512X128.lef at line 37.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4697.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4711.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4725.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4739.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4753.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4767.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4781.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4795.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4809.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4823.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4837.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4851.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4865.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4879.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4893.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4907.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4921.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4935.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SRAM_512X128.lef at line 4949.
+
+Loading LEF file LEF/SUMA180_1024X32X1BM2.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 37.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3357.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3371.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3385.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3399.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3413.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3427.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3441.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3455.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3469.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3483.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3497.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3511.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3525.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3539.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3553.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3567.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3581.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3595.
+WARNING (LEFPARS-2057): MACRO CAPACITANCE statement is obsolete in version 5.4 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.4 or later. See file LEF/SUMA180_1024X32X1BM2.lef at line 3609.
+**WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO31' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI31' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO30' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI30' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO29' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI29' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO28' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI28' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO27' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI27' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO26' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI26' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO25' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI25' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO24' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI24' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO23' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI23' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO22' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI22' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO21' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI21' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO20' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI20' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO19' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI19' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO18' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI18' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO17' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI17' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO16' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'DI16' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A1' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'WEB' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OE' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'CS' in macro 'SUMA180_1024X32X1BM2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'DO15' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO14' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO13' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO12' in macro 'SUMA180_1024X32X1BM2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+viaInitial starts at Wed May 27 18:58:05 2026
+viaInitial ends at Wed May 27 18:58:05 2026
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from CHIP_mmmc.view
+Reading lib_max timing library '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.lib)
+Read 382 cells in library 'fsa0m_a_generic_core_ss1p62v125c' 
+Reading lib_max timing library '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2008Q3v1.2/T33_GENERIC_IO/FrontEnd/synopsys/fsa0m_a_t33_generic_io_ss1p62v125c.lib' ...
+Read 6 cells in library 'fsa0m_a_t33_generic_io_ss1p62v125c' 
+Reading lib_max timing library '/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR/LIB/SRAM_128X16_WC.lib' ...
+Read 1 cells in library 'SRAM_128X16_WC' 
+Reading lib_max timing library '/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR/LIB/SRAM_512X128_WC.lib' ...
+Read 1 cells in library 'SRAM_512X128_WC' 
+Reading lib_max timing library '/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR/LIB/SUMA180_1024X32X1BM2_WC.lib' ...
+Read 1 cells in library 'SUMA180_1024X32X1BM2_WC' 
+Reading lib_min timing library '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ff1p98vm40c.lib)
+Read 382 cells in library 'fsa0m_a_generic_core_ff1p98vm40c' 
+Reading lib_min timing library '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/orig_lib/fsa0m_a/2008Q3v1.2/T33_GENERIC_IO/FrontEnd/synopsys/fsa0m_a_t33_generic_io_ff1p98vm40c.lib' ...
+Read 6 cells in library 'fsa0m_a_t33_generic_io_ff1p98vm40c' 
+Reading lib_min timing library '/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR/LIB/SRAM_128X16_BC.lib' ...
+Read 1 cells in library 'SRAM_128X16_BC' 
+Reading lib_min timing library '/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR/LIB/SRAM_512X128_BC.lib' ...
+Read 1 cells in library 'SRAM_512X128_BC' 
+Reading lib_min timing library '/RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR/LIB/SUMA180_1024X32X1BM2_BC.lib' ...
+Read 1 cells in library 'SUMA180_1024X32X1BM2_BC' 
+*** End library_loading (cpu=0.03min, real=0.03min, mem=16.9M, fe_cpu=0.91min, fe_real=8.58min, fe_mem=947.7M) ***
+#% Begin Load netlist data ... (date=05/27 18:58:07, mem=659.9M)
+*** Begin netlist parsing (mem=947.7M) ***
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 391 new cells from 10 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'CHIP_SYN.v'
+
+*** Memory Usage v#1 (Current mem = 959.727M, initial mem = 284.375M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=959.7M) ***
+#% End Load netlist data ... (date=05/27 18:58:07, total cpu=0:00:00.2, real=0:00:00.0, peak res=682.0M, current mem=682.0M)
+Set top cell to CHIP.
+Hooked 782 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell CHIP ...
+*** Netlist is unique.
+** info: there are 823 modules.
+** info: there are 34559 stdCell insts.
+** info: there are 45 Pad insts.
+** info: there are 19 macros.
+
+*** Memory Usage v#1 (Current mem = 1022.652M, initial mem = 284.375M) ***
+Reading IO assignment file "CHIP.io" ...
+Adjusting Core to Bottom to: 0.4400.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File RC/u18_Faraday.CapTbl ...
+Cap table was created using Encounter 13.13-s017_1.
+Process name: MIXED_MODE_RFCMOS18_1P6M_MMC_TOP_METAL20_6K.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: av_func_mode_max
+    RC-Corner Name        : RC_Corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : 'RC/u18_Faraday.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: 'RC/icecaps.tch'
+ 
+ Analysis View: av_func_mode_min
+    RC-Corner Name        : RC_Corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : 'RC/u18_Faraday.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: 'RC/icecaps.tch'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file 'CHIP.sdc' ...
+Current (total cpu=0:00:55.7, real=0:08:36, peak res=963.9M, current mem=963.9M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File CHIP.sdc, Line 8).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File CHIP.sdc, Line 86).
+
+INFO (CTE): Reading of timing constraints file CHIP.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=985.3M, current mem=985.3M)
+Current (total cpu=0:00:55.7, real=0:08:36, peak res=985.3M, current mem=985.3M)
+Total number of combinational cells: 290
+Total number of sequential cells: 79
+Total number of tristate cells: 13
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF1 BUF12CK BUF1S BUF1CK BUF2CK BUF2 BUF3 BUF4 BUF3CK BUF4CK BUF6CK BUF6 BUF8 BUF8CK
+Total number of usable buffers: 14
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV1 INV12 INV12CK INV1CK INV1S INV2 INV3 INV2CK INV4 INV3CK INV4CK INV6 INV6CK INV8 INV8CK
+Total number of usable inverters: 15
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DELA DELC DELB
+Total number of identified usable delay cells: 3
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPSYC-2):	Timing information is not defined for cell VCCKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell VCC3IOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell GNDKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+**WARN: (IMPSYC-2):	Timing information is not defined for cell GNDIOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200          221  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201          176  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
+WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+WARNING   IMPSYC-2             4  Timing information is not defined for ce...
+WARNING   IMPVL-159          770  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+*** Message Summary: 1589 warning(s), 0 error(s)
+
+<CMD> zoomBox 167.26600 509.13200 2748.24600 2172.98100
+<CMD> zoomBox -198.73200 -639.92500 4745.61800 2547.48900
+<CMD> zoomBox -333.85400 -1064.14600 5483.02800 2685.75300
+<CMD> getIoFlowFlag
+<CMD> zoomBox 193.06900 -336.42500 4395.76700 2372.87700
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site core_5040 -r 0.995838352864 0.7 200 200 200 200
+Adjusting Core to Bottom to: 200.9200.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> panPage 1 0
+<CMD> setDrawView fplan
+<CMD> panPage -1 0
+<CMD> uiSetTool move
+<CMD> selectInst CORE/u_img_sram
+<CMD> setObjFPlanBox Instance CORE/u_img_sram 376.797 2163.05 1381.817 2457.05
+<CMD> addHaloToBlock {15 15 15 15} -allMacro
+<CMD> setObjFPlanBox Instance CORE/u_img_sram 400.225 2168.907 1405.245 2462.907
+<CMD> setObjFPlanBox Instance CORE/u_img_sram 370.939 2174.766 1375.959 2468.766
+<CMD> zoomBox -496.15600 552.20600 2744.90600 2824.33400
+<CMD> zoomBox -33.01200 1452.95500 1658.84300 2639.02000
+<CMD> setObjFPlanBox Instance CORE/u_img_sram 390.819 2170.353 1395.839 2464.353
+<CMD> zoomBox -540.24500 942.78700 2214.65800 2874.09600
+<CMD> zoomBox -1399.80800 134.51500 3086.09100 3279.32900
+<CMD> zoomBox -3980.85400 -1342.17000 4612.72100 4682.30800
+<CMD> panPage 1 0
+<CMD> deselectAll
+<CMD> selectInst CORE/u_fmB_sram
+<CMD> zoomBox -765.75200 -517.67500 5443.10700 3835.01100
+<CMD> zoomBox -319.17700 104.16300 4166.72400 3248.97900
+<CMD> zoomBox -144.36800 351.88300 3668.64900 3024.97700
+<CMD> zoomBox 131.90200 780.10100 2886.80600 2711.41100
+<CMD> setObjFPlanBox Instance CORE/u_fmB_sram 381.367 1788.558 2290.967 2082.558
+<CMD> zoomBox -852.78000 -288.29300 4424.75300 3411.49200
+<CMD> zoomBox -1218.74700 -681.00800 4990.11700 3671.68100
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_15__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_15__u_sram 380.989 1523.353 697.189 1699.753
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_14__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_14__u_sram 786.184 1539.564 1102.384 1715.964
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> deselectAll
+<CMD> selectInst CORE/u_fmA_sram
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> setObjFPlanBox Instance CORE/u_fmA_sram 372.895 1118.075 2282.495 1412.075
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_14__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_14__u_sram 826.708 704.687 1142.908 881.087
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_15__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_15__u_sram 445.834 785.743 762.034 962.143
+<CMD> deselectAll
+<CMD> selectInst CORE/u_fmA_sram
+<CMD> setObjFPlanBox Instance CORE/u_fmA_sram 3136.889 777.636 5046.489 1071.636
+<CMD> deselectAll
+<CMD> selectInst CORE/u_img_sram
+<CMD> setObjFPlanBox Instance CORE/u_img_sram 374.609 1384.11 1379.629 1678.11
+<CMD> deselectAll
+<CMD> selectInst CORE/u_fmA_sram
+<CMD> setObjFPlanBox Instance CORE/u_fmA_sram 389.103 2196.114 2298.703 2490.114
+<CMD> setObjFPlanBox Instance CORE/u_fmA_sram 389.1 2147.476 2298.7 2441.476
+<CMD> deselectAll
+<CMD> selectInst CORE/u_fmB_sram
+<CMD> setObjFPlanBox Instance CORE/u_fmB_sram 413.792 1780.455 2323.392 2074.455
+<CMD> deselectAll
+<CMD> selectInst CORE/u_img_sram
+<CMD> setObjFPlanBox Instance CORE/u_img_sram 455.665 1343.582 1460.685 1637.582
+<CMD> setObjFPlanBox Instance CORE/u_img_sram 415.133 1367.897 1420.153 1661.897
+<CMD> deselectAll
+<CMD> selectInst CORE/u_fmB_sram
+<CMD> setObjFPlanBox Instance CORE/u_fmB_sram 413.79 1772.344 2323.39 2066.344
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_0__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_0__u_sram 1564.318 1491.424 1880.518 1667.824
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_1__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_1__u_sram 2034.524 1507.635 2350.724 1684.035
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_1__u_sram 1985.887 1491.418 2302.087 1667.818
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_1__u_sram 2010.207 1483.315 2326.407 1659.715
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_1__u_sram 1993.999 1507.626 2310.199 1684.026
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_14__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_14__u_sram 2002.017 1215.34 2318.217 1391.74
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_15__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_15__u_sram 1540.081 1174.807 1856.281 1351.207
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_15__u_sram 1564.397 1182.916 1880.597 1359.316
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_2__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_2__u_sram 1572.59 891.612 1888.79 1068.012
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_3__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_3__u_sram 1986.057 924.034 2302.257 1100.434
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_4__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_4__u_sram 1564.65 664.657 1880.85 841.057
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_4__u_sram 1572.755 632.238 1888.955 808.638
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_5__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_5__u_sram 1978.116 616.023 2294.316 792.423
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_6__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_6__u_sram 397.614 1078.04 713.814 1254.44
+<CMD> panPage 1 0
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_7__u_sram
+<CMD> panPage -1 0
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_7__u_sram 837.019 1094.251 1153.219 1270.651
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_11__u_sram
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> zoomBox -953.69500 -463.37400 4323.84000 3236.41200
+<CMD> zoomBox -729.43400 -276.31900 3756.47100 2868.50000
+<CMD> zoomBox -542.32800 -110.29400 3270.69300 2562.80300
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_11__u_sram 393.554 828.542 709.754 1004.942
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_8__u_sram
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_8__u_sram 835.378 841.254 1151.578 1017.654
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 0 -1
+<CMD> panPage -1 0
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_8__u_sram 790.579 841.25 1106.779 1017.65
+<CMD> panPage -1 0
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_10__u_sram
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_10__u_sram 418.45 552.539 734.65 728.939
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_9__u_sram
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 0 1
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_9__u_sram 819.059 538.104 1135.259 714.504
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_3__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_3__u_sram 2105.528 938.963 2421.728 1115.363
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_5__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_5__u_sram 2092.61 630.954 2408.81 807.354
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_14__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_14__u_sram 2106.554 1200.407 2422.754 1376.807
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_15__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_15__u_sram 1644.045 1192.875 1960.245 1369.275
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_2__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_2__u_sram 1632.324 916.499 1948.524 1092.899
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_4__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_4__u_sram 1642.439 602.373 1958.639 778.773
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_13__u_sram
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_13__u_sram 1213.734 861.166 1529.934 1037.566
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_12__u_sram
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> zoomBox 724.03200 10.66700 3965.10100 2282.80000
+<CMD> zoomBox 819.86800 113.48400 3574.77600 2044.79700
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_12__u_sram 1239.31 577.714 1555.51 754.114
+<CMD> zoomBox -1108.48600 -411.43200 5100.38700 3941.26400
+<CMD> zoomBox -1722.12700 -578.78900 5582.43100 4542.03000
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> zoomBox -677.09400 109.31300 3808.81900 3254.13700
+<CMD> zoomBox -34.67800 531.89300 2720.23400 2463.20900
+<CMD> deselectAll
+<CMD> selectInst CORE/u_wt_sram_wrapper_W_SRAM_MACRO_7__u_sram
+<CMD> setObjFPlanBox Instance CORE/u_wt_sram_wrapper_W_SRAM_MACRO_7__u_sram 801.055 1108.636 1117.255 1285.036
+<CMD> zoomBox -262.52700 440.49900 2978.54700 2712.63600
+<CMD> zoomBox -1216.95900 80.84400 4060.58900 3780.63900
+<CMD> saveDesign CHIP_floorplan.inn
+#% Begin save design ... (date=05/27 19:03:09, mem=1198.4M)
+% Begin Save ccopt configuration ... (date=05/27 19:03:09, mem=1201.4M)
+% End Save ccopt configuration ... (date=05/27 19:03:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=1202.2M, current mem=1202.2M)
+% Begin Save netlist data ... (date=05/27 19:03:09, mem=1202.3M)
+Writing Binary DB to CHIP_floorplan.inn.dat.tmp/CHIP.v.bin in single-threaded mode...
+% End Save netlist data ... (date=05/27 19:03:09, total cpu=0:00:00.1, real=0:00:00.0, peak res=1205.9M, current mem=1203.5M)
+Saving symbol-table file ...
+Saving congestion map file CHIP_floorplan.inn.dat.tmp/CHIP.route.congmap.gz ...
+% Begin Save AAE data ... (date=05/27 19:03:09, mem=1204.5M)
+Saving AAE Data ...
+% End Save AAE data ... (date=05/27 19:03:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=1204.5M, current mem=1204.5M)
+Saving preference file CHIP_floorplan.inn.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=05/27 19:03:10, mem=1207.8M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=05/27 19:03:10, total cpu=0:00:00.1, real=0:00:00.0, peak res=1207.8M, current mem=1207.8M)
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=05/27 19:03:10, mem=1207.9M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=05/27 19:03:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=1208.1M, current mem=1208.1M)
+% Begin Save routing data ... (date=05/27 19:03:10, mem=1208.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1945.9M) ***
+% End Save routing data ... (date=05/27 19:03:10, total cpu=0:00:00.1, real=0:00:00.0, peak res=1208.5M, current mem=1208.5M)
+Saving property file CHIP_floorplan.inn.dat.tmp/CHIP.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1948.9M) ***
+% Begin Save power constraints data ... (date=05/27 19:03:10, mem=1209.1M)
+% End Save power constraints data ... (date=05/27 19:03:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=1209.2M, current mem=1209.2M)
+RC_Corner
+RC_Corner
+RC_Corner
+Generated self-contained design CHIP_floorplan.inn.dat.tmp
+#% End save design ... (date=05/27 19:03:11, total cpu=0:00:01.0, real=0:00:02.0, peak res=1238.6M, current mem=1211.2M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+<CMD> globalNetConnect VCC -type net -net VCC
+<CMD> globalNetConnect VCC -type tiehi -pin VCC -instanceBasename *
+<CMD> globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+<CMD> globalNetConnect GND -type net -net GND
+<CMD> globalNetConnect GND -type tielo -pin GND -instanceBasename *
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+<CMD> globalNetConnect VCC -type net -net VCC
+<CMD> globalNetConnect VCC -type tiehi -pin VCC -instanceBasename *
+<CMD> globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+<CMD> globalNetConnect GND -type net -net GND
+<CMD> globalNetConnect GND -type tielo -pin GND -instanceBasename *
+Warning: term PU of inst I_CLK is not connect to global special net.
+Warning: term PD of inst I_CLK is not connect to global special net.
+Warning: term SMT of inst I_CLK is not connect to global special net.
+Warning: term PU of inst I_RST_N is not connect to global special net.
+Warning: term PD of inst I_RST_N is not connect to global special net.
+Warning: term SMT of inst I_RST_N is not connect to global special net.
+Warning: term PU of inst I_VALID is not connect to global special net.
+Warning: term PD of inst I_VALID is not connect to global special net.
+Warning: term SMT of inst I_VALID is not connect to global special net.
+Warning: term PU of inst I_ITER_0 is not connect to global special net.
+Warning: term PD of inst I_ITER_0 is not connect to global special net.
+Warning: term SMT of inst I_ITER_0 is not connect to global special net.
+Warning: term PU of inst I_ITER_1 is not connect to global special net.
+Warning: term PD of inst I_ITER_1 is not connect to global special net.
+Warning: term SMT of inst I_ITER_1 is not connect to global special net.
+Warning: term PU of inst I_ITER_2 is not connect to global special net.
+Warning: term PD of inst I_ITER_2 is not connect to global special net.
+Warning: term SMT of inst I_ITER_2 is not connect to global special net.
+Warning: term PU of inst I_MODE_0 is not connect to global special net.
+Warning: term PD of inst I_MODE_0 is not connect to global special net.
+Warning: term SMT of inst I_MODE_0 is not connect to global special net.
+Warning: term PU of inst I_MODE_1 is not connect to global special net.
+Warning: term PD of inst I_MODE_1 is not connect to global special net.
+Warning: term SMT of inst I_MODE_1 is not connect to global special net.
+Warning: term PU of inst I_DATA_0 is not connect to global special net.
+Warning: term PD of inst I_DATA_0 is not connect to global special net.
+Warning: term SMT of inst I_DATA_0 is not connect to global special net.
+Warning: term PU of inst I_DATA_1 is not connect to global special net.
+Warning: term PD of inst I_DATA_1 is not connect to global special net.
+Warning: term SMT of inst I_DATA_1 is not connect to global special net.
+Warning: term PU of inst I_DATA_2 is not connect to global special net.
+Warning: term PD of inst I_DATA_2 is not connect to global special net.
+Warning: term SMT of inst I_DATA_2 is not connect to global special net.
+Warning: term PU of inst I_DATA_3 is not connect to global special net.
+Warning: term PD of inst I_DATA_3 is not connect to global special net.
+Warning: term SMT of inst I_DATA_3 is not connect to global special net.
+Warning: term PU of inst I_DATA_4 is not connect to global special net.
+Warning: term PD of inst I_DATA_4 is not connect to global special net.
+Warning: term SMT of inst I_DATA_4 is not connect to global special net.
+Warning: term PU of inst I_DATA_5 is not connect to global special net.
+Warning: term PD of inst I_DATA_5 is not connect to global special net.
+Warning: term SMT of inst I_DATA_5 is not connect to global special net.
+Warning: term PU of inst I_DATA_6 is not connect to global special net.
+Warning: term PD of inst I_DATA_6 is not connect to global special net.
+Warning: term SMT of inst I_DATA_6 is not connect to global special net.
+Warning: term PU of inst I_DATA_7 is not connect to global special net.
+Warning: term PD of inst I_DATA_7 is not connect to global special net.
+Warning: term SMT of inst I_DATA_7 is not connect to global special net.
+Warning: term PU of inst I_WEIGHT_0 is not connect to global special net.
+Warning: term PD of inst I_WEIGHT_0 is not connect to global special net.
+Warning: term SMT of inst I_WEIGHT_0 is not connect to global special net.
+Warning: term PU of inst I_WEIGHT_1 is not connect to global special net.
+Warning: term PD of inst I_WEIGHT_1 is not connect to global special net.
+Warning: term SMT of inst I_WEIGHT_1 is not connect to global special net.
+Warning: term PU of inst I_WEIGHT_2 is not connect to global special net.
+Warning: term PD of inst I_WEIGHT_2 is not connect to global special net.
+Warning: term SMT of inst I_WEIGHT_2 is not connect to global special net.
+Warning: term PU of inst I_WEIGHT_3 is not connect to global special net.
+Warning: term PD of inst I_WEIGHT_3 is not connect to global special net.
+Warning: term SMT of inst I_WEIGHT_3 is not connect to global special net.
+Warning: term E of inst O_VALID is not connect to global special net.
+Warning: term E2 of inst O_VALID is not connect to global special net.
+Warning: term E4 of inst O_VALID is not connect to global special net.
+Warning: term E8 of inst O_VALID is not connect to global special net.
+Warning: term SR of inst O_VALID is not connect to global special net.
+Warning: term E of inst O_DATA_0 is not connect to global special net.
+Warning: term E2 of inst O_DATA_0 is not connect to global special net.
+Warning: term E4 of inst O_DATA_0 is not connect to global special net.
+Warning: term E8 of inst O_DATA_0 is not connect to global special net.
+Warning: term SR of inst O_DATA_0 is not connect to global special net.
+Warning: term E of inst O_DATA_1 is not connect to global special net.
+Warning: term E2 of inst O_DATA_1 is not connect to global special net.
+Warning: term E4 of inst O_DATA_1 is not connect to global special net.
+Warning: term E8 of inst O_DATA_1 is not connect to global special net.
+Warning: term SR of inst O_DATA_1 is not connect to global special net.
+Warning: term E of inst O_DATA_2 is not connect to global special net.
+Warning: term E2 of inst O_DATA_2 is not connect to global special net.
+Warning: term E4 of inst O_DATA_2 is not connect to global special net.
+Warning: term E8 of inst O_DATA_2 is not connect to global special net.
+Warning: term SR of inst O_DATA_2 is not connect to global special net.
+Warning: term E of inst O_DATA_3 is not connect to global special net.
+Warning: term E2 of inst O_DATA_3 is not connect to global special net.
+Warning: term E4 of inst O_DATA_3 is not connect to global special net.
+Warning: term E8 of inst O_DATA_3 is not connect to global special net.
+Warning: term SR of inst O_DATA_3 is not connect to global special net.
+Warning: term E of inst O_DATA_4 is not connect to global special net.
+Warning: term E2 of inst O_DATA_4 is not connect to global special net.
+Warning: term E4 of inst O_DATA_4 is not connect to global special net.
+Warning: term E8 of inst O_DATA_4 is not connect to global special net.
+Warning: term SR of inst O_DATA_4 is not connect to global special net.
+Warning: term E of inst O_DATA_5 is not connect to global special net.
+Warning: term E2 of inst O_DATA_5 is not connect to global special net.
+Warning: term E4 of inst O_DATA_5 is not connect to global special net.
+Warning: term E8 of inst O_DATA_5 is not connect to global special net.
+Warning: term SR of inst O_DATA_5 is not connect to global special net.
+Warning: term E of inst O_DATA_6 is not connect to global special net.
+Warning: term E2 of inst O_DATA_6 is not connect to global special net.
+Warning: term E4 of inst O_DATA_6 is not connect to global special net.
+Warning: term E8 of inst O_DATA_6 is not connect to global special net.
+Warning: term SR of inst O_DATA_6 is not connect to global special net.
+Warning: term E of inst O_DATA_7 is not connect to global special net.
+Warning: term E2 of inst O_DATA_7 is not connect to global special net.
+Warning: term E4 of inst O_DATA_7 is not connect to global special net.
+Warning: term E8 of inst O_DATA_7 is not connect to global special net.
+Warning: term SR of inst O_DATA_7 is not connect to global special net.
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 10 -use_interleaving_wire_group 1
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1997.5M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 80 wires.
+ViaGen created 800 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal2 |       40       |       NA       |
+|  via2  |       800      |        0       |
+| metal3 |       40       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {GND VCC} -type block_rings -around each_block -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 2 bottom 2 left 2 right 2} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1999.1M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 152 wires.
+ViaGen created 152 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal2 |       76       |       NA       |
+|  via2  |       152      |        0       |
+| metal3 |       76       |       NA       |
++--------+----------------+----------------+
+<CMD> setSrouteMode -viaConnectToShape { ring blockring }
+<CMD> sroute -connect { blockPin padPin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal6(6) }
+*** Begin SPECIAL ROUTE on Wed May 27 19:05:42 2026 ***
+SPECIAL ROUTE ran on directory: /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR
+SPECIAL ROUTE ran on machine: ee24 (Linux 3.10.0-1160.88.1.el7.x86_64 x86_64 1.50Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "GND VCC"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteConnectCorePin set to false
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring stripe blockpin coverpin noshape blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3125.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 1 overlap layer
+Read in 138 macros, 138 used
+Read in 196 components
+  128 core components: 128 unplaced, 0 placed, 0 fixed
+  49 pad components: 0 unplaced, 45 placed, 4 fixed
+  19 block/ring components: 0 unplaced, 0 placed, 19 fixed
+Read in 29 logical pins
+Read in 20 blockages
+Read in 29 nets
+Read in 2 special nets, 2 routed
+Read in 302 terminals
+2 nets selected.
+
+Begin power routing ...
+  Number of IO ports routed: 24
+  Number of Block ports routed: 3114
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:01, real: 0:00:01, peak: 3155.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 3138 wires.
+ViaGen created 3354 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |      1077      |       NA       |
+|   via  |      1176      |        0       |
+| metal2 |      2038      |       NA       |
+|  via2  |      2172      |        0       |
+| metal3 |       17       |       NA       |
+|  via3  |        6       |        0       |
+| metal4 |        6       |       NA       |
++--------+----------------+----------------+
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from left -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 2037.8M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:01.0, peak mem: 2037.8M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Stripe generation is complete.
+vias are now being generated.
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (493.30, 1006.74) (494.38, 1008.74).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (493.30, 1006.74) (494.38, 1008.74).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (490.38, 2443.28) (490.85, 2445.28).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (490.38, 2443.28) (490.85, 2445.28).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (590.38, 1006.74) (590.78, 1008.74).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (590.38, 1006.74) (590.78, 1008.74).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (592.84, 1256.24) (594.38, 1258.24).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (592.84, 1256.24) (594.38, 1258.24).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (593.01, 2443.28) (594.38, 2445.28).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (593.01, 2443.28) (594.38, 2445.28).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (692.94, 1006.74) (694.38, 1008.74).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (692.94, 1006.74) (694.38, 1008.74).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (690.38, 1663.70) (690.48, 1665.70).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (690.38, 1663.70) (690.48, 1665.70).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (690.38, 2443.28) (690.49, 2445.28).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (690.38, 2443.28) (690.49, 2445.28).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (792.64, 1663.70) (794.38, 1665.70).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (792.64, 1663.70) (794.38, 1665.70).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (792.65, 2443.28) (794.38, 2445.28).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal1 & metal2 at (792.65, 2443.28) (794.38, 2445.28).
+**WARN: (EMS-27):	Message (IMPPP-532) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+addStripe created 327 wires.
+ViaGen created 1386 vias, deleted 142 vias to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |       61       |       NA       |
+|   via  |       122      |        0       |
+| metal2 |       258      |       NA       |
+|  via2  |      1220      |       142      |
+| metal3 |        4       |       NA       |
+|  via3  |       44       |        0       |
+| metal4 |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {GND VCC} -layer metal3 -direction horizontal -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from bottom -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 2037.8M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2037.8M)
+Stripe generation is complete.
+vias are now being generated.
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (156.87, 481.29) (332.91, 485.29).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (2544.51, 481.29) (2720.55, 485.29).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (815.26, 591.04) (817.26, 592.02).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (815.26, 591.04) (817.26, 592.02).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1137.06, 591.04) (1139.06, 592.02).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1235.51, 591.04) (1237.51, 592.43).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1137.06, 591.04) (1139.06, 592.02).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1235.51, 591.04) (1237.51, 592.43).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1557.31, 591.04) (1559.31, 592.43).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1557.31, 591.04) (1559.31, 592.43).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1235.51, 692.35) (1237.51, 694.35).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1235.51, 692.35) (1237.51, 694.35).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1557.31, 692.35) (1559.31, 694.35).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1638.64, 693.49) (1640.64, 695.04).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1557.31, 692.35) (1559.31, 694.35).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1638.64, 693.49) (1640.64, 695.04).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1960.44, 693.49) (1962.44, 695.04).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (1960.44, 693.49) (1962.44, 695.04).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (786.78, 893.17) (788.78, 895.04).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer metal3 & metal1 at (786.78, 893.17) (788.78, 895.04).
+**WARN: (EMS-27):	Message (IMPPP-532) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+addStripe created 131 wires.
+ViaGen created 1521 vias, deleted 14 vias to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |        1       |       NA       |
+|   via  |       15       |        4       |
+| metal2 |        2       |       NA       |
+|  via2  |      1502      |       10       |
+| metal3 |       126      |       NA       |
+|  via3  |        4       |        0       |
+| metal4 |        2       |       NA       |
++--------+----------------+----------------+
+<CMD> setSrouteMode -viaConnectToShape { ring stripe blockring }
+<CMD> sroute -connect { corePin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -targetViaLayerRange { metal1(1) metal6(6) }
+**WARN: (IMPSR-4058):	Sroute option: blockPinTarget should be used in conjunction with option: -connect blockPin. 
+*** Begin SPECIAL ROUTE on Wed May 27 19:06:56 2026 ***
+SPECIAL ROUTE ran on directory: /RAID2/COURSE/2026_Spring/iclab/iclab053/Lab12_26S/Exercise/05_APR
+SPECIAL ROUTE ran on machine: ee24 (Linux 3.10.0-1160.88.1.el7.x86_64 x86_64 1.50Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "GND VCC"
+routeSpecial set to true
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring blockpin coverpin noshape blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3155.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 1 overlap layer
+Read in 405 macros, 139 used
+Read in 196 components
+  128 core components: 128 unplaced, 0 placed, 0 fixed
+  49 pad components: 0 unplaced, 45 placed, 4 fixed
+  19 block/ring components: 0 unplaced, 0 placed, 19 fixed
+Read in 29 logical pins
+Read in 20 blockages
+Read in 29 nets
+Read in 2 special nets, 2 routed
+Read in 302 terminals
+2 nets selected.
+
+Begin power routing ...
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of Core ports routed: 2562
+  Number of Followpin connections: 1281
+End power routing: cpu: 0:00:01, real: 0:00:01, peak: 3178.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 6 via definition ...
+
+sroute post-processing starts at Wed May 27 19:06:57 2026
+The viaGen is rebuilding shadow vias for net GND.
+sroute post-processing ends at Wed May 27 19:06:57 2026
+
+sroute post-processing starts at Wed May 27 19:06:57 2026
+The viaGen is rebuilding shadow vias for net VCC.
+sroute post-processing ends at Wed May 27 19:06:57 2026
+sroute created 4067 wires.
+ViaGen created 14536 vias, deleted 157 vias to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |      3819      |       NA       |
+|   via  |      13870     |       157      |
+| metal2 |        8       |       NA       |
+|  via2  |       664      |        0       |
+| metal3 |       240      |       NA       |
+|  via3  |        2       |        0       |
++--------+----------------+----------------+
+<CMD> getMultiCpuUsage -localCpu
+<CMD> get_verify_drc_mode -disable_rules -quiet
+<CMD> get_verify_drc_mode -quiet -area
+<CMD> get_verify_drc_mode -quiet -layer_range
+<CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+<CMD> get_verify_drc_mode -check_only -quiet
+<CMD> get_verify_drc_mode -check_same_via_cell -quiet
+<CMD> get_verify_drc_mode -exclude_pg_net -quiet
+<CMD> get_verify_drc_mode -ignore_trial_route -quiet
+<CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+<CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+<CMD> get_verify_drc_mode -limit -quiet
+<CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+<CMD> verify_drc
+#-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+#-report CHIP.drc.rpt                    # string, default="", user setting
+ *** Starting Verify DRC (MEM: 2055.5) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+
+  Verification Complete : 1 Viols.
+
+ Violation Summary By Layer and Type:
+
+	          Short   Totals
+	metal1        1        1
+	Totals        1        1
+
+ *** End Verify DRC (CPU: 0:00:00.5  ELAPSED TIME: 1.00  MEM: 13.0M) ***
+
+<CMD> set_verify_drc_mode -area {0 0 0 0}
+<CMD> zoomBox -53.24700 352.01800 2498.14800 2624.15600
+<CMD> zoomBox 644.63200 518.55300 2211.50800 1913.93000
+<CMD> zoomBox 809.11500 557.53000 2140.96000 1743.60100
+<CMD> zoomBox 1503.14000 734.02900 1811.62000 1008.74500
+<CMD> zoomBox 1580.90400 757.67500 1770.35000 926.38600
+<CMD> zoomBox 1599.32900 763.42400 1760.35900 906.82900
+<CMD> zoomBox 1644.22700 777.50400 1728.28800 852.36400
+<CMD> zoomBox 1670.91600 785.91700 1708.21500 819.13400
+<CMD> zoomBox 1681.14700 789.49200 1700.61900 806.83300
+<CMD> zoomBox 1682.80300 790.20400 1699.35500 804.94400
+<CMD> zoomBox 1688.02500 792.46300 1695.37000 799.00400
+<CMD> zoomBox 1689.63200 793.15800 1694.14300 797.17500
+<CMD> zoomBox 1690.01500 793.32400 1693.85000 796.73900
+<CMD> zoomBox 1690.34100 793.46500 1693.60100 796.36800
+<CMD> deselectAll
+<CMD> selectMarker 1690.3800 794.2600 1694.3800 795.0200 1 1 6
+<CMD> zoomBox 1689.13800 792.81100 1694.44800 797.54000
+<CMD> zoomBox 1686.96800 790.63600 1695.61600 798.33700
+<CMD> verifyConnectivity -net {GND VCC} -type special -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Wed May 27 19:07:31 2026
+
+Design Name: CHIP
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (2877.4200, 2858.9200)
+Error Limit = 1000; Warning Limit = 50
+Check specified nets
+*** Checking Net VCC
+*** Checking Net GND
+Net GND: dangling Wire.
+
+Begin Summary 
+    3 Problem(s) (IMPVFC-94): The net has dangling wire(s).
+    3 total info(s) created.
+End Summary
+
+End Time: Wed May 27 19:07:31 2026
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 3 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 3.000M)
+
+<CMD> zoomBox 1680.00400 794.19200 1702.93300 814.61100
+<CMD> zoomBox 1678.03100 793.01700 1705.00700 817.04000
+<CMD> zoomBox 1661.53800 783.25600 1722.33800 837.40100
+<CMD> zoomBox 1612.04300 761.25800 1773.25200 904.82200
+<CMD> zoomBox 1478.70600 702.97700 1906.14800 1083.63400
+<CMD> zoomBox 1282.02900 615.34800 2100.87600 1344.57000
+<CMD> zoomBox 1209.41800 582.99600 2172.76800 1440.90500
+<CMD> zoomBox 1123.99300 544.93600 2257.34600 1554.24000
+<CMD> zoomBox 602.51300 312.59300 2773.66200 2246.10400
+<CMD> zoomBox 409.98800 226.81400 2964.28100 2501.53300
+<CMD> zoomBox -401.80200 -579.65200 3757.43800 3124.34800
+<CMD> zoomBox 310.23500 -83.90600 3315.28600 2592.23400
+<CMD> zoomBox 824.68100 274.27000 2995.83100 2207.78200
+<CMD> zoomBox 1569.78900 793.04200 2533.14200 1650.95300
+<CMD> zoomBox 1789.49200 952.70800 2381.11200 1479.57400
+<CMD> zoomBox 1841.88400 990.82500 2344.76100 1438.66100
+<CMD> zoomBox 1886.41700 1023.22400 2313.86300 1403.88500
+<CMD> zoomBox 1995.17100 1107.86700 2218.30100 1306.57500
+<CMD> zoomBox 2012.76600 1121.63200 2202.42700 1290.53400
+<CMD> zoomBox 2054.26000 1156.51000 2153.26500 1244.67900
+<CMD> zoomBox 2075.84100 1174.01100 2127.52400 1220.03700
+<CMD> zoomBox 2086.53300 1182.89900 2113.51300 1206.92600
+<CMD> editMove -dx 405.458 -dy 398.154
+<CMD> uiSetTool select
+<CMD> uiSetTool obstruct
+<CMD> uiSetTool select
+<CMD> deselectAll
+<CMD> selectWire 1962.0400 1191.0400 2098.2200 1195.0400 3 GND
+<CMD> editTrim
+<CMD> zoomBox 2058.57100 1165.75400 2130.10900 1229.46200
+<CMD> zoomBox 2041.30100 1155.18100 2140.31600 1243.35900
+<CMD> zoomBox 1939.83100 1089.60000 2202.37100 1323.40400
+<CMD> zoomBox 1838.06300 1027.22400 2265.56700 1407.93700
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> zoomBox 2181.03100 996.44600 2683.97800 1444.34400
+<CMD> zoomBox 2276.85100 1072.22100 2585.72400 1347.28700
+<CMD> zoomBox 2299.51700 1090.20000 2562.05900 1324.00600
+<CMD> zoomBox 2349.29300 1129.46600 2510.52800 1273.05300
+<CMD> zoomBox 2387.46800 1159.24500 2471.63400 1234.19900
+<CMD> zoomBox 2407.61600 1175.05700 2451.55200 1214.18400
+<CMD> deselectAll
+<CMD> selectWire 2431.0800 1191.0400 2720.5500 1195.0400 3 GND
+<CMD> editTrim
+<CMD> zoomBox 2354.21900 1139.69000 2491.27500 1261.74500
+<CMD> zoomBox 2226.59500 1052.13900 2589.99600 1375.76500
+<CMD> zoomBox 1888.20300 819.24700 2851.75000 1677.33100
+<CMD> zoomBox 1219.06900 338.43300 3390.66200 2272.33900
+<CMD> zoomBox 117.64500 -453.01100 4277.73600 3251.74700
+<CMD> zoomBox 564.69300 412.65700 2736.28800 2346.56500
+<CMD> zoomBox 867.77400 913.94100 1831.32200 1772.02600
+<CMD> zoomBox 989.98200 1098.13900 1492.96000 1546.06500
+<CMD> zoomBox 1010.12600 1127.91700 1437.65700 1508.65400
+<CMD> zoomBox 1056.63600 1191.39000 1319.19400 1425.21000
+<CMD> zoomBox 1097.81300 1247.58600 1214.31100 1351.33300
+<CMD> zoomBox 1113.37400 1269.00900 1174.18800 1323.16700
+<CMD> deselectAll
+<CMD> selectWire 1125.5800 1291.0400 1642.2400 1295.0400 3 GND
+<CMD> editTrim
+<CMD> zoomBox 1076.06400 1224.53700 1237.31300 1368.13700
+<CMD> zoomBox 1001.63400 1141.39000 1365.05000 1465.02900
+<CMD> zoomBox 879.11800 1004.52600 1575.31100 1624.51900
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> zoomBox 1036.76100 821.62800 2370.45100 2009.34200
+<CMD> zoomBox 484.49400 729.85400 3039.42700 3005.14300
+<CMD> zoomBox -233.74600 583.90200 3926.53700 4288.83100
+<CMD> panPage 0 -1
+<CMD> zoomBox 840.90600 234.41600 2686.84700 1878.31400
+<CMD> zoomBox 1331.35900 547.76100 2150.41300 1277.16700
+<CMD> zoomBox 1480.93900 642.83200 1983.94200 1090.78000
+<CMD> zoomBox 1600.72600 722.77000 1823.91200 921.52800
+<CMD> zoomBox 1643.65000 756.85900 1760.15500 860.61200
+<CMD> zoomBox 1669.81400 777.81500 1721.51000 823.85300
+<CMD> zoomBox 1681.73600 787.02000 1704.67400 807.44700
+<CMD> zoomBox 1686.40800 790.52800 1698.38300 801.19200
+<CMD> zoomBox 1687.83000 791.59100 1696.48200 799.29600
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed May 27 19:08:43 2026
+  Total CPU time:     0:01:33
+  Total real time:    0:19:18
+  Peak memory (main): 1321.83MB
+
+
+*** Memory Usage v#1 (Current mem = 2088.988M, initial mem = 284.375M) ***
+*** Message Summary: 1799 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:31, real=0:19:11, mem=2089.0M) ---

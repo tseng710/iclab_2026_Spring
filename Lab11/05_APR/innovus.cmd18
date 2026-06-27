@@ -1,0 +1,476 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu May 21 23:08:10 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+set init_design_uniquify 1
+setDesignMode -process 180
+suppressMessage TECHLIB 1318
+suppressMessage ENCEXT-2799
+set init_gnd_net GND
+set init_lef_file {LEF/header6_V55_20ka_cic.lef LEF/fsa0m_a_generic_core.lef LEF/FSA0M_A_GENERIC_CORE_ANT_V55.lef LEF/fsa0m_a_t33_generic_io.lef LEF/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef LEF/BONDPAD.lef LEF/SUMA180_4096X12.lef}
+set init_verilog CHIP_SYN.v
+set init_mmmc_file CHIP_mmmc.view
+set init_io_file CHIP.io
+set init_top_cell CHIP
+set init_pwr_net VCC
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core_5040 -r 0.997200732899 0.5 170 170 170 170
+uiSetTool select
+getIoFlowFlag
+fit
+setDrawView fplan
+uiSetTool move
+selectInst CORE/mem3
+setObjFPlanBox Instance CORE/mem3 483.105 1543.561 1261.825 1994.361
+deselectAll
+selectInst CORE/mem2
+setObjFPlanBox Instance CORE/mem2 1473.918 1739.942 2252.638 2190.742
+deselectAll
+selectInst CORE/mem3
+setObjFPlanBox Instance CORE/mem3 329.922 1237.205 1108.642 1688.005
+panPage 1 0
+panPage 1 0
+deselectAll
+selectInst CORE/mem1
+panPage -1 0
+panPage -1 0
+setObjFPlanBox Instance CORE/mem1 346.948 353.487 1125.668 804.287
+panPage 1 0
+deselectAll
+selectInst CORE/mem0
+panPage -1 0
+flipOrRotateObject -rotate R90
+flipOrRotateObject -rotate R180
+setObjFPlanBox Instance CORE/mem0 1575.776 463.461 2026.576 1242.181
+deselectAll
+selectInst CORE/mem1
+setObjFPlanBox Instance CORE/mem1 378.371 380.984 1157.091 831.784
+deselectAll
+selectInst CORE/mem0
+flipOrRotateObject -rotate R180
+setObjFPlanBox Instance CORE/mem0 1544.359 475.243 1995.159 1253.963
+deselectAll
+selectInst CORE/mem1
+setObjFPlanBox Instance CORE/mem1 394.081 412.401 1172.801 863.201
+deselectAll
+selectInst CORE/mem0
+setObjFPlanBox Instance CORE/mem0 1591.491 447.746 2042.291 1226.466
+deselectAll
+selectInst CORE/mem1
+setObjFPlanBox Instance CORE/mem1 386.224 412.4 1164.944 863.2
+deselectAll
+selectInst CORE/mem3
+flipOrRotateObject -rotate R90
+setObjFPlanBox Instance CORE/mem3 353.486 1339.319 804.286 2118.039
+flipOrRotateObject -rotate R180
+setObjFPlanBox Instance CORE/mem3 432.043 1221.491 882.843 2000.211
+deselectAll
+selectInst CORE/mem1
+setObjFPlanBox Instance CORE/mem1 405.858 408.473 1184.578 859.273
+deselectAll
+selectInst CORE/mem3
+setObjFPlanBox Instance CORE/mem3 435.968 1221.49 886.768 2000.21
+deselectAll
+selectInst CORE/mem2
+flipOrRotateObject -rotate R180
+setObjFPlanBox Instance CORE/mem2 1202.913 1567.124 1981.633 2017.924
+deselectAll
+selectInst CORE/mem0
+setObjFPlanBox Instance CORE/mem0 1548.286 447.75 1999.086 1226.47
+deselectAll
+selectInst CORE/mem1
+setObjFPlanBox Instance CORE/mem1 382.294 424.18 1161.014 874.98
+setObjFPlanBox Instance CORE/mem1 405.856 424.18 1184.576 874.98
+zoomBox -1112.17000 -612.30800 4769.77000 3149.52400
+deselectAll
+selectInst CORE/mem3
+addHaloToBlock {15 15 15 15} -allMacro
+deselectAll
+selectInst CORE/mem2
+addHaloToBlock {15 15 15 15} CORE/mem2
+addHaloToBlock {15 15 15 15} -allMacro
+uiSetTool obstruct
+zoomBox -2241.74700 -1270.01000 5899.34700 3936.67900
+zoomBox -2960.08000 -1688.26300 6617.67900 4437.25400
+zoomBox -1771.18100 -803.95800 5148.75000 3621.72800
+zoomBox -1306.86800 -458.60200 4575.07400 3303.23200
+saveDesign CHIP_floorplan.inn
+clearGlobalNets
+globalNetConnect VCC -type pgpin -pin VCC -instanceBasename *
+globalNetConnect VCC -type net -net VCC
+globalNetConnect VCC -type tiehi -pin VCC -instanceBasename *
+globalNetConnect GND -type pgpin -pin GND -instanceBasename *
+globalNetConnect GND -type net -net GND
+globalNetConnect GND -type tielo -pin GND -instanceBasename *
+zoomBox -821.12000 360.53400 3428.58500 3078.46000
+zoomBox -417.97700 1188.03900 2191.87400 2857.18600
+zoomBox -321.73600 1385.58700 1896.63800 2804.36200
+zoomBox -550.10200 1061.93700 2520.31200 3025.64000
+zoomBox -695.32700 856.11900 2916.92500 3166.35800
+zoomBox -866.17900 613.98000 3383.52900 3331.90800
+zoomBox -1193.32800 331.19000 3806.32800 3528.75200
+undo
+redo
+zoomBox -1666.27700 177.07400 4215.67200 3938.91200
+panPage 0 -1
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 10 -use_interleaving_wire_group 1
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type block_rings -around each_block -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 2 bottom 2 left 2 right 2} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { ring blockring }
+sroute -connect { blockPin padPin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal6(6) }
+zoomBox -1034.20000 -375.21500 3215.51000 2342.71400
+zoomBox -787.34800 -150.16100 2824.90600 2160.07900
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from left -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+undo
+redo
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal3 -direction horizontal -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from bottom -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { ring stripe blockring }
+sroute -connect { corePin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -targetViaLayerRange { metal1(1) metal6(6) }
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+zoomBox -256.59300 661.43100 1961.78400 2080.20800
+zoomBox -129.88800 855.18000 1755.73300 2061.14100
+zoomBox 69.83900 1163.23600 1432.20100 2034.54300
+panPage 0 1
+zoomBox 205.39400 1652.98300 1042.05500 2188.07500
+zoomBox 237.75400 1707.49700 948.91700 2162.32600
+zoomBox 420.39400 2015.18300 423.22800 2016.99600
+zoomBox 420.66300 2015.60600 422.40500 2016.72000
+zoomBox 419.23600 2013.36800 426.75800 2018.17900
+zoomBox 418.90800 2012.85400 427.75800 2018.51400
+zoomBox 418.06800 2011.53700 430.31900 2019.37200
+zoomBox 414.86300 2009.02700 438.33300 2024.03700
+zoomBox 413.68000 2008.10100 441.29200 2025.76000
+zoomBox 410.65200 2005.40600 448.86800 2029.84700
+zoomBox 400.65800 1996.51200 473.86700 2043.33300
+zoomBox 381.51000 1979.47300 521.75900 2069.17000
+zoomBox 374.44200 1973.18300 539.44100 2078.70900
+zoomBox 315.36400 1920.60500 687.23100 2158.43500
+zoomBox 248.63600 1861.21900 854.15900 2248.48500
+zoomBox 10.57800 1768.03500 996.57200 2398.63400
+zoomBox -226.37500 1675.28400 1138.32400 2548.08600
+panPage 0 -1
+panPage 0 1
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage -1 0
+zoomBox 403.69800 1333.98300 2009.22700 2360.80900
+zoomBox 192.38000 1242.59500 2081.23800 2450.62600
+zoomBox -315.85700 1063.57100 2298.48000 2735.58700
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+panPage 0 -1
+zoomBox 4.53200 207.50800 2226.71900 1628.72200
+zoomBox 474.14900 470.81300 2079.67900 1497.64000
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage -1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 1 0
+panPage 1 0
+panPage 0 1
+zoomBox 1394.97800 1649.75500 2380.97500 2280.35600
+zoomBox 1499.81900 1710.58200 2337.91700 2246.59300
+zoomBox 1661.45900 1783.87800 2266.98500 2171.14600
+zoomBox 1818.45400 1863.77900 2190.32300 2101.61000
+zoomBox 1855.93300 1882.85300 2172.02200 2085.01000
+zoomBox 1885.42300 1899.32900 2154.10000 2071.16300
+zoomBox 1841.26500 1866.32900 2213.13700 2104.16200
+zoomBox 1741.28000 1791.61000 2346.81100 2178.88100
+zoomBox 1696.04800 1757.53800 2408.43700 2213.15100
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 0 -1
+panPage -1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+panPage 0 1
+panPage 0 -1
+panPage 0 1
+zoomBox 344.33400 892.98000 660.42700 1095.13900
+zoomBox 386.49400 948.89300 580.61600 1073.04500
+zoomBox 422.16900 996.23100 523.50200 1061.03900
+zoomBox 428.01300 1003.98500 514.14600 1059.07200
+zoomBox 446.43500 1028.42900 484.65200 1052.87100
+zoomBox 452.10400 1035.95200 475.57500 1050.96300
+zoomBox 454.60800 1039.27400 471.56600 1050.12000
+zoomBox 457.12300 1042.61200 467.53800 1049.27300
+zoomBox 457.72300 1043.40900 466.57600 1049.07100
+zoomBox 456.19900 1042.19900 468.45200 1050.03500
+zoomBox 451.17000 1038.20700 474.64300 1053.21900
+zoomBox 449.31300 1036.73300 476.92800 1054.39400
+zoomBox 444.55800 1032.95900 482.78000 1057.40400
+zoomBox 441.53500 1030.55900 486.50200 1059.31800
+zoomBox 437.97700 1027.73500 490.88100 1061.57000
+zoomBox 416.26300 1010.49700 517.61000 1075.31400
+zoomBox 374.66300 977.47500 568.81500 1101.64600
+zoomBox 319.97900 932.15000 636.12500 1134.34300
+zoomBox 190.21500 824.59300 795.85400 1211.93300
+zoomBox 85.94700 732.79300 924.20100 1268.90400
+zoomBox -58.37000 605.73500 1101.84400 1347.75700
+zoomBox -534.58200 186.47200 1688.02500 1607.95400
+zoomBox -1062.40300 33.41200 2013.86900 2000.86100
+panPage 0 -1
+panPage 1 0
+panPage 0 1
+zoomBox 108.25800 250.48500 2723.08900 1922.81700
+panPage 0 1
+panPage 0 1
+panPage -1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+verifyConnectivity -net {GND VCC} -type special -error 1000 -warning 50
+zoomBox -517.34900 -534.31700 3101.79500 1780.33000
+zoomBox -1383.24200 -926.15200 3625.95500 2277.51200
+panPage 0 1
+zoomBox -289.94300 824.55200 2786.33000 2792.00200
+panPage 0 -1
+zoomBox 744.25600 567.27200 2350.09100 1594.29400
+zoomBox 1372.54900 769.54700 2085.06800 1225.24300
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 0 1
+panPage 0 1
+zoomBox 202.65600 1845.93300 518.80600 2048.12900
+zoomBox 291.38900 1892.83600 485.54500 2017.01000
+zoomBox 312.57200 1904.03300 477.60500 2009.58100
+zoomBox 347.61800 1921.47100 466.85500 1997.73000
+zoomBox 361.30400 1928.28100 462.65700 1993.10200
+zoomBox 382.85300 1938.02900 456.08000 1984.86200
+zoomBox 391.26900 1941.83600 453.51200 1981.64400
+zoomBox 391.26900 1937.85500 453.51200 1977.66300
+zoomBox 364.52100 1924.01200 465.87300 1988.83200
+zoomBox 337.89800 1910.23300 478.17700 1999.94900
+zoomBox 274.76400 1877.32100 503.18600 2023.41000
+zoomBox 245.89100 1862.27000 514.62300 2034.13900
+zoomBox 132.90600 1832.77500 570.49200 2112.63600
+zoomBox -271.21200 1659.87200 715.00000 2290.61000
+panPage 0 -1
+panPage 0 1
+panPage 1 0
+setPlaceMode -prerouteAsObs {2 3}
+setPlaceMode -fp false
+place_design -noPrePlaceOpt
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS
+zoomBox -4362.59000 22.93900 3794.30900 5239.73600
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+zoomBox -5348.38900 -357.54500 4247.96300 5779.86300
+zoomBox -6508.15300 -805.17300 4781.67300 6415.30700
+panPage 0 -1
+zoomBox -3556.87400 -785.03500 3376.49300 3649.24400
+zoomBox -1090.11000 480.43000 1986.26300 2447.94400
+zoomBox -285.91300 1035.57800 1603.36500 2243.87800
+zoomBox -93.93000 1168.10700 1511.95700 2195.16200
+zoomBox 304.10300 1473.93300 1290.31900 2104.67400
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+zoomBox -430.69300 99.95300 1791.99100 1521.48500
+zoomBox -672.12700 -46.86500 1942.79700 1625.52600
+zoomBox -1683.46600 -661.86800 2574.50300 2061.34300
+zoomBox -2145.97700 -943.12500 2863.39900 2260.65300
+panPage 0 1
+zoomBox -604.66000 989.98300 1001.23200 2017.04100
+zoomBox -324.03300 1155.49600 662.18700 1786.23900
+zoomBox -194.53000 1236.94100 518.01400 1692.65300
+zoomBox -143.95400 1268.74800 461.70900 1656.10400
+zoomBox 10.80700 1356.87200 279.54500 1528.74500
+zoomBox 43.54500 1378.58200 237.70900 1502.76100
+zoomBox -10.01400 1343.06400 306.15000 1545.26900
+zoomBox -97.22600 1285.22900 417.59600 1614.48700
+zoomBox -184.03200 1227.66300 528.52400 1683.38300
+zoomBox -380.58400 1097.31800 779.69500 1839.38200
+zoomBox -700.63600 885.07400 1188.68600 2093.40200

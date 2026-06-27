@@ -1,0 +1,184 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sun Jun 21 19:07:33 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/2026_Spring/iclab/iclab053/Final_Project/05_APR/CHIP.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_postRoute -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix CHIP_postRoute -outDir timingReports
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+verifyConnectivity -type all -error 1000 -warning 50
+zoomBox -269.37700 -220.93800 771.79400 808.72800
+zoomBox -594.89100 -475.01700 846.17700 950.12800
+zoomBox -270.09300 196.72200 369.31700 829.06700
+zoomBox -120.73300 463.56800 162.97700 744.14300
+zoomBox -102.39400 496.72000 138.76000 735.20900
+zoomBox -57.80300 592.77700 238.70900 747.64000
+zoomBox -30.61200 640.33300 124.17000 721.17300
+zoomBox -15.86100 664.80300 64.93600 707.00200
+zoomBox -18.70400 660.08700 76.35200 709.73300
+zoomBox -27.03900 652.22300 104.52600 720.93700
+panPage 0 -1
+uiSetTool move
+zoomBox -15.68100 655.70300 65.11700 697.90200
+zoomBox -9.24600 670.76700 40.37500 696.68300
+zoomBox -3.55100 684.10400 18.46800 695.60400
+selectObject IO_Pin clk
+zoomBox -13.70200 671.18000 54.98600 707.05500
+panPage 0 -1
+zoomBox -5.06900 665.19800 25.40900 681.11600
+zoomBox -1.08400 667.31700 12.44300 674.38200
+zoomBox 1.20800 668.46500 5.54700 670.73100
+moveGroupPins -loc {2.48700 669.20000}
+zoomBox -2.14100 667.81300 11.40000 674.88500
+zoomBox -10.08000 665.69600 25.82400 684.44800
+zoomBox -25.95400 661.33100 54.96600 703.59400
+panPage 0 1
+zoomBox -7.42200 688.05400 14.63100 699.57200
+zoomBox -4.13200 690.65700 7.38100 696.67000
+deselectAll
+selectObject IO_Pin {bresp_m_inf_data[1]}
+panPage 0 -1
+zoomBox -8.79600 684.85200 17.15600 698.40600
+zoomBox -12.01500 683.65100 23.90500 702.41100
+panPage 0 -1
+zoomBox -19.35700 675.53400 39.13400 706.08300
+zoomBox -26.66500 673.05700 54.29300 715.34000
+panPage 0 -1
+zoomBox -59.84000 634.38800 122.62200 729.68500
+panPage 0 -1
+panPage 0 -1
+zoomBox -82.79900 559.73800 169.74500 691.63700
+zoomBox -97.39900 555.66000 199.71200 710.83600
+panPage 0 1
+moveGroupPins -loc {-0.62000 664.03300}
+zoomBox -42.86600 635.42400 88.96500 704.27700
+zoomBox -22.51900 647.83900 46.29800 683.78100
+zoomBox -10.52100 656.11600 20.01400 672.06400
+zoomBox -5.80400 659.60800 10.13600 667.93300
+zoomBox -3.71900 661.24500 6.07200 666.35900
+moveGroupPins -loc {-0.62000 662.89800}
+zoomBox -13.11500 659.28100 17.43200 675.23500
+zoomBox -30.45400 655.62700 38.39200 691.58400
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+zoomBox -81.39300 472.36700 101.15200 567.70700
+zoomBox -156.28000 456.55200 193.42100 639.19500
+zoomBox -412.75800 405.35500 514.46900 889.63000
+zoomBox -789.82000 330.34000 986.46000 1258.06100
+zoomBox -1285.47700 230.85900 1606.90100 1741.49900
+zoomBox -2089.72700 74.55600 2620.02800 2534.38100
+panPage 0 -1
+zoomBox -1521.10500 -481.97100 1881.69400 1295.25300
+zoomBox -949.27400 -300.25800 1140.46900 791.17900
+zoomBox -507.23500 -162.80500 583.62400 406.93200
+zoomBox -220.31400 -74.20900 263.70700 178.58700
+zoomBox -113.77100 -38.03100 138.89300 93.93100
+zoomBox -50.49400 -14.51500 61.61600 44.03800
+zoomBox -36.55700 -9.56000 44.44300 32.74500
+zoomBox -19.21900 -3.69100 23.06500 18.39300
+zoomBox -8.67200 -0.21000 10.09100 9.59000
+zoomBox -4.52200 0.43000 5.27400 5.54600
+panPage 0 -1
+zoomBox -12.46800 -2.29400 13.51100 11.27400
+zoomBox -39.50600 -6.34400 41.53800 35.98400
+zoomBox -123.84700 -18.96900 128.96700 113.07100
+zoomBox -455.27300 -68.12900 472.53000 416.44700
+zoomBox -1206.54700 -176.48400 1253.49700 1108.35500
+panPage 1 0
+zoomBox 92.28400 -108.45200 1376.44600 562.24400
+zoomBox 426.29000 -49.80700 996.08200 247.78600
+zoomBox 568.62700 -21.50900 821.45000 110.53600
+zoomBox 631.82500 -8.42400 744.00600 50.16600
+zoomBox 661.34400 -2.52200 711.12000 23.47500
+zoomBox 677.17300 -1.14700 703.15800 12.42500
+deselectAll
+selectObject IO_Pin stall_2
+moveGroupPins -loc {683.24000 -0.31000}
+panPage 0 -1
+moveGroupPins -loc {682.03400 -0.62000}
+deselectAll
+selectObject IO_Pin {bid_m_inf_data[2]}
+moveGroupPins -loc {683.86000 1.74200}
+zoomBox 667.72200 -13.32000 726.28800 17.26800
+zoomBox 639.81700 -37.37000 795.10400 43.73400
+zoomBox 598.79200 -72.72500 896.27400 82.64500
+zoomBox 520.20200 -140.45300 1090.08500 157.18700
+zoomBox 314.06500 -318.09800 1598.44000 352.70900
+panPage 0 1
+panPage 0 1
+panPage 0 1
+zoomBox 484.51600 477.47700 1154.96900 827.64300
+zoomBox 581.48400 575.44800 931.46500 758.23700
+zoomBox 634.06300 628.28900 816.75600 723.70600
+zoomBox 657.59700 653.58700 769.79700 712.18700
+zoomBox 675.45800 672.87500 734.03000 703.46600
+deselectAll
+selectObject IO_Pin bvalid_m_inf_data
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+moveGroupPins -loc {683.86000 664.50500}
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+deselectAll
+selectObject IO_Pin bready_m_inf_data
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+moveGroupPins -loc {681.85300 669.20000}
+verifyConnectivity -type all -error 1000 -warning 50

@@ -1,0 +1,79 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : HARVESTER_TOP
+Version: P-2019.03-SP5-1
+Date   : Sun Apr 26 21:10:29 2026
+****************************************
+
+
+  Startpoint: u_HARVESTER_tree_ptr_idx_reg_1_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_FIFO_syn_output_wfull_reg
+               (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_HARVESTER_tree_ptr_idx_reg_1_/CK (QDFFRBT)            0.00       0.00 r
+  u_HARVESTER_tree_ptr_idx_reg_1_/Q (QDFFRBT)             0.55 *     0.55 r
+  U1846/O (BUF3)                                          0.25 *     0.80 r
+  U5611/O (INV3)                                          0.08 *     0.88 f
+  U5613/O (ND2F)                                          0.14 *     1.02 r
+  U2509/O (INV12)                                         0.22 *     1.24 f
+  U2642/O (AOI22S)                                        0.29 *     1.53 r
+  U4950/O (AN2T)                                          0.27 *     1.81 r
+  U4949/O (ND3HT)                                         0.13 *     1.94 f
+  U4948/O (AO12T)                                         0.38 *     2.31 f
+  U2814/O (BUF4CK)                                        0.51 *     2.82 f
+  U3848/O (XNR2HS)                                        0.38 *     3.21 r
+  U10868/O (OAI22S)                                       0.25 *     3.46 f
+  U1549/CO (FA1S)                                         0.62 *     4.08 f
+  U11091/S (FA1)                                          0.72 *     4.80 f
+  U11104/S (FA1)                                          0.58 *     5.38 f
+  U11128/S (FA1)                                          0.58 *     5.96 f
+  U11134/S (FA1)                                          0.68 *     6.64 f
+  U4240/S (FA1)                                           0.84 *     7.48 f
+  U11210/CO (FA1)                                         0.57 *     8.04 f
+  U11216/O (ND2P)                                         0.19 *     8.23 r
+  U1362/O (OAI12H)                                        0.14 *     8.38 f
+  U1349/O (AOI12HP)                                       0.17 *     8.55 r
+  U4975/O (OAI12HP)                                       0.11 *     8.66 f
+  U11219/O (AOI12HP)                                      0.17 *     8.83 r
+  U11882/O (OAI12HP)                                      0.10 *     8.93 f
+  U2056/O (INV4)                                          0.10 *     9.03 r
+  U4935/O (OAI12HT)                                       0.10 *     9.13 f
+  U4934/O (NR3HT)                                         0.12 *     9.25 r
+  U5025/O (OR2T)                                          0.30 *     9.55 r
+  U2879/O (INV4)                                          0.07 *     9.62 f
+  U5024/O (NR2F)                                          0.21 *     9.84 r
+  U11900/O (ND2F)                                         0.12 *     9.96 f
+  U11901/O (XNR2HT)                                       0.23 *    10.19 f
+  U11914/O (MUX2T)                                        0.41 *    10.60 f
+  U2859/O (XNR2H)                                         0.17 *    10.77 r
+  U16984/O (ND3HT)                                        0.15 *    10.92 f
+  U16985/O (NR3HT)                                        0.11 *    11.03 r
+  u_FIFO_syn_output_wfull_reg/D (QDFFRBS)                 0.00 *    11.03 r
+  data arrival time                                                 11.03
+
+  clock clk2 (rise edge)                                 11.30      11.30
+  clock network delay (ideal)                             0.00      11.30
+  clock reconvergence pessimism                           0.00      11.30
+  clock uncertainty                                      -0.10      11.20
+  u_FIFO_syn_output_wfull_reg/CK (QDFFRBS)                          11.20 r
+  library setup time                                     -0.17 *    11.03
+  data required time                                                11.03
+  ------------------------------------------------------------------------------
+  data required time                                                11.03
+  data arrival time                                                -11.03
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
